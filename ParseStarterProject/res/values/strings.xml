@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ParseStarterProjectActivity!</string>
+    <string name="app_name">UM Malibu</string>
+    <string name="title_string">Title</string>
+    <string name="date_string">Date</string>
+    <string name="graphic_image_description">Series Graphic</string>
+    <string name="activity_details">Sermon</string>
+    <string name="title_activity_main">UM Malibu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_worship">Worship</string>
+    <string name="songs_title_text">Songs recently played at UM</string>
+    <string name="request_text">Type song Requests here... </string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_prayer">Prayer</string>
+    <string name="action_new">New Action</string>
+    <string name="action_alerts">Notifications</string>
+    <string name="title_activity_new_prayer">Prayer Request</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="name">Name:</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_activity_events_detail">Event</string>
+    <string name="title_activity_activity_with_fragment">Activity_with_fragment</string>
+    <string name="title_activity_about_um">About UM</string>
+    <string name="title_activity_coffee">Connecting With UM</string>
+    <string name="um_goal">At UM our job is to minister to students in any way we can. That means getting to know students on a more personal level than we can in the short time that everyone is together on Tuesday nights. We would love to talk about life, God, and answer any questions you may have about our ministry. Plus if you take the time to meet with us we will byy you a coffee, so you have nothing to lose. Use the link below to send us an email of talk to Steve at UM if you are interested.</string>
+    <string name="meet_steve_title">Meet Our Director - Steve Smith</string>
+    <string name="steve_bio_text">As a native of Northern California, Steve came to Malibu over a decade ago to attend Pepperdine. While there, Steve found and fell in love with UM.\n\nFrom finding a community of lifelong friends his freshman year, to finding his wife junior year, to serving as the UM his senior year, UM has played an absolutely pivotal role in Steve\'s life.\n\nSteve is elated to be the new Director of University Ministries after a few years away from Malibu. During that time, Steve worked in the advertising industry, completed his Masters of Divinity, worked as a chaplain in an ICU, co-pastored a church in Topanga Canyon, captained a crab fishing vessel on the Bering Sea, and married th woman of his dreams. (OK, one of those might not be true)\n\nNow at the helm of UM, Steve is excited to see what the Lord has in store for him and for the wonderful students of Pepperdine University. </string>
+    <string name="about_link">Check us out at http://www.ummalibu.com or https://www.facebook.com/universityministries</string>
+    <string name="about_um_text">UM is University Ministries, a college ministry hosted by Malibu Presbyterian Church that meets every Tuesday night at 8pm. We are focused on creating a community of people who can be real and love God together. This ministry is open to any college aged student. UM is lead by Steve Smith along with yearly interns. Check out our website or our facebook page below for more information, and we hope to see you on Tuesday nights!</string>
+    <string name="about_ride_text">Shuttles to UM pick up students every week in Smothers Parking Lot on Pepperdine\'s main campus at 7:50 every Tuesday night.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_notifications_list">Notifications</string>
+    <string name="title_activity_umsl_menu">Send Push Notifications</string>
+
+</resources>
