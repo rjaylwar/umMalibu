@@ -1,9 +1,0 @@
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/classes/release
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/release/support-annotations-21.0.3-3a28847b4492bf3ef948d20d762079dda83d773c.jar
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/release/bolts-android-1.1.4-42e179ebe89eea3e6dd73de0a2bddbb832180fc1.jar
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/release/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/release/internal_impl-21.0.3-e5a28cfb1caa4d37a834838dd5fcef011b59b764.jar
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/release/classes-7e87027859b1f38492940a2125aa7e8a6fb90feb.jar
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/release/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/release/classes-314bd47dca2b356317bbc0b250b0e7848e291be8.jar
-/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/release/classes-9bb465a6bc53fdce4b8ad48b7727c821882e0834.jar
