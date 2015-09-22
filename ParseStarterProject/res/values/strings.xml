@@ -35,4 +35,17 @@
     <string name="title_activity_notifications_list">Notifications</string>
     <string name="title_activity_umsl_menu">Send Push Notifications</string>
 
+    <string name="artist_text">Artists</string>
+    <string name="next_text">Next</string>
+    <string name="title_activity_artist_list">Artist List</string>
+    <string name="title_activity_artists_frag">ArtistsFragActivity</string>
+    <string name="play">Play</string>
+    <string name="share">Share</string>
+    <string name="more">More</string>
+    <string name="title_activity_talk_detail">TalkDetailActivity</string>
+    <string name="title_activity_umber">Map</string>
+    <string name="events">Events</string>
+    <string name="sermons">Sermons</string>
+    <string name="umber">UMber</string>
+
 </resources>

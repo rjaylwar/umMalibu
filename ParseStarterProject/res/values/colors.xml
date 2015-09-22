@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#FF33B5E5</color>
+    <color name="purple">#FFAA66CC</color>
+    <color name="green">#FF99CC00</color>
+    <color name="orange">#FFFFBB33</color>
+    <color name="red">#FFFF4444</color>
+    <color name="darkpurple">#FF9933CC</color>
+    <color name="darkgreen">#FF669900</color>
+    <color name="darkorange">#FFFF8800</color>
+    <color name="darkred">#FFCC0000</color>
+    <color name="grey">#5a5a5a</color>
+    <color name="light_grey">#9c9c9c</color>
+    <color name="transparent_grey">#55818181</color>
+    <color name="breakline_color">#44b4b4b4</color>
+    <color name="grey_blue">#234265</color>
+
+    <color name="um_grey_blue">#FF345065</color>
+    <color name="um_dark_blue">#FF233645</color>
+    <color name="um_highlight_blue">#FF00DEF2</color>
+    <color name="um_grey">#FFABCDCF</color>
+    <color name="um_green">#5DFC0A</color>
+    <color name="black">#000000</color>
+
+</resources>

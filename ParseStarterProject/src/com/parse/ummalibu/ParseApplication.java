@@ -4,7 +4,6 @@ import android.app.Application;
 import android.util.Log;
 
 import com.parse.Parse;
-import com.parse.ParseACL;
 import com.parse.ParseCrashReporting;
 import com.parse.ParseException;
 import com.parse.ParsePush;
@@ -20,17 +19,16 @@ public class ParseApplication extends Application {
     // Initialize Crash Reporting.
     ParseCrashReporting.enable(this);
     //Parse.enableLocalDatastore(this);
-    // Add your initialization code here
     Parse.initialize(this, "M8lsPPcaku0od8yzToKaHKR11TUFlsZuRPorClFt", "ovSmqOh3BFF0IrQu5zrhFHPxOsIQYA88bOHWEc42");
 
     ParseUser.enableAutomaticUser();
-    ParseACL defaultACL = new ParseACL();
+//    ParseACL defaultACL = new ParseACL();
       
-    // If you would like all objects to be private by default, remove this line.
-    defaultACL.setPublicReadAccess(true);
-    //defaultACL.setPublicWriteAccess(true);
-    
-    ParseACL.setDefaultACL(defaultACL, true);
+//    // If you would like all objects to be private by default, remove this line.
+//    defaultACL.setPublicReadAccess(true);
+//    //defaultACL.setPublicWriteAccess(true);
+//
+//    ParseACL.setDefaultACL(defaultACL, true);
 
     ParsePush.subscribeInBackground("global", new SaveCallback() {
         @Override
