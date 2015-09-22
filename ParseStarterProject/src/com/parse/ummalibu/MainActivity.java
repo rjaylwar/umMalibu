@@ -1,11 +1,11 @@
 package com.parse.ummalibu;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,24 +16,23 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     //ImageButton sermonButton;
     //ImageButton aboutButton;
-    Intent detailIntent;
-    Intent worshipIntent;
-    Intent prayerIntent;
-    Intent eventsIntent;
-    Intent aboutUMIntent;
-    Intent coffeeIntent;
-    Intent umslIntent;
-    Context context = this;
+    private Intent detailIntent;
+    private Intent worshipIntent;
+    private Intent prayerIntent;
+    private Intent eventsIntent;
+    private Intent aboutUMIntent;
+    private Intent coffeeIntent;
+    private Intent umslIntent;
+    private Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //setTheme(android.R.style.Theme_Holo);
 
         addListenerOnButton();
         detailIntent = new Intent(this, ParseStarterProjectActivity.class);

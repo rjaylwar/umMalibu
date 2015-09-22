@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_name"
+                android:text="Title"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ff07e2ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_date"
+                android:text="Date"
+                android:textColor="#fff5fffa"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:paddingRight="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="4dp"
+                android:layout_alignTop="@+id/event_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.parse.ParseImageView
+                android:id="@+id/icon"
+                android:layout_width="180dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description_view"
+                android:text="Short-ish description of event"
+                android:textSize="18sp"
+                android:layout_gravity="end"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="215dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/price_view"
+                android:textSize="20sp"
+                android:text="Price"
+                android:textColor="#ff73ff00"
+                android:layout_alignBottom="@+id/icon"
+                android:layout_alignLeft="@+id/description_view"
+                android:layout_alignStart="@+id/description_view"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+<!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/layout/activity_events.xml -->
