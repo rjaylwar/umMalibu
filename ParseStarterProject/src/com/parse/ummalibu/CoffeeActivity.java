@@ -1,6 +1,5 @@
 package com.parse.ummalibu;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,13 +9,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.parse.ummalibu.Base.ToolbarActivity;
 
-public class CoffeeActivity extends Activity {
+
+public class CoffeeActivity extends ToolbarActivity {
 
     Button submitButton;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coffee);
 

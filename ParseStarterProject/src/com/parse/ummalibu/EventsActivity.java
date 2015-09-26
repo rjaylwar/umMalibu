@@ -1,6 +1,5 @@
 package com.parse.ummalibu;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,15 +10,16 @@ import android.widget.ListView;
 
 import com.parse.ParseFile;
 import com.parse.ParseObject;
+import com.parse.ummalibu.Base.ToolbarActivity;
 
 
-public class EventsActivity extends Activity implements View.OnClickListener, AdapterView.OnItemClickListener{
+public class EventsActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener{
 
     private EventsAdapter alternateListAdapter;
     private ListView listView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         //setTheme(android.R.style.Theme_Holo);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);

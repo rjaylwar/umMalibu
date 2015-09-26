@@ -52,7 +52,7 @@ public abstract class AbsPreferences {
 
     protected String getStringPref(String key) {
         SharedPreferences preferences = mContext.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-        return preferences.getString(key, null);
+        return preferences.getString(key, "");
     }
 
     protected int getIntPref(String key) {

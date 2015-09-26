@@ -112,7 +112,7 @@ public class Table {
         public static final String CREATED_AT = FieldNames.CREATED_AT;
     }
 
-    public static final class Talk {
+    public static final class Talks {
         public static final String TABLE_NAME = "talks";
         public static final Uri CONTENT_URI = Uri.parse("content://" + DatabaseProvider.AUTHORITY + "/" + TABLE_NAME);
         public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.UM." + TABLE_NAME;
@@ -129,6 +129,20 @@ public class Table {
         public static final String DESCRIPTION = FieldNames.DESCRIPTION;
         public static final String SERIES_IMAGE_URL = FieldNames.SERIES_IMAGE_URL;
         public static final String CREATED_AT = FieldNames.CREATED_AT;
+    }
+
+    public static final class UmLocations {
+        public static final String TABLE_NAME = "um_locations";
+        public static final Uri CONTENT_URI = Uri.parse("content://" + DatabaseProvider.AUTHORITY + "/" + TABLE_NAME);
+        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.UM." + TABLE_NAME;
+
+        public static final String NAME = FieldNames.NAME;
+        public static final String ADDRESS = FieldNames.ADDRESS;
+        public static final String IMAGE_URL = FieldNames.IMAGE_URL;
+        public static final String TYPE = FieldNames.TYPE;
+        public static final String LATITUDE = FieldNames.LATITUDE;
+        public static final String LONGITUDE = FieldNames.LONGITUDE;
+        public static final String OBJECT_ID = FieldNames.OBJECT_ID;
     }
 }
 

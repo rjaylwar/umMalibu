@@ -1,0 +1,18 @@
+package com.parse.ummalibu;
+
+import android.support.v4.app.Fragment;
+
+import com.parse.ummalibu.Base.BaseFragActivity;
+import com.parse.ummalibu.Fragments.RequestListFragment;
+
+/**
+ * Created by rjaylward on 9/25/15.
+ */
+public class RequestsActivity extends BaseFragActivity {
+
+    @Override
+    protected Fragment getFragment() {
+        return new RequestListFragment();
+    }
+
+}

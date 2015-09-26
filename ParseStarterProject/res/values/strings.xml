@@ -34,6 +34,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_notifications_list">Notifications</string>
     <string name="title_activity_umsl_menu">Send Push Notifications</string>
+    <string name="pickup_location">Pickup Location</string>
 
     <string name="artist_text">Artists</string>
     <string name="next_text">Next</string>
@@ -47,5 +48,8 @@
     <string name="events">Events</string>
     <string name="sermons">Sermons</string>
     <string name="umber">UMber</string>
+    <string name="request_cant_be_claimed">Request can not be claimed at this time. Please try again later.</string>
+    <string name="want_to_give_person_ride_to_address">Would you like to give %1$s a ride to %2$s?</string>
+    <string name="claim_request">Claim Request</string>
 
 </resources>

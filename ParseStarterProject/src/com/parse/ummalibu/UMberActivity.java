@@ -13,8 +13,6 @@ import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.util.Property;
 import android.view.KeyEvent;
@@ -38,6 +36,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.JsonObject;
 import com.parse.ummalibu.Api.ApiHelper;
+import com.parse.ummalibu.Base.ToolbarActivity;
 import com.parse.ummalibu.Objects.LatLngInterpolator;
 import com.parse.ummalibu.Objects.UmberRequest;
 import com.parse.ummalibu.Values.Constants;
@@ -48,7 +47,7 @@ import java.util.concurrent.ScheduledExecutorService;
 /**
  * Created by rjaylward on 9/22/15.
  */
-public class UMberActivity extends AppCompatActivity {
+public class UMberActivity extends ToolbarActivity {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     private LocationManager mLocationManager;
@@ -73,14 +72,12 @@ public class UMberActivity extends AppCompatActivity {
     private UmberRequest mUmberRequest;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_umber);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("UMBER");
+        if(getSupportActionBar() != null)
+            getSupportActionBar().setTitle("UMBER");
 
         mPickUpLocationName = (EditText) findViewById(R.id.search_pickup_location);
         mPickUpLocationName.setOnEditorActionListener(new TextView.OnEditorActionListener() {

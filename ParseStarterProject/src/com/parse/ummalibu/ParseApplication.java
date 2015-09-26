@@ -9,6 +9,7 @@ import com.parse.ParseException;
 import com.parse.ParsePush;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
+import com.parse.ummalibu.Values.Preferences;
 
 public class ParseApplication extends Application {
 
@@ -16,6 +17,7 @@ public class ParseApplication extends Application {
   public void onCreate() {
     super.onCreate();
 
+    Preferences.initialize(getApplicationContext());
     // Initialize Crash Reporting.
     ParseCrashReporting.enable(this);
     //Parse.enableLocalDatastore(this);

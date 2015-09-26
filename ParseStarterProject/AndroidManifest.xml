@@ -195,6 +195,28 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.parse.ummalibu.MainActivity" />
         </activity>
+        <activity
+            android:name="com.parse.ummalibu.UMberActivity"
+            android:label="UMBER"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.parse.ummalibu.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.parse.ummalibu.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.parse.ummalibu.RequestsActivity"
+            android:label="UMBER"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.parse.ummalibu.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.parse.ummalibu.MainActivity" />
+        </activity>
+        <provider
+            android:name=".Database.DatabaseProvider"
+            android:exported="false"
+            android:authorities="com.parse.ummalibu.provider.internalDB" />
     </application>
 
 </manifest>

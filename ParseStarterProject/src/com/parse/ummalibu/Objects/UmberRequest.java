@@ -1,9 +1,12 @@
 package com.parse.ummalibu.Objects;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.net.Uri;
 
 import com.google.gson.annotations.SerializedName;
+import com.parse.ummalibu.Database.ApiResponse;
+import com.parse.ummalibu.Database.DatabaseHelper;
 import com.parse.ummalibu.Database.Table;
 import com.parse.ummalibu.Values.FieldNames;
 
@@ -12,7 +15,7 @@ import java.util.Date;
 /**
  * Created by rjaylward on 9/22/15.
  */
-public class UmberRequest {
+public class UmberRequest implements ApiResponse {
 
     @SerializedName(FieldNames.OBJECT_ID)
     private String mObjectId = "";
@@ -320,9 +323,14 @@ public class UmberRequest {
         values.put(Table.Requests.IS_COMPLETE, mComplete ? 1 : 0);
         values.put(Table.Requests.CANCELED, mCanceled ? 1 : 0);
 
-        values.put(Table.Drivers.CREATED_AT, mCreatedAt.getTime());
+        values.put(Table.Requests.CREATED_AT, mCreatedAt == null ? 0 : mCreatedAt.getTime());
 
         return values;
     }
 
+    @Override
+    public void saveResponse(Context context) {
+        DatabaseHelper helper = new DatabaseHelper(context);
+        helper.addRequest(this);
+    }
 }

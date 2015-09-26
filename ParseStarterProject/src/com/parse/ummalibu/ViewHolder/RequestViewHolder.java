@@ -7,48 +7,52 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.parse.ummalibu.Objects.UmberRequest;
 import com.parse.ummalibu.R;
 import com.parse.ummalibu.Values.Preferences;
-import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by rjaylward on 9/22/15.
  */
 public class RequestViewHolder extends RecyclerView.ViewHolder {
 
-    private TextView mPickUp;
-    private TextView mDestination;
-    private TextView mName;
-    private TextView mTime;
-    private RelativeLayout mBackgroundLayout;
+    @Bind(R.id.request_card_pick_up) TextView mPickUp;
+    @Bind(R.id.request_card_destination) TextView mDestination;
+    @Bind(R.id.request_card_name) TextView mName;
+    @Bind(R.id.request_card_time) TextView mTime;
 
-    private ImageView mProfile;
-    private ImageView mMap;
+    @Bind(R.id.request_card_background_layout) RelativeLayout mBackgroundLayout;
 
+    @Bind(R.id.request_card_person_image) de.hdodenhof.circleimageview.CircleImageView mProfile;
+    @Bind(R.id.request_card_main_image) ImageView mMap;
+
+    private OnRequestClickedListener mListener;
     private Context mContext;
 
-    public RequestViewHolder(Context context, View itemView) {
+    public RequestViewHolder(Context context, View itemView, OnRequestClickedListener listener) {
         super(itemView);
-        mBackgroundLayout = (RelativeLayout) itemView.findViewById(R.id.request_card_background_layout);
-
-        mPickUp = (TextView) itemView.findViewById(R.id.request_card_pick_up);
-        mDestination = (TextView) itemView.findViewById(R.id.request_card_destination);
-        mName = (TextView) itemView.findViewById(R.id.request_card_name);
-        mTime = (TextView) itemView.findViewById(R.id.request_card_time);
-
-        mProfile = (ImageView) itemView.findViewById(R.id.request_card_person_image);
-        mMap = (ImageView) itemView.findViewById(R.id.request_card_main_image);
+        ButterKnife.bind(this, itemView);
 
         mContext = context;
+        mListener = listener;
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.onRequestClicked(getAdapterPosition());
+            }
+        });
     }
 
     public void loadView(UmberRequest request) {
-        Picasso.with(mContext).load(request.getRiderImageUrl()).into(mProfile);
-        Picasso.with(mContext).load(request.getMapUrl(mMap.getWidth(), mMap.getHeight())).into(mMap);
+        Glide.with(mContext).load(request.getRiderImageUrl()).into(mProfile);
+        Glide.with(mContext).load(request.getMapUrl(mMap.getWidth(), mMap.getHeight())).into(mMap);
 
         if(!request.isClaimed())
             mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.light_grey));
@@ -62,9 +66,12 @@ public class RequestViewHolder extends RecyclerView.ViewHolder {
         mPickUp.setText(request.getPickUpLocation());
         mDestination.setText(request.getDestination());
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-M-d H:mm", Locale.US);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("M-d-yyyy H:mm", Locale.US);
         mTime.setText(dateFormat.format(request.getEta()));
         mName.setText(request.getName());
     }
 
+    public interface OnRequestClickedListener {
+        void onRequestClicked(int position);
+    }
 }

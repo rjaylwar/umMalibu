@@ -22,9 +22,11 @@ public abstract class BaseFragActivity extends BaseActivity {
         mFragment = getFragment();
         mFragment.setArguments(getIntent().getExtras());
 
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.root, mFragment, FRAGMENT_TAG)
-                .commit();
+        if(mFragment != null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.root, mFragment, FRAGMENT_TAG)
+                    .commit();
+        }
     }
 
     protected abstract Fragment getFragment();

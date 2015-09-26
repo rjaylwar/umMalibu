@@ -18,9 +18,10 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParsePush;
 import com.parse.SaveCallback;
+import com.parse.ummalibu.Base.ToolbarActivity;
 
 
-public class UmslMenuActivity extends Activity {
+public class UmslMenuActivity extends ToolbarActivity {
 
     Button submitButton;
     EditText channelTextBox;
@@ -29,9 +30,8 @@ public class UmslMenuActivity extends Activity {
     CheckBox checkBox;
     Boolean addToList;
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_umsl_menu);
 

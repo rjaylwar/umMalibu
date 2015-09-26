@@ -9,6 +9,10 @@ android:focusableInTouchMode="true"
     android:weightSum="7"
     android:background="#ff233645">
 
+    <include
+        layout="@layout/toolbar_basic"
+        android:id="@+id/toolbar"/>
+
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="150dp"

@@ -1,6 +1,5 @@
 package com.parse.ummalibu;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,14 +9,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.parse.ummalibu.Base.ToolbarActivity;
 
-public class PrayerActivity extends Activity implements View.OnClickListener, AdapterView.OnItemClickListener {
+
+public class PrayerActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     private ListView listView;
     private PrayerAdapter alternateListAdapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prayer);
 

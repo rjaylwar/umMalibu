@@ -1,6 +1,5 @@
 package com.parse.ummalibu;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -23,9 +22,10 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.parse.ParseObject;
+import com.parse.ummalibu.Base.ToolbarActivity;
 
 
-public class WorshipActivity extends Activity implements View.OnClickListener, AdapterView.OnItemClickListener {
+public class WorshipActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     private SongsTableAdapter mainAdapter;
     Button submitButton;
@@ -33,7 +33,7 @@ public class WorshipActivity extends Activity implements View.OnClickListener, A
     ImageView worshipImageView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_worship);
 
@@ -96,7 +96,6 @@ public class WorshipActivity extends Activity implements View.OnClickListener, A
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         ParseObject queryObject = mainAdapter.getItem(position);
-
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(queryObject.getString("youtubeUrl"))));
     }
 

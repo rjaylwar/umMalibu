@@ -30,6 +30,7 @@ public class DatabaseProvider extends ContentProvider {
     private static final int RAW = 0;
     private static final int REQUESTS = 1;
     private static final int DRIVERS = 2;
+    private static final int UM_LOCATIONS = 3;
 
     private static final UriMatcher mUriMatcher;
     static {
@@ -37,6 +38,7 @@ public class DatabaseProvider extends ContentProvider {
         mUriMatcher.addURI(AUTHORITY, Table.RAW, RAW);
         mUriMatcher.addURI(AUTHORITY, Table.Requests.TABLE_NAME, REQUESTS);
         mUriMatcher.addURI(AUTHORITY, Table.Drivers.TABLE_NAME, DRIVERS);
+        mUriMatcher.addURI(AUTHORITY, Table.UmLocations.TABLE_NAME, UM_LOCATIONS);
     }
 
     public static class OpenDatabaseHelper extends SQLiteOpenHelper {
@@ -80,6 +82,8 @@ public class DatabaseProvider extends ContentProvider {
                 return Table.Drivers.CONTENT_ITEM_TYPE;
             case REQUESTS :
                 return Table.Requests.CONTENT_ITEM_TYPE;
+            case UM_LOCATIONS :
+                return Table.UmLocations.CONTENT_ITEM_TYPE;
             default :
                 throw new IllegalArgumentException("uri not matched");
         }
@@ -97,6 +101,8 @@ public class DatabaseProvider extends ContentProvider {
                 return Table.Drivers.TABLE_NAME;
             case REQUESTS :
                 return Table.Requests.TABLE_NAME;
+            case UM_LOCATIONS :
+                return Table.UmLocations.TABLE_NAME;
             default :
                 throw new IllegalArgumentException("uri not matched");
         }
@@ -141,6 +147,8 @@ public class DatabaseProvider extends ContentProvider {
         db.setTransactionSuccessful();
         db.endTransaction();
 
+        getContext().getContentResolver().notifyChange(uri, null);
+
         return rows;
     }
 
@@ -153,6 +161,8 @@ public class DatabaseProvider extends ContentProvider {
 
         if(insertedId < 0)
             Log.e("error", "inserted id: " + insertedId + " and was not caught");
+
+        getContext().getContentResolver().notifyChange(uri, null);
 
         if(insertedId >= 0)
             return ContentUris.withAppendedId(uri, insertedId);

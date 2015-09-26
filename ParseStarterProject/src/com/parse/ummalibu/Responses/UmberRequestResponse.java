@@ -16,12 +16,14 @@ import java.util.ArrayList;
 public class UmberRequestResponse implements ApiResponse {
 
     @SerializedName(FieldNames.RESULTS)
-    private ArrayList<UmberRequest> mUmberRequests;
+    private ArrayList<UmberRequest> mUmberRequests = new ArrayList<>();
 
     @Override
     public void saveResponse(Context context) {
-        DatabaseHelper helper = new DatabaseHelper(context);
-        helper.addRequests(mUmberRequests);
+        if(mUmberRequests.size() > 0) {
+            DatabaseHelper helper = new DatabaseHelper(context);
+            helper.addRequests(mUmberRequests);
+        }
     }
 
     public ArrayList<UmberRequest> getRequests() {

@@ -46,6 +46,17 @@ public abstract class AbsVolleyRequester {
         queue.add(request);
     }
 
+    public void makePutRequest(AppCompatActivity activity, String url, JsonObject requestBody, VolleyRequestListener listener) {
+        makePutRequest(activity, url, requestBody, listener, true);
+    }
+
+    public void makePutRequest(AppCompatActivity activity, String url, JsonObject requestBody, VolleyRequestListener listener, boolean handleResponse) {
+        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity);
+        Request request = buildRequest(activity, Request.Method.PUT, url, requestBody, listener, DefaultRetryPolicy.DEFAULT_TIMEOUT_MS, handleResponse);
+
+        queue.add(request);
+    }
+
     protected abstract Request buildRequest(AppCompatActivity activity, int requestType, String url, JsonObject requestBody,
                                             VolleyRequestListener listener, int timeout, boolean handleResponse);
 
@@ -63,7 +74,7 @@ public abstract class AbsVolleyRequester {
         }
 
         if(listener != null)
-            listener.onErrorResponse(error);
+            listener.onErrorResponse(error == null ? new VolleyError("error was null") : error);
     }
 
 }

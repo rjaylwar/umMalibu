@@ -16,9 +16,10 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.parse.ParseObject;
+import com.parse.ummalibu.Base.ToolbarActivity;
 
 
-public class NewPrayerActivity extends Activity {
+public class NewPrayerActivity extends ToolbarActivity {
 
     Button submitButton;
     Switch mySwitch;
@@ -26,7 +27,7 @@ public class NewPrayerActivity extends Activity {
     EditText prayerText;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_prayer);
 

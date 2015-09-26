@@ -6,6 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.parse.ummalibu.Objects.UmLocation;
 import com.parse.ummalibu.Values.FieldNames;
 import com.parse.ummalibu.Objects.Driver;
 import com.parse.ummalibu.Objects.Notification;
@@ -195,6 +196,39 @@ public class DatabaseHelper {
         return talks;
     }
 
+    public synchronized ArrayList<UmLocation> getAllLocations() {
+
+        ArrayList<UmLocation> locations = new ArrayList<>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + Table.UmLocations.TABLE_NAME + " ORDER BY " + Table.UmLocations.NAME + " DESC";
+
+        SQLiteDatabase db = mOpenDatabaseHelper.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        try {
+            if(cursor.moveToFirst()) {
+                do {
+                    UmLocation location = new UmLocation();
+
+                    location.setId(cursor.getString(cursor.getColumnIndexOrThrow(FieldNames.OBJECT_ID)));
+                    location.setName(cursor.getString(cursor.getColumnIndexOrThrow(Table.UmLocations.NAME)));
+                    location.setImageUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.UmLocations.IMAGE_URL)));
+                    location.setLat(cursor.getLong(cursor.getColumnIndexOrThrow(Table.UmLocations.LATITUDE)));
+                    location.setLon(cursor.getLong(cursor.getColumnIndexOrThrow(Table.UmLocations.LONGITUDE)));
+                    location.setType(cursor.getString(cursor.getColumnIndexOrThrow(Table.UmLocations.TYPE)));
+                    location.setAddress(cursor.getString(cursor.getColumnIndexOrThrow(Table.UmLocations.ADDRESS)));
+
+                    locations.add(location);
+                } while (cursor.moveToNext());
+            }
+        } finally {
+            if(cursor != null)
+                cursor.close();
+        }
+
+        return locations;
+    }
+
     public synchronized ArrayList<Driver> getAllDrivers() {
 
         ArrayList<Driver> drivers = new ArrayList<>();
@@ -231,7 +265,7 @@ public class DatabaseHelper {
     public synchronized ArrayList<UmberRequest> getRequests() {
         ArrayList<UmberRequest> requests = new ArrayList<>();
         // Select All Query
-        String selectQuery = "SELECT  * FROM " + Table.Requests.TABLE_NAME + " ORDER BY " + Table.Requests.ETA + " DESC";
+        String selectQuery = "SELECT * FROM " + Table.Requests.TABLE_NAME + " ORDER BY " + Table.Requests.ETA + " DESC";
 
         SQLiteDatabase db = mOpenDatabaseHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
@@ -243,6 +277,7 @@ public class DatabaseHelper {
                     request.setCreatedAt(new Date(cursor.getLong(cursor.getColumnIndexOrThrow(Table.Requests.CREATED_AT))));
                     request.setObjectId(cursor.getString(cursor.getColumnIndexOrThrow(Table.Requests.OBJECT_ID)));
                     request.setName(cursor.getString(cursor.getColumnIndexOrThrow(Table.Requests.NAME)));
+                    request.setEmail(cursor.getString(cursor.getColumnIndexOrThrow(Table.Requests.EMAIL)));
                     request.setRiderImageUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.Requests.RIDER_IMAGE_URL)));
                     request.setLatitude(cursor.getDouble(cursor.getColumnIndexOrThrow(Table.Requests.LATITUDE)));
                     request.setLongitude(cursor.getDouble(cursor.getColumnIndexOrThrow(Table.Requests.LONGITUDE)));

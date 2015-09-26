@@ -29,15 +29,15 @@ public class UmberRequestDeserializer implements JsonDeserializer<UmberRequest> 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ", Locale.US);
 
         try {
-            Date date = simpleDateFormat.parse(jsonElement.getAsJsonObject().getAsJsonObject(FieldNames.CREATED_AT).getAsString().replace("Z", "+00:00"));
+            Date date = simpleDateFormat.parse(jsonElement.getAsJsonObject().getAsJsonPrimitive(FieldNames.CREATED_AT).getAsString().replace("Z", "+00:00"));
             umberRequest.setCreatedAt(date);
 
-            Date eta = new Date(jsonElement.getAsJsonObject().getAsJsonObject(FieldNames.ETA).getAsLong());
+            Date eta = new Date(jsonElement.getAsJsonObject().getAsJsonPrimitive(FieldNames.ETA).getAsLong()*1000);
             umberRequest.setEta(eta.getTime());
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
-        return null;
+        return umberRequest;
     }
 }

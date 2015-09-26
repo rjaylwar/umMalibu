@@ -48,7 +48,7 @@ public class FieldNames {
     public static final String SERIES_IMAGE_URL = "seriesImageUrl";
     public static final String EVENT_DATE = "event_date";
 
-    //    UMber field names
+    // UMber field names
     public static final String REQUESTS = "requests";
     public static final String PHONE_NUMBER = "phoneNumber";
     public static final String RIDER_IMAGE_URL = "riderImageUrl";
@@ -73,8 +73,12 @@ public class FieldNames {
     public static final String PATH = "path";
     public static final String STARTED = "started";
 
-    //    Driver field names
+    // Driver field names
     public static final String DRIVERS = "drivers";
     public static final String MPG = "mpg";
     public static final String CAR_DESCRIPTION = "carDescription";
+
+    // pick up spots
+    public static final String ADDRESS = "address";
+    public static final String TYPE = "type";
 }

@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,8 +14,10 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.parse.ummalibu.Base.ToolbarActivity;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends ToolbarActivity {
 
     //ImageButton sermonButton;
     //ImageButton aboutButton;
@@ -27,10 +28,12 @@ public class MainActivity extends AppCompatActivity {
     private Intent aboutUMIntent;
     private Intent coffeeIntent;
     private Intent umslIntent;
+    private Intent umberIntent;
+    private Intent requestIntent;
     private Context context = this;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -42,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         coffeeIntent = new Intent(this, CoffeeActivity.class);
         aboutUMIntent = new Intent(this, AboutUMActivity.class);
         umslIntent = new Intent(this, UmslMenuActivity.class);
+        umberIntent = new Intent(this, UMberActivity.class);
+        requestIntent = new Intent(this, RequestsActivity.class);
     }
 
     public void addListenerOnButton() {
@@ -126,6 +131,20 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog alertD = alertDialogBuilder.create();
                 alertD.show();
                 //startActivity(umslIntent);
+            }
+        });
+        ImageButton umberButton = (ImageButton) findViewById(R.id.umberButton);
+        umberButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(umberIntent);
+            }
+        });
+        ImageButton requestsButton = (ImageButton) findViewById(R.id.requestsButton);
+        requestsButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(requestIntent);
             }
         });
     }

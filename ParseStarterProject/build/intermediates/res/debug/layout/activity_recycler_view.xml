@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar_basic"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fe_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        bit:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.bandsintown.view.LoadMoreRecyclerView
+            android:id="@+id/fe_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            bit:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+<!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/layout/activity_recycler_view.xml -->
