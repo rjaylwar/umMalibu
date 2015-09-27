@@ -23,21 +23,42 @@ public class RequestListAdapter extends RecyclerView.Adapter{
     private ArrayList<UmberRequest> mRequests = new ArrayList<>();
     private ArrayList<UmberRequest> mItems = new ArrayList<>();
 
+    private boolean mUseColors;
+
+    public static final int ALL_REQUESTS = 0;
+    public static final int MY_REQUESTS = 1;
+    public static final int OPEN_REQUESTS = 2;
+
     public RequestListAdapter(Context context, OnRequestClickedListener listener) {
         mContext = context;
         mListener = listener;
     }
 
-    public void setData(ArrayList<UmberRequest> requests) {
+    public void colorRequests(boolean useColors) {
+        mUseColors = useColors;
+    }
+
+    public void setData(ArrayList<UmberRequest> requests, int mode) {
         mRequests.clear();
         mItems.clear();
 
         mRequests = requests;
-        for(UmberRequest request : requests) {
-            if(!request.getEmail().equals(Preferences.getInstance().getEmail()) && !request.isClaimed() && !request.isCanceled()) {
-                mItems.add(request);
-                Log.d("Request -->",request.toContentValues().toString());
-            }
+        switch (mode) {
+            case OPEN_REQUESTS :
+                for(UmberRequest request : requests) {
+                    if (!request.getEmail().equals(Preferences.getInstance().getEmail()) && !request.isClaimed() && !request.isCanceled())
+                        mItems.add(request);
+                }
+                break;
+            case MY_REQUESTS :
+                for(UmberRequest request : requests) {
+                    if (request.getEmail().equals(Preferences.getInstance().getEmail()) || request.getDriverEmail().equals(Preferences.getInstance().getEmail()))
+                        mItems.add(request);
+                }
+                break;
+            default :
+                mItems.addAll(requests);
+                break;
         }
 
         Log.d("Number requests loaded", String.valueOf(mItems.size()));
@@ -59,7 +80,7 @@ public class RequestListAdapter extends RecyclerView.Adapter{
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int i) {
         if(viewHolder instanceof RequestViewHolder)
-            ((RequestViewHolder) viewHolder).loadView(mItems.get(i));
+            ((RequestViewHolder) viewHolder).loadView(mItems.get(i), mUseColors);
     }
 
     @Override

@@ -50,23 +50,25 @@ public class RequestViewHolder extends RecyclerView.ViewHolder {
         });
     }
 
-    public void loadView(UmberRequest request) {
+    public void loadView(UmberRequest request, boolean useColors) {
         Glide.with(mContext).load(request.getRiderImageUrl()).into(mProfile);
         Glide.with(mContext).load(request.getMapUrl(mMap.getWidth(), mMap.getHeight())).into(mMap);
 
-        if(!request.isClaimed())
-            mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.light_grey));
-        else
-            mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.black));
-        if(Preferences.getInstance().getEmail().equals(request.getEmail()))
-            mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.grey_blue));
-        if(request.isCanceled())
-            mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.red));
+        if(useColors) {
+            if (!request.isClaimed())
+                mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.light_grey));
+            else
+                mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.black));
+            if (Preferences.getInstance().getEmail().equals(request.getEmail()))
+                mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.grey_blue));
+            if (request.isCanceled())
+                mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.red));
+        }
 
         mPickUp.setText(request.getPickUpLocation());
         mDestination.setText(request.getDestination());
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("M-d-yyyy H:mm", Locale.US);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("M/d/yyyy H:mm a", Locale.US);
         mTime.setText(dateFormat.format(request.getEta()));
         mName.setText(request.getName());
     }

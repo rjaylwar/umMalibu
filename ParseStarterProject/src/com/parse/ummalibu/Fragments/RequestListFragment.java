@@ -79,15 +79,24 @@ public class RequestListFragment extends Fragment {
                 checkRequestStatus(request);
             }
         });
+        mAdapter.colorRequests(useColors());
         mRecyclerView.setAdapter(mAdapter);
 
-        mSwipeRefreshLayout.setColorSchemeColors(R.color.um_green, R.color.um_highlight_blue, R.color.um_grey_blue);
+        mSwipeRefreshLayout.setColorSchemeColors(R.color.um_green);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 apiRequest();
             }
         });
+    }
+
+    protected boolean useColors() {
+        return false;
+    }
+
+    protected int getMode() {
+        return RequestListAdapter.OPEN_REQUESTS;
     }
 
     private ContentObserver mRequestsObserver = new ContentObserver(new Handler()) {
@@ -103,7 +112,7 @@ public class RequestListFragment extends Fragment {
         helper.getUmberRequest(request.getObjectId(), new VolleyRequestListener<UmberRequest>() {
             @Override
             public void onResponse(UmberRequest response) {
-                if(!request.isClaimed()) {
+                if (!request.isClaimed()) {
                     showAlert(request);
                 } else {
                     Toast.makeText(mActivity, "Request has already been claimed", Toast.LENGTH_SHORT).show();
@@ -200,7 +209,7 @@ public class RequestListFragment extends Fragment {
 
     private void databaseRequest() {
         ArrayList<UmberRequest> requests = new DatabaseHelper(mActivity).getRequests();
-        mAdapter.setData(requests);
+        mAdapter.setData(requests, getMode());
     }
 
     private void apiRequest() {
@@ -208,7 +217,8 @@ public class RequestListFragment extends Fragment {
         helper.getUmberRequests(new VolleyRequestListener<UmberRequestResponse>() {
             @Override
             public void onResponse(UmberRequestResponse response) {
-                mSwipeRefreshLayout.setRefreshing(false);
+                if(mSwipeRefreshLayout != null)
+                    mSwipeRefreshLayout.setRefreshing(false);
                 Preferences.getInstance().getListData().setRequestsExpiration(System.currentTimeMillis() + Constants.ONE_MIN_MILLIS);
                 response.saveResponse(mActivity);
                 Log.d("Response ------>", String.valueOf(response.getRequests().size()));
@@ -216,7 +226,8 @@ public class RequestListFragment extends Fragment {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                mSwipeRefreshLayout.setRefreshing(false);
+                if(mSwipeRefreshLayout != null)
+                    mSwipeRefreshLayout.setRefreshing(false);
                 Log.d("Get Umber Request Error", error.getMessage());
             }
         });

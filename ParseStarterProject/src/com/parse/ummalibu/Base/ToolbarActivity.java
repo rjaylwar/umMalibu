@@ -20,6 +20,7 @@ public class ToolbarActivity extends AppCompatActivity {
         try {
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
+            getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
         } catch (NullPointerException e) {
             Log.d("No toolbar here", e.toString());
         }

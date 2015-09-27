@@ -571,22 +571,24 @@ ADDED from AndroidManifest.xml:198:9
 		ADDED from AndroidManifest.xml:199:13
 activity#com.parse.ummalibu.RequestsActivity
 ADDED from AndroidManifest.xml:207:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:210:13
-	android:label
-		ADDED from AndroidManifest.xml:209:13
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:211:13
+		ADDED from AndroidManifest.xml:209:13
 	android:name
 		ADDED from AndroidManifest.xml:208:13
-provider#com.parse.ummalibu.Database.DatabaseProvider
-ADDED from AndroidManifest.xml:216:9
-	android:exported
-		ADDED from AndroidManifest.xml:218:13
-	android:authorities
-		ADDED from AndroidManifest.xml:219:13
+activity#com.parse.ummalibu.RideShareActivity
+ADDED from AndroidManifest.xml:214:9
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:216:13
 	android:name
-		ADDED from AndroidManifest.xml:217:13
+		ADDED from AndroidManifest.xml:215:13
+provider#com.parse.ummalibu.Database.DatabaseProvider
+ADDED from AndroidManifest.xml:221:9
+	android:exported
+		ADDED from AndroidManifest.xml:223:13
+	android:authorities
+		ADDED from AndroidManifest.xml:224:13
+	android:name
+		ADDED from AndroidManifest.xml:222:13
 activity#com.google.android.gms.ads.AdActivity
 ADDED from com.google.android.gms:play-services-ads:7.5.0:26:9
 	android:configChanges

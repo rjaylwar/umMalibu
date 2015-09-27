@@ -46,7 +46,7 @@ public class MainActivity extends ToolbarActivity {
         aboutUMIntent = new Intent(this, AboutUMActivity.class);
         umslIntent = new Intent(this, UmslMenuActivity.class);
         umberIntent = new Intent(this, UMberActivity.class);
-        requestIntent = new Intent(this, RequestsActivity.class);
+        requestIntent = new Intent(this, RideShareActivity.class);
     }
 
     public void addListenerOnButton() {

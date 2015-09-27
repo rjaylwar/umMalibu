@@ -517,6 +517,17 @@ public class UMberActivity extends ToolbarActivity {
 
     }
 
+//    private void setUpSnackBar() {
+//        Snackbar snackbar = Snackbar
+//                .make(mRoot, "Had a snack at Snackbar", Snackbar.LENGTH_LONG)
+//                .setAction("Ok", new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Log.d("Snack bar clicked", "should dismiss now");
+//                    }
+//                });
+//    }
+
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.menu_home_screen, menu);

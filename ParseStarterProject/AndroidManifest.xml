@@ -206,8 +206,13 @@
         </activity>
         <activity
             android:name="com.parse.ummalibu.RequestsActivity"
-            android:label="UMBER"
-            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.parse.ummalibu.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.parse.ummalibu.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.parse.ummalibu.RideShareActivity"
             android:parentActivityName="com.parse.ummalibu.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

@@ -11,13 +11,14 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@color/um_dark_blue"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_scrollFlags="scroll|enterAlways" />
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/abc_action_bar_default_height_material" />
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/um_dark_blue"/>
 
 </android.support.design.widget.AppBarLayout>
