@@ -1,6 +1,8 @@
 package com.parse.ummalibu.ViewHolder;
 
 import android.content.Context;
+import android.os.Build;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -23,15 +25,15 @@ import butterknife.ButterKnife;
  */
 public class RequestViewHolder extends RecyclerView.ViewHolder {
 
+    @Bind(R.id.request_card_view) CardView mCardView;
+    @Bind(R.id.request_card_background_layout) RelativeLayout mBackgroundLayout;
+    @Bind(R.id.request_card_person_image) de.hdodenhof.circleimageview.CircleImageView mProfile;
+    @Bind(R.id.request_card_main_image) ImageView mMap;
+
     @Bind(R.id.request_card_pick_up) TextView mPickUp;
     @Bind(R.id.request_card_destination) TextView mDestination;
     @Bind(R.id.request_card_name) TextView mName;
     @Bind(R.id.request_card_time) TextView mTime;
-
-    @Bind(R.id.request_card_background_layout) RelativeLayout mBackgroundLayout;
-
-    @Bind(R.id.request_card_person_image) de.hdodenhof.circleimageview.CircleImageView mProfile;
-    @Bind(R.id.request_card_main_image) ImageView mMap;
 
     private OnRequestClickedListener mListener;
     private Context mContext;
@@ -48,6 +50,9 @@ public class RequestViewHolder extends RecyclerView.ViewHolder {
                 mListener.onRequestClicked(getAdapterPosition());
             }
         });
+
+        if(Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP)
+            mCardView.setPreventCornerOverlap(false);
     }
 
     public void loadView(UmberRequest request, boolean useColors) {
@@ -63,6 +68,7 @@ public class RequestViewHolder extends RecyclerView.ViewHolder {
                 mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.grey_blue));
             if (request.isCanceled())
                 mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.red));
+
         }
 
         mPickUp.setText(request.getPickUpLocation());

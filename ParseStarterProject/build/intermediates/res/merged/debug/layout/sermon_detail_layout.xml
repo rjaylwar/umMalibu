@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#365166">
+
+    <include
+        layout="@layout/toolbar_basic"
+        android:id="@+id/toolbar"/>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:fillViewport="true"
+    android:background="#365166">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:weightSum="1">
+
+        <ImageView
+            android:contentDescription="@string/graphic_image_description"
+            android:id="@+id/graphicView"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <!--<fragment class="com.parse.starter.WebviewFragment"
+            android:id="@+id/webview_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sermon is loading..."
+            android:textColor="#ff73ff00"
+            android:textSize="20sp"
+            android:id="@+id/loading_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp" />
+
+        <ProgressBar android:id="@+id/progressB"
+            style="?android:attr/progressBarStyleHorizontal" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="50dp">
+        </ProgressBar>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#fffefefe"
+            android:layout_marginRight="5dp"
+            android:id="@+id/media_player_layout">
+
+            <Button
+                android:id="@+id/play_pause_button"
+                android:background="@drawable/button_play"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="15dp" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toStartOf="@+id/imageView"
+                android:layout_toLeftOf="@+id/imageView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title \nBy"
+                android:id="@+id/textView"
+                android:layout_toRightOf="@+id/play_pause_button"
+                android:layout_toLeftOf="@+id/imageView"
+                android:layout_toStartOf="@+id/imageView"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="#000000"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+            <!-- android:layout_below="@+id/graphicView"-->
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"/> -->
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_string"
+            android:textColor="#ff07e2ff"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="24sp"/>
+            <!--android:layout_below="@id/webView"-->
+
+        <TextView
+            android:id="@+id/datelabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_string"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            />
+            <!--android:layout_below="@id/titleLabel" -->
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:gravity="top|left"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ff00314a"
+            android:hint="Warning: streaming sermons uses almost 35mb of data per session. Wifi is recommended.\n\n(Take notes here)"
+            android:padding="3dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/layout/sermon_detail_layout.xml -->

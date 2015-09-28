@@ -69,80 +69,224 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4312cdd8-eb08-4789-a969-a0ca2ccbc0ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/AbsRequestListFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/MyRequestsFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RideShareActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/UmberPagerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_ride_share.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/glide_3_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/res/layout/header_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/library_1_0_19.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/res/layout/tabs_bar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/res/layout/widget_summary_view.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/glide_3_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/library_1_0_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/picasso_2_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$7$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$7$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/glide-3.6.0-c023189f8122901b6ab655652773e78705eb10f6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/gson-2.3-e1230f99eb5bb0fe812a6092fb1f91eba6aa33c2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/library-1.0.16-35f1a82e503a4d1ee2bfa6e0bb1a318e24b73561.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/picasso-2.5.2-a6d669ae207d56cf18b68c095a24f7983848e424.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/AboutUMActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/AboutUMActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/AbsRequestListFragment$$ViewBinder.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/AbsRequestListFragment$$ViewBinder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/AbsRequestListFragment.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/AbsRequestListFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/CoffeeActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/CoffeeActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/CustomAdapter.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/CustomAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Views/EmptyListView.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Views/EmptyListView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/EventsActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/EventsActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/EventsDetailActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/EventsDetailActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/LocationCellViewHolder.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/LocationCellViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Adapters/LocationsListAdapter.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Adapters/LocationsListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$1.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$2.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$3.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$4.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$5.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$6.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$7.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$8.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$9.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/NewPrayerActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/NewPrayerActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/NotificationsAdapter.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/NotificationsAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/NotificationsListActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/NotificationsListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/outputs/apk/ParseStarterProject-debug-unaligned.apk" afterPath="$PROJECT_DIR$/ParseStarterProject/build/outputs/apk/ParseStarterProject-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/outputs/apk/ParseStarterProject-debug.apk" afterPath="$PROJECT_DIR$/ParseStarterProject/build/outputs/apk/ParseStarterProject-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ParseStarterProjectActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ParseStarterProjectActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/PrayerActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/PrayerActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/PrayerAdapter.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/PrayerAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/design/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/mediarouter/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/mediarouter/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/ads/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/ads/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/analytics/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/analytics/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appstate/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appstate/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/cast/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/cast/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/drive/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/drive/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/fitness/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/fitness/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/games/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/games/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/gcm/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/gcm/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/identity/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/identity/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/location/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/location/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/maps/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/maps/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/nearby/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/nearby/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/panorama/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/panorama/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/plus/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/plus/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/wallet/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/wallet/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/wearable/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/wearable/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$color.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$dimen.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$drawable.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/design/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$id.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$integer.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/design/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/mediarouter/R$layout.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/mediarouter/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$layout.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$menu.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$menu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$raw.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/design/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/design/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/ads/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/ads/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/analytics/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/analytics/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appstate/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/appstate/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/cast/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/cast/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/drive/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/drive/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/fitness/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/fitness/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/games/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/games/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/gcm/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/gcm/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/identity/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/identity/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/location/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/location/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/maps/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/maps/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/nearby/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/nearby/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/panorama/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/panorama/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/plus/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/plus/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/wallet/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/wallet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/wearable/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/google/android/gms/wearable/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$style.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$styleable.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$xml.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R$xml.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Adapters/RequestListAdapter$1.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Adapters/RequestListAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Adapters/RequestListAdapter.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Adapters/RequestListAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/RequestListFragment$$ViewBinder.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/RequestListFragment$$ViewBinder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/RequestListFragment.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/RequestListFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/RequestViewHolder$$ViewBinder.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/RequestViewHolder$$ViewBinder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/RequestViewHolder$1.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/RequestViewHolder$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/RequestViewHolder.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/RequestViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/RideShareActivity$1.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/RideShareActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/RideShareActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/RideShareActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/SearchLayout.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/SearchLayout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/SermonDetailActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/SermonDetailActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/SongsTableAdapter.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/SongsTableAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Base/ToolbarActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Base/ToolbarActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/UMberActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/UMberActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/UmslMenuActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/UmslMenuActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/WebviewFragment.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/WebviewFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/WorshipActivity$2.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/WorshipActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/WorshipActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/WorshipActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-2b6478e02f8b069e62dbd76f6f8b06efe2e694ca.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-2b6478e02f8b069e62dbd76f6f8b06efe2e694ca.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/butterknife-7.0.1-72c46ab50e6de9d78d14cd345277e9f252e12191.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/butterknife-7.0.1-72c46ab50e6de9d78d14cd345277e9f252e12191.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-02044537faead9ea985fcabd95d57e35c5adbaf5.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-02044537faead9ea985fcabd95d57e35c5adbaf5.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-17ed00109c99166c6742fc16a992ae646b13aa35.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-17ed00109c99166c6742fc16a992ae646b13aa35.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37a83abbda86fb5e99333ab4cfddc1bce68fef69.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37a83abbda86fb5e99333ab4cfddc1bce68fef69.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-41dc9c1125feb23e6b5ad2681560f0e04138e917.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-41dc9c1125feb23e6b5ad2681560f0e04138e917.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-483de6ed156506650d96dba89a5732db3b51e506.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-483de6ed156506650d96dba89a5732db3b51e506.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-53016d187c4127683405702b48bae0300a2987ef.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-53016d187c4127683405702b48bae0300a2987ef.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-536d9a9f401907e1447f14e3714051b349a214ff.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-536d9a9f401907e1447f14e3714051b349a214ff.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-5c4123c31463a2c07a7e3214ee67e70a3dda6fff.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-5c4123c31463a2c07a7e3214ee67e70a3dda6fff.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-6387968cf5a386f04c8f333613c1bbfedd17c09d.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-6387968cf5a386f04c8f333613c1bbfedd17c09d.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7a9442f51747e420555b65d225169e9653a67d02.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7a9442f51747e420555b65d225169e9653a67d02.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8406ecdfa482a79f1ca60160a6d2ff55c2a977cb.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8406ecdfa482a79f1ca60160a6d2ff55c2a977cb.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8c8283f48348b6ecc51017c79831d641ea4ad177.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8c8283f48348b6ecc51017c79831d641ea4ad177.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-92c62238fc9a1c9a94e6d9d73f4119f71bd71248.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-92c62238fc9a1c9a94e6d9d73f4119f71bd71248.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95c6ee00856850bf63716eaa6027e6b474ec98df.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95c6ee00856850bf63716eaa6027e6b474ec98df.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95cb804f53797aaeb7972e4dc70af614a2d41751.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95cb804f53797aaeb7972e4dc70af614a2d41751.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-97dc7e4c59dfc13e48380ea294c05f3d7e6a22a3.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-97dc7e4c59dfc13e48380ea294c05f3d7e6a22a3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-9d8117939698168d2ae98bd0a69b2db787450388.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-9d8117939698168d2ae98bd0a69b2db787450388.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-b20a7834c358db839ac811ff90554197b152797b.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-b20a7834c358db839ac811ff90554197b152797b.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-b3cfa67431ddd6fb9014098a90f028ab28d46625.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-b3cfa67431ddd6fb9014098a90f028ab28d46625.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d3eb3a16b469a769eaafb71f9afaa06b0fa25b67.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d3eb3a16b469a769eaafb71f9afaa06b0fa25b67.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d7e760e94a37180c039ca811e92d091684a6e864.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d7e760e94a37180c039ca811e92d091684a6e864.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-db246c7e77dad3000aa424fade87a947e078489b.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-db246c7e77dad3000aa424fade87a947e078489b.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-dd4ec59e17b64cd3429774c1b30ed1a3a0b7d9e6.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-dd4ec59e17b64cd3429774c1b30ed1a3a0b7d9e6.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e01a808ff6e5bba69bd992854f492438fb00741e.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e01a808ff6e5bba69bd992854f492438fb00741e.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e1a47f7f5ea7aac3f208eeb6645c30f85c89b5bc.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e1a47f7f5ea7aac3f208eeb6645c30f85c89b5bc.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e395c394a995f80fb425eb3ec04dc5c86216c11b.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e395c394a995f80fb425eb3ec04dc5c86216c11b.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-fccfbbfa349a7b9ebecd2737e4584033ee5fde30.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-fccfbbfa349a7b9ebecd2737e4584033ee5fde30.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-73eac0b564d7aa96e95b14f799e66afa03a99f30.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-73eac0b564d7aa96e95b14f799e66afa03a99f30.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-bff85572bba2ae3d85e07ce26d328f1c85f8478c.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-bff85572bba2ae3d85e07ce26d328f1c85f8478c.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/resources/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/resources/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-25feaf7acf89ef6c52c7e794d3b1f00bff4fdf7b.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-25feaf7acf89ef6c52c7e794d3b1f00bff4fdf7b.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/AbsRequestListFragment$$ViewBinder.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/AbsRequestListFragment$$ViewBinder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/manifests/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/manifests/androidTest/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/MainActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/ParseStarterProject.iml" afterPath="$PROJECT_DIR$/ParseStarterProject/ParseStarterProject.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/android/support/design/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/ads/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/ads/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/analytics/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/analytics/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/appindexing/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/appindexing/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/appinvite/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/appinvite/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/appstate/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/appstate/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/cast/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/cast/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/drive/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/drive/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/fitness/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/fitness/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/games/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/games/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/gcm/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/gcm/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/identity/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/identity/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/location/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/location/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/maps/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/maps/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/nearby/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/nearby/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/panorama/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/panorama/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/plus/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/plus/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/safetynet/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/safetynet/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/wallet/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/wallet/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/wearable/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/google/android/gms/wearable/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/parse/ummalibu/R.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/parse/ummalibu/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/RequestListAdapter.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/RequestListAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/RequestListFragment$$ViewBinder.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/Fragments/RequestListFragment$$ViewBinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/RequestListFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/RequestListFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/RequestViewHolder$$ViewBinder.java" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/ummalibu/ViewHolder/RequestViewHolder$$ViewBinder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ViewHolder/RequestViewHolder.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ViewHolder/RequestViewHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Base/ToolbarActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Base/ToolbarActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/UMberActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/UMberActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RideShareActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RideShareActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/layout/activity_ride_share.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/layout/activity_ride_share.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_ride_share.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_ride_share.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build.gradle" afterPath="$PROJECT_DIR$/ParseStarterProject/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/layout/card_request.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/layout/card_request.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/res/layout/card_request.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/res/layout/card_request.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/res/values/colors.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/res/values/dimens.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/ParseStarterProject/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/menu/menu_main.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/menu/menu_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/res/menu/menu_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/incremental/mergeResources/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/res/values/strings.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/layout/toolbar_tabs.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/layout/toolbar_tabs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/res/layout/toolbar_tabs.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/res/layout/toolbar_tabs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -195,112 +339,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RideShareActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RideShareActivity.java">
+      <file leaf-file-name="RequestViewHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ViewHolder/RequestViewHolder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UmberPagerAdapter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/UmberPagerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7887324">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/RequestListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="230" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3396#3397#0" expanded="true" />
-                <element signature="e#3424#3425#0" expanded="true" />
-                <element signature="e#3455#3456#0" expanded="true" />
-                <element signature="e#3510#3511#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbsRequestListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/AbsRequestListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2172#2378#0" expanded="true" />
-                <element signature="e#2377#2378#0" expanded="true" />
-                <element signature="e#2588#2746#0" expanded="true" />
-                <element signature="e#2745#2746#0" expanded="true" />
-                <element signature="e#2860#2861#0" expanded="true" />
-                <element signature="e#2888#2889#0" expanded="true" />
-                <element signature="e#2919#2920#0" expanded="true" />
-                <element signature="e#2974#2975#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyRequestsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/MyRequestsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1952#1953#0" expanded="true" />
-                <element signature="e#1979#1980#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/RequestListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding>
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-                <element signature="e#2893#2894#0" expanded="true" />
-                <element signature="e#2929#2930#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToolbarActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Base/ToolbarActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toolbar_tabs.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/toolbar_tabs.xml">
+      <file leaf-file-name="widget_summary_view.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/widget_summary_view.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
+              <folding>
+                <element signature="e#1667#1699#0" expanded="true" />
+                <element signature="e#8690#8705#0" expanded="true" />
+                <element signature="e#9035#9066#0" expanded="true" />
+                <element signature="e#9392#9406#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="breakline.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/breakline.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6896553">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+            <state vertical-scroll-proportion="-0.51724136">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -309,21 +380,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/values/style.xml">
+      <file leaf-file-name="RideShareActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RideShareActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1548#2184#0" expanded="true" />
+                <element signature="e#2183#2184#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/header_layout.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.172414">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card_request.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/card_request.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/values-v21/style.xml">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="61" />
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/values/colors.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -335,9 +456,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile_vertical" />
         <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -415,12 +536,10 @@
                 <option name="name" value="assembleDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the android (on device) tests for the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="assembleDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the unit tests for the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
@@ -430,7 +549,6 @@
                 <option name="name" value="assembleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the unit tests for the Release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="assembleReleaseUnitTest" />
               </ExternalTaskPojo>
@@ -477,7 +595,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAndroidTestJava" />
+                <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -493,7 +611,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugJava" />
+                <option name="name" value="compileDebugJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -509,7 +627,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugUnitTestJava" />
+                <option name="name" value="compileDebugUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -525,7 +643,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseJava" />
+                <option name="name" value="compileReleaseJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -541,7 +659,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseUnitTestJava" />
+                <option name="name" value="compileReleaseUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -553,14 +671,14 @@
                 <option name="name" value="connectedAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Debug build on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="connectedAndroidTestDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks on currently connected devices." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for debug on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="connectedDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
@@ -726,14 +844,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preCompileDebugUnitTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preCompileReleaseUnitTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -977,6 +1087,11 @@
                 <option name="name" value="signingReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prints out all the source sets defined in this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="sourceSets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for all variants." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="test" />
@@ -984,12 +1099,12 @@
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testDebug" />
+                <option name="name" value="testDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testRelease" />
+                <option name="name" value="testReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstall all applications." />
@@ -1046,12 +1161,10 @@
                 <option name="name" value="assembleDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the android (on device) tests for the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
                 <option name="name" value="assembleDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the unit tests for the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
@@ -1061,7 +1174,6 @@
                 <option name="name" value="assembleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the unit tests for the Release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
                 <option name="name" value="assembleReleaseUnitTest" />
               </ExternalTaskPojo>
@@ -1108,7 +1220,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="compileDebugAndroidTestJava" />
+                <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
@@ -1124,7 +1236,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="compileDebugJava" />
+                <option name="name" value="compileDebugJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
@@ -1140,7 +1252,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="compileDebugUnitTestJava" />
+                <option name="name" value="compileDebugUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
@@ -1156,7 +1268,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="compileReleaseJava" />
+                <option name="name" value="compileReleaseJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
@@ -1172,7 +1284,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="compileReleaseUnitTestJava" />
+                <option name="name" value="compileReleaseUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
@@ -1184,14 +1296,14 @@
                 <option name="name" value="connectedAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Debug build on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="connectedAndroidTestDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks on currently connected devices." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
                 <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for debug on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
+                <option name="name" value="connectedDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
@@ -1357,14 +1469,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
                 <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="preCompileDebugUnitTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="preCompileReleaseUnitTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
@@ -1608,6 +1712,11 @@
                 <option name="name" value="signingReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prints out all the source sets defined in this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
+                <option name="name" value="sourceSets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for all variants." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
                 <option name="name" value="test" />
@@ -1615,12 +1724,12 @@
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="testDebug" />
+                <option name="name" value="testDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ParseStarterProject" />
-                <option name="name" value="testRelease" />
+                <option name="name" value="testReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstall all applications." />
@@ -1657,7 +1766,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4296467453000" />
+        <entry key="$PROJECT_DIR$" value="4304848263000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1672,76 +1781,82 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.2.3/gradle-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.2.3/gradle-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.2.3/gradle-core-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.2.3/gradle-core-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.2.3/lint-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.2.3/lint-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.2.3/builder-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.2.3/builder-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.1/proguard-base-5.1-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.2.3/lint-checks-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.2.3/lint-checks-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.2.3/sdk-common-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.2.3/sdk-common-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.2.3/builder-test-api-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.2.3/builder-test-api-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/1.3.1/f03da49001aa1274822a8265453e496127515e13/gradle-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/1.3.1/f9f3d53c24efd3b9176ec36aeed9c518954c2fd9/gradle-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/1.3.1/5b678d9b1656bfd09c39c5c65deb9a0bdf141aaa/gradle-core-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/1.3.1/70731f5b83a22faa2f25d6281f6812977f64f520/gradle-core-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/1.3.1/c28ada3461bdfe0e26a3fcd74cd00b80de7e1383/builder-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/1.3.1/83e6307a43477f2a5ff0b5b654b131425c3dcbc5/builder-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/24.3.1/6b1dcead03399197796d64b5f891e89f902420ee/lint-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/24.3.1/57cb2a6361f32753bee3670f072f097840219e34/lint-24.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/1.3.1/f25d38149595b9cbc5292b775835e36fb0734e64/builder-model-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/1.3.1/16c0a3e34af44f31f757144d7c1bf045777dff88/builder-model-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/1.3.1/2b606649d93d44621961df27488b6598161ed793/builder-test-api-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/1.3.1/1954d436ec3eeea11070e91e6c808232837728b8/builder-test-api-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/24.3.1/9ed8ec95c205923234740f78c9937d5c1d073b5e/sdklib-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/24.3.1/1a4226d7db1381552b94fee30453a08fbfd678a5/sdklib-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/24.3.1/4d174e34a0a72d0ed6346074d4de009b7dea90f9/sdk-common-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/24.3.1/5c28ab2dda1600eddaa978e095f0d8c044cac33b/sdk-common-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/24.3.1/bc53a90f1946a2616a37361d8cbcb79d74819579/common-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/24.3.1/92f1a60ebb004e2969661315de200232f90e0a80/common-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/24.3.1/23d3189d5f2eba7c0653f70cc26106e2d9c295f6/manifest-merger-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/24.3.1/b9b0fc1064f963774beb573469ac371bf0c2c461/manifest-merger-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/24.3.1/d20b7452c76470b2d4442989fda41fcf9f18dacd/ddmlib-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/24.3.1/2018ea863b14fe3aeaf2b49316ee98567e1d9c11/ddmlib-24.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.2.3/common-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.2.3/common-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.2.3/builder-model-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.2.3/builder-model-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.2.3/sdklib-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.2.3/sdklib-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.2.3/manifest-merger-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.2.3/manifest-merger-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.2.3/ddmlib-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.2.3/ddmlib-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.2.3/lint-api-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.2.3/lint-api-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.2.3/annotations-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.2.3/annotations-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.2.3/layoutlib-api-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.2.3/layoutlib-api-24.2.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.9.0/jack-api-0.9.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.9.0/jack-api-0.9.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.9.0/jill-api-0.9.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.9.0/jill-api-0.9.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/24.3.1/606831c23251acf115949306b6c20be19e60a8f9/lint-checks-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/24.3.1/ee1edb630d923511bb46bef4da148dcb0a74a029/lint-checks-24.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.2.1/proguard-base-5.2.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.2.1/proguard-base-5.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/24.3.1/8cad6d336a2f6bd32d04b251621d375991ba3f49/annotations-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/24.3.1/3c0f015e74a277e90ca34229458dd767aa39bb30/annotations-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/24.3.1/46242e3d715941c59be336dbd31cfafae1b68205/layoutlib-api-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/24.3.1/982783a222369254fce34336cc48155bbd87e3fd/layoutlib-api-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/24.3.1/40c9bf825ee7a931b096a94d3994f49109b59d1c/dvlib-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/24.3.1/1d78ec584fb99277e54e849b8ab57b860d590c17/dvlib-24.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.2.3/dvlib-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.2.3/dvlib-24.2.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/24.3.1/ab078c2ba2196e5f4595bdd39701e022d8929976/lint-api-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/24.3.1/f5666b0d8408e79273a17cbe89c673c98f37b9fa/lint-api-24.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
@@ -1753,85 +1868,90 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.2.3/gradle-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.2.3/gradle-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.2.3/gradle-core-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.2.3/gradle-core-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.2.3/lint-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.2.3/lint-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.2.3/builder-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.2.3/builder-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.1/proguard-base-5.1-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.2.3/lint-checks-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.2.3/lint-checks-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.2.3/sdk-common-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.2.3/sdk-common-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.2.3/builder-test-api-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.2.3/builder-test-api-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/1.3.1/f03da49001aa1274822a8265453e496127515e13/gradle-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/1.3.1/f9f3d53c24efd3b9176ec36aeed9c518954c2fd9/gradle-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/1.3.1/5b678d9b1656bfd09c39c5c65deb9a0bdf141aaa/gradle-core-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/1.3.1/70731f5b83a22faa2f25d6281f6812977f64f520/gradle-core-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/1.3.1/c28ada3461bdfe0e26a3fcd74cd00b80de7e1383/builder-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/1.3.1/83e6307a43477f2a5ff0b5b654b131425c3dcbc5/builder-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/24.3.1/6b1dcead03399197796d64b5f891e89f902420ee/lint-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/24.3.1/57cb2a6361f32753bee3670f072f097840219e34/lint-24.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/1.3.1/f25d38149595b9cbc5292b775835e36fb0734e64/builder-model-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/1.3.1/16c0a3e34af44f31f757144d7c1bf045777dff88/builder-model-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/1.3.1/2b606649d93d44621961df27488b6598161ed793/builder-test-api-1.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/1.3.1/1954d436ec3eeea11070e91e6c808232837728b8/builder-test-api-1.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/24.3.1/9ed8ec95c205923234740f78c9937d5c1d073b5e/sdklib-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/24.3.1/1a4226d7db1381552b94fee30453a08fbfd678a5/sdklib-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/24.3.1/4d174e34a0a72d0ed6346074d4de009b7dea90f9/sdk-common-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/24.3.1/5c28ab2dda1600eddaa978e095f0d8c044cac33b/sdk-common-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/24.3.1/bc53a90f1946a2616a37361d8cbcb79d74819579/common-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/24.3.1/92f1a60ebb004e2969661315de200232f90e0a80/common-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/24.3.1/23d3189d5f2eba7c0653f70cc26106e2d9c295f6/manifest-merger-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/24.3.1/b9b0fc1064f963774beb573469ac371bf0c2c461/manifest-merger-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/24.3.1/d20b7452c76470b2d4442989fda41fcf9f18dacd/ddmlib-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/24.3.1/2018ea863b14fe3aeaf2b49316ee98567e1d9c11/ddmlib-24.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.2.3/common-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.2.3/common-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.2.3/builder-model-1.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.2.3/builder-model-1.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.2.3/sdklib-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.2.3/sdklib-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.2.3/manifest-merger-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.2.3/manifest-merger-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.2.3/ddmlib-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.2.3/ddmlib-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.2.3/lint-api-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.2.3/lint-api-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.2.3/annotations-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.2.3/annotations-24.2.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.2.3/layoutlib-api-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.2.3/layoutlib-api-24.2.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.9.0/jack-api-0.9.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.9.0/jack-api-0.9.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.9.0/jill-api-0.9.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.9.0/jill-api-0.9.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/24.3.1/606831c23251acf115949306b6c20be19e60a8f9/lint-checks-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/24.3.1/ee1edb630d923511bb46bef4da148dcb0a74a029/lint-checks-24.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.2.1/proguard-base-5.2.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.2.1/proguard-base-5.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/24.3.1/8cad6d336a2f6bd32d04b251621d375991ba3f49/annotations-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/24.3.1/3c0f015e74a277e90ca34229458dd767aa39bb30/annotations-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/24.3.1/46242e3d715941c59be336dbd31cfafae1b68205/layoutlib-api-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/24.3.1/982783a222369254fce34336cc48155bbd87e3fd/layoutlib-api-24.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/24.3.1/40c9bf825ee7a931b096a94d3994f49109b59d1c/dvlib-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/24.3.1/1d78ec584fb99277e54e849b8ab57b860d590c17/dvlib-24.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.2.3/dvlib-24.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.2.3/dvlib-24.2.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/24.3.1/ab078c2ba2196e5f4595bdd39701e022d8929976/lint-api-24.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/24.3.1/f5666b0d8408e79273a17cbe89c673c98f37b9fa/lint-api-24.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/22.2.0/appcompat-v7-22.2.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.0/support-v4-22.2.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/cardview-v7/22.2.0/cardview-v7-22.2.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/22.2.0/recyclerview-v7-22.2.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/design/22.2.0/design-22.2.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.0/a7537446a030da8eb0da4c71424d16c2589f6c4a/glide-3.6.0.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.16/d8f5b9114ebe0f76de7fbf55e950540959ce4ff8/library-1.0.16.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services/7.5.0/play-services-7.5.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.1/44780c2cf98f6a3cf4e77f1234d644758b329201/bolts-android-1.2.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar" />
@@ -1884,13 +2004,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/values/style.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/widget_search_layout.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/SearchLayout.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/widget_search.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_umber.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Values/FieldNames.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ViewHolder/LocationCellViewHolder.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/LocationsListAdapter.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/view_pager_layout.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_locations_list.xml" />
@@ -1905,15 +2018,11 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/cell_location.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RequestsActivity.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Base/BaseFragActivity.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ParseApplication.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Values/AbsPreferences.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/fragment_search_locations.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/basic_swipe_refresh_recyclerview.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Database/TablesSQL.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Database/DatabaseHelper.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/build.gradle" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/card_request.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Api/GsonFactory.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Responses/UmberRequestResponse.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Api/UmberRequestDeserializer.java" />
@@ -1923,18 +2032,29 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/UMberActivity.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Database/DatabaseProvider.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ViewHolder/RequestViewHolder.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_ride_share.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/MainActivity.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/toolbar_tabs.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Base/ToolbarActivity.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RideShareActivity.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/AbsRequestListFragment.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/UmberPagerAdapter.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ParseApplication.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/RequestListAdapter.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/RequestListFragment.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/AbsRequestListFragment.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/MyRequestsFragment.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/UmberPagerAdapter.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/tabs_bar.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/MainActivity.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/menu/menu_main.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RideShareActivity.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_ride_share.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/header_layout.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/build.gradle" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/card_request.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ViewHolder/RequestViewHolder.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/breakline.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/widget_summary_view.xml" />
       </list>
     </option>
   </component>
@@ -2044,28 +2164,6 @@
               <option name="myItemId" value="values" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style.xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parse-Starter-Project-1.8.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseStarterProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2115,72 +2213,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="ummalibu" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parse-Starter-Project-1.8.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseStarterProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ummalibu" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fragments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parse-Starter-Project-1.8.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseStarterProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ummalibu" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parse-Starter-Project-1.8.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseStarterProject" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ummalibu" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2308,7 +2340,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../APK Signing Keys/ummalibu_key.jks" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="TA98903BZS" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="HT342W903475" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus4" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="371" />
     <property name="OverrideImplement.combined" value="true" />
@@ -2325,6 +2357,8 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.project.structure.last.selected" value="ParseStarterProject" />
     <property name="android.project.structure.proportion" value="0.15" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -2598,13 +2632,13 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29071537" sideWeight="0.50646204" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24555735" sideWeight="0.5107296" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29071537" sideWeight="0.49353796" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30898023" sideWeight="0.7075929" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3500761" sideWeight="0.7075929" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24878837" sideWeight="0.49880096" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2289644" sideWeight="0.4892704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21440129" sideWeight="0.4892704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2680,107 +2714,11 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/LocationsActivities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/activity_umber.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6896553">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/widget_empty_list_with_button.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6551723">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Views/EmptyListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/cell_location.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6551723">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Base/BaseFragActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.344828">
-          <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ParseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Database/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="81" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/fragment_search_locations.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-32.068966">
@@ -2825,20 +2763,6 @@
           <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/card_request.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6206896">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="e#3577#3604#0" expanded="true" />
-            <element signature="e#3639#3666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Api/EventDeserializer.java">
@@ -2945,14 +2869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.296296">
-          <caret line="51" column="162" selection-start-line="51" selection-start-column="162" selection-end-line="51" selection-end-column="162" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Database/AbsDatabaseObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3004,71 +2920,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ViewHolder/RequestViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/activity_ride_share.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.275862">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="e#556#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="82" selection-start-line="53" selection-start-column="82" selection-end-line="53" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RequestsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="207" column="62" selection-start-line="207" selection-start-column="62" selection-end-line="207" selection-end-column="62" />
-          <folding>
-            <element signature="e#2672#2690#0" expanded="true" />
-            <element signature="e#3129#3155#0" expanded="true" />
-            <element signature="e#3592#3621#0" expanded="true" />
-            <element signature="e#4059#4091#0" expanded="true" />
-            <element signature="e#4445#4476#0" expanded="true" />
-            <element signature="e#4833#4868#0" expanded="true" />
-            <element signature="e#5285#5316#0" expanded="true" />
-            <element signature="e#5735#5773#0" expanded="true" />
-            <element signature="e#7696#7735#0" expanded="true" />
-            <element signature="e#7846#7871#0" expanded="true" />
-            <element signature="e#7982#8015#0" expanded="true" />
-            <element signature="e#8296#8327#0" expanded="true" />
-            <element signature="e#8692#8735#0" expanded="true" />
-            <element signature="e#9095#9129#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3088,10 +2944,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ParseStarterProjectActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ParseApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/UmberPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1224#1225#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/RequestListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+          <folding>
+            <element signature="e#1106#1107#0" expanded="false" />
+            <element signature="e#1144#1145#0" expanded="false" />
+            <element signature="e#2966#2967#0" expanded="false" />
+            <element signature="e#3002#3003#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/MyRequestsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2056#2057#0" expanded="false" />
+            <element signature="e#2083#2084#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/toolbar_tabs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6896553">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -3099,45 +3008,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Base/ToolbarActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/RequestListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#2893#2894#0" expanded="true" />
-            <element signature="e#2929#2930#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/RequestListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="230" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3396#3397#0" expanded="true" />
-            <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3510#3511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/AbsRequestListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2172#2378#0" expanded="true" />
@@ -3152,38 +3026,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/MyRequestsFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Base/ToolbarActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="e#1431#2006#0" expanded="false" />
+            <element signature="e#2005#2006#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.172414">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3549223">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/tabs_bar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2413793">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#473#520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/menu/menu_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#399#411#0" expanded="true" />
+            <element signature="e#607#627#0" expanded="true" />
+            <element signature="e#829#854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Fragments/RequestListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="230" column="69" selection-start-line="230" selection-start-column="69" selection-end-line="230" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#3396#3397#0" expanded="true" />
+            <element signature="e#3424#3425#0" expanded="true" />
+            <element signature="e#3455#3456#0" expanded="true" />
+            <element signature="e#3510#3511#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/activity_ride_share.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.068966">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/ViewHolder/RequestViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/RideShareActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1548#2184#0" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/Adapters/UmberPagerAdapter.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/breakline.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7887324">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        <state vertical-scroll-proportion="-0.51724136">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/card_request.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/header_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.172414">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/res/layout/widget_summary_view.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1667#1699#0" expanded="true" />
+            <element signature="e#8690#8705#0" expanded="true" />
+            <element signature="e#9035#9066#0" expanded="true" />
+            <element signature="e#9392#9406#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

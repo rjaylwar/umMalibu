@@ -16,6 +16,10 @@
     <color name="breakline_color">#44b4b4b4</color>
     <color name="grey_blue">#234265</color>
     <color name="transparent_white">#e1f1f1f1</color>
+    <color name="gray_white">#ebebeb</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent_blue">#da345065</color>
+    <color name="transparent_um_grey">#d7bfe9eb</color>
 
     <color name="um_grey_blue">#FF345065</color>
     <color name="um_dark_blue">#FF233645</color>

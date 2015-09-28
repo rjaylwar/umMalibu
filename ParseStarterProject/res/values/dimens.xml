@@ -6,4 +6,5 @@
     <dimen name="media_player_height">56dp</dimen>
     <dimen name="search_widget_height">48dp</dimen>
     <dimen name="request_image_size">64dp</dimen>
+    <dimen name="sliding_view_top_margin">120dp</dimen>
 </resources>

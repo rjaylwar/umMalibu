@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/request_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:id="@+id/request_card_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
+
+        <LinearLayout
+            android:id="@+id/request_card_linear_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/request_card_pick_up"
+                android:text="Pick up spot : Pepperdine University"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:lines="1"
+                android:textSize="14dp"
+                android:textColor="@color/um_green"/>
+
+            <TextView
+                android:id="@+id/request_card_destination"
+                android:text="Destination : UM 3324 Malibu Canyon Rd, Malibu, CA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:lines="1"
+                android:textSize="14dp"
+                android:textColor="@color/um_highlight_blue"/>
+
+            <ImageView
+                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/transparent_grey"
+                android:transitionName="map_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/request_card_main_image"/>
+
+            <TextView
+                android:id="@+id/request_card_time"
+                android:text="9/20/15 12:00 PM"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:paddingLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/request_card_name"
+                android:text="Rider"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="80dp"
+                android:textSize="14dp"
+                android:textColor="@color/gray_white"/>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/request_card_person_image"
+            android:layout_width="@dimen/request_image_size"
+            android:layout_height="@dimen/request_image_size"
+            android:src="@color/grey"
+            android:layout_alignBottom="@id/request_card_linear_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="6dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/layout/card_request.xml -->

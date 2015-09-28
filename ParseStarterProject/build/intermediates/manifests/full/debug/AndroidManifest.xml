@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="23" />
 
     <permission
         android:name="com.parse.ummalibu.permission.MAPS_RECEIVE"

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,10 +33,31 @@ public class MainActivity extends ToolbarActivity {
     private Intent requestIntent;
     private Context context = this;
 
+    public static Intent createIntent(Context context) {
+        return new Intent(context, MainActivity.class);
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                if (!menuItem.isChecked())
+                    menuItem.setChecked(true);
+
+                switch (menuItem.getItemId()) {
+                    case R.id.menu_item_rideshare:
+                        startActivity(RideShareActivity.createIntent(MainActivity.this));
+                        return true;
+                    default:
+                        return true;
+                }
+            }
+        });
 
         addListenerOnButton();
         detailIntent = new Intent(this, ParseStarterProjectActivity.class);

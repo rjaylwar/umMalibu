@@ -51,5 +51,10 @@
     <string name="request_cant_be_claimed">Request can not be claimed at this time. Please try again later.</string>
     <string name="want_to_give_person_ride_to_address">Would you like to give %1$s a ride to %2$s?\n\nYou will be prompted to adjust the pickup time if necessary.</string>
     <string name="claim_request">Claim Request</string>
+    <string name="ride_share">Ride Share</string>
+    <string name="um">UM</string>
+    <string name="split_gas_number_ways">Split Gas %s Ways</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
 
 </resources>

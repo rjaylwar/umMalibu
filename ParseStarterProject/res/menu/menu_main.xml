@@ -1,5 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" tools:context="com.parse.ummalibu.MainActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" android:showAsAction="never" />
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_item_um"
+            android:checked="false"
+            android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+            android:title="@string/um"/>
+
+        <item
+            android:id="@+id/menu_item_rideshare"
+            android:checked="false"
+            android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+            android:title="@string/ride_share"/>
+
+        <item
+            android:id="@+id/menu_item_settings"
+            android:checked="false"
+            android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:title="@string/action_settings"/>
+
+    </group>
+
 </menu>
