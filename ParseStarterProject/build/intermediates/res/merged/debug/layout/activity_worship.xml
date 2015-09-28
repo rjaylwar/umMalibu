@@ -1,13 +1,12 @@
-
 <LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:clickable="true"
-android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
     android:weightSum="7"
-    android:background="#ff233645">
+    android:background="@color/um_grey_blue">
 
     <include
         layout="@layout/toolbar_basic"

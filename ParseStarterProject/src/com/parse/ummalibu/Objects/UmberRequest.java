@@ -1,14 +1,14 @@
-package com.parse.ummalibu.Objects;
+package com.parse.ummalibu.objects;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.net.Uri;
 
 import com.google.gson.annotations.SerializedName;
-import com.parse.ummalibu.Database.ApiResponse;
-import com.parse.ummalibu.Database.DatabaseHelper;
-import com.parse.ummalibu.Database.Table;
-import com.parse.ummalibu.Values.FieldNames;
+import com.parse.ummalibu.database.ApiResponse;
+import com.parse.ummalibu.database.DatabaseHelper;
+import com.parse.ummalibu.database.Table;
+import com.parse.ummalibu.values.FieldNames;
 
 import java.util.Date;
 

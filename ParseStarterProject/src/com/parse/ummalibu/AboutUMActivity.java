@@ -32,7 +32,6 @@ public class AboutUMActivity extends FragmentActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_um);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         MapViewEnabled = true;
 

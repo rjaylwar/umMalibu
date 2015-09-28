@@ -18,7 +18,7 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParsePush;
 import com.parse.SaveCallback;
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 
 public class UmslMenuActivity extends ToolbarActivity {

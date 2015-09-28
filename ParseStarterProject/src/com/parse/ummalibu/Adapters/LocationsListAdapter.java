@@ -1,13 +1,13 @@
-package com.parse.ummalibu.Adapters;
+package com.parse.ummalibu.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.parse.ummalibu.Objects.UmLocation;
+import com.parse.ummalibu.objects.UmLocation;
 import com.parse.ummalibu.R;
-import com.parse.ummalibu.ViewHolder.LocationCellViewHolder;
+import com.parse.ummalibu.holder.LocationCellViewHolder;
 
 import java.util.ArrayList;
 

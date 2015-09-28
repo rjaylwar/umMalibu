@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Fragments;
+package com.parse.ummalibu.fragments;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -22,18 +22,18 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
-import com.parse.ummalibu.Adapters.RequestListAdapter;
-import com.parse.ummalibu.Api.ApiHelper;
-import com.parse.ummalibu.Database.DatabaseHelper;
-import com.parse.ummalibu.Database.Table;
-import com.parse.ummalibu.Objects.UmberRequest;
+import com.parse.ummalibu.adapters.RequestListAdapter;
+import com.parse.ummalibu.api.ApiHelper;
+import com.parse.ummalibu.database.DatabaseHelper;
+import com.parse.ummalibu.database.Table;
+import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.R;
-import com.parse.ummalibu.Responses.UmberRequestResponse;
-import com.parse.ummalibu.Values.Constants;
-import com.parse.ummalibu.Values.Preferences;
-import com.parse.ummalibu.Views.EmptyListView;
-import com.parse.ummalibu.Views.LoadMoreRecyclerView;
-import com.parse.ummalibu.Volley.VolleyRequestListener;
+import com.parse.ummalibu.responses.UmberRequestResponse;
+import com.parse.ummalibu.values.Constants;
+import com.parse.ummalibu.values.Preferences;
+import com.parse.ummalibu.views.EmptyListView;
+import com.parse.ummalibu.views.LoadMoreRecyclerView;
+import com.parse.ummalibu.volley.VolleyRequestListener;
 
 import java.util.ArrayList;
 import java.util.Calendar;

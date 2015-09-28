@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import com.parse.ParseObject;
 import com.parse.ParseQueryAdapter;
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 public class ParseStarterProjectActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 

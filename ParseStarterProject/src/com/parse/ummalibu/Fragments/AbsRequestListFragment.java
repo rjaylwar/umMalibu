@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Fragments;
+package com.parse.ummalibu.fragments;
 
 import android.database.ContentObserver;
 import android.net.Uri;
@@ -13,12 +13,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
-import com.parse.ummalibu.Adapters.RequestListAdapter;
-import com.parse.ummalibu.Database.Table;
-import com.parse.ummalibu.Objects.UmberRequest;
+import com.parse.ummalibu.adapters.RequestListAdapter;
+import com.parse.ummalibu.database.Table;
+import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.R;
-import com.parse.ummalibu.Views.EmptyListView;
-import com.parse.ummalibu.Views.LoadMoreRecyclerView;
+import com.parse.ummalibu.views.EmptyListView;
+import com.parse.ummalibu.views.LoadMoreRecyclerView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

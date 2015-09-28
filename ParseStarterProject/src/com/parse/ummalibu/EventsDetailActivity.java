@@ -15,7 +15,7 @@ import com.parse.ParseException;
 import com.parse.ParseImageView;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 public class EventsDetailActivity extends ToolbarActivity {
 

@@ -56,5 +56,6 @@
     <string name="split_gas_number_ways">Split Gas %s Ways</string>
     <string name="minus">-</string>
     <string name="plus">+</string>
+    <string name="streaming_warning">Warning: streaming sermons uses almost 35mb of data per session. Wifi is recommended.\n\n(Take notes here)</string>
 
 </resources>

@@ -1,7 +1,7 @@
-package com.parse.ummalibu.Objects;
+package com.parse.ummalibu.objects;
 
 import com.google.gson.annotations.SerializedName;
-import com.parse.ummalibu.Values.FieldNames;
+import com.parse.ummalibu.values.FieldNames;
 
 /**
  * Created by rjaylward on 9/24/15.

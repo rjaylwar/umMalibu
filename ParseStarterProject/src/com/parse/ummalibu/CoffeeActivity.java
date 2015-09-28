@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 
 public class CoffeeActivity extends ToolbarActivity {

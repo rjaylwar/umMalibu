@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Values;
+package com.parse.ummalibu.values;
 
 import android.content.Context;
 

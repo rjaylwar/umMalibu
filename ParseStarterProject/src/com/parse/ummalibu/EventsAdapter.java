@@ -36,7 +36,7 @@ public class EventsAdapter extends ParseQueryAdapter<ParseObject> {
     @Override
     public View getItemView(ParseObject object, View v, ViewGroup parent) {
         if (v == null) {
-            v = View.inflate(getContext(), R.layout.activity_events, null);
+            v = View.inflate(getContext(), R.layout.cell_events, null);
         }
         super.getItemView(object, v, parent);
 

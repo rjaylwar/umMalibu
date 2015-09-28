@@ -1,13 +1,13 @@
-package com.parse.ummalibu.Api;
+package com.parse.ummalibu.api;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.parse.ummalibu.Objects.Event;
-import com.parse.ummalibu.Objects.Notification;
-import com.parse.ummalibu.Objects.Prayer;
-import com.parse.ummalibu.Objects.Song;
-import com.parse.ummalibu.Objects.Talk;
-import com.parse.ummalibu.Objects.UmberRequest;
+import com.parse.ummalibu.objects.Event;
+import com.parse.ummalibu.objects.Notification;
+import com.parse.ummalibu.objects.Prayer;
+import com.parse.ummalibu.objects.Song;
+import com.parse.ummalibu.objects.Talk;
+import com.parse.ummalibu.objects.UmberRequest;
 
 /**
  * Created by rjaylward on 9/22/15.

@@ -4,10 +4,11 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,13 +16,14 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 
 public class MainActivity extends ToolbarActivity {
 
-    //ImageButton sermonButton;
-    //ImageButton aboutButton;
     private Intent detailIntent;
     private Intent worshipIntent;
     private Intent prayerIntent;
@@ -30,8 +32,10 @@ public class MainActivity extends ToolbarActivity {
     private Intent coffeeIntent;
     private Intent umslIntent;
     private Intent umberIntent;
-    private Intent requestIntent;
     private Context context = this;
+
+    @Bind(R.id.drawer_layout) DrawerLayout mDrawerLayout;
+    @Bind(R.id.navigation_view) NavigationView mNavigationView;
 
     public static Intent createIntent(Context context) {
         return new Intent(context, MainActivity.class);
@@ -41,9 +45,12 @@ public class MainActivity extends ToolbarActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        mNavigationView.setBackgroundColor(getResources().getColor(R.color.um_dark_blue));
+        mNavigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.white)));
+        mNavigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.white)));
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 if (!menuItem.isChecked())
@@ -52,6 +59,7 @@ public class MainActivity extends ToolbarActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.menu_item_rideshare:
                         startActivity(RideShareActivity.createIntent(MainActivity.this));
+                        mDrawerLayout.closeDrawer(mNavigationView);
                         return true;
                     default:
                         return true;
@@ -68,7 +76,6 @@ public class MainActivity extends ToolbarActivity {
         aboutUMIntent = new Intent(this, AboutUMActivity.class);
         umslIntent = new Intent(this, UmslMenuActivity.class);
         umberIntent = new Intent(this, UMberActivity.class);
-        requestIntent = new Intent(this, RideShareActivity.class);
     }
 
     public void addListenerOnButton() {
@@ -162,34 +169,5 @@ public class MainActivity extends ToolbarActivity {
                 startActivity(umberIntent);
             }
         });
-        ImageButton requestsButton = (ImageButton) findViewById(R.id.requestsButton);
-        requestsButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(requestIntent);
-            }
-        });
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

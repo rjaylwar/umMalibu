@@ -87,14 +87,6 @@
                     android:src="@drawable/new_about_um"
                     android:layout_gravity="center"/>
 
-                <ImageButton
-                    android:id="@+id/requestsButton"
-                    android:layout_marginBottom="10sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/um_logo"
-                    android:layout_gravity="center"/>
-
             </LinearLayout>
 
         </ScrollView>
@@ -106,6 +98,7 @@
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:layout_gravity="start"
-        app:menu="@menu/menu_main"/>
+        app:menu="@menu/menu_main"
+        app:headerLayout="@layout/header_layout"/>
 
 </android.support.v4.widget.DrawerLayout><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/layout/activity_main.xml -->

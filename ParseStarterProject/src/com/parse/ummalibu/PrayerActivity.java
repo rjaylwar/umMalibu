@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 
 public class PrayerActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {

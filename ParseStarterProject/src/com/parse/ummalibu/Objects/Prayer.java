@@ -1,10 +1,10 @@
-package com.parse.ummalibu.Objects;
+package com.parse.ummalibu.objects;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
-import com.parse.ummalibu.Values.FieldNames;
+import com.parse.ummalibu.values.FieldNames;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Database;
+package com.parse.ummalibu.database;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -6,12 +6,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.parse.ummalibu.Objects.UmLocation;
-import com.parse.ummalibu.Values.FieldNames;
-import com.parse.ummalibu.Objects.Driver;
-import com.parse.ummalibu.Objects.Notification;
-import com.parse.ummalibu.Objects.Talk;
-import com.parse.ummalibu.Objects.UmberRequest;
+import com.parse.ummalibu.objects.UmLocation;
+import com.parse.ummalibu.values.FieldNames;
+import com.parse.ummalibu.objects.Driver;
+import com.parse.ummalibu.objects.Notification;
+import com.parse.ummalibu.objects.Talk;
+import com.parse.ummalibu.objects.UmberRequest;
 
 import java.util.ArrayList;
 import java.util.Date;

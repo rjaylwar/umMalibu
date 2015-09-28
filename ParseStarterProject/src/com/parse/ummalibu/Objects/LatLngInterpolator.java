@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Objects;
+package com.parse.ummalibu.objects;
 
 import com.google.android.gms.maps.model.LatLng;
 

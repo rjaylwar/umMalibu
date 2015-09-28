@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Values;
+package com.parse.ummalibu.values;
 
 /**
  * Created by rjaylward on 9/22/15.

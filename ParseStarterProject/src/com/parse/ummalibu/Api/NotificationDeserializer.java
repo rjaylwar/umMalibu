@@ -1,12 +1,12 @@
-package com.parse.ummalibu.Api;
+package com.parse.ummalibu.api;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParseException;
-import com.parse.ummalibu.Values.FieldNames;
-import com.parse.ummalibu.Objects.Notification;
+import com.parse.ummalibu.values.FieldNames;
+import com.parse.ummalibu.objects.Notification;
 
 import java.lang.reflect.Type;
 import java.text.ParseException;

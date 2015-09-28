@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Volley;
+package com.parse.ummalibu.volley;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -10,8 +10,8 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.google.gson.JsonObject;
-import com.parse.ummalibu.Api.GsonRequest;
-import com.parse.ummalibu.Database.ApiResponse;
+import com.parse.ummalibu.api.GsonRequest;
+import com.parse.ummalibu.database.ApiResponse;
 
 import java.util.HashMap;
 import java.util.Map;

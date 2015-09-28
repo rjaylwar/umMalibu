@@ -177,7 +177,9 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/colors.xml -->
     <eat-comment/>
+    <color name="transparent_blue">#da345065</color>
     <color name="transparent_grey">#55818181</color>
+    <color name="transparent_um_grey">#d7bfe9eb</color>
     <color name="transparent_white">#e1f1f1f1</color>
     <color name="um_dark_blue">#FF233645</color>
     <color name="um_green">#5DFC0A</color>
@@ -367,6 +369,7 @@
     <eat-comment/>
     <dimen name="request_image_size">64dp</dimen>
     <dimen name="search_widget_height">48dp</dimen>
+    <dimen name="sliding_view_top_margin">120dp</dimen>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="snackbar_action_inline_max_width">128dp</dimen>
@@ -543,6 +546,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="meet_steve_title">Meet Our Director - Steve Smith</string>
+    <string name="minus">-</string>
     <string name="more">More</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -562,6 +566,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="next_text">Next</string>
     <string name="pickup_location">Pickup Location</string>
     <string name="play">Play</string>
+    <string name="plus">+</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings_activity_settings.xml -->
     <eat-comment/>
     <string name="pref_default_display_name">John Smith</string>
@@ -588,6 +593,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="sermons">Sermons</string>
     <string name="share">Share</string>
     <string name="songs_title_text">Songs recently played at UM</string>
+    <string name="split_gas_number_ways">Split Gas %s Ways</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -600,6 +606,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="store_picture_title">Save image</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
+    <string name="streaming_warning">Warning: streaming sermons uses almost 35mb of data per session. Wifi is recommended.\n\n(Take notes here)</string>
     <string name="submit">Submit</string>
     <string name="title_activity_about_um">About UM</string>
     <string name="title_activity_activity_with_fragment">Activity_with_fragment</string>

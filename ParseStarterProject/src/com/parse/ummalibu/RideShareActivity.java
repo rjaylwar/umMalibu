@@ -10,8 +10,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
 
-import com.parse.ummalibu.Adapters.UmberPagerAdapter;
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.adapters.UmberPagerAdapter;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

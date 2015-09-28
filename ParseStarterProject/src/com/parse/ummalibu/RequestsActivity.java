@@ -2,8 +2,8 @@ package com.parse.ummalibu;
 
 import android.support.v4.app.Fragment;
 
-import com.parse.ummalibu.Base.BaseFragActivity;
-import com.parse.ummalibu.Fragments.RequestListFragment;
+import com.parse.ummalibu.base.BaseFragActivity;
+import com.parse.ummalibu.fragments.RequestListFragment;
 
 /**
  * Created by rjaylward on 9/25/15.

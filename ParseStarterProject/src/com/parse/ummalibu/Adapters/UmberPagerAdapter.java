@@ -1,11 +1,11 @@
-package com.parse.ummalibu.Adapters;
+package com.parse.ummalibu.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.parse.ummalibu.Fragments.MyRequestsFragment;
-import com.parse.ummalibu.Fragments.RequestListFragment;
+import com.parse.ummalibu.fragments.MyRequestsFragment;
+import com.parse.ummalibu.fragments.RequestListFragment;
 
 import java.util.ArrayList;
 

@@ -1,20 +1,20 @@
-package com.parse.ummalibu.Api;
+package com.parse.ummalibu.api;
 
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.google.gson.JsonObject;
-import com.parse.ummalibu.Objects.UmberRequest;
-import com.parse.ummalibu.Responses.EventsResponse;
-import com.parse.ummalibu.Responses.NotificationsResponse;
-import com.parse.ummalibu.Responses.TalksResponse;
-import com.parse.ummalibu.Responses.UmLocationsResponse;
-import com.parse.ummalibu.Responses.UmberRequestResponse;
-import com.parse.ummalibu.Values.FieldNames;
-import com.parse.ummalibu.Volley.GsonVolleyRequester;
-import com.parse.ummalibu.Volley.JsonObjectVolleyRequester;
-import com.parse.ummalibu.Volley.StringObjectVolleyRequester;
-import com.parse.ummalibu.Volley.VolleyRequestListener;
+import com.parse.ummalibu.objects.UmberRequest;
+import com.parse.ummalibu.responses.EventsResponse;
+import com.parse.ummalibu.responses.NotificationsResponse;
+import com.parse.ummalibu.responses.TalksResponse;
+import com.parse.ummalibu.responses.UmLocationsResponse;
+import com.parse.ummalibu.responses.UmberRequestResponse;
+import com.parse.ummalibu.values.FieldNames;
+import com.parse.ummalibu.volley.GsonVolleyRequester;
+import com.parse.ummalibu.volley.JsonObjectVolleyRequester;
+import com.parse.ummalibu.volley.StringObjectVolleyRequester;
+import com.parse.ummalibu.volley.VolleyRequestListener;
 
 /**
  * Created by rjaylward on 9/22/15.

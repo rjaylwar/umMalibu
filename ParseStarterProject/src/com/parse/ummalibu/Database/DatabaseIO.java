@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Database;
+package com.parse.ummalibu.database;
 
 import android.database.Cursor;
 import android.net.Uri;

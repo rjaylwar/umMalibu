@@ -1,11 +1,11 @@
-package com.parse.ummalibu.Responses;
+package com.parse.ummalibu.responses;
 
 import android.content.Context;
 
 import com.google.gson.annotations.SerializedName;
-import com.parse.ummalibu.Database.ApiResponse;
-import com.parse.ummalibu.Values.FieldNames;
-import com.parse.ummalibu.Objects.Talk;
+import com.parse.ummalibu.database.ApiResponse;
+import com.parse.ummalibu.values.FieldNames;
+import com.parse.ummalibu.objects.Talk;
 
 import java.util.ArrayList;
 

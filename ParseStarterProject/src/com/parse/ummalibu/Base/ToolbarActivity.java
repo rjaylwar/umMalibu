@@ -1,4 +1,4 @@
-package com.parse.ummalibu.Base;
+package com.parse.ummalibu.base;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

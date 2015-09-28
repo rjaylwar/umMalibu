@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 
 public class NotificationsListActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {

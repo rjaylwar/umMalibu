@@ -22,7 +22,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.parse.ParseObject;
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 
 public class WorshipActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {

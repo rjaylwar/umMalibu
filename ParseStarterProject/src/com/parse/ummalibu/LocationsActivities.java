@@ -5,11 +5,11 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.android.volley.VolleyError;
-import com.parse.ummalibu.Adapters.LocationsListAdapter;
-import com.parse.ummalibu.Api.ApiHelper;
-import com.parse.ummalibu.Base.ToolbarActivity;
-import com.parse.ummalibu.Responses.UmLocationsResponse;
-import com.parse.ummalibu.Volley.VolleyRequestListener;
+import com.parse.ummalibu.adapters.LocationsListAdapter;
+import com.parse.ummalibu.api.ApiHelper;
+import com.parse.ummalibu.base.ToolbarActivity;
+import com.parse.ummalibu.responses.UmLocationsResponse;
+import com.parse.ummalibu.volley.VolleyRequestListener;
 
 /**
  * Created by rjaylward on 9/25/15.

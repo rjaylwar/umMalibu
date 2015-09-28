@@ -16,7 +16,7 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.parse.ParseObject;
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 
 public class NewPrayerActivity extends ToolbarActivity {

@@ -221,9 +221,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.parse.ummalibu.MainActivity" />
         </activity>
+        <activity android:name="com.parse.ummalibu.TripSummaryActivity" />
 
         <provider
-            android:name="com.parse.ummalibu.Database.DatabaseProvider"
+            android:name="com.parse.ummalibu.database.DatabaseProvider"
             android:authorities="com.parse.ummalibu.provider.internalDB"
             android:exported="false" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->

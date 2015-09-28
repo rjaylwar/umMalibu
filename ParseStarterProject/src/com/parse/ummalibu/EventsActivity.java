@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import com.parse.ParseFile;
 import com.parse.ParseObject;
-import com.parse.ummalibu.Base.ToolbarActivity;
+import com.parse.ummalibu.base.ToolbarActivity;
 
 
 public class EventsActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener{

@@ -1,241 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/root">
 
-    <ImageView
-        android:id="@+id/summary_background_map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/triangles_large"
-        android:scaleType="center"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/black"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="2dp">
-
-        <TextView
-            android:id="@+id/summary_pick_up_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/um_green"
-            android:text="Pepperdine University"
-            android:textSize="12dp"/>
-
-        <TextView
-            android:id="@+id/summary_destination_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/um_highlight_blue"
-            android:text="UM - 3324 Malibu Canyon Rd. Malibu, CA"
-            android:textSize="12dp"/>
-
-    </LinearLayout>
+    <include layout="@layout/toolbar_basic"/>
 
     <RelativeLayout
+        android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="@dimen/sliding_view_top_margin"
-        android:elevation="2dp"
-        android:background="@android:color/transparent"
-        tools:ignore="UnusedAttribute">
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/summary_background_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/triangles_large"
+            android:scaleType="center"/>
+
+        <LinearLayout
+            android:id="@+id/summary_locations_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/summary_pick_up_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/um_green"
+                android:text="Pepperdine University"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/summary_destination_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/um_highlight_blue"
+                android:text="UM - 3324 Malibu Canyon Rd. Malibu, CA"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="28dp"
-            android:background="@color/transparent_um_grey">
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/sliding_view_top_margin"
+            android:elevation="2dp"
+            android:background="@android:color/transparent"
+            tools:ignore="UnusedAttribute">
 
-            <LinearLayout
-                android:id="@+id/summary_top_button_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/summary_person_image"
-                android:layout_marginTop="28dp"
-                android:weightSum="2">
-
-                <Button
-                    android:id="@+id/summary_contact_button"
-                    android:layout_width="0dp"
-                    android:layout_height="24dp"
-                    android:layout_weight="1"
-                    android:text="Contact"
-                    android:textColor="@color/um_grey_blue"
-                    android:background="?android:attr/selectableItemBackground"/>
-
-                <Button
-                    android:id="@+id/summary_status_button"
-                    android:layout_width="0dp"
-                    android:layout_height="24dp"
-                    android:layout_weight="1"
-                    android:text="Cancel"
-                    android:textColor="@color/red"
-                    android:background="?android:attr/selectableItemBackground"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/summary_name_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:textColor="@color/black"
-                android:layout_marginBottom="12dp"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/summary_top_button_layout"/>
-
-            <View
-                android:id="@+id/breakline"
-                android:layout_below="@+id/summary_name_view"
-                android:layout_height="1dp"
-                android:layout_width="match_parent"
-                android:background="@color/black"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"/>
-
-            <TextView
-                android:id="@+id/summary_pick_up_label"
-                android:layout_below="@+id/breakline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Pick Up Time"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="8dp"/>
-
-            <TextView
-                android:id="@+id/summary_pick_up_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Test Text"
-                android:layout_alignParentRight="true"
-                android:layout_alignBaseline="@+id/summary_pick_up_label"
-                android:layout_marginRight="8dp"/>
-
-            <TextView
-                android:id="@+id/summary_distance_label"
-                android:layout_below="@+id/summary_pick_up_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Distance"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="8dp"/>
-
-            <TextView
-                android:id="@+id/summary_distance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Miles"
-                android:layout_alignParentRight="true"
-                android:layout_alignBaseline="@+id/summary_distance_label"
-                android:layout_marginRight="8dp"/>
-
-            <TextView
-                android:id="@+id/summary_time_label"
-                android:layout_below="@+id/summary_distance_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Length"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="8dp"/>
-
-            <TextView
-                android:id="@+id/summary_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="- min"
-                android:layout_alignParentRight="true"
-                android:layout_alignBaseline="@+id/summary_time_label"
-                android:layout_marginRight="8dp"/>
-
-            <TextView
-                android:id="@+id/summary_status_label"
-                android:layout_below="@+id/summary_time_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Status"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="8dp"/>
-
-            <TextView
-                android:id="@+id/summary_status"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Test Text"
-                android:layout_alignParentRight="true"
-                android:layout_alignBaseline="@+id/summary_status_label"
-                android:layout_marginRight="8dp"/>
-
-            <TextView
-                android:id="@+id/summary_cost_view"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/summary_status_label"
-                android:layout_above="@+id/summary_gas_button_layout"
-                android:text="$0.00"
-                android:textColor="@color/black"
-                android:textSize="48dp"
-                android:gravity="center"/>
+                android:layout_marginTop="28dp"
+                android:background="@color/transparent_um_grey">
 
-            <LinearLayout
-                android:id="@+id/summary_gas_button_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:weightSum="6"
-                android:layout_alignParentBottom="true">
-
-                <Button
-                    android:id="@+id/summary_minus_button"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:id="@+id/summary_top_button_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/um_green"
-                    android:text="@string/minus"/>
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/summary_person_image"
+                    android:layout_marginTop="28dp"
+                    android:weightSum="2">
 
-                <Button
-                    android:id="@+id/summary_split_gas_button"
-                    android:layout_width="0dp"
+                    <Button
+                        android:id="@+id/summary_contact_button"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        android:text="Contact"
+                        android:textColor="@color/um_grey_blue"
+                        android:background="?android:attr/selectableItemBackground"/>
+
+                    <Button
+                        android:id="@+id/summary_status_button"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        android:text="Cancel"
+                        android:textColor="@color/red"
+                        android:background="?android:attr/selectableItemBackground"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/summary_name_view"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:background="@color/um_grey"
-                    android:text="@string/split_gas_number_ways"/>
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/summary_top_button_layout"/>
 
-                <Button
-                    android:id="@+id/summary_plus_button"
-                    android:layout_width="0dp"
+                <View
+                    android:id="@+id/breakline"
+                    android:layout_below="@+id/summary_name_view"
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/black"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/summary_pick_up_label"
+                    android:layout_below="@+id/breakline"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/um_green"
-                    android:text="@string/plus"/>
+                    android:layout_marginTop="8dp"
+                    android:text="Pick Up Time"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"/>
 
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/summary_pick_up_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBaseline="@+id/summary_pick_up_label"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/summary_distance_label"
+                    android:layout_below="@+id/summary_pick_up_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Distance"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/summary_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miles"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBaseline="@+id/summary_distance_label"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/summary_time_label"
+                    android:layout_below="@+id/summary_distance_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Length"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/summary_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- min"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBaseline="@+id/summary_time_label"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/summary_status_label"
+                    android:layout_below="@+id/summary_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Status"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/summary_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBaseline="@+id/summary_status_label"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/summary_cost_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/summary_status_label"
+                    android:layout_above="@+id/summary_gas_button_layout"
+                    android:text="$0.00"
+                    android:textColor="@color/black"
+                    android:textSize="48dp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/summary_gas_button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:layout_alignParentBottom="true">
+
+                    <Button
+                        android:id="@+id/summary_minus_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/um_green"
+                        android:text="@string/minus"/>
+
+                    <Button
+                        android:id="@+id/summary_split_gas_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@color/um_grey"
+                        android:text="@string/split_gas_number_ways"/>
+
+                    <Button
+                        android:id="@+id/summary_plus_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/um_green"
+                        android:text="@string/plus"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/summary_person_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@color/grey"/>
 
         </RelativeLayout>
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/summary_person_image"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:src="@color/grey"/>
-
     </RelativeLayout>
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
