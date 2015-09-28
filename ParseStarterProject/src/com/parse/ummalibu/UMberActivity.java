@@ -76,7 +76,7 @@ public class UMberActivity extends ToolbarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_umber);
 
-        if(getSupportActionBar() != null)
+        if (getSupportActionBar() != null)
             getSupportActionBar().setTitle("UMBER");
 
         mPickUpLocationName = (EditText) findViewById(R.id.search_pickup_location);
@@ -108,8 +108,8 @@ public class UMberActivity extends ToolbarActivity {
             }
         });
 
-        Button requstRideButton = (Button) findViewById(R.id.umber_button);
-        requstRideButton.setOnClickListener(new View.OnClickListener() {
+        Button requestRideButton = (Button) findViewById(R.id.umber_button);
+        requestRideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 makeUmberRequest();
@@ -164,7 +164,7 @@ public class UMberActivity extends ToolbarActivity {
                     }
                 }
 
-                if(!mKeepUpdating)
+                if (!mKeepUpdating)
                     mIsUpdating = false;
             }
         }).start();
@@ -257,34 +257,39 @@ public class UMberActivity extends ToolbarActivity {
             }
 
             @Override
-            public void onStatusChanged(String provider, int status, Bundle extras) { }
+            public void onStatusChanged(String provider, int status, Bundle extras) {
+            }
 
             @Override
-            public void onProviderEnabled(String provider) { }
+            public void onProviderEnabled(String provider) {
+            }
 
             @Override
-            public void onProviderDisabled(String provider) { }
+            public void onProviderDisabled(String provider) {
+            }
         };
 
 
         String bestProvider = mLocationManager.getBestProvider(criteria, false);
-        // Request location updates
-        mLocationManager.requestLocationUpdates(bestProvider, minTime, minDistance, mLocationListener);
+        try {
+            mLocationManager.requestLocationUpdates(bestProvider, minTime, minDistance, mLocationListener);
+        } catch (SecurityException e) {
+            // do something
+        }
 
-        if(mMarker == null) {
+        if (mMarker == null) {
             mMarker = mMap.addMarker(new MarkerOptions().position(new LatLng(34.04063163, -118.69598329)));
             mMarker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.ic_launcher));
         }
 
-        if(!mIsUpdating)
+        if (!mIsUpdating)
             startUpdating();
 
     }
 
 
-
     private void updateMapCameraOnce(Location location) {
-        if(!mHasHappened) {
+        if (!mHasHappened) {
             updateMapCamera(location);
             mHasHappened = true;
         }
@@ -324,7 +329,7 @@ public class UMberActivity extends ToolbarActivity {
     }
 
     private void drawPinAndMoveCamera(final LatLng location, final Marker marker, boolean moveCamera, final Integer iconResource) {
-        if(moveCamera) {
+        if (moveCamera) {
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location, 15), 2800, new GoogleMap.CancelableCallback() {
                 @Override
                 public void onFinish() {
@@ -345,14 +350,19 @@ public class UMberActivity extends ToolbarActivity {
     private void drawPin(LatLng location, Marker marker, Integer iconResource) {
         marker = mMap.addMarker(new MarkerOptions().position(location));
 
-        if(iconResource != null && iconResource > 0)
+        if (iconResource != null && iconResource > 0)
             marker.setIcon(BitmapDescriptorFactory.fromResource(iconResource));
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mLocationManager.removeUpdates(mLocationListener);
+        try {
+            mLocationManager.removeUpdates(mLocationListener);
+        } catch (SecurityException e) {
+            // something
+        }
+
         mKeepUpdating = false;
 //        mExecutor.shutdownNow();
     }
@@ -516,42 +526,5 @@ public class UMberActivity extends ToolbarActivity {
         }
 
     }
-
-//    private void setUpSnackBar() {
-//        Snackbar snackbar = Snackbar
-//                .make(mRoot, "Had a snack at Snackbar", Snackbar.LENGTH_LONG)
-//                .setAction("Ok", new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        Log.d("Snack bar clicked", "should dismiss now");
-//                    }
-//                });
-//    }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.menu_home_screen, menu);
-//        return super.onCreateOptionsMenu(menu);
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int id = item.getItemId();
-//        Intent intent = null;
-//
-//        switch (id) {
-//            case R.id.hsa_notifications :
-//                intent = new Intent(this, UmberRequestsActivity.class);
-//                break;
-//
-//            default:
-//                break;
-//        }
-//
-//        if(intent != null)
-//            startActivity(intent);
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 }
 

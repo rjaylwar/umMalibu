@@ -57,6 +57,7 @@ public class RideShareActivity extends ToolbarActivity {
         });
 
         mTabLayout = (TabLayout) findViewById(R.id.tabs);
+        mTabLayout.addTab(mTabLayout.newTab().setText("Map"));
         mTabLayout.addTab(mTabLayout.newTab().setText("Requests"));
         mTabLayout.addTab(mTabLayout.newTab().setText("History"));
         mTabLayout.setTabMode(TabLayout.MODE_FIXED);
@@ -65,6 +66,7 @@ public class RideShareActivity extends ToolbarActivity {
         UmberPagerAdapter adapter = new UmberPagerAdapter(getSupportFragmentManager(), mTabLayout.getTabCount());
 
         mViewPager.setAdapter(adapter);
+        mViewPager.setOffscreenPageLimit(3);
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
         mTabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

@@ -30,10 +30,10 @@ public class UmberRequestDeserializer implements JsonDeserializer<UmberRequest> 
 
         try {
             Date date = simpleDateFormat.parse(jsonElement.getAsJsonObject().getAsJsonPrimitive(FieldNames.CREATED_AT).getAsString().replace("Z", "+00:00"));
-            umberRequest.setCreatedAt(date);
+            umberRequest.setCreatedAt(date.getTime());
 
-            Date eta = new Date(jsonElement.getAsJsonObject().getAsJsonPrimitive(FieldNames.ETA).getAsLong()*1000);
-            umberRequest.setEta(eta.getTime());
+            long eta = jsonElement.getAsJsonObject().getAsJsonPrimitive(FieldNames.ETA).getAsLong()*1000;
+            umberRequest.setEta(eta);
         } catch (ParseException e) {
             e.printStackTrace();
         }

@@ -274,7 +274,7 @@ public class DatabaseHelper {
             if(cursor.moveToFirst()) {
                 do {
                     UmberRequest request = new UmberRequest();
-                    request.setCreatedAt(new Date(cursor.getLong(cursor.getColumnIndexOrThrow(Table.Requests.CREATED_AT))));
+                    request.setCreatedAt(cursor.getLong(cursor.getColumnIndexOrThrow(Table.Requests.CREATED_AT)));
                     request.setObjectId(cursor.getString(cursor.getColumnIndexOrThrow(Table.Requests.OBJECT_ID)));
                     request.setName(cursor.getString(cursor.getColumnIndexOrThrow(Table.Requests.NAME)));
                     request.setEmail(cursor.getString(cursor.getColumnIndexOrThrow(Table.Requests.EMAIL)));

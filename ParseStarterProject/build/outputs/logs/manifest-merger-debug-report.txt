@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:1-228:12
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:1-229:12
 	xmlns:android
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:11-69
 	package
@@ -229,7 +229,7 @@ MERGED from [com.google.android.gms:play-services-maps:7.5.0] /Users/rjaylward/G
 	android:glEsVersion
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:50:9-41
 application
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:53:5-226:19
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:53:5-227:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
@@ -576,23 +576,25 @@ ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.
 	android:name
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:208:13-63
 activity#com.parse.ummalibu.RideShareActivity
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:214:9-220:20
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:214:9-221:20
+	android:windowSoftInputMode
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:216:13-54
 	android:parentActivityName
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:216:13-73
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:217:13-73
 	android:name
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:215:13-64
 activity#com.parse.ummalibu.TripSummaryActivity
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:221:9-74
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:222:9-74
 	android:name
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:221:19-72
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:222:19-72
 provider#com.parse.ummalibu.database.DatabaseProvider
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:222:9-225:76
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:223:9-226:76
 	android:exported
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:224:13-37
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:225:13-37
 	android:authorities
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:225:13-73
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:226:13-73
 	android:name
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:223:13-54
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:224:13-54
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads:7.5.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:26:9-29:64
 	android:configChanges

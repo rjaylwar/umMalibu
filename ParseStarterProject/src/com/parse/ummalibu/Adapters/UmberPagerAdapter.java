@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.parse.ummalibu.fragments.MyRequestsFragment;
 import com.parse.ummalibu.fragments.RequestListFragment;
+import com.parse.ummalibu.fragments.UmberMapFragment;
 
 import java.util.ArrayList;
 
@@ -28,9 +29,12 @@ public class UmberPagerAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                fragment = new RequestListFragment();
+                fragment = new UmberMapFragment();
                 break;
             case 1:
+                fragment = new RequestListFragment();
+                break;
+            case 2:
                 fragment = new MyRequestsFragment();
                 break;
             default:

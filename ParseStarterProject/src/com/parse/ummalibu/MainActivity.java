@@ -32,7 +32,6 @@ public class MainActivity extends ToolbarActivity {
     private Intent coffeeIntent;
     private Intent umslIntent;
     private Intent umberIntent;
-    private Context context = this;
 
     @Bind(R.id.drawer_layout) DrawerLayout mDrawerLayout;
     @Bind(R.id.navigation_view) NavigationView mNavigationView;
@@ -128,9 +127,9 @@ public class MainActivity extends ToolbarActivity {
             public void onClick(View arg0) {
 
                 // get prompts.xml view
-                LayoutInflater layoutInflater = LayoutInflater.from(context);
+                LayoutInflater layoutInflater = LayoutInflater.from(MainActivity.this);
                 View promptView = layoutInflater.inflate(R.layout.password_prompt, null);
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
                 // set prompts.xml to be the layout file of the alertdialog builder
                 alertDialogBuilder.setView(promptView);
                 final EditText passwordEditText = (EditText) promptView.findViewById(R.id.password_editText);

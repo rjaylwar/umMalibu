@@ -3,6 +3,8 @@ package com.parse.ummalibu.objects;
 import android.content.ContentValues;
 import android.content.Context;
 import android.net.Uri;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 import com.parse.ummalibu.database.ApiResponse;
@@ -15,7 +17,9 @@ import java.util.Date;
 /**
  * Created by rjaylward on 9/22/15.
  */
-public class UmberRequest implements ApiResponse {
+public class UmberRequest implements ApiResponse, Parcelable {
+
+    public UmberRequest() {}
 
     @SerializedName(FieldNames.OBJECT_ID)
     private String mObjectId = "";
@@ -86,7 +90,7 @@ public class UmberRequest implements ApiResponse {
     @SerializedName(FieldNames.CANCELED)
     private boolean mCanceled;
 
-    private Date mCreatedAt;
+    private long mCreatedAt;
 
     public String getName() {
         return mName;
@@ -185,10 +189,10 @@ public class UmberRequest implements ApiResponse {
     }
 
     public Date getCreatedAt() {
-        return mCreatedAt;
+        return new Date(mCreatedAt);
     }
 
-    public void setCreatedAt(Date date) {
+    public void setCreatedAt(long date) {
         mCreatedAt = date;
     }
     public boolean isPickedUp() {
@@ -323,7 +327,7 @@ public class UmberRequest implements ApiResponse {
         values.put(Table.Requests.IS_COMPLETE, mComplete ? 1 : 0);
         values.put(Table.Requests.CANCELED, mCanceled ? 1 : 0);
 
-        values.put(Table.Requests.CREATED_AT, mCreatedAt == null ? 0 : mCreatedAt.getTime());
+        values.put(Table.Requests.CREATED_AT, mCreatedAt);
 
         return values;
     }
@@ -333,4 +337,77 @@ public class UmberRequest implements ApiResponse {
         DatabaseHelper helper = new DatabaseHelper(context);
         helper.addRequest(this);
     }
+
+    public UmberRequest(Parcel in) {
+        mObjectId = in.readString();
+        mEmail = in.readString();
+        mDriverEmail = in.readString();
+        mName = in.readString();
+        mRiderImageUrl = in.readString();
+        mLatitude = in.readDouble();
+        mLongitude = in.readDouble();
+        mPickUpLocation = in.readString();
+        mPickupLat = in.readDouble();
+        mPickupLong = in.readDouble();
+        mDestination = in.readString();
+        mDestinationLat = in.readDouble();
+        mDestinationLong = in.readDouble();
+        mPhoneNumber = in.readString();
+        mDriverLat = in.readDouble();
+        mDriverLon = in.readDouble();
+        mEta = in.readLong();
+        mPath = in.readString();
+        mClaimed = in.readByte() != 0x00;
+        mStarted = in.readByte() != 0x00;
+        mIsPickedUp = in.readByte() != 0x00;
+        mComplete = in.readByte() != 0x00;
+        mCanceled = in.readByte() != 0x00;
+        mCreatedAt = in.readLong();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(mObjectId);
+        dest.writeString(mEmail);
+        dest.writeString(mDriverEmail);
+        dest.writeString(mName);
+        dest.writeString(mRiderImageUrl);
+        dest.writeDouble(mLatitude);
+        dest.writeDouble(mLongitude);
+        dest.writeString(mPickUpLocation);
+        dest.writeDouble(mPickupLat);
+        dest.writeDouble(mPickupLong);
+        dest.writeString(mDestination);
+        dest.writeDouble(mDestinationLat);
+        dest.writeDouble(mDestinationLong);
+        dest.writeString(mPhoneNumber);
+        dest.writeDouble(mDriverLat);
+        dest.writeDouble(mDriverLon);
+        dest.writeLong(mEta);
+        dest.writeString(mPath);
+        dest.writeByte((byte) (mClaimed ? 0x01 : 0x00));
+        dest.writeByte((byte) (mStarted ? 0x01 : 0x00));
+        dest.writeByte((byte) (mIsPickedUp ? 0x01 : 0x00));
+        dest.writeByte((byte) (mComplete ? 0x01 : 0x00));
+        dest.writeByte((byte) (mCanceled ? 0x01 : 0x00));
+        dest.writeLong(mCreatedAt);
+    }
+
+    @SuppressWarnings("unused")
+    public static final Parcelable.Creator<UmberRequest> CREATOR = new Parcelable.Creator<UmberRequest>() {
+        @Override
+        public UmberRequest createFromParcel(Parcel in) {
+            return new UmberRequest(in);
+        }
+
+        @Override
+        public UmberRequest[] newArray(int size) {
+            return new UmberRequest[size];
+        }
+    };
 }
