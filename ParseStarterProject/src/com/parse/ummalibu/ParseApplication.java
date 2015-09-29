@@ -19,6 +19,7 @@ public class ParseApplication extends Application {
 
         Preferences.initialize(getApplicationContext());
         Preferences.getInstance().setEmail("richard.j.aylward@gmail.com");
+        Preferences.getInstance().setMpg(20);
 
         // Initialize Crash Reporting.
         ParseCrashReporting.enable(this);

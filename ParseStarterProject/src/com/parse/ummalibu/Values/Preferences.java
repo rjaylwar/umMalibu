@@ -38,4 +38,12 @@ public class Preferences extends AbsPreferences{
     public void setEmail(String email) {
         setPref(FieldNames.EMAIL, email);
     }
+
+    public int getMpg() {
+        return getIntPref(FieldNames.ETA);
+    }
+
+    public void setMpg(int eta) {
+        setPref(FieldNames.ETA, eta);
+    }
 }

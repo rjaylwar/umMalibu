@@ -33,7 +33,6 @@ public class RideShareActivity extends ToolbarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ride_share);
         ButterKnife.bind(this);
 
         mNavigationView.setBackgroundColor(getResources().getColor(R.color.um_dark_blue));
@@ -84,6 +83,11 @@ public class RideShareActivity extends ToolbarActivity {
 
             }
         });
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_ride_share;
     }
 
 }

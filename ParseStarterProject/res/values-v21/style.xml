@@ -6,13 +6,12 @@
         <item name="android:windowContentTransitions">true</item>
         <item name="android:colorPrimary">@color/um_dark_blue</item>
         <item name="android:colorPrimaryDark">@color/um_grey_blue</item>
-        <item name="android:colorAccent">#ff07e2ff</item>
+        <item name="android:colorAccent">@color/um_highlight_blue</item>
 
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
     <style name="AppTheme.NoStatusBar">
-        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
 </resources>

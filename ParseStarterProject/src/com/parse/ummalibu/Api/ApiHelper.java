@@ -5,7 +5,9 @@ import android.util.Log;
 
 import com.google.gson.JsonObject;
 import com.parse.ummalibu.objects.UmberRequest;
+import com.parse.ummalibu.responses.DriverResponse;
 import com.parse.ummalibu.responses.EventsResponse;
+import com.parse.ummalibu.responses.MapsResponse;
 import com.parse.ummalibu.responses.NotificationsResponse;
 import com.parse.ummalibu.responses.TalksResponse;
 import com.parse.ummalibu.responses.UmLocationsResponse;
@@ -23,6 +25,7 @@ public class ApiHelper {
 
     AppCompatActivity mActivity;
     String PARSE_API_URL = "https://api.parse.com/1/classes";
+    String GOOGLE_MAPS_DIRECTIONS_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%f,%f&destination=%f,%f&key=AIzaSyC8l_H5c5SxRYFwGsiV85kFJ9mgeprPkxA";
 
     public ApiHelper(AppCompatActivity activity) {
         mActivity = activity;
@@ -159,6 +162,23 @@ public class ApiHelper {
 
         StringObjectVolleyRequester volleyRequester = new StringObjectVolleyRequester(mActivity);
         volleyRequester.makePostRequest(mActivity, url, requestParams, uiListener);
+    }
+
+    public void getDriver(String email, VolleyRequestListener<DriverResponse> uiListener) {
+        String url = PARSE_API_URL + "/drivers?where={\"email\":\"" + email + "\"}";
+        Log.d("get driver", url);
+
+        GsonVolleyRequester<DriverResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, DriverResponse.class);
+        volleyRequester.makeGetRequest(mActivity, url, uiListener);
+    }
+
+    public void getGoogleMapsData(UmberRequest request, VolleyRequestListener<MapsResponse> uiListener) {
+        String url = String.format(GOOGLE_MAPS_DIRECTIONS_URL, request.getPickupLat(), request.getPickupLong(),
+                request.getDestinationLat(), request.getDestinationLong());
+        Log.d("making maps request", url);
+
+        GsonVolleyRequester<MapsResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, MapsResponse.class);
+        volleyRequester.makeGetRequest(mActivity, url, uiListener);
     }
 }
 

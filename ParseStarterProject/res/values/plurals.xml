@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="split_gas_number_ways">
+        <item quantity="one">Split Gas %s Way</item>
+        <item quantity="other">Split Gas %s Ways</item>
+    </plurals>
+
+</resources>

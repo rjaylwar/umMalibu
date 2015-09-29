@@ -19,11 +19,15 @@ public class CoffeeActivity extends ToolbarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coffee);
 
         TextView textView = (TextView) findViewById(R.id.steve_bio_text);
 
         addListenerOnButton();
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_coffee;
     }
 
 

@@ -74,7 +74,6 @@ public class UMberActivity extends ToolbarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_umber);
 
         if (getSupportActionBar() != null)
             getSupportActionBar().setTitle("UMBER");
@@ -120,6 +119,11 @@ public class UMberActivity extends ToolbarActivity {
 
         setUpMapIfNeeded();
 
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_umber;
     }
 
     private void makeApiRequest() {
@@ -279,7 +283,7 @@ public class UMberActivity extends ToolbarActivity {
 
         if (mMarker == null) {
             mMarker = mMap.addMarker(new MarkerOptions().position(new LatLng(34.04063163, -118.69598329)));
-            mMarker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.ic_launcher));
+            mMarker.setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher));
         }
 
         if (!mIsUpdating)

@@ -20,7 +20,6 @@ public class ParseStarterProjectActivity extends ToolbarActivity implements View
     public void onCreate(Bundle savedInstanceState) {
         //setTheme(android.R.style.Theme_Holo);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
 
         // Initialize main ParseQueryAdapter
         mainAdapter = new ParseQueryAdapter<ParseObject>(this, "sermon");
@@ -40,6 +39,11 @@ public class ParseStarterProjectActivity extends ToolbarActivity implements View
 
         // 5. Set this activity to react to list items being pressed
         listView.setOnItemClickListener(this);
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.main;
     }
 
     @Override

@@ -244,7 +244,7 @@ public class UmberRequest implements ApiResponse, Parcelable {
     }
 
     public String getEmail() {
-        return mEmail;
+        return mEmail.toLowerCase();
     }
 
     public void setEmail(String email) {
@@ -252,7 +252,7 @@ public class UmberRequest implements ApiResponse, Parcelable {
     }
 
     public String getDriverEmail() {
-        return mDriverEmail;
+        return mDriverEmail.toLowerCase();
     }
 
     public void setDriverEmail(String driverEmail) {

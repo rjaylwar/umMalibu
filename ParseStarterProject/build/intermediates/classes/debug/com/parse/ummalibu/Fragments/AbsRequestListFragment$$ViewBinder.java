@@ -8,14 +8,14 @@ import butterknife.ButterKnife.ViewBinder;
 public class AbsRequestListFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.AbsRequestListFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131624127, "field 'mRecyclerView'");
-    target.mRecyclerView = finder.castView(view, 2131624127, "field 'mRecyclerView'");
-    view = finder.findRequiredView(source, 2131624126, "field 'mSwipeRefreshLayout'");
-    target.mSwipeRefreshLayout = finder.castView(view, 2131624126, "field 'mSwipeRefreshLayout'");
-    view = finder.findRequiredView(source, 2131624128, "field 'mEmptyListView'");
-    target.mEmptyListView = finder.castView(view, 2131624128, "field 'mEmptyListView'");
-    view = finder.findRequiredView(source, 2131624129, "field 'mProgressBar'");
-    target.mProgressBar = finder.castView(view, 2131624129, "field 'mProgressBar'");
+    view = finder.findRequiredView(source, 2131689663, "field 'mRecyclerView'");
+    target.mRecyclerView = finder.castView(view, 2131689663, "field 'mRecyclerView'");
+    view = finder.findRequiredView(source, 2131689662, "field 'mSwipeRefreshLayout'");
+    target.mSwipeRefreshLayout = finder.castView(view, 2131689662, "field 'mSwipeRefreshLayout'");
+    view = finder.findRequiredView(source, 2131689664, "field 'mEmptyListView'");
+    target.mEmptyListView = finder.castView(view, 2131689664, "field 'mEmptyListView'");
+    view = finder.findRequiredView(source, 2131689665, "field 'mProgressBar'");
+    target.mProgressBar = finder.castView(view, 2131689665, "field 'mProgressBar'");
   }
 
   @Override public void unbind(T target) {

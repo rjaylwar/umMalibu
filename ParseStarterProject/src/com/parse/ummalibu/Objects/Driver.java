@@ -1,9 +1,12 @@
 package com.parse.ummalibu.objects;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.net.Uri;
 
 import com.google.gson.annotations.SerializedName;
+import com.parse.ummalibu.database.ApiResponse;
+import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.database.Table;
 import com.parse.ummalibu.values.FieldNames;
 
@@ -12,7 +15,7 @@ import java.util.Date;
 /**
  * Created by rjaylward on 9/22/15.
  */
-public class Driver {
+public class Driver implements ApiResponse {
 
     @SerializedName(FieldNames.OBJECT_ID)
     private String mObjectId = "";
@@ -70,7 +73,7 @@ public class Driver {
     }
 
     public String getEmail() {
-        return mEmail;
+        return mEmail.toLowerCase();
     }
 
     public void setEmail(String email) {
@@ -118,5 +121,11 @@ public class Driver {
 
         values.put(Table.Drivers.CREATED_AT, mCreatedAt.getTime());
         return values;
+    }
+
+    @Override
+    public void saveResponse(Context context) {
+        DatabaseHelper helper = new DatabaseHelper(context);
+        helper.addDriver(this);
     }
 }

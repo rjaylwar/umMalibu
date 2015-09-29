@@ -329,7 +329,7 @@ MERGED from [de.hdodenhof:circleimageview:2.0.0] /Users/rjaylward/Google Drive/A
 	android:allowBackup
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:55:9-35
 	android:icon
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:57:9-45
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:57:9-43
 	android:theme
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:59:9-44
 	android:hardwareAccelerated
@@ -485,9 +485,9 @@ ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.
 	android:name
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:153:25-66
 meta-data#com.parse.push.notification_icon
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:157:9-159:56
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:157:9-159:54
 	android:resource
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:159:13-53
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:159:13-51
 	android:name
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:158:13-60
 meta-data#com.google.android.gms.version

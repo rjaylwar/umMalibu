@@ -43,7 +43,6 @@ public class MainActivity extends ToolbarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
         mNavigationView.setBackgroundColor(getResources().getColor(R.color.um_dark_blue));
@@ -75,6 +74,11 @@ public class MainActivity extends ToolbarActivity {
         aboutUMIntent = new Intent(this, AboutUMActivity.class);
         umslIntent = new Intent(this, UmslMenuActivity.class);
         umberIntent = new Intent(this, UMberActivity.class);
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_main;
     }
 
     public void addListenerOnButton() {

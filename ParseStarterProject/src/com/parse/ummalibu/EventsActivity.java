@@ -22,7 +22,6 @@ public class EventsActivity extends ToolbarActivity implements View.OnClickListe
     public void onCreate(Bundle savedInstanceState) {
         //setTheme(android.R.style.Theme_Holo);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
 
         // Initialize the subclass of ParseQueryAdapter
         alternateListAdapter = new EventsAdapter(this);
@@ -35,6 +34,11 @@ public class EventsActivity extends ToolbarActivity implements View.OnClickListe
 
         // 5. Set this activity to react to list items being pressed
         listView.setOnItemClickListener(this);
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.main;
     }
 
     @Override

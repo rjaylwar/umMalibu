@@ -20,7 +20,6 @@ public class PrayerActivity extends ToolbarActivity implements View.OnClickListe
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prayer);
 
         // Initialize the subclass of ParseQueryAdapter
         alternateListAdapter = new PrayerAdapter(this);
@@ -32,6 +31,11 @@ public class PrayerActivity extends ToolbarActivity implements View.OnClickListe
 
         // 5. Set this activity to react to list items being pressed
         listView.setOnItemClickListener(this);
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_prayer;
     }
 
 

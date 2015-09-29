@@ -25,7 +25,6 @@ public class EventsDetailActivity extends ToolbarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_events_detail);
 
         Intent i = getIntent();
         linkUrl = i.getStringExtra("linkUrl");
@@ -73,6 +72,11 @@ public class EventsDetailActivity extends ToolbarActivity {
         });
 
         addListenerOnButton();
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_events_detail;
     }
 
     @Override

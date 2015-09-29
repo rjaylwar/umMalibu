@@ -33,7 +33,6 @@ public class UmslMenuActivity extends ToolbarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_umsl_menu);
 
         channelTextBox = (EditText) findViewById(R.id.channel_edittext);
         expirationTextBox = (EditText) findViewById(R.id.expiration_edittext);
@@ -44,6 +43,11 @@ public class UmslMenuActivity extends ToolbarActivity {
         addListenerOnButton();
         addListenerOnChk();
 
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_umsl_menu;
     }
 
     public void addListenerOnChk() {

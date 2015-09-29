@@ -81,4 +81,7 @@ public class FieldNames {
     // pick up spots
     public static final String ADDRESS = "address";
     public static final String TYPE = "type";
+
+    //Intent Item Field Names
+    public static final String UMBER_REQUEST = "umber_request";
 }

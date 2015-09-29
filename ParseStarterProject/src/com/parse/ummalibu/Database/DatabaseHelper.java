@@ -200,7 +200,7 @@ public class DatabaseHelper {
 
         ArrayList<UmLocation> locations = new ArrayList<>();
         // Select All Query
-        String selectQuery = "SELECT  * FROM " + Table.UmLocations.TABLE_NAME + " ORDER BY " + Table.UmLocations.NAME + " DESC";
+        String selectQuery = "SELECT  * FROM " + Table.UmLocations.TABLE_NAME + " ORDER BY \'" + Table.UmLocations.NAME + "\' DESC";
 
         SQLiteDatabase db = mOpenDatabaseHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
@@ -262,6 +262,31 @@ public class DatabaseHelper {
         return drivers;
     }
 
+    public synchronized Driver getDriver(String email) {
+        String selectQuery = "SELECT * FROM " + Table.Drivers.TABLE_NAME + " WHERE " + Table.Drivers.EMAIL + " = \'" + email + "\'";
+        SQLiteDatabase db = mOpenDatabaseHelper.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        try {
+            if(cursor.moveToFirst()) {
+                Driver driver = new Driver();
+                driver.setCreatedAt(new Date(cursor.getLong(cursor.getColumnIndexOrThrow(Table.Drivers.CREATED_AT))));
+                driver.setObjectId(cursor.getString(cursor.getColumnIndexOrThrow(Table.Drivers.OBJECT_ID)));
+                driver.setName(cursor.getString(cursor.getColumnIndexOrThrow(Table.Drivers.NAME)));
+                driver.setEmail(cursor.getString(cursor.getColumnIndexOrThrow(Table.Drivers.EMAIL)));
+                driver.setImageUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.Drivers.IMAGE_URL)));
+                driver.setCarDescription(cursor.getString(cursor.getColumnIndexOrThrow(Table.Drivers.CAR_DESCRIPTION)));
+                driver.setMpg(cursor.getInt(cursor.getColumnIndexOrThrow(Table.Drivers.MPG)));
+                driver.setPhoneNumber(cursor.getString(cursor.getColumnIndexOrThrow(Table.Drivers.PHONE_NUMBER)));
+
+                return driver;
+            } else
+                return null;
+        } finally {
+            cursor.close();
+        }
+    }
+
     public synchronized ArrayList<UmberRequest> getRequests() {
         ArrayList<UmberRequest> requests = new ArrayList<>();
         // Select All Query
@@ -319,6 +344,10 @@ public class DatabaseHelper {
         mContentResolver.insert(Table.Requests.CONTENT_URI, request.toContentValues());
     }
 
+    public synchronized void addDriver(Driver driver) {
+        mContentResolver.insert(Table.Drivers.CONTENT_URI, driver.toContentValues());
+    }
+
     public synchronized void addRequests(ArrayList<UmberRequest> requests) {
         ArrayList<ContentValues> values = new ArrayList<>();
 
@@ -327,6 +356,16 @@ public class DatabaseHelper {
         }
 
         mContentResolver.bulkInsert(Table.Requests.CONTENT_URI, values.toArray(new ContentValues[requests.size()]));
+    }
+
+    public synchronized void addDrivers(ArrayList<Driver> drivers) {
+        ArrayList<ContentValues> values = new ArrayList<>();
+
+        for(Driver driver : drivers) {
+            values.add(driver.toContentValues());
+        }
+
+        mContentResolver.bulkInsert(Table.Drivers.CONTENT_URI, values.toArray(new ContentValues[drivers.size()]));
     }
 
 }

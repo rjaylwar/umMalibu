@@ -22,8 +22,11 @@ public class LocationsActivities extends ToolbarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
 
-        setContentView(R.layout.activity_locations_list);
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_locations_list;
     }
 
     public void getLocations() {
@@ -36,7 +39,7 @@ public class LocationsActivities extends ToolbarActivity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("Get Locations Request Error", error.getMessage());
+                Log.d("Locations Request Error", error.getMessage());
             }
         });
     }

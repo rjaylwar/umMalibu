@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.google.gson.annotations.SerializedName;
 import com.parse.ummalibu.database.ApiResponse;
+import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.values.FieldNames;
 import com.parse.ummalibu.objects.Driver;
 
@@ -19,7 +20,8 @@ public class DriverResponse implements ApiResponse {
 
     @Override
     public void saveResponse(Context context) {
-
+        DatabaseHelper helper = new DatabaseHelper(context);
+        helper.addDriver(mDrivers.get(0));
     }
 
     public ArrayList<Driver> getDrivers() {

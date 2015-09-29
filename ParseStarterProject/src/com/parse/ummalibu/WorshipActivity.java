@@ -35,7 +35,6 @@ public class WorshipActivity extends ToolbarActivity implements View.OnClickList
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_worship);
 
         addListenerOnButton();
 
@@ -78,6 +77,11 @@ public class WorshipActivity extends ToolbarActivity implements View.OnClickList
 
         //String linkUrl = "http://www.youtube.com/embed/WhmdJeHsd6Y?list=PLi1lg8EgWuZREIU5YyX13mistBCRIhtZ2";
         listView.setOnItemClickListener(this);
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_worship;
     }
 
     @Override

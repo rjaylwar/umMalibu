@@ -29,8 +29,6 @@ public class NewPrayerActivity extends ToolbarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_prayer);
-
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         nameText = (EditText) findViewById(R.id.name_edit);
@@ -54,6 +52,11 @@ public class NewPrayerActivity extends ToolbarActivity {
         });
         addListenerOnButton();
 
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_new_prayer;
     }
 
     private void addListenerOnButton() {

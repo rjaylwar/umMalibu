@@ -19,7 +19,6 @@ public class NotificationsListActivity extends ToolbarActivity implements View.O
     public void onCreate(Bundle savedInstanceState) {
         //setTheme(android.R.style.Theme_Holo);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
         //setContentView(R.layout.activity_notifications_list);
 
         // Initialize the subclass of ParseQueryAdapter
@@ -35,6 +34,10 @@ public class NotificationsListActivity extends ToolbarActivity implements View.O
         listView.setOnItemClickListener(this);
     }
 
+    @Override
+    public int getLayoutId() {
+        return R.layout.main;
+    }
 
 
     @Override

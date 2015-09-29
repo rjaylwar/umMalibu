@@ -56,7 +56,8 @@
             android:layout_marginTop="@dimen/sliding_view_top_margin"
             android:elevation="2dp"
             android:background="@android:color/transparent"
-            tools:ignore="UnusedAttribute">
+            tools:ignore="UnusedAttribute"
+            android:id="@+id/summary_sliding_layout">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -248,4 +249,4 @@
         </RelativeLayout>
 
     </RelativeLayout>
-</android.support.design.widget.CoordinatorLayout><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/layout/widget_summary_view.xml -->
+</android.support.design.widget.CoordinatorLayout>

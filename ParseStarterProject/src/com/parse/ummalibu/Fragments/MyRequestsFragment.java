@@ -1,15 +1,14 @@
 package com.parse.ummalibu.fragments;
 
-import android.content.Intent;
 import android.util.Log;
 
 import com.android.volley.VolleyError;
+import com.parse.ummalibu.TripSummaryActivity;
 import com.parse.ummalibu.adapters.RequestListAdapter;
 import com.parse.ummalibu.api.ApiHelper;
 import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.responses.UmberRequestResponse;
-import com.parse.ummalibu.TripSummaryActivity;
 import com.parse.ummalibu.values.Constants;
 import com.parse.ummalibu.values.Preferences;
 import com.parse.ummalibu.volley.VolleyRequestListener;
@@ -21,8 +20,7 @@ public class MyRequestsFragment extends AbsRequestListFragment {
 
     @Override
     protected void onRequestSelected(UmberRequest request) {
-        Intent intent = new Intent(mActivity, TripSummaryActivity.class);
-        startActivity(intent);
+        startActivity(TripSummaryActivity.createIntent(mActivity, request));
     }
 
     @Override
