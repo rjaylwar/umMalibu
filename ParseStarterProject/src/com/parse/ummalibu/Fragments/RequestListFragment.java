@@ -22,12 +22,13 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
+import com.parse.ummalibu.R;
 import com.parse.ummalibu.adapters.RequestListAdapter;
 import com.parse.ummalibu.api.ApiHelper;
+import com.parse.ummalibu.api.NotificationsHelper;
 import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.database.Table;
 import com.parse.ummalibu.objects.UmberRequest;
-import com.parse.ummalibu.R;
 import com.parse.ummalibu.responses.UmberRequestResponse;
 import com.parse.ummalibu.values.Constants;
 import com.parse.ummalibu.values.Preferences;
@@ -42,7 +43,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by rjaylward on 9/25/15.
+ * Created by rjaylward on 9/25/15
  */
 public class RequestListFragment extends Fragment {
 
@@ -53,6 +54,7 @@ public class RequestListFragment extends Fragment {
 
     private RequestListAdapter mAdapter;
     protected AppCompatActivity mActivity;
+    private boolean mCheckingRequest;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -76,7 +78,7 @@ public class RequestListFragment extends Fragment {
         mAdapter = new RequestListAdapter(getActivity(), new RequestListAdapter.OnRequestClickedListener() {
             @Override
             public void onRequestClicked(UmberRequest request) {
-                checkRequestStatus(request);
+                showAlert(request);
             }
         });
         mAdapter.colorRequests(useColors());
@@ -108,45 +110,52 @@ public class RequestListFragment extends Fragment {
     };
 
     private void checkRequestStatus(final UmberRequest request) {
-        ApiHelper helper = new ApiHelper(mActivity);
-        helper.getUmberRequest(request.getObjectId(), new VolleyRequestListener<UmberRequest>() {
-            @Override
-            public void onResponse(UmberRequest response) {
-                if (!request.isClaimed()) {
-                    showAlert(request);
-                } else {
-                    Toast.makeText(mActivity, "Request has already been claimed", Toast.LENGTH_SHORT).show();
-                    request.saveResponse(mActivity);
+        if(!mCheckingRequest) {
+            mCheckingRequest = true;
+            ApiHelper helper = new ApiHelper(mActivity);
+            helper.getUmberRequest(request.getObjectId(), new VolleyRequestListener<UmberRequest>() {
+                @Override
+                public void onResponse(UmberRequest response) {
+                    mCheckingRequest = false;
+                    if (!request.isClaimed()) {
+                        showDatePicker(request);
+                    } else {
+                        Toast.makeText(mActivity, "Request has already been claimed", Toast.LENGTH_SHORT).show();
+                        request.saveResponse(mActivity);
+                    }
                 }
-            }
 
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("Checking Request Error", error.getMessage());
-                Toast.makeText(mActivity, R.string.request_cant_be_claimed, Toast.LENGTH_SHORT).show();
-            }
-        });
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    mCheckingRequest = false;
+                    Log.d("Checking Request Error", error.getMessage());
+                    Toast.makeText(mActivity, R.string.request_cant_be_claimed, Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 
     private void showAlert(final UmberRequest request) {
-        AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
-        alertDialog.setTitle(mActivity.getString(R.string.claim_request));
-        alertDialog.setMessage(String.format(mActivity.getString(R.string.want_to_give_person_ride_to_address), request.getName(), request.getDestination()));
-        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        showDatePicker(request);
-                        dialog.dismiss();
-                    }
-                });
-        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Cancel",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-        alertDialog.show();
+        if(!mCheckingRequest) {
+            AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
+            alertDialog.setTitle(mActivity.getString(R.string.claim_request));
+            alertDialog.setMessage(String.format(mActivity.getString(R.string.want_to_give_person_ride_to_address), request.getName(), request.getDestination()));
+            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            checkRequestStatus(request);
+                            dialog.dismiss();
+                        }
+                    });
+            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Cancel",
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+            alertDialog.show();
+        }
     }
 
     private void showDatePicker(final UmberRequest request) {
@@ -166,6 +175,8 @@ public class RequestListFragment extends Fragment {
 
     private void showTimePicker(final Calendar cal, final UmberRequest request) {
         Calendar today = Calendar.getInstance();
+        today.setTime(request.getEta());
+
         TimePickerDialog timePickerDialog = new TimePickerDialog(mActivity, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
@@ -190,6 +201,7 @@ public class RequestListFragment extends Fragment {
             public void onResponse(Object response) {
                 DatabaseHelper dbHelper = new DatabaseHelper(mActivity);
                 dbHelper.addRequest(request);
+                NotificationsHelper.subscribeAsDriver(request.getObjectId());
             }
 
             @Override

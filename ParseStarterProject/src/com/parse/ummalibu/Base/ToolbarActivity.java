@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.parse.ummalibu.R;
 
@@ -21,7 +22,16 @@ public abstract class ToolbarActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         try {
             setSupportActionBar(toolbar);
+            getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
+            toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha));
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onBackPressed();
+                }
+            });
+
         } catch (NullPointerException e) {
             Log.d("No toolbar here", e.toString());
         }
@@ -40,5 +50,4 @@ public abstract class ToolbarActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

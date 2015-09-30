@@ -74,7 +74,7 @@ public class RequestViewHolder extends RecyclerView.ViewHolder {
         mPickUp.setText(request.getPickUpLocation());
         mDestination.setText(request.getDestination());
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("M/d/yyyy H:mm a", Locale.US);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("M/d/yy h:mm a", Locale.US);
         mTime.setText(dateFormat.format(request.getEta()));
         mName.setText(request.getName());
     }

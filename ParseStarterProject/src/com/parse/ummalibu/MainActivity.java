@@ -165,12 +165,5 @@ public class MainActivity extends ToolbarActivity {
                 //startActivity(umslIntent);
             }
         });
-        ImageButton umberButton = (ImageButton) findViewById(R.id.umberButton);
-        umberButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(umberIntent);
-            }
-        });
     }
 }

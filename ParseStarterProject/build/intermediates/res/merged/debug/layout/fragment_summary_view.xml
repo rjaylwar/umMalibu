@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/triangles_large"
-            android:scaleType="center"/>
+            android:scaleType="fitXY"/>
 
         <LinearLayout
             android:id="@+id/summary_locations_top_layout"

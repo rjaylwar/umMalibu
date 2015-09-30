@@ -79,14 +79,6 @@
                     android:src="@drawable/umslbutton"
                     android:layout_gravity="center"/>
 
-                <ImageButton
-                    android:id="@+id/umberButton"
-                    android:layout_marginBottom="10sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/new_about_um"
-                    android:layout_gravity="center"/>
-
             </LinearLayout>
 
         </ScrollView>

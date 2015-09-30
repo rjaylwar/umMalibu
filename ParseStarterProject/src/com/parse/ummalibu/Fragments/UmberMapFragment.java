@@ -52,7 +52,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by rjaylward on 9/28/15.
+ * Created by rjaylward on 9/28/15
  */
 public class UmberMapFragment extends Fragment {
 
@@ -74,7 +74,7 @@ public class UmberMapFragment extends Fragment {
     private String mDestinationName;
 
     private Handler mHandler;
-    private boolean mKeepUpdating = true;
+    private boolean mKeepUpdating = false;
     private boolean mIsUpdating = false;
 
     private boolean mHasHappened = false;
@@ -181,7 +181,7 @@ public class UmberMapFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        mKeepUpdating = true;
+        mKeepUpdating = false;
         setUpMapIfNeeded();
     }
 

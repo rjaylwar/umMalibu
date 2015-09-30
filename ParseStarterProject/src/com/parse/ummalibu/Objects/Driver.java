@@ -119,7 +119,7 @@ public class Driver implements ApiResponse {
         values.put(Table.Drivers.CAR_DESCRIPTION, mCarDescription);
         values.put(Table.Drivers.IMAGE_URL, mImageUrl);
 
-        values.put(Table.Drivers.CREATED_AT, mCreatedAt.getTime());
+        values.put(Table.Drivers.CREATED_AT, mCreatedAt == null ? 0 : mCreatedAt.getTime());
         return values;
     }
 

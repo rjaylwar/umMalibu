@@ -60,6 +60,8 @@ public class TablesSQL {
             Table.Drivers.NAME + " TEXT, " +
             Table.Drivers.CAR_DESCRIPTION + " TEXT, " +
             Table.Drivers.IMAGE_URL + " TEXT, " +
+            Table.Drivers.PHONE_NUMBER + " TEXT, " +
+            Table.Drivers.CREATED_AT + " INTEGER, " +
             Table.Drivers.MPG + " INTEGER " + ");";
 
     public static final String CREATE_UM_LOCATIONS_TABLE = "CREATE TABLE " + Table.UmLocations.TABLE_NAME + " ( " +

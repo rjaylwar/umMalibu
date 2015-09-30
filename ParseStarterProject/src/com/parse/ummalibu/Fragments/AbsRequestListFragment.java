@@ -13,10 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
+import com.parse.ummalibu.R;
 import com.parse.ummalibu.adapters.RequestListAdapter;
 import com.parse.ummalibu.database.Table;
 import com.parse.ummalibu.objects.UmberRequest;
-import com.parse.ummalibu.R;
 import com.parse.ummalibu.views.EmptyListView;
 import com.parse.ummalibu.views.LoadMoreRecyclerView;
 
@@ -24,9 +24,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by rjaylward on 9/26/15.
+ * Created by rjaylward on 9/26/15
  */
-public abstract class AbsRequestListFragment extends Fragment{
+public abstract class AbsRequestListFragment extends Fragment {
 
     @Bind(R.id.recycler_view)
     protected LoadMoreRecyclerView mRecyclerView;

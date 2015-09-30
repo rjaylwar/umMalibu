@@ -153,6 +153,8 @@ public class ApiHelper {
 
         JsonObject requestParams = new JsonObject();
 
+        requestParams.addProperty(FieldNames.DRIVER_EMAIL, request.getDriverEmail());
+
         requestParams.addProperty(FieldNames.CLAIMED, request.isClaimed());
         requestParams.addProperty(FieldNames.STARTED, request.isStarted());
         requestParams.addProperty(FieldNames.IS_PICKED_UP, request.isPickedUp());
@@ -179,6 +181,14 @@ public class ApiHelper {
 
         GsonVolleyRequester<MapsResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, MapsResponse.class);
         volleyRequester.makeGetRequest(mActivity, url, uiListener);
+    }
+
+    public void deleteRequest(String objectId, VolleyRequestListener uiListener) {
+        String url = PARSE_API_URL + "/uber_requests/" + objectId;
+        Log.d("delete umber request", url);
+
+        StringObjectVolleyRequester volleyRequester = new StringObjectVolleyRequester(mActivity);
+        volleyRequester.makeDeleteRequest(mActivity, url, uiListener);
     }
 }
 

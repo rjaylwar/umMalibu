@@ -2,7 +2,6 @@ package com.parse.ummalibu;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
 import com.parse.ummalibu.base.BaseFragActivity;
@@ -11,7 +10,7 @@ import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.values.FieldNames;
 
 /**
- * Created by rjaylward on 9/27/15.
+ * Created by rjaylward on 9/27/15
  */
 public class TripSummaryActivity extends BaseFragActivity {
 
@@ -24,12 +23,7 @@ public class TripSummaryActivity extends BaseFragActivity {
 
     @Override
     protected Fragment getFragment() {
-        Bundle bundle = new Bundle();
-        bundle.putParcelable("umber_request", getIntent().getParcelableExtra(FieldNames.UMBER_REQUEST));
-        SummaryFragment fragment = new SummaryFragment();
-        fragment.setArguments(bundle);
-
-        return fragment;
+        return SummaryFragment.makeFragment((UmberRequest) getIntent().getParcelableExtra(FieldNames.UMBER_REQUEST));
     }
 
 }

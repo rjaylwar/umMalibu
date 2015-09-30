@@ -57,6 +57,13 @@ public abstract class AbsVolleyRequester {
         queue.add(request);
     }
 
+    public void makeDeleteRequest(AppCompatActivity activity, String url, VolleyRequestListener listener) {
+        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity);
+        Request request = buildRequest(activity, Request.Method.DELETE, url, null, listener, DefaultRetryPolicy.DEFAULT_TIMEOUT_MS, false);
+
+        queue.add(request);
+    }
+
     protected abstract Request buildRequest(AppCompatActivity activity, int requestType, String url, JsonObject requestBody,
                                             VolleyRequestListener listener, int timeout, boolean handleResponse);
 
