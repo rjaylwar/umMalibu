@@ -18,6 +18,7 @@ import android.util.Property;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -149,6 +150,12 @@ public class UmberMapFragment extends Fragment {
             mPickUpLocationName.setText("");
             mPickUpLocationName.setCursorVisible(false);
         }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        hideKeyboard();
     }
 
     private void setSelectedPickUp(UmLocation location) {
@@ -458,6 +465,18 @@ public class UmberMapFragment extends Fragment {
             else
                 Toast.makeText(mActivity, "Error, please try again later", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void hideKeyboard() {
+        // Check if no view has focus:
+        View view = mActivity.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager inputManager = (InputMethodManager) mActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
+            inputManager.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+        }
+
+        mSearchPickUpLayout.getEditText().clearFocus();
+        mSearchDestLayout.getEditText().clearFocus();
     }
 
     @Override

@@ -148,6 +148,8 @@ public class LocationsFragment extends Fragment {
                 mSwipeRefreshLayout.setRefreshing(false);
                 Preferences.getInstance().getListData().setLocationsExpiration(System.currentTimeMillis() + Constants.ONE_MIN_MILLIS);
                 response.saveResponse(mActivity);
+
+                mAdapter.setItems(response.getLocations());
             }
 
             @Override
@@ -189,6 +191,8 @@ public class LocationsFragment extends Fragment {
             InputMethodManager inputManager = (InputMethodManager) mActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
             inputManager.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         }
+
+        mSearchLayout.getEditText().clearFocus();
     }
 
     private class GeocodeLookup extends AsyncTask<String, Void, Address> {
@@ -240,11 +244,14 @@ public class LocationsFragment extends Fragment {
     }
 
     private void finishForResult(UmLocation location, int activityResultCode) {
+        hideKeyboard();
+
         Intent intent = new Intent();
         if(location != null)
             intent.putExtra(FieldNames.ADDRESS, location);
 
         mActivity.setResult(activityResultCode, intent);
+        mActivity.finish();
     }
 
     private void showProgressDialog(String message) {

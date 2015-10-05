@@ -11,7 +11,7 @@ import com.parse.ummalibu.values.FieldNames;
 import java.util.ArrayList;
 
 /**
- * Created by rjaylward on 9/25/15.
+ * Created by rjaylward on 9/25/15
  */
 public class UmLocationsResponse implements ApiResponse {
 
@@ -22,5 +22,9 @@ public class UmLocationsResponse implements ApiResponse {
     public void saveResponse(Context context) {
         DatabaseHelper helper = new DatabaseHelper(context);
         helper.addLocations(mLocations);
+    }
+
+    public ArrayList<UmLocation> getLocations() {
+        return mLocations;
     }
 }

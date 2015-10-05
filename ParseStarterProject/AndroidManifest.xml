@@ -175,7 +175,9 @@
             android:screenOrientation="portrait"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
-        <activity android:name="com.parse.ummalibu.LocationsActivity"/>
+        <activity
+            android:name="com.parse.ummalibu.LocationsActivity"
+            android:windowSoftInputMode="stateHidden"/>
 
         <provider
             android:name=".database.DatabaseProvider"

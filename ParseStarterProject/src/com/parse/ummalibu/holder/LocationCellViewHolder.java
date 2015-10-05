@@ -11,7 +11,7 @@ import com.parse.ummalibu.objects.UmLocation;
 import com.parse.ummalibu.R;
 
 /**
- * Created by rjaylward on 9/24/15.
+ * Created by rjaylward on 9/24/15
  */
 public class LocationCellViewHolder extends RecyclerView.ViewHolder {
 

@@ -176,7 +176,9 @@
             android:name="com.parse.ummalibu.TripSummaryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
-        <activity android:name="com.parse.ummalibu.LocationsActivity" />
+        <activity
+            android:name="com.parse.ummalibu.LocationsActivity"
+            android:windowSoftInputMode="stateHidden" />
 
         <provider
             android:name="com.parse.ummalibu.database.DatabaseProvider"
