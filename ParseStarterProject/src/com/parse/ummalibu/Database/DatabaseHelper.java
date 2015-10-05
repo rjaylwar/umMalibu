@@ -374,5 +374,7 @@ public class DatabaseHelper {
         for(UmLocation location : locations) {
             values.add(location.toContentValues());
         }
+
+        mContentResolver.bulkInsert(Table.UmLocations.CONTENT_URI, values.toArray(new ContentValues[locations.size()]));
     }
 }

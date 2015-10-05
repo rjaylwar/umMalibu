@@ -20,8 +20,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -71,7 +69,6 @@ public class UmberMapFragment extends Fragment {
     private ProgressDialog mDialog;
 
     private LatLng mPickUpLocation;
-    @Bind(R.id.search_pickup_location) EditText mPickUpLocationName;
 
     private LatLng mDestination;
     private String mDestinationName;
@@ -98,20 +95,41 @@ public class UmberMapFragment extends Fragment {
         mActivity = (AppCompatActivity) getActivity();
         ButterKnife.bind(this, mRoot);
 
-        mPickUpLocationName.setOnClickListener(new View.OnClickListener() {
+        mSearchPickUpLayout.setOnSearchListener(new SearchLayout.OnSearchListener() {
             @Override
-            public void onClick(View v) {
-                mPickUpLocationName.setCursorVisible(true);
+            public void onTextClicked() {
                 launchPickupSpotsList();
+                mSearchPickUpLayout.getEditText().setCursorVisible(true);
+            }
+
+            @Override
+            public void onLocationButtonClicked() {
+
+            }
+
+            @Override
+            public void onClearButtonClicked() {
+                mSearchPickUpLayout.setLocationName("");
+                mSearchPickUpLayout.getEditText().setCursorVisible(false);
             }
         });
 
-        ImageView clearButton = (ImageView) mRoot.findViewById(R.id.search_clear_button);
-        clearButton.setOnClickListener(new View.OnClickListener() {
+        mSearchDestLayout.setOnSearchListener(new SearchLayout.OnSearchListener() {
             @Override
-            public void onClick(View v) {
-                mPickUpLocationName.setText("");
-                mPickUpLocationName.setCursorVisible(false);
+            public void onTextClicked() {
+                lauchDestinationSpotsList();
+                mSearchDestLayout.getEditText().setCursorVisible(true);
+            }
+
+            @Override
+            public void onLocationButtonClicked() {
+
+            }
+
+            @Override
+            public void onClearButtonClicked() {
+                mSearchDestLayout.setLocationName("");
+                mSearchDestLayout.getEditText().setCursorVisible(false);
             }
         });
 
@@ -134,6 +152,10 @@ public class UmberMapFragment extends Fragment {
         startActivityForResult(LocationsActivity.createIntent(mActivity, LocationsActivity.PICKUP), PICKUP_LOCATIONS);
     }
 
+    private void lauchDestinationSpotsList() {
+        startActivityForResult(LocationsActivity.createIntent(mActivity, LocationsActivity.DESTINATION), DESTINATION_LOCATIONS);
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -147,8 +169,14 @@ public class UmberMapFragment extends Fragment {
                 setSelectedDestination(location);
 
         } else {
-            mPickUpLocationName.setText("");
-            mPickUpLocationName.setCursorVisible(false);
+
+            if(requestCode == PICKUP_LOCATIONS) {
+                mSearchPickUpLayout.setLocationName("");
+                mSearchPickUpLayout.getEditText().setCursorVisible(false);
+            } else {
+                mSearchDestLayout.setLocationName("");
+                mSearchDestLayout.getEditText().setCursorVisible(false);
+            }
         }
     }
 
@@ -438,7 +466,7 @@ public class UmberMapFragment extends Fragment {
             mUmberRequest.setLongitude(myLocation.getLongitude());
             mUmberRequest.setLatitude(myLocation.getLatitude());
 
-            mUmberRequest.setPickUpLocation(mPickUpLocationName.getText().toString());
+            mUmberRequest.setPickUpLocation(mSearchPickUpLayout.getEditText().getText().toString());
             mUmberRequest.setPickupLat(mPickUpLocation.latitude);
             mUmberRequest.setPickupLong(mPickUpLocation.longitude);
 

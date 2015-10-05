@@ -148,8 +148,6 @@ public class LocationsFragment extends Fragment {
                 mSwipeRefreshLayout.setRefreshing(false);
                 Preferences.getInstance().getListData().setLocationsExpiration(System.currentTimeMillis() + Constants.ONE_MIN_MILLIS);
                 response.saveResponse(mActivity);
-
-                mAdapter.setItems(response.getLocations());
             }
 
             @Override
@@ -226,8 +224,10 @@ public class LocationsFragment extends Fragment {
                 final String formattedAddressLine;
                 if(addressLine0.contains(","))
                     formattedAddressLine = addressLine0;
-                else
+                else if(!addressLine0.contains("null"))
                     formattedAddressLine = String.format("%s, %s", addressLine0, address.getAddressLine(1));
+                else
+                    formattedAddressLine = address.getAddressLine(1);
 
                 mSearchLayout.clearTextViewFocus();
                 mSearchLayout.setLocationName(formattedAddressLine);
