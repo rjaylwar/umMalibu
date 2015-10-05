@@ -86,4 +86,15 @@ public class SearchLayout extends RelativeLayout {
         mPickUpLocationName.setText(text);
     }
 
+    public void clearTextViewFocus() {
+        mPickUpLocationName.clearFocus();
+    }
+
+    public void setOnTextChangedListener(TextView.OnEditorActionListener actionListener) {
+        mPickUpLocationName.setOnEditorActionListener(actionListener);
+    }
+
+    public EditText getEditText() {
+        return mPickUpLocationName;
+    }
 }

@@ -368,4 +368,11 @@ public class DatabaseHelper {
         mContentResolver.bulkInsert(Table.Drivers.CONTENT_URI, values.toArray(new ContentValues[drivers.size()]));
     }
 
+    public synchronized void addLocations(ArrayList<UmLocation> locations) {
+        ArrayList<ContentValues> values = new ArrayList<>();
+
+        for(UmLocation location : locations) {
+            values.add(location.toContentValues());
+        }
+    }
 }

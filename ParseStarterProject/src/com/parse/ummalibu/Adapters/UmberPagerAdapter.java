@@ -53,4 +53,6 @@ public class UmberPagerAdapter extends FragmentPagerAdapter {
     public ArrayList<Fragment> getFragments() {
         return mFragments;
     }
+
+
 }

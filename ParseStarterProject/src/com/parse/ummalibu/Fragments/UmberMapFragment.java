@@ -2,32 +2,26 @@ package com.parse.ummalibu.fragments;
 
 import android.animation.ObjectAnimator;
 import android.animation.TypeEvaluator;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.location.Address;
+import android.content.Intent;
 import android.location.Criteria;
-import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.util.Property;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
@@ -39,13 +33,18 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.JsonObject;
+import com.parse.ummalibu.LocationsActivity;
 import com.parse.ummalibu.R;
+import com.parse.ummalibu.SearchLayout;
 import com.parse.ummalibu.api.ApiHelper;
 import com.parse.ummalibu.objects.LatLngInterpolator;
+import com.parse.ummalibu.objects.UmLocation;
 import com.parse.ummalibu.objects.UmberRequest;
-import com.parse.ummalibu.values.Constants;
+import com.parse.ummalibu.values.FieldNames;
+import com.parse.ummalibu.values.Preferences;
 import com.parse.ummalibu.volley.VolleyRequestListener;
 
+import java.util.HashSet;
 import java.util.concurrent.ScheduledExecutorService;
 
 import butterknife.Bind;
@@ -55,6 +54,9 @@ import butterknife.ButterKnife;
  * Created by rjaylward on 9/28/15
  */
 public class UmberMapFragment extends Fragment {
+
+    @Bind(R.id.search_pickup_layout) SearchLayout mSearchPickUpLayout;
+    @Bind(R.id.search_destination_layout) SearchLayout mSearchDestLayout;
 
     private View mRoot;
     private AppCompatActivity mActivity;
@@ -81,27 +83,25 @@ public class UmberMapFragment extends Fragment {
 
     private UmberRequest mUmberRequest;
 
+    private static final int PICKUP_LOCATIONS = 33;
+    private static final int DESTINATION_LOCATIONS = 34;
+
+    private HashSet<UmberRequest> mOpenRequests = new HashSet<>();
+    private UmLocation mSelectedPickUpLocation;
+    private UmLocation mSelectedDestLocation;
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mRoot = inflater.inflate(R.layout.activity_umber, container, false);
         mActivity = (AppCompatActivity) getActivity();
         ButterKnife.bind(this, mRoot);
 
-        mPickUpLocationName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-
-                if (actionId == EditorInfo.IME_ACTION_DONE || (actionId == EditorInfo.IME_NULL && event != null && event.getAction() == KeyEvent.ACTION_DOWN)) {
-                    mPickUpLocationName.setCursorVisible(false);
-                    return onLocationEntered();
-                } else
-                    return false;
-            }
-        });
         mPickUpLocationName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mPickUpLocationName.setCursorVisible(true);
+                launchPickupSpotsList();
             }
         });
 
@@ -111,7 +111,6 @@ public class UmberMapFragment extends Fragment {
             public void onClick(View v) {
                 mPickUpLocationName.setText("");
                 mPickUpLocationName.setCursorVisible(false);
-                hideKeyboard();
             }
         });
 
@@ -128,6 +127,38 @@ public class UmberMapFragment extends Fragment {
         setUpMapIfNeeded();
 
         return mRoot;
+    }
+
+    private void launchPickupSpotsList() {
+        startActivityForResult(LocationsActivity.createIntent(mActivity, LocationsActivity.PICKUP), PICKUP_LOCATIONS);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(resultCode == Activity.RESULT_OK) {
+            UmLocation location = data.getParcelableExtra(FieldNames.ADDRESS);
+
+            if(requestCode == PICKUP_LOCATIONS)
+                setSelectedPickUp(location);
+            else
+                setSelectedDestination(location);
+
+        } else {
+            mPickUpLocationName.setText("");
+            mPickUpLocationName.setCursorVisible(false);
+        }
+    }
+
+    private void setSelectedPickUp(UmLocation location) {
+        mSelectedPickUpLocation = location;
+        mSearchPickUpLayout.setLocationName(location.getFormattedTitle());
+    }
+
+    private void setSelectedDestination(UmLocation location) {
+        mSelectedDestLocation = location;
+        mSearchDestLayout.setLocationName(location.getFormattedTitle());
     }
 
     private void makeApiRequest() {
@@ -208,17 +239,19 @@ public class UmberMapFragment extends Fragment {
             mMap = ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map))
                     .getMap();
 
-            View mapView = ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map)).getView();
+            View mapView = getChildFragmentManager().findFragmentById(R.id.map).getView();
 
-            //noinspection ResourceType
-            View locationButton = ((View) mapView.findViewById(1).getParent()).findViewById(2);
+            if(mapView != null) {
+                //noinspection ResourceType
+                View locationButton = ((View) mapView.findViewById(1).getParent()).findViewById(2);
 
-            // and next place it, for example, on bottom right (as Google Maps app)
-            RelativeLayout.LayoutParams rlp = (RelativeLayout.LayoutParams) locationButton.getLayoutParams();
-            // position on right bottom
-            rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP, 0);
-            rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);
-            rlp.setMargins(0, 0, 30, 30);
+                // and next place it, for example, on bottom right (as Google Maps app)
+                RelativeLayout.LayoutParams rlp = (RelativeLayout.LayoutParams) locationButton.getLayoutParams();
+                // position on right bottom
+                rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP, 0);
+                rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);
+                rlp.setMargins(0, 0, 30, 30);
+            }
         }
 
         // Check if we were successful in obtaining the map.
@@ -257,7 +290,6 @@ public class UmberMapFragment extends Fragment {
         // Get the best provider from the criteria specified, and false to say it can turn the
         // provider on if it isn't already
 
-
         mLocationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
@@ -277,7 +309,6 @@ public class UmberMapFragment extends Fragment {
             }
         };
 
-
         String bestProvider = mLocationManager.getBestProvider(criteria, false);
         // Request location updates
         try {
@@ -295,7 +326,6 @@ public class UmberMapFragment extends Fragment {
             startUpdating();
 
     }
-
 
     private void updateMapCameraOnce(Location location) {
         if (!mHasHappened) {
@@ -370,23 +400,6 @@ public class UmberMapFragment extends Fragment {
 //        mExecutor.shutdownNow();
     }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        mKeepUpdating = false;
-//        mExecutor.shutdownNow();
-    }
-
-    private void showProgressDialog(String message) {
-        mDialog = new ProgressDialog(mActivity);
-        mDialog.setMessage(message);
-        mDialog.show();
-    }
-
-    private void hideProgressDialog() {
-        mDialog.hide();
-    }
-
     static void animateMarkerToICS(Marker marker, LatLng finalPosition, final LatLngInterpolator latLngInterpolator) {
         TypeEvaluator<LatLng> typeEvaluator = new TypeEvaluator<LatLng>() {
             @Override
@@ -400,38 +413,18 @@ public class UmberMapFragment extends Fragment {
         animator.start();
     }
 
-    private boolean onLocationEntered() {
-        String entry = mPickUpLocationName.getText().toString();
-        if(entry.length() > 0) {
-            hideKeyboard();
-            new GeocodeLookup().execute(entry);
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
-    private void hideKeyboard() {
-        // Check if no view has focus:
-        View view = mActivity.getCurrentFocus();
-        if (view != null) {
-            InputMethodManager inputManager = (InputMethodManager) mActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
-            inputManager.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-        }
-    }
-
     private void makeUmberRequest() {
 
         if(mMap != null && mPickUpLocation != null) {
             mUmberRequest = new UmberRequest();
 
-            mUmberRequest.setName("RJ Test");
+            mUmberRequest.setName(Preferences.getInstance().getName());
+            mUmberRequest.setEmail(Preferences.getInstance().getEmail());
 
             mUmberRequest.setClaimed(false);
             mUmberRequest.setIsPickedUp(false);
-            mUmberRequest.setPhoneNumber(Constants.TEST_PHONE_NUMBER);
-            mUmberRequest.setRiderImageUrl(Constants.TEST_IMAGE_URL);
+            mUmberRequest.setPhoneNumber(Preferences.getInstance().getPhoneNumber());
+            mUmberRequest.setRiderImageUrl(Preferences.getInstance().getImageUrl());
 
             Location myLocation = mMap.getMyLocation();
 
@@ -442,9 +435,9 @@ public class UmberMapFragment extends Fragment {
             mUmberRequest.setPickupLat(mPickUpLocation.latitude);
             mUmberRequest.setPickupLong(mPickUpLocation.longitude);
 
-            mUmberRequest.setDestination("UM");
-            mUmberRequest.setDestinationLat(34.040599);
-            mUmberRequest.setDestinationLong(-118.696172);
+            mUmberRequest.setDestination(mDestinationName);
+            mUmberRequest.setDestinationLat(mDestination.latitude);
+            mUmberRequest.setDestinationLong(mDestination.longitude);
 
             ApiHelper helper = new ApiHelper(mActivity);
             helper.makeUmberRequest(mUmberRequest, new VolleyRequestListener() {
@@ -467,56 +460,11 @@ public class UmberMapFragment extends Fragment {
         }
     }
 
-    private class GeocodeLookup extends AsyncTask<String, Void, Address> {
-
-        @Override
-        protected void onPreExecute() {
-            showProgressDialog("Looking up location");
-        }
-
-        @Override
-        protected Address doInBackground(String... params) {
-            try {
-                Geocoder geocoder = new Geocoder(mActivity.getApplicationContext());
-                Address address = geocoder.getFromLocationName(params[0], 1).get(0);
-
-                Log.d("address match", address.toString());
-
-                return address;
-            } catch(Exception e) {
-                Log.e("address search error", e.getMessage());
-                return null;
-            }
-        }
-
-        @Override
-        protected void onPostExecute(Address address) {
-            hideProgressDialog();
-
-            if(address != null) {
-                //The address may have separate lines for city and state, or combined into 1. This will figure out which
-                String addressLine0 = address.getAddressLine(0);
-                final String formattedAddressLine;
-                if(addressLine0.contains(","))
-                    formattedAddressLine = addressLine0;
-                else
-                    formattedAddressLine = String.format("%s, %s", addressLine0, address.getAddressLine(1));
-
-                mPickUpLocationName.setText(formattedAddressLine);
-                mPickUpLocationName.clearFocus();
-
-                //Set location on the map
-                LatLng location = new LatLng(address.getLatitude(), address.getLongitude());
-                if(mPickUpMarker != null)
-                    mPickUpMarker.remove();
-
-                mPickUpLocation = location;
-                drawPinAndMoveCamera(location, mPickUpMarker, true);
-
-            } else
-                Toast.makeText(mActivity, "error not found", Toast.LENGTH_SHORT).show();
-        }
-
+    @Override
+    public void onStop() {
+        super.onStop();
+        mKeepUpdating = false;
+//        mExecutor.shutdownNow();
     }
 
     @Override

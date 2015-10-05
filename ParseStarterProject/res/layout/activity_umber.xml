@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include
-        layout="@layout/widget_search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"/>
-
     <fragment
         android:id="@+id/map"
         android:layout_below="@id/toolbar"
@@ -93,5 +87,11 @@
             android:textColor="@color/red"/>
 
     </RelativeLayout>
+
+    <include
+        layout="@layout/widget_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"/>
 
 </RelativeLayout>

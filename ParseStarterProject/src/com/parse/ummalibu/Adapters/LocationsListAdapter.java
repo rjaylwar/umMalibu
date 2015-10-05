@@ -12,7 +12,7 @@ import com.parse.ummalibu.holder.LocationCellViewHolder;
 import java.util.ArrayList;
 
 /**
- * Created by rjaylward on 9/24/15.
+ * Created by rjaylward on 9/24/15
  */
 public class LocationsListAdapter extends RecyclerView.Adapter {
 

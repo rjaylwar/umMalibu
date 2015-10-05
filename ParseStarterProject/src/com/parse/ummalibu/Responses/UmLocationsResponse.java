@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.google.gson.annotations.SerializedName;
 import com.parse.ummalibu.database.ApiResponse;
+import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.objects.UmLocation;
 import com.parse.ummalibu.values.FieldNames;
 
@@ -19,6 +20,7 @@ public class UmLocationsResponse implements ApiResponse {
 
     @Override
     public void saveResponse(Context context) {
-
+        DatabaseHelper helper = new DatabaseHelper(context);
+        helper.addLocations(mLocations);
     }
 }

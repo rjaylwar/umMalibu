@@ -19,7 +19,7 @@ import com.parse.ummalibu.volley.StringObjectVolleyRequester;
 import com.parse.ummalibu.volley.VolleyRequestListener;
 
 /**
- * Created by rjaylward on 9/22/15.
+ * Created by rjaylward on 9/22/15
  */
 public class ApiHelper {
 
@@ -190,5 +190,7 @@ public class ApiHelper {
         StringObjectVolleyRequester volleyRequester = new StringObjectVolleyRequester(mActivity);
         volleyRequester.makeDeleteRequest(mActivity, url, uiListener);
     }
+
+
 }
 

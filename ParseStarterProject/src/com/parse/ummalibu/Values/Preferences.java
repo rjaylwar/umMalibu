@@ -3,7 +3,7 @@ package com.parse.ummalibu.values;
 import android.content.Context;
 
 /**
- * Created by rjaylward on 9/22/15.
+ * Created by rjaylward on 9/22/15
  */
 public class Preferences extends AbsPreferences{
 
@@ -46,4 +46,26 @@ public class Preferences extends AbsPreferences{
     public void setMpg(int eta) {
         setPref(FieldNames.ETA, eta);
     }
+
+    public String getName() {
+        return getStringPref(FieldNames.NAME);
+    }
+
+    public void setName(String name) {
+        setPref(FieldNames.NAME, name);
+    }
+
+    public String getPhoneNumber() {
+        return getStringPref(FieldNames.PHONE_NUMBER);
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        setPref(FieldNames.PHONE_NUMBER, phoneNumber);
+    }
+
+    public String getImageUrl() {
+        return getStringPref(FieldNames.IMAGE_URL).equals("") ? Constants.TEST_IMAGE_URL : getStringPref(FieldNames.IMAGE_URL);
+    }
+
+
 }

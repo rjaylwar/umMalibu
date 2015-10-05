@@ -3,7 +3,7 @@ package com.parse.ummalibu.values;
 import android.content.Context;
 
 /**
- * Created by rjaylward on 9/22/15.
+ * Created by rjaylward on 9/22/15
  */
 public class ListData extends AbsPreferences {
 
@@ -13,6 +13,7 @@ public class ListData extends AbsPreferences {
     private static final String PRAYERS_EXPIRATION = "prayers_exp";
     private static final String SONGS_EXPIRATION = "songs_exp";
     private static final String REQUESTS_EXPIRATION = "requests_exp";
+    private static final String UM_LOCATIONS_EXPIRATION = "um_locations_exp";
 
     protected ListData(Context context) {
         super(context);
@@ -64,5 +65,13 @@ public class ListData extends AbsPreferences {
 
     public void setRequestsExpiration(long expiration) {
         setPref(REQUESTS_EXPIRATION, expiration);
+    }
+
+    public long getLocationsExpiration() {
+        return getLongPref(UM_LOCATIONS_EXPIRATION);
+    }
+
+    public void setLocationsExpiration(long expiration) {
+        setPref(UM_LOCATIONS_EXPIRATION, expiration);
     }
 }
