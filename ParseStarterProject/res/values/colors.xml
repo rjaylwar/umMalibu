@@ -12,6 +12,7 @@
     <color name="darkred">#FFCC0000</color>
     <color name="grey">#5a5a5a</color>
     <color name="light_grey">#9c9c9c</color>
+    <color name="very_light_grey">#f4f4f4</color>
     <color name="transparent_grey">#55818181</color>
     <color name="breakline_color">#44b4b4b4</color>
     <color name="grey_blue">#234265</color>

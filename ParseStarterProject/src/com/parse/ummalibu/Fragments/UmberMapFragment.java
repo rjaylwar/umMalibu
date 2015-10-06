@@ -3,7 +3,6 @@ package com.parse.ummalibu.fragments;
 import android.animation.ObjectAnimator;
 import android.animation.TypeEvaluator;
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Criteria;
@@ -20,6 +19,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -44,9 +45,9 @@ import com.parse.ummalibu.values.Preferences;
 import com.parse.ummalibu.volley.VolleyRequestListener;
 
 import java.util.HashSet;
-import java.util.concurrent.ScheduledExecutorService;
 
 import butterknife.Bind;
+import butterknife.BindDimen;
 import butterknife.ButterKnife;
 
 /**
@@ -56,6 +57,9 @@ public class UmberMapFragment extends Fragment {
 
     @Bind(R.id.search_pickup_layout) SearchLayout mSearchPickUpLayout;
     @Bind(R.id.search_destination_layout) SearchLayout mSearchDestLayout;
+    @Bind(R.id.search_search_layout) LinearLayout mSearchLayout;
+    @Bind(R.id.umber_request_button) Button mRequestButton;
+    @BindDimen(R.dimen.search_widget_height) int mSearchLayoutHeight;
 
     private View mRoot;
     private AppCompatActivity mActivity;
@@ -64,27 +68,18 @@ public class UmberMapFragment extends Fragment {
     private LocationManager mLocationManager;
     private LocationListener mLocationListener;
     private Marker mMarker;
-    private Marker mPickUpMarker;
-    private ScheduledExecutorService mExecutor;
-    private ProgressDialog mDialog;
-
-    private LatLng mPickUpLocation;
-
-    private LatLng mDestination;
-    private String mDestinationName;
 
     private Handler mHandler;
+
     private boolean mKeepUpdating = false;
     private boolean mIsUpdating = false;
-
     private boolean mHasHappened = false;
-
-    private UmberRequest mUmberRequest;
 
     private static final int PICKUP_LOCATIONS = 33;
     private static final int DESTINATION_LOCATIONS = 34;
 
     private HashSet<UmberRequest> mOpenRequests = new HashSet<>();
+
     private UmLocation mSelectedPickUpLocation;
     private UmLocation mSelectedDestLocation;
 
@@ -95,45 +90,59 @@ public class UmberMapFragment extends Fragment {
         mActivity = (AppCompatActivity) getActivity();
         ButterKnife.bind(this, mRoot);
 
+        mSearchPickUpLayout.getEditText().setHint("Click to choose a spot...");
+        mSearchPickUpLayout.setTitleText("Pickup Spot");
+        mSearchPickUpLayout.setTitleColor(mActivity.getResources().getColor(R.color.um_green));
         mSearchPickUpLayout.setOnSearchListener(new SearchLayout.OnSearchListener() {
             @Override
             public void onTextClicked() {
+                mSearchPickUpLayout.getEditText().setFocusable(true);
+                mSearchPickUpLayout.clear();
                 launchPickupSpotsList();
                 mSearchPickUpLayout.getEditText().setCursorVisible(true);
+                hideKeyboard();
             }
 
             @Override
             public void onLocationButtonClicked() {
-
             }
 
             @Override
             public void onClearButtonClicked() {
-                mSearchPickUpLayout.setLocationName("");
-                mSearchPickUpLayout.getEditText().setCursorVisible(false);
+                if (mSearchDestLayout.getEditText().getText().toString().length() == 0)
+                    hideDestinationSearch();
+                mSelectedPickUpLocation = null;
+                mRequestButton.setVisibility(View.GONE);
             }
         });
 
+        mSearchDestLayout.setTitleText("Destination");
+        mSearchDestLayout.getEditText().setHint("UM - 3324 Malibu Canyon Rd, Malibu, CA 90265");
+        mSearchDestLayout.setTitleColor(mActivity.getResources().getColor(R.color.um_highlight_blue));
         mSearchDestLayout.setOnSearchListener(new SearchLayout.OnSearchListener() {
             @Override
             public void onTextClicked() {
+                mSearchDestLayout.getEditText().setFocusable(true);
+                mSearchDestLayout.clear();
                 lauchDestinationSpotsList();
                 mSearchDestLayout.getEditText().setCursorVisible(true);
+                hideKeyboard();
             }
 
             @Override
             public void onLocationButtonClicked() {
-
             }
 
             @Override
             public void onClearButtonClicked() {
-                mSearchDestLayout.setLocationName("");
-                mSearchDestLayout.getEditText().setCursorVisible(false);
+                if (mSearchPickUpLayout.getEditText().getText().toString().length() == 0)
+                    hideDestinationSearch();
+                mSelectedDestLocation = null;
+                mRequestButton.setVisibility(View.GONE);
             }
         });
 
-        Button requestRideButton = (Button) mRoot.findViewById(R.id.umber_button);
+        Button requestRideButton = (Button) mRoot.findViewById(R.id.umber_request_button);
         requestRideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -142,7 +151,6 @@ public class UmberMapFragment extends Fragment {
         });
 
         mHandler = new Handler();
-
         setUpMapIfNeeded();
 
         return mRoot;
@@ -156,6 +164,16 @@ public class UmberMapFragment extends Fragment {
         startActivityForResult(LocationsActivity.createIntent(mActivity, LocationsActivity.DESTINATION), DESTINATION_LOCATIONS);
     }
 
+    private void hideDestinationSearch() {
+        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) mSearchLayout.getLayoutParams();
+        params.height = mSearchLayoutHeight;
+    }
+
+    private void showDestinationSearch() {
+        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) mSearchLayout.getLayoutParams();
+        params.height = 2 * mSearchLayoutHeight;
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -163,21 +181,29 @@ public class UmberMapFragment extends Fragment {
         if(resultCode == Activity.RESULT_OK) {
             UmLocation location = data.getParcelableExtra(FieldNames.ADDRESS);
 
-            if(requestCode == PICKUP_LOCATIONS)
-                setSelectedPickUp(location);
-            else
-                setSelectedDestination(location);
-
-        } else {
-
             if(requestCode == PICKUP_LOCATIONS) {
-                mSearchPickUpLayout.setLocationName("");
-                mSearchPickUpLayout.getEditText().setCursorVisible(false);
+                setSelectedPickUp(location);
+                showDestinationSearch();
+            } else
+                setSelectedDestination(location);
+            checkIfRequestCanBeMade();
+        } else {
+            if(requestCode == PICKUP_LOCATIONS) {
+                mSearchPickUpLayout.clear();
+                mSelectedPickUpLocation = null;
             } else {
-                mSearchDestLayout.setLocationName("");
-                mSearchDestLayout.getEditText().setCursorVisible(false);
+                mSearchDestLayout.clear();
+                mSelectedDestLocation = null;
             }
         }
+    }
+
+    private void checkIfRequestCanBeMade() {
+        if(mSearchDestLayout.getEditText().getText().toString().length() > 0 &&
+                mSearchPickUpLayout.getEditText().getText().toString().length() > 0)
+            mRequestButton.setVisibility(View.VISIBLE);
+        else
+            mRequestButton.setVisibility(View.GONE);
     }
 
     @Override
@@ -189,14 +215,16 @@ public class UmberMapFragment extends Fragment {
     private void setSelectedPickUp(UmLocation location) {
         mSelectedPickUpLocation = location;
         mSearchPickUpLayout.setLocationName(location.getFormattedTitle());
+        mSearchPickUpLayout.clearFocus();
     }
 
     private void setSelectedDestination(UmLocation location) {
         mSelectedDestLocation = location;
         mSearchDestLayout.setLocationName(location.getFormattedTitle());
+        mSearchDestLayout.clearFocus();
     }
 
-    private void makeApiRequest() {
+    private void makeMovingDriverApiRequest() {
         ApiHelper helper = new ApiHelper(mActivity);
         helper.getUmberLocation(new VolleyRequestListener<JsonObject>() {
             @Override
@@ -230,7 +258,7 @@ public class UmberMapFragment extends Fragment {
 
                             @Override
                             public void run() {
-                                makeApiRequest();
+                                makeMovingDriverApiRequest();
                             }
                         });
                     } catch (Exception e) {
@@ -250,22 +278,6 @@ public class UmberMapFragment extends Fragment {
         mKeepUpdating = false;
         setUpMapIfNeeded();
     }
-
-    /**
-     * Sets up the map if it is possible to do so (i.e., the Google Play services APK is correctly
-     * installed) and the map has not already been instantiated.. This will ensure that we only ever
-     * call {@link #setUpMap()} once when {@link #mMap} is not null.
-     * <p/>
-     * If it isn't installed {@link SupportMapFragment} (and
-     * {@link com.google.android.gms.maps.MapView MapView}) will show a prompt for the user to
-     * install/update the Google Play services APK on their device.
-     * <p/>
-     * A user can return to this FragmentActivity after following the prompt and correctly
-     * installing/updating/enabling the Google Play services. Since the FragmentActivity may not
-     * have been completely destroyed during this process (it is likely that it would only be
-     * stopped or paused), {@link #onCreate(Bundle)} may not be called again so we should call this
-     * method in {@link #onResume()} to guarantee that it will be called.
-     **/
 
     private void setUpMapIfNeeded() {
         // Do a null check to confirm that we have not already instantiated the map.
@@ -294,13 +306,6 @@ public class UmberMapFragment extends Fragment {
             setUpMap();
         }
     }
-
-    /**
-     * This is where we can add markers or lines, add listeners or move the camera. In this case, we
-     * just add a marker near Africa.
-     * <p/>
-     * This should only be called once and when we are sure that {@link #mMap} is not null.
-     */
 
     private void setUpMap() {
 
@@ -355,6 +360,7 @@ public class UmberMapFragment extends Fragment {
         if (mMarker == null) {
             mMarker = mMap.addMarker(new MarkerOptions().position(new LatLng(34.04063163, -118.69598329)));
             mMarker.setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher));
+            mMarker.set
         }
 
         if (!mIsUpdating)
@@ -432,7 +438,6 @@ public class UmberMapFragment extends Fragment {
     public void onPause() {
         super.onPause();
         mKeepUpdating = false;
-//        mExecutor.shutdownNow();
     }
 
     static void animateMarkerToICS(Marker marker, LatLng finalPosition, final LatLngInterpolator latLngInterpolator) {
@@ -450,35 +455,43 @@ public class UmberMapFragment extends Fragment {
 
     private void makeUmberRequest() {
 
-        if(mMap != null && mPickUpLocation != null) {
-            mUmberRequest = new UmberRequest();
+        if(mMap != null && mSelectedPickUpLocation != null && mSelectedDestLocation != null) {
+            UmberRequest umberRequest = new UmberRequest();
 
-            mUmberRequest.setName(Preferences.getInstance().getName());
-            mUmberRequest.setEmail(Preferences.getInstance().getEmail());
+            umberRequest.setName(Preferences.getInstance().getName());
+            umberRequest.setEmail(Preferences.getInstance().getEmail());
 
-            mUmberRequest.setClaimed(false);
-            mUmberRequest.setIsPickedUp(false);
-            mUmberRequest.setPhoneNumber(Preferences.getInstance().getPhoneNumber());
-            mUmberRequest.setRiderImageUrl(Preferences.getInstance().getImageUrl());
+            umberRequest.setClaimed(false);
+            umberRequest.setIsPickedUp(false);
+            umberRequest.setStarted(false);
+            umberRequest.setComplete(false);
+            umberRequest.setCanceled(false);
 
-            Location myLocation = mMap.getMyLocation();
+            umberRequest.setPhoneNumber(Preferences.getInstance().getPhoneNumber());
+            umberRequest.setRiderImageUrl(Preferences.getInstance().getImageUrl());
 
-            mUmberRequest.setLongitude(myLocation.getLongitude());
-            mUmberRequest.setLatitude(myLocation.getLatitude());
+            if(mMap.getMyLocation() != null) {
+                Location myLocation = mMap.getMyLocation();
 
-            mUmberRequest.setPickUpLocation(mSearchPickUpLayout.getEditText().getText().toString());
-            mUmberRequest.setPickupLat(mPickUpLocation.latitude);
-            mUmberRequest.setPickupLong(mPickUpLocation.longitude);
+                umberRequest.setLongitude(myLocation.getLongitude());
+                umberRequest.setLatitude(myLocation.getLatitude());
+            }
 
-            mUmberRequest.setDestination(mDestinationName);
-            mUmberRequest.setDestinationLat(mDestination.latitude);
-            mUmberRequest.setDestinationLong(mDestination.longitude);
+            umberRequest.setPickUpLocation(mSelectedPickUpLocation.getFormattedTitle());
+            umberRequest.setPickupLat(mSelectedPickUpLocation.getLat());
+            umberRequest.setPickupLong(mSelectedPickUpLocation.getLon());
+
+            umberRequest.setDestination(mSelectedDestLocation.getFormattedTitle());
+            umberRequest.setDestinationLat(mSelectedDestLocation.getLat());
+            umberRequest.setDestinationLong(mSelectedDestLocation.getLon());
 
             ApiHelper helper = new ApiHelper(mActivity);
-            helper.makeUmberRequest(mUmberRequest, new VolleyRequestListener() {
+            helper.makeUmberRequest(umberRequest, new VolleyRequestListener() {
                 @Override
                 public void onResponse(Object response) {
-                    Toast.makeText(mActivity, "it worked!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mActivity, "Your request has been made!", Toast.LENGTH_SHORT).show();
+                    mSearchPickUpLayout.clear();
+                    mSearchDestLayout.clear();
                 }
 
                 @Override
@@ -496,7 +509,6 @@ public class UmberMapFragment extends Fragment {
     }
 
     private void hideKeyboard() {
-        // Check if no view has focus:
         View view = mActivity.getCurrentFocus();
         if (view != null) {
             InputMethodManager inputManager = (InputMethodManager) mActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -505,13 +517,15 @@ public class UmberMapFragment extends Fragment {
 
         mSearchPickUpLayout.getEditText().clearFocus();
         mSearchDestLayout.getEditText().clearFocus();
+
+        mSearchPickUpLayout.getEditText().setFocusable(false);
+        mSearchDestLayout.getEditText().setFocusable(false);
     }
 
     @Override
     public void onStop() {
         super.onStop();
         mKeepUpdating = false;
-//        mExecutor.shutdownNow();
     }
 
     @Override
@@ -526,6 +540,5 @@ public class UmberMapFragment extends Fragment {
         }
 
         mKeepUpdating = false;
-//        mExecutor.shutdownNow();
     }
 }

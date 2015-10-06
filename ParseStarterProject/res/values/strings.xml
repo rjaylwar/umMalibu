@@ -57,5 +57,12 @@
     <string name="minus">-</string>
     <string name="plus">+</string>
     <string name="streaming_warning">Warning: streaming sermons uses almost 35mb of data per session. Wifi is recommended.\n\n(Take notes here)</string>
+    <string name="cancel">Cancel</string>
+    <string name="contact">Contact</string>
+    <string name="finish">Finish</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="start">Start</string>
+    <string name="if_you_have_a_car">If you have a car enter the info below</string>
+    <string name="request_a_ride">Request A Ride</string>
 
 </resources>

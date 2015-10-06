@@ -107,7 +107,7 @@ public class UMberActivity extends ToolbarActivity {
             }
         });
 
-        Button requestRideButton = (Button) findViewById(R.id.umber_button);
+        Button requestRideButton = (Button) findViewById(R.id.umber_request_button);
         requestRideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

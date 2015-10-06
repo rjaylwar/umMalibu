@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
 import com.parse.ummalibu.values.FieldNames;
 
 /**
- * Created by rjaylward on 9/24/15.
+ * Created by rjaylward on 9/24/15
  */
 public class UmLocation implements Parcelable {
 

@@ -106,31 +106,10 @@ public class ApiHelper {
     public void makeUmberRequest(UmberRequest umberRequest, VolleyRequestListener uiListener){
         String url = PARSE_API_URL + "/uber_requests";
         Log.d("make umber request", url);
-
-        JsonObject requestParams = new JsonObject();
-
-        requestParams.addProperty(FieldNames.NAME, umberRequest.getName());
-        requestParams.addProperty(FieldNames.CLAIMED, umberRequest.isClaimed());
-        requestParams.addProperty(FieldNames.IS_PICKED_UP, false);
-
-        requestParams.addProperty(FieldNames.PHONE_NUMBER, umberRequest.getPhoneNumber());
-        requestParams.addProperty(FieldNames.RIDER_IMAGE_URL, umberRequest.getRiderImageUrl());
-        requestParams.addProperty(FieldNames.LATITUDE, umberRequest.getLatitude());
-        requestParams.addProperty(FieldNames.LONGITUDE, umberRequest.getLongitude());
-
-        requestParams.addProperty(FieldNames.PICKUP_LOCATION_NAME, umberRequest.getPickUpLocation());
-        requestParams.addProperty(FieldNames.PICKUP_LATITUDE, umberRequest.getPickupLat());
-        requestParams.addProperty(FieldNames.PICKUP_LONGITUDE, umberRequest.getPickupLong());
-
-        requestParams.addProperty(FieldNames.DESTINATION_NAME, umberRequest.getDestination());
-        requestParams.addProperty(FieldNames.DESTINATION_LATITUDE, umberRequest.getDestinationLat());
-        requestParams.addProperty(FieldNames.DESTINATION_LONGITUDE, umberRequest.getDestinationLong());
-
-        Log.d("Request params", requestParams.toString());
+//        Log.d("Request params", umberRequest.getAsJson(false).toString());
 
         StringObjectVolleyRequester volleyRequester = new StringObjectVolleyRequester(mActivity);
-        volleyRequester.makePostRequest(mActivity, url, requestParams, uiListener);
-
+        volleyRequester.makePostRequest(mActivity, url, umberRequest.getAsJson(false), uiListener);
     }
 
     public void claimUmberRequest(UmberRequest request, VolleyRequestListener uiListener) {

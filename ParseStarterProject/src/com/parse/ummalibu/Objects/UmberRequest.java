@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.google.gson.JsonObject;
 import com.google.gson.annotations.SerializedName;
 import com.parse.ummalibu.database.ApiResponse;
 import com.parse.ummalibu.database.DatabaseHelper;
@@ -195,6 +196,7 @@ public class UmberRequest implements ApiResponse, Parcelable {
     public void setCreatedAt(long date) {
         mCreatedAt = date;
     }
+
     public boolean isPickedUp() {
         return mIsPickedUp;
     }
@@ -410,4 +412,44 @@ public class UmberRequest implements ApiResponse, Parcelable {
             return new UmberRequest[size];
         }
     };
+
+    public JsonObject getAsJson(boolean includeId) {
+        JsonObject requestParams = new JsonObject();
+
+        if(!mObjectId.equals("") && includeId)
+            requestParams.addProperty(FieldNames.OBJECT_ID, mObjectId);
+
+        requestParams.addProperty(FieldNames.EMAIL, mEmail);
+        requestParams.addProperty(FieldNames.DRIVER_EMAIL, mDriverEmail);
+
+        requestParams.addProperty(FieldNames.NAME, mName);
+        requestParams.addProperty(FieldNames.PHONE_NUMBER, mPhoneNumber);
+        requestParams.addProperty(FieldNames.RIDER_IMAGE_URL, mRiderImageUrl);
+
+        requestParams.addProperty(FieldNames.CLAIMED, mClaimed);
+        requestParams.addProperty(FieldNames.IS_PICKED_UP, mIsPickedUp);
+        requestParams.addProperty(FieldNames.STARTED, mStarted);
+        requestParams.addProperty(FieldNames.IS_COMPLETE, mComplete);
+        requestParams.addProperty(FieldNames.CANCELED, mCanceled);
+
+        requestParams.addProperty(FieldNames.LATITUDE, mLatitude);
+        requestParams.addProperty(FieldNames.LONGITUDE, mLongitude);
+
+        requestParams.addProperty(FieldNames.PICKUP_LOCATION_NAME, mPickUpLocation);
+        requestParams.addProperty(FieldNames.PICKUP_LATITUDE, mPickupLat);
+        requestParams.addProperty(FieldNames.PICKUP_LONGITUDE, mPickupLong);
+
+        requestParams.addProperty(FieldNames.DESTINATION_NAME, mDestination);
+        requestParams.addProperty(FieldNames.DESTINATION_LATITUDE, mDestinationLat);
+        requestParams.addProperty(FieldNames.DESTINATION_LONGITUDE, mDestinationLong);
+
+        requestParams.addProperty(FieldNames.DRIVER_LATITUDE, mDriverLat);
+        requestParams.addProperty(FieldNames.DRIVER_LONGITUDE, mDriverLon);
+        requestParams.addProperty(FieldNames.DRIVER_EMAIL, mDriverEmail);
+
+        requestParams.addProperty(FieldNames.PATH, mPath);
+        requestParams.addProperty(FieldNames.ETA, mEta/1000);
+
+        return requestParams;
+    }
 }

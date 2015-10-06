@@ -116,10 +116,13 @@ public class LocationsFragment extends Fragment {
 
         mSearchLayout.setOnSearchListener(new SearchLayout.OnSearchListener() {
             @Override
-            public void onTextClicked() { }
+            public void onTextClicked() {
+                mSearchLayout.getEditText().setCursorVisible(true);
+            }
 
             @Override
-            public void onLocationButtonClicked() { }
+            public void onLocationButtonClicked() {
+            }
 
             @Override
             public void onClearButtonClicked() {
@@ -145,14 +148,16 @@ public class LocationsFragment extends Fragment {
         helper.getLocations(new VolleyRequestListener<UmLocationsResponse>() {
             @Override
             public void onResponse(UmLocationsResponse response) {
-                mSwipeRefreshLayout.setRefreshing(false);
+                if(mSwipeRefreshLayout != null)
+                    mSwipeRefreshLayout.setRefreshing(false);
                 Preferences.getInstance().getListData().setLocationsExpiration(System.currentTimeMillis() + Constants.ONE_MIN_MILLIS);
                 response.saveResponse(mActivity);
             }
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                mSwipeRefreshLayout.setRefreshing(false);
+                if(mSwipeRefreshLayout != null)
+                    mSwipeRefreshLayout.setRefreshing(false);
                 Log.d("Locations Request Error", error.getMessage());
             }
         });

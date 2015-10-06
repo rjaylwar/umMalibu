@@ -6,8 +6,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,13 +35,18 @@ public class MainActivity extends ToolbarActivity {
     private Intent aboutUMIntent;
     private Intent coffeeIntent;
     private Intent umslIntent;
-    private Intent umberIntent;
 
     @Bind(R.id.drawer_layout) DrawerLayout mDrawerLayout;
     @Bind(R.id.navigation_view) NavigationView mNavigationView;
 
     public static Intent createIntent(Context context) {
         return new Intent(context, MainActivity.class);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mDrawerLayout.closeDrawer(Gravity.LEFT);
     }
 
     @Override
@@ -57,7 +66,6 @@ public class MainActivity extends ToolbarActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.menu_item_rideshare:
                         startActivity(RideShareActivity.createIntent(MainActivity.this));
-                        mDrawerLayout.closeDrawer(mNavigationView);
                         return true;
                     default:
                         return true;
@@ -73,12 +81,32 @@ public class MainActivity extends ToolbarActivity {
         coffeeIntent = new Intent(this, CoffeeActivity.class);
         aboutUMIntent = new Intent(this, AboutUMActivity.class);
         umslIntent = new Intent(this, UmslMenuActivity.class);
-        umberIntent = new Intent(this, UMberActivity.class);
+
+        initDrawer(mToolbar);
     }
 
     @Override
     public int getLayoutId() {
         return R.layout.activity_main;
+    }
+
+    public void initDrawer(@NonNull Toolbar toolbar) {
+        if(mDrawerLayout != null) {
+            ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, 0, 0) {
+                @Override
+                public void onDrawerClosed(View view) {
+                    invalidateOptionsMenu();
+                }
+
+                @Override
+                public void onDrawerOpened(View drawerView) {
+                    invalidateOptionsMenu();
+                }
+            };
+
+            mDrawerLayout.setDrawerListener(drawerToggle);
+            drawerToggle.syncState();
+        }
     }
 
     public void addListenerOnButton() {
@@ -144,7 +172,7 @@ public class MainActivity extends ToolbarActivity {
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // get user input and set it to result
-                                if (passwordEditText.getText().toString().equalsIgnoreCase("umsl2014")) {
+                                if (passwordEditText.getText().toString().equalsIgnoreCase("umslisthebest")) {
                                     startActivity(umslIntent);
                                 } else {
                                     Toast.makeText(MainActivity.this,
@@ -162,7 +190,6 @@ public class MainActivity extends ToolbarActivity {
                 // create an alert dialog
                 AlertDialog alertD = alertDialogBuilder.create();
                 alertD.show();
-                //startActivity(umslIntent);
             }
         });
     }

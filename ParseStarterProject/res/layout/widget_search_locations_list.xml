@@ -6,13 +6,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="56dp">
+        android:layout_height="match_parent">
 
         <com.parse.ummalibu.SearchLayout
             android:id="@+id/search_layout"
             android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:elevation="6dp"/>
 
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipe_refresh"

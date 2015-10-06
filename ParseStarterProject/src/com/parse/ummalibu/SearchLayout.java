@@ -10,7 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
- * Created by rjaylward on 9/24/15.
+ * Created by rjaylward on 9/24/15
  */
 public class SearchLayout extends RelativeLayout {
 
@@ -44,14 +44,18 @@ public class SearchLayout extends RelativeLayout {
             }
         });
         mTitle = (TextView) findViewById(R.id.search_pickup_location_title);
+        mTitle.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mListener.onTextClicked();
+            }
+        });
 
         ImageView clearButton = (ImageView) findViewById(R.id.search_clear_button);
         clearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mPickUpLocationName.setText("");
-                mPickUpLocationName.setCursorVisible(false);
-                mListener.onClearButtonClicked();
+                clear();
             }
         });
 
@@ -92,6 +96,12 @@ public class SearchLayout extends RelativeLayout {
 
     public void setOnTextChangedListener(TextView.OnEditorActionListener actionListener) {
         mPickUpLocationName.setOnEditorActionListener(actionListener);
+    }
+
+    public void clear() {
+        mPickUpLocationName.setText("");
+        mPickUpLocationName.setCursorVisible(false);
+        mListener.onClearButtonClicked();
     }
 
     public EditText getEditText() {
