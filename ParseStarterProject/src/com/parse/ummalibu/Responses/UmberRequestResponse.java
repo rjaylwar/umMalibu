@@ -11,7 +11,7 @@ import com.parse.ummalibu.objects.UmberRequest;
 import java.util.ArrayList;
 
 /**
- * Created by rjaylward on 9/22/15.
+ * Created by rjaylward on 9/22/15
  */
 public class UmberRequestResponse implements ApiResponse {
 

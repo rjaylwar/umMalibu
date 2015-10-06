@@ -8,11 +8,13 @@ import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.responses.DriverResponse;
 import com.parse.ummalibu.responses.EventsResponse;
 import com.parse.ummalibu.responses.MapsResponse;
+import com.parse.ummalibu.responses.MyUmberRequestResponse;
 import com.parse.ummalibu.responses.NotificationsResponse;
 import com.parse.ummalibu.responses.TalksResponse;
 import com.parse.ummalibu.responses.UmLocationsResponse;
 import com.parse.ummalibu.responses.UmberRequestResponse;
 import com.parse.ummalibu.values.FieldNames;
+import com.parse.ummalibu.values.Preferences;
 import com.parse.ummalibu.volley.GsonVolleyRequester;
 import com.parse.ummalibu.volley.JsonObjectVolleyRequester;
 import com.parse.ummalibu.volley.StringObjectVolleyRequester;
@@ -101,6 +103,15 @@ public class ApiHelper {
 
         GsonVolleyRequester<UmberRequestResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, UmberRequestResponse.class);
         volleyRequester.makeGetRequest(mActivity, url, uiListener);
+    }
+
+    public void getMyUmberRequests(VolleyRequestListener<MyUmberRequestResponse> uiListener) {
+        String email = Preferences.getInstance().getEmail();
+        String where = "?where={\"$or\":[{\"email\":\"" + email + "\", \"canceled\":false, \"isComplete\":false}," +
+                "{\"driverEmail\":\"" + email + "\", \"canceled\":false, \"isComplete\":false}]}";
+
+        String url = PARSE_API_URL + "/uber_requests" + where;
+        Log.d("getting umber request", url);
     }
 
     public void makeUmberRequest(UmberRequest umberRequest, VolleyRequestListener uiListener){
