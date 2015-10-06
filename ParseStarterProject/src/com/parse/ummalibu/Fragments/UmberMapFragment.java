@@ -360,7 +360,6 @@ public class UmberMapFragment extends Fragment {
         if (mMarker == null) {
             mMarker = mMap.addMarker(new MarkerOptions().position(new LatLng(34.04063163, -118.69598329)));
             mMarker.setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher));
-            mMarker.set
         }
 
         if (!mIsUpdating)
