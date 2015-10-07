@@ -629,6 +629,8 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="request_cant_be_claimed">Request can not be claimed at this time. Please try again later.</string>
     <string name="request_text">Type song Requests here... </string>
     <string name="ride_share">Ride Share</string>
+    <string name="save">Save</string>
+    <string name="saving">Saving...</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>
     <string name="screenshotstartalerttext">Take a screenshot to send feedback</string>

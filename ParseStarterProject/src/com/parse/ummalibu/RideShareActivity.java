@@ -49,6 +49,9 @@ public class RideShareActivity extends ToolbarActivity {
                         startActivity(MainActivity.createIntent(RideShareActivity.this));
                         mDrawerLayout.closeDrawer(mNavigationView);
                         return true;
+                    case R.id.menu_item_settings:
+                        startActivity(LoginActivity.createIntent(RideShareActivity.this));
+                        return true;
                     default:
                         return true;
                 }

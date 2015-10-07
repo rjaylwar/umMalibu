@@ -821,7 +821,7 @@ public final class R {
 		public static final int pleasewait = 0x7f080038;
 		public static final int screenshotstartalerttext = 0x7f080039;
 		public static final int shakestartalerttext = 0x7f08003a;
-		public static final int status_bar_notification_info_overflow = 0x7f080084;
+		public static final int status_bar_notification_info_overflow = 0x7f080086;
 		public static final int submitbutton = 0x7f08003b;
 		public static final int tutorialalerttext = 0x7f08003c;
 		public static final int twofingerswipestartalerttext = 0x7f08003d;

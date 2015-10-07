@@ -22,6 +22,10 @@ public class LoginActivity$$ViewBinder<T extends com.parse.ummalibu.LoginActivit
     target.mCarLayout = finder.castView(view, 2131689685, "field 'mCarLayout'");
     view = finder.findRequiredView(source, 2131689687, "field 'mMpgLayout'");
     target.mMpgLayout = finder.castView(view, 2131689687, "field 'mMpgLayout'");
+    view = finder.findRequiredView(source, 2131689610, "field 'mDrawerLayout'");
+    target.mDrawerLayout = finder.castView(view, 2131689610, "field 'mDrawerLayout'");
+    view = finder.findRequiredView(source, 2131689618, "field 'mNavigationView'");
+    target.mNavigationView = finder.castView(view, 2131689618, "field 'mNavigationView'");
   }
 
   @Override public void unbind(T target) {
@@ -32,5 +36,7 @@ public class LoginActivity$$ViewBinder<T extends com.parse.ummalibu.LoginActivit
     target.mImageUrlLayout = null;
     target.mCarLayout = null;
     target.mMpgLayout = null;
+    target.mDrawerLayout = null;
+    target.mNavigationView = null;
   }
 }

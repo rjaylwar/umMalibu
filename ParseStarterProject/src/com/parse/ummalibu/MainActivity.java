@@ -67,6 +67,9 @@ public class MainActivity extends ToolbarActivity {
                     case R.id.menu_item_rideshare:
                         startActivity(RideShareActivity.createIntent(MainActivity.this));
                         return true;
+                    case R.id.menu_item_settings:
+                        startActivity(LoginActivity.createIntent(MainActivity.this));
+                        return true;
                     default:
                         return true;
                 }
