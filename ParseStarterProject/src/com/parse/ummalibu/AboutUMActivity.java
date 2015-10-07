@@ -3,7 +3,6 @@ package com.parse.ummalibu;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.text.Html;
 import android.view.Menu;
@@ -19,8 +18,9 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.instabug.wrapper.support.activity.InstabugFragmentActivity;
 
-public class AboutUMActivity extends FragmentActivity {
+public class AboutUMActivity extends InstabugFragmentActivity {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     Button navButton;

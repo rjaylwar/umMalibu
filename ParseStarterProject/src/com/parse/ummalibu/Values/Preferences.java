@@ -67,5 +67,17 @@ public class Preferences extends AbsPreferences{
         return getStringPref(FieldNames.IMAGE_URL).equals("") ? Constants.TEST_IMAGE_URL : getStringPref(FieldNames.IMAGE_URL);
     }
 
+    public void setImageUrl(String imageUrl) {
+        setPref(FieldNames.IMAGE_URL, imageUrl);
+    }
+
+    public String getCarDescription() {
+        return getStringPref(FieldNames.CAR_DESCRIPTION);
+    }
+
+    public void setCarDescription(String carDescription) {
+        setPref(FieldNames.CAR_DESCRIPTION, carDescription);
+    }
+
 
 }

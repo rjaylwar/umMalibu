@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-sw600dp/values-sw600dp.xml -->
+    <eat-comment/>
+    <bool name="isTablet">true</bool>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">24dp</dimen>
@@ -13,9 +16,9 @@
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values-sw600dp/dimens.xml -->
     <eat-comment/>
     <dimen name="circle_size">72dp</dimen>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
-    <dimen name="mr_media_route_controller_art_max_height">480dp</dimen>
+    <dimen name="instabug_actionbar_height">56dp</dimen>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <dimen name="snackbar_action_inline_max_width">0dp</dimen>

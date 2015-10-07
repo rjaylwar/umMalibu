@@ -1,12 +1,13 @@
 package com.parse.ummalibu.base;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import com.instabug.wrapper.support.activity.InstabugAppCompatActivity;
 
 /**
  * Created by rjaylward on 9/22/15.
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends InstabugAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

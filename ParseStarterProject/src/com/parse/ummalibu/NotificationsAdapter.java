@@ -13,7 +13,7 @@ import java.text.Format;
 import java.text.SimpleDateFormat;
 
 /**
- * Created by rjaylward on 1/8/15.
+ * Created by rjaylward on 1/8/15
  */
 public class NotificationsAdapter extends ParseQueryAdapter<ParseObject>{
 

@@ -2,11 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/ParseCrashReporting-1.8.0.jar"
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="55e71442ecbce939ce2a1ad75d1a4408a61d6804">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" />
+        revision="23.0.0"
+        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37a83abbda86fb5e99333ab4cfddc1bce68fef69.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95cb804f53797aaeb7972e4dc70af614a2d41751.jar" />
     </item>
     <item
         jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.1.0/jars/classes.jar"
@@ -16,9 +23,219 @@
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-f378f96ca5f9c1d39ea9dfd3fe1ba397b78422ef.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/butterknife-7.0.1-72c46ab50e6de9d78d14cd345277e9f252e12191.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
+        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-0272abe3e427e7aa37fa3ad1593d850f52c28234.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-25feaf7acf89ef6c52c7e794d3b1f00bff4fdf7b.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-ce05e160e06d9dfd6194ca1beee720100d01decd.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-9eb96860cd61ee7eb94e9e22b18648066893ff9c.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="482de223655d06253cc6a4955d653f8994169500">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-959af95ddbb18a0a5cbafe8794026d2347004048.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-1afacfaead289c443c0d0ae77fab441c61565cf1.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8ec6b6b0e6769a3229b10b9b075a0354d81980d1.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7a9442f51747e420555b65d225169e9653a67d02.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8406ecdfa482a79f1ca60160a6d2ff55c2a977cb.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8406ecdfa482a79f1ca60160a6d2ff55c2a977cb.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/ParseCrashReporting-1.8.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="55e71442ecbce939ce2a1ad75d1a4408a61d6804">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3178362320bcf51228835b60ff978efadfd1f783">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-3a723537feb6308dc3857ccc163e04e235243839.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/ParseCrashReporting-1.8.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="55e71442ecbce939ce2a1ad75d1a4408a61d6804">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.1/44780c2cf98f6a3cf4e77f1234d644758b329201/bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-2b6478e02f8b069e62dbd76f6f8b06efe2e694ca.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e1a47f7f5ea7aac3f208eeb6645c30f85c89b5bc.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.1/44780c2cf98f6a3cf4e77f1234d644758b329201/bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-2b6478e02f8b069e62dbd76f6f8b06efe2e694ca.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-4590b2b1e432cb94f77a2e292bcdc8330d68ea85.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-bff85572bba2ae3d85e07ce26d328f1c85f8478c.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/Parse-1.8.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95cb804f53797aaeb7972e4dc70af614a2d41751.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7a9442f51747e420555b65d225169e9653a67d02.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95cb804f53797aaeb7972e4dc70af614a2d41751.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-bff85572bba2ae3d85e07ce26d328f1c85f8478c.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1c60880a1661db1057c6e3800f1b3cec7a64b984">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-89597c57624806b6555ed7018ea3fd4540374e1e.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-973fb75d4a41846d33465bb209d3ad7ddf373768.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.squareup.mimecraft/mimecraft/1.1.1/66f73c3e42fa4658ef1cbae8b1ebefdaa856a23c/mimecraft-1.1.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="66f73c3e42fa4658ef1cbae8b1ebefdaa856a23c">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/mimecraft-1.1.1-068754c8a3f72ed391f8e106688d545960a828f6.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/library-1.0.19-32f63d9ad88a7896d273b86c794718df509b872a.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/Parse-1.8.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-6dce0fed5989feb8bcf2ca0f00711876f4a182e8.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
         sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-25feaf7acf89ef6c52c7e794d3b1f00bff4fdf7b.jar" />
     </item>
@@ -30,144 +247,18 @@
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-3be0eaa925a62eaa32f02480cf841a9247b614b8.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/ParseCrashReporting-1.8.0.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-bff85572bba2ae3d85e07ce26d328f1c85f8478c.jar" />
+        revision="23.0.0"
+        sha1="55e71442ecbce939ce2a1ad75d1a4408a61d6804">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" />
     </item>
     <item
         jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/Parse-1.8.0.jar"
         jumboMode="false"
-        revision="22.0.1"
+        revision="21.1.2"
         sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-db246c7e77dad3000aa424fade87a947e078489b.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="482de223655d06253cc6a4955d653f8994169500">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-959af95ddbb18a0a5cbafe8794026d2347004048.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7f51e5b47d242d86112ae1efc0c7b920e0d23fda.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.1/44780c2cf98f6a3cf4e77f1234d644758b329201/bolts-android-1.2.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-2b6478e02f8b069e62dbd76f6f8b06efe2e694ca.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-9eb96860cd61ee7eb94e9e22b18648066893ff9c.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-6dce0fed5989feb8bcf2ca0f00711876f4a182e8.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-db246c7e77dad3000aa424fade87a947e078489b.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-973fb75d4a41846d33465bb209d3ad7ddf373768.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/butterknife-7.0.1-72c46ab50e6de9d78d14cd345277e9f252e12191.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95cb804f53797aaeb7972e4dc70af614a2d41751.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-1afacfaead289c443c0d0ae77fab441c61565cf1.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-708e562a444f349bb622d713d98eb1494940d6b6.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37513999141cfda8e90d6166ba4b89b16bc12fea.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="997773777cf3904c11d6764fe3b7668538220e49">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-acf7cb387048905d4faf8854d078636ecc87c0fc.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-25feaf7acf89ef6c52c7e794d3b1f00bff4fdf7b.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/glide-3.6.1-1f0a83f4871cad3c645e13a2f6164354497f409c.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="3c729e6d76a36c5dc27e6a4c4009296f49eaa88a">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-238ebd8cfceeae619662e5dd5bf22f9426b37083.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.1/44780c2cf98f6a3cf4e77f1234d644758b329201/bolts-android-1.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-2b6478e02f8b069e62dbd76f6f8b06efe2e694ca.jar" />
     </item>
     <item
         jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.1.0/jars/classes.jar"
@@ -177,46 +268,11 @@
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-380e688a781d6612c4df08950056059a4e5077e6.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7a9442f51747e420555b65d225169e9653a67d02.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/butterknife-7.0.1-72c46ab50e6de9d78d14cd345277e9f252e12191.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e1a47f7f5ea7aac3f208eeb6645c30f85c89b5bc.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-bff85572bba2ae3d85e07ce26d328f1c85f8478c.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-ce05e160e06d9dfd6194ca1beee720100d01decd.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-0272abe3e427e7aa37fa3ad1593d850f52c28234.jar" />
+        sha1="3c729e6d76a36c5dc27e6a4c4009296f49eaa88a">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-238ebd8cfceeae619662e5dd5bf22f9426b37083.jar" />
     </item>
     <item
         jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
@@ -226,48 +282,6 @@
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e3316dd08079d1193355c48cd5f66e9724786557.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95cb804f53797aaeb7972e4dc70af614a2d41751.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/Parse-1.8.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-4590b2b1e432cb94f77a2e292bcdc8330d68ea85.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-25feaf7acf89ef6c52c7e794d3b1f00bff4fdf7b.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37a83abbda86fb5e99333ab4cfddc1bce68fef69.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8406ecdfa482a79f1ca60160a6d2ff55c2a977cb.jar" />
-    </item>
-    <item
         jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -275,39 +289,46 @@
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-db246c7e77dad3000aa424fade87a947e078489b.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-bff85572bba2ae3d85e07ce26d328f1c85f8478c.jar" />
+        sha1="997773777cf3904c11d6764fe3b7668538220e49">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-acf7cb387048905d4faf8854d078636ecc87c0fc.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
-        revision="23.0.0"
-        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/library-1.0.19-32f63d9ad88a7896d273b86c794718df509b872a.jar" />
+        revision="22.0.1"
+        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37a83abbda86fb5e99333ab4cfddc1bce68fef69.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8406ecdfa482a79f1ca60160a6d2ff55c2a977cb.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="17449c47df35c754b257532052f1270c444f7993">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-2330b9e15b702e8194f47490f85a4dfa066544c4.jar" />
+        sha1="8202aebf0fb089267542ad56a883fbc3d71f48c4">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-bac41663571cd70163b6e911bfe293b41e11c3ff.jar" />
     </item>
     <item
         jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
-        revision="22.0.1"
+        revision="23.0.0"
         sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e1a47f7f5ea7aac3f208eeb6645c30f85c89b5bc.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-708e562a444f349bb622d713d98eb1494940d6b6.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-db246c7e77dad3000aa424fade87a947e078489b.jar" />
     </item>
     <item
         jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
@@ -317,81 +338,39 @@
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/gson-2.3.1-8dddcaaf9ec2b807fb97e50e13cc358d384ed71c.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7a9442f51747e420555b65d225169e9653a67d02.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/Parse-1.8.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jar="/Users/rjaylward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-95cb804f53797aaeb7972e4dc70af614a2d41751.jar" />
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-25feaf7acf89ef6c52c7e794d3b1f00bff4fdf7b.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/jars/classes.jar"
+        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="95758a2905669affbffc5ddd262921d375674fad">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8039695a8056d25d79c8a56e3cdb02ea83f49587.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/ParseCrashReporting-1.8.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="55e71442ecbce939ce2a1ad75d1a4408a61d6804">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8ec6b6b0e6769a3229b10b9b075a0354d81980d1.jar" />
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/butterknife-7.0.1-72c46ab50e6de9d78d14cd345277e9f252e12191.jar" />
     </item>
     <item
         jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
+        revision="22.0.1"
         sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8406ecdfa482a79f1ca60160a6d2ff55c2a977cb.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/libs/ParseCrashReporting-1.8.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="55e71442ecbce939ce2a1ad75d1a4408a61d6804">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/jars/classes.jar"
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-a73335facc924d3f3bee86508e534f52b3a43e5a.jar" />
+        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7f51e5b47d242d86112ae1efc0c7b920e0d23fda.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.1.0/jars/classes.jar"
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="3178362320bcf51228835b60ff978efadfd1f783">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-3a723537feb6308dc3857ccc163e04e235243839.jar" />
-    </item>
-    <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-ba388587e1fb015ec2f4983b354e47403f5e6f5e.jar" />
+        sha1="17449c47df35c754b257532052f1270c444f7993">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-2330b9e15b702e8194f47490f85a4dfa066544c4.jar" />
     </item>
     <item
         jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.1.0/jars/classes.jar"
@@ -401,11 +380,53 @@
         <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d89621c0bea977f61b710427f0aaf84b67e40c99.jar" />
     </item>
     <item
-        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars/classes.jar"
+        jar="/Users/rjaylward/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/glide-3.6.1-1f0a83f4871cad3c645e13a2f6164354497f409c.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-bff85572bba2ae3d85e07ce26d328f1c85f8478c.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="95758a2905669affbffc5ddd262921d375674fad">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8039695a8056d25d79c8a56e3cdb02ea83f49587.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37513999141cfda8e90d6166ba4b89b16bc12fea.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-ba388587e1fb015ec2f4983b354e47403f5e6f5e.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-a73335facc924d3f3bee86508e534f52b3a43e5a.jar" />
+    </item>
+    <item
+        jar="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
-        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37a83abbda86fb5e99333ab4cfddc1bce68fef69.jar" />
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-db246c7e77dad3000aa424fade87a947e078489b.jar" />
     </item>
 
 </items>

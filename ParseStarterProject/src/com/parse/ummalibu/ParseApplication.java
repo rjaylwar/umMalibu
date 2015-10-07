@@ -3,6 +3,7 @@ package com.parse.ummalibu;
 import android.app.Application;
 import android.util.Log;
 
+import com.instabug.library.Instabug;
 import com.parse.Parse;
 import com.parse.ParseCrashReporting;
 import com.parse.ParseException;
@@ -24,17 +25,16 @@ public class ParseApplication extends Application {
         // Initialize Crash Reporting.
         ParseCrashReporting.enable(this);
         //Parse.enableLocalDatastore(this);
-        Parse.initialize(this, "M8lsPPcaku0od8yzToKaHKR11TUFlsZuRPorClFt", "ovSmqOh3BFF0IrQu5zrhFHPxOsIQYA88bOHWEc42");
-
+        Parse.initialize(this, getString(R.string.parse_app_id), getString(R.string.parse_client_key));
         ParseUser.enableAutomaticUser();
-//    ParseACL defaultACL = new ParseACL();
 
-//    // If you would like all objects to be private by default, remove this line.
-//    defaultACL.setPublicReadAccess(true);
-//    //defaultACL.setPublicWriteAccess(true);
-//
-//    ParseACL.setDefaultACL(defaultACL, true);
+        Instabug.initialize(this, getString(R.string.instabug_key));
 
+        subscribeToChannels();
+
+    }
+
+    private void subscribeToChannels() {
         ParsePush.subscribeInBackground("global", new SaveCallback() {
             @Override
             public void done(ParseException e) {
@@ -67,6 +67,5 @@ public class ParseApplication extends Application {
                 }
             }
         });
-
     }
 }

@@ -64,5 +64,10 @@
     <string name="start">Start</string>
     <string name="if_you_have_a_car">If you have a car enter the info below</string>
     <string name="request_a_ride">Request A Ride</string>
+    <string name="image_url_optional">Image url (optional)</string>
+    <string name="car_desc">Car Description</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
+    <string name="saving">Saving...</string>
 
 </resources>

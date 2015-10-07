@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-pt-rPT/values-pt-rPT.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>Comunicar um problema</item>
+        <item>Enviar Comentários</item>
+    </string-array>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-pt-rPT/values-pt-rPT.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
@@ -15,6 +21,12 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partilhar com"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partilhar com %s"</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-pt-rPT/values-pt-rPT.xml -->
+    <eat-comment/>
+    <string name="bottommessage">Comentários Fornecidos pelo &amp;name&amp;</string>
+    <string name="bugheader">Comunicar um problema</string>
+    <string name="cancelbutton">Cancelar</string>
+    <string name="commentplaceholder">Escreva aqui os seus comentários...</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pt-rPT/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"O <ns1:g id="APP_NAME">%1$s</ns1:g> requer uma atualização da aplicação Android Wear."</string>
@@ -47,15 +59,21 @@
     <string msgid="2201289642219771610" name="common_google_play_services_updating_text">"O <ns1:g id="APP_NAME">%1$s</ns1:g> não é executado sem os serviços do Google Play, os quais estão a ser atualizados."</string>
     <string msgid="815008177440683245" name="common_google_play_services_updating_title">"Serviços do Google Play em atualização"</string>
     <string msgid="411506735369601515" name="common_open_on_phone">"Abrir no telemóvel"</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-pt-rPT/values-pt-rPT.xml -->
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-pt-rPT/values-pt-rPT.xml -->
     <eat-comment/>
-    <string msgid="4271159405637008602" name="mr_media_route_button_content_description">"Saída de som multimédia"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"A pesquisar dispositivos…"</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Ligar ao dispositivo"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Desassociar"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"Sistema"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Dispositivos"</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/values-pt-rPT/wallet_strings.xml -->
-    <eat-comment/>
-    <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Comprar com a Google"</string>
+    <string name="edgeswipestartalerttext">Deslize a partir da margem para enviar comentários</string>
+    <string name="emailplaceholder">Introduza o seu E-mail...</string>
+    <string name="feedbackheader">Enviar Comentários</string>
+    <string name="feedbacksentalerttext">Obrigado por ajudar a melhorar o InstabugApp!</string>
+    <string name="feedbacksentalerttitle">Comentários Enviados</string>
+    <string name="invalidcommentalerttext">Introduza um comentário válido</string>
+    <string name="invalidcommentalerttitle">Comentário Inválido</string>
+    <string name="invalidemailalerttext">Introduza um e-mail válido</string>
+    <string name="invalidemailalerttitle">E-mail Inválido</string>
+    <string name="pleasewait">Por favor, aguarde um momento</string>
+    <string name="screenshotstartalerttext">Faça uma captura de ecrã para enviar comentários</string>
+    <string name="shakestartalerttext">Abane para enviar comentários</string>
+    <string name="submitbutton">Enviar</string>
+    <string name="tutorialalerttext">Desenhe na captura de ecrã e adicione texto</string>
+    <string name="twofingerswipestartalerttext">Deslize com dois dedos para enviar comentários</string>
 </resources>

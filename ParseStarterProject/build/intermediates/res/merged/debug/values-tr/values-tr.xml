@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-tr/values-tr.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>Bir sorunu rapor</item>
+        <item>Geri Bildirim Gönder</item>
+    </string-array>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-tr/values-tr.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ana ekrana git"</string>
@@ -15,6 +21,12 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sesli arama"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Şununla paylaş"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s ile paylaş"</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-tr/values-tr.xml -->
+    <eat-comment/>
+    <string name="bottommessage">&amp;name&amp; tarafından sağlanan geri bildirim</string>
+    <string name="bugheader">Bir sorunu rapor</string>
+    <string name="cancelbutton">İptal</string>
+    <string name="commentplaceholder">Geri bildiriminizi buraya yazın...</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-tr/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, Android Wear uygulamasında güncelleme yapılmasını gerektiriyor."</string>
@@ -47,15 +59,21 @@
     <string msgid="2201289642219771610" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, şu anda güncellenmekte olan Google Play hizmetleri olmadan çalışmayacak."</string>
     <string msgid="815008177440683245" name="common_google_play_services_updating_title">"Google Play hizmetleri güncelleniyor"</string>
     <string msgid="411506735369601515" name="common_open_on_phone">"Telefonda aç"</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-tr/values-tr.xml -->
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-tr/values-tr.xml -->
     <eat-comment/>
-    <string msgid="4271159405637008602" name="mr_media_route_button_content_description">"Medya çıkışı"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Cihaz arayın…"</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Cihaza bağlanın"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Bağlantıyı kes"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"Sistem"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Cihazlar"</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/values-tr/wallet_strings.xml -->
-    <eat-comment/>
-    <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Google ile satın al"</string>
+    <string name="edgeswipestartalerttext">Geri bildirim göndermek için kenardan çekin</string>
+    <string name="emailplaceholder">E-postanızı girin...</string>
+    <string name="feedbackheader">Geri Bildirim Gönder</string>
+    <string name="feedbacksentalerttext">InstabugApp\'ın geliştirilmesindeki yardımınız için teşekkür ederiz!</string>
+    <string name="feedbacksentalerttitle">Geri Bildirim Gönderildi</string>
+    <string name="invalidcommentalerttext">Lütfen geçerli bir yorum girin</string>
+    <string name="invalidcommentalerttitle">Geçersiz Yorum</string>
+    <string name="invalidemailalerttext">Lütfen geçerli bir e-posta girin</string>
+    <string name="invalidemailalerttitle">Geçersiz E-posta</string>
+    <string name="pleasewait">Lütfen bekleyiniz</string>
+    <string name="screenshotstartalerttext">Geri bildirim göndermek için ekran görüntüsü alın</string>
+    <string name="shakestartalerttext">Geri bildirim göndermek için sallayın</string>
+    <string name="submitbutton">Gönder</string>
+    <string name="tutorialalerttext">Ekran görüntüsünü çekin, ardından metin ekleyin</string>
+    <string name="twofingerswipestartalerttext">Geri bildirim göndermek için iki parmağınızla çekin</string>
 </resources>

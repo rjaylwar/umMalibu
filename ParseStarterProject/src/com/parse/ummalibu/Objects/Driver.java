@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.net.Uri;
 
+import com.google.gson.JsonObject;
 import com.google.gson.annotations.SerializedName;
 import com.parse.ummalibu.database.ApiResponse;
 import com.parse.ummalibu.database.DatabaseHelper;
@@ -27,7 +28,7 @@ public class Driver implements ApiResponse {
     private String mName = "";
 
     @SerializedName(FieldNames.MPG)
-    private int mMpg;
+    private int mMpg = 20;
 
     @SerializedName(FieldNames.PHONE_NUMBER)
     private String mPhoneNumber = "";
@@ -36,7 +37,7 @@ public class Driver implements ApiResponse {
     private String mCarDescription = "";
 
     @SerializedName(FieldNames.IMAGE_URL)
-    private String mImageUrl = "";
+    private String mImageUrl = "http://a2.mzstatic.com/us/r30/Purple1/v4/df/b8/b3/dfb8b375-b66f-a191-2a0a-488651a8afaa/icon175x175.jpeg";
 
     private Date mCreatedAt;
 
@@ -61,7 +62,8 @@ public class Driver implements ApiResponse {
     }
 
     public void setMpg(int mpg) {
-        mMpg = mpg;
+        if(mpg > 0)
+            mMpg = mpg;
     }
 
     public String getPhoneNumber() {
@@ -93,7 +95,8 @@ public class Driver implements ApiResponse {
     }
 
     public void setImageUrl(String imageUrl) {
-        mImageUrl = imageUrl;
+        if(!imageUrl.equals(""))
+            mImageUrl = imageUrl;
     }
 
     public Date getCreatedAt() {
@@ -127,5 +130,21 @@ public class Driver implements ApiResponse {
     public void saveResponse(Context context) {
         DatabaseHelper helper = new DatabaseHelper(context);
         helper.addDriver(this);
+    }
+
+    public JsonObject getAsJson(boolean includeObjectId) {
+        JsonObject body = new JsonObject();
+
+        if(includeObjectId)
+            body.addProperty(FieldNames.OBJECT_ID, mObjectId);
+
+        body.addProperty(FieldNames.EMAIL, mEmail);
+        body.addProperty(FieldNames.NAME, mName);
+        body.addProperty(FieldNames.MPG, mMpg);
+        body.addProperty(FieldNames.PHONE_NUMBER, mPhoneNumber);
+        body.addProperty(FieldNames.CAR_DESCRIPTION, mCarDescription);
+        body.addProperty(FieldNames.IMAGE_URL, mImageUrl);
+
+        return body;
     }
 }

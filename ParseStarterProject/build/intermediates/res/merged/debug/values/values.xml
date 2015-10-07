@@ -28,22 +28,17 @@
         <item>360</item>
         <item>-1</item>
     </string-array>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>Report a bug</item>
+        <item>Send feedback</item>
+    </string-array>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
-    <eat-comment/>
-    <attr format="reference" name="mediaRouteButtonStyle"/>
-    <attr format="reference" name="mediaRouteConnectingDrawable"/>
-    <attr format="reference" name="mediaRouteOffDrawable"/>
-    <attr format="reference" name="mediaRouteOnDrawable"/>
-    <attr format="reference" name="mediaRoutePauseDrawable"/>
-    <attr format="reference" name="mediaRoutePlayDrawable"/>
-    <attr format="reference" name="mediaRouteSettingsDrawable"/>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
-    <eat-comment/>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
@@ -52,6 +47,11 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <bool name="isTablet">false</bool>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -126,6 +126,16 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <color name="instabug_annotation_color_blue">#006AA1</color>
+    <color name="instabug_annotation_color_default">@color/instabug_annotation_color_blue</color>
+    <color name="instabug_annotation_color_gray">#E5E5E5</color>
+    <color name="instabug_annotation_color_green">#5CC500</color>
+    <color name="instabug_annotation_color_orange">#F77A00</color>
+    <color name="instabug_annotation_color_red">#ED3A3A</color>
+    <color name="instabug_annotation_color_yellow">#F1B600</color>
+    <color name="instabug_transparent_color">#00000000</color>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/colors.xml -->
     <eat-comment/>
     <color name="light_grey">#9c9c9c</color>
@@ -187,23 +197,6 @@
     <color name="um_grey_blue">#FF345065</color>
     <color name="um_highlight_blue">#FF00DEF2</color>
     <color name="very_light_grey">#f4f4f4</color>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/values/wallet_colors.xml -->
-    <eat-comment/>
-    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
-    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
-    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
-    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
-    <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
-    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
-    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
-    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
-    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
-    <color name="wallet_hint_foreground_holo_dark">#808080</color>
-    <color name="wallet_hint_foreground_holo_light">#808080</color>
-    <color name="wallet_holo_blue_light">#ff33b5e5</color>
-    <color name="wallet_link_text_light">#0000ee</color>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/colors.xml -->
-    <eat-comment/>
     <color name="white">#ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
@@ -211,7 +204,6 @@
     <declare-styleable name="ActionMenuView"/>
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/><attr format="reference" name="closeItemLayout"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
-    <declare-styleable name="AdsAttrs"><attr format="string" name="adSize"/><attr format="string" name="adSizes"/><attr format="string" name="adUnitId"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/></declare-styleable>
     <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="AppBarLayout_LayoutParams"><attr name="layout_scrollFlags"><flag name="scroll" value="0x1"/><flag name="exitUntilCollapsed" value="0x2"/><flag name="enterAlways" value="0x4"/><flag name="enterAlwaysCollapsed" value="0x8"/></attr><attr format="reference" name="layout_scrollInterpolator"/></declare-styleable>
@@ -222,7 +214,6 @@
     <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="reference" name="statusBarBackground"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout_LayoutParams"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
-    <declare-styleable name="CustomWalletTheme"><attr format="enum" name="windowTransitionStyle"><enum name="slide" value="1"/><enum name="none" value="2"/></attr></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="topBottomBarArrowSize"/><attr format="dimension" name="middleBarArrowSize"/><attr format="dimension" name="barSize"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="android:background"/><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
@@ -230,7 +221,6 @@
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
     <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
     <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/><attr format="boolean" name="ambientEnabled"/></declare-styleable>
-    <declare-styleable name="MediaRouteButton"><attr format="reference" name="externalRouteEnabledDrawable"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
@@ -251,8 +241,6 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="appTheme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="test" value="3"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
-    <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with" value="5"/><enum name="logo_only" value="6"/><enum name="donate_with" value="7"/><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/><enum name="donate_with_google" value="4"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="google_wallet_classic" value="1"/><enum name="google_wallet_grayscale" value="2"/><enum name="google_wallet_monochrome" value="3"/><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="google_wallet_classic" value="1"/><enum name="google_wallet_monochrome" value="2"/><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
@@ -350,6 +338,9 @@
     <dimen name="fab_size_mini">40dp</dimen>
     <dimen name="fab_size_normal">56dp</dimen>
     <dimen name="fab_translation_z_pressed">6dp</dimen>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="instabug_actionbar_height">48dp</dimen>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
@@ -357,9 +348,6 @@
     <eat-comment/>
     <dimen name="login_text_size">15dp</dimen>
     <dimen name="media_player_height">56dp</dimen>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
-    <eat-comment/>
-    <dimen name="mr_media_route_controller_art_max_height">320dp</dimen>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="navigation_elevation">12dp</dimen>
@@ -400,12 +388,17 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.1.0/res/values/cast_ids.xml -->
-    <eat-comment/>
-    <item name="cast_notification_id" type="id"/>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
-    <eat-comment/>
     <item name="home" type="id"/>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <item name="instabug_action_cancel" type="id"/>
+    <item name="instabug_action_clear_annotations" type="id"/>
+    <item name="instabug_action_open_composer" type="id"/>
+    <item name="instabug_action_pick_color" type="id"/>
+    <item name="instabug_action_send" type="id"/>
+    <item name="instabug_bottom_bar_toolbar" type="id"/>
+    <item name="instabug_brush_stroke" type="id"/>
+    <item name="instabug_top_bar_toolbar" type="id"/>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
@@ -463,11 +456,6 @@
     <string name="about_link">Check us out at http://www.ummalibu.com or https://www.facebook.com/universityministries</string>
     <string name="about_ride_text">Shuttles to UM pick up students every week in Smothers Parking Lot on Pepperdine\'s main campus at 7:50 every Tuesday night.</string>
     <string name="about_um_text">UM is University Ministries, a college ministry hosted by Malibu Presbyterian Church that meets every Tuesday night at 8pm. We are focused on creating a community of people who can be real and love God together. This ministry is open to any college aged student. UM is lead by Steve Smith along with yearly interns. Check out our website or our facebook page below for more information, and we hope to see you on Tuesday nights!</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
-    <eat-comment/>
-    <string name="accept">Accept</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
-    <eat-comment/>
     <string name="action_alerts">Notifications</string>
     <string name="action_new">New Action</string>
     <string name="action_settings">Settings</string>
@@ -484,17 +472,23 @@
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="bottommessage">Feedback Powered by &amp;name&amp;</string>
+    <string name="bugheader">Report a bug</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="cancel">Cancel</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.1.0/res/values/cast_strings.xml -->
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>
-    <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
-    <string name="cast_notification_connecting_message">Connecting to <ns1:g id="name">%1$s</ns1:g></string>
-    <string name="cast_notification_disconnect">Disconnect</string>
+    <string name="cancelbutton">Cancel</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
+    <string name="car_desc">Car Description</string>
     <string name="claim_request">Claim Request</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="commentplaceholder">Enter your feedback...</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
@@ -534,19 +528,26 @@
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="contact">Contact</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
+    <string name="date_string">Date</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>
-    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
-    <string name="create_calendar_title">Create calendar event</string>
+    <string name="edgeswipestartalerttext">Swipe from edge to send feedback</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
-    <string name="date_string">Date</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
+    <string name="email">Email</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>
-    <string name="decline">Decline</string>
+    <string name="emailplaceholder">Enter your Email...</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="events">Events</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="feedbackheader">Send feedback</string>
+    <string name="feedbacksentalerttext">Thank you for helping us improve InstabugApp!</string>
+    <string name="feedbacksentalerttitle">Feedback Sent</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
     <string name="finish">Finish</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/src/debug/res/values/google_maps_api.xml -->
     <eat-comment/>
@@ -572,28 +573,37 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="if_you_have_a_car">If you have a car enter the info below</string>
+    <string name="image_url_optional">Image url (optional)</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/keys.xml -->
+    <eat-comment/>
+    <string name="instabug_key">7f58e5854e7e2ab477467da69ee5e933</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="invalidcommentalerttext">Please enter a valid comment</string>
+    <string name="invalidcommentalerttitle">Invalid Comment</string>
+    <string name="invalidemailalerttext">Please enter a valid email</string>
+    <string name="invalidemailalerttitle">Invalid Email</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
     <string name="meet_steve_title">Meet Our Director - Steve Smith</string>
     <string name="minus">-</string>
     <string name="more">More</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
-    <eat-comment/>
-    <string name="mr_media_route_button_content_description">Cast</string>
-    <string name="mr_media_route_chooser_searching">Searching for devices\u2026</string>
-    <string name="mr_media_route_chooser_title">Connect to device</string>
-    <string name="mr_media_route_controller_disconnect">Disconnect</string>
-    <string name="mr_media_route_controller_pause">Pause</string>
-    <string name="mr_media_route_controller_play">Play</string>
-    <string name="mr_media_route_controller_settings_description">Route settings</string>
-    <string name="mr_media_route_controller_stop">Stop casting</string>
-    <string name="mr_system_route_name">System</string>
-    <string name="mr_user_route_category_name">Devices</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
-    <eat-comment/>
     <string name="name">Name:</string>
     <string name="next_text">Next</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/keys.xml -->
+    <eat-comment/>
+    <string name="parse_app_id">M8lsPPcaku0od8yzToKaHKR11TUFlsZuRPorClFt</string>
+    <string name="parse_client_key">ovSmqOh3BFF0IrQu5zrhFHPxOsIQYA88bOHWEc42</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
     <string name="pick_up">Pick Up</string>
     <string name="pickup_location">Pickup Location</string>
     <string name="play">Play</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="pleasewait">Please wait a moment</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
     <string name="plus">+</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings_activity_settings.xml -->
     <eat-comment/>
@@ -619,7 +629,17 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="request_cant_be_claimed">Request can not be claimed at this time. Please try again later.</string>
     <string name="request_text">Type song Requests here... </string>
     <string name="ride_share">Ride Share</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="screenshotstartalerttext">Take a screenshot to send feedback</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
     <string name="sermons">Sermons</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="shakestartalerttext">Shake to send feedback</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
     <string name="share">Share</string>
     <string name="songs_title_text">Songs recently played at UM</string>
     <string name="split_gas_number_ways">Split Gas %s Ways</string>
@@ -630,14 +650,13 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="steve_bio_text">As a native of Northern California, Steve came to Malibu over a decade ago to attend Pepperdine. While there, Steve found and fell in love with UM.\n\nFrom finding a community of lifelong friends his freshman year, to finding his wife junior year, to serving as the UM his senior year, UM has played an absolutely pivotal role in Steve\'s life.\n\nSteve is elated to be the new Director of University Ministries after a few years away from Malibu. During that time, Steve worked in the advertising industry, completed his Masters of Divinity, worked as a chaplain in an ICU, co-pastored a church in Topanga Canyon, captained a crab fishing vessel on the Bering Sea, and married th woman of his dreams. (OK, one of those might not be true)\n\nNow at the helm of UM, Steve is excited to see what the Lord has in store for him and for the wonderful students of Pepperdine University. </string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
-    <eat-comment/>
-    <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
-    <string name="store_picture_title">Save image</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
-    <eat-comment/>
     <string name="streaming_warning">Warning: streaming sermons uses almost 35mb of data per session. Wifi is recommended.\n\n(Take notes here)</string>
     <string name="submit">Submit</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="submitbutton">Send</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
     <string name="title_activity_about_um">About UM</string>
     <string name="title_activity_activity_with_fragment">Activity_with_fragment</string>
     <string name="title_activity_artist_list">Artist List</string>
@@ -659,14 +678,15 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="title_activity_umsl_menu">Send Push Notifications</string>
     <string name="title_activity_worship">Worship</string>
     <string name="title_string">Title</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="tutorialalerttext">Draw on screenshot then add text</string>
+    <string name="twofingerswipestartalerttext">Swipe two fingers to send feedback</string>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
     <string name="um">UM</string>
     <string name="um_goal">At UM our job is to minister to students in any way we can. That means getting to know students on a more personal level than we can in the short time that everyone is together on Tuesday nights. We would love to talk about life, God, and answer any questions you may have about our ministry. Plus if you take the time to meet with us we will byy you a coffee, so you have nothing to lose. Use the link below to send us an email of talk to Steve at UM if you are interested.</string>
     <string name="umber">UMber</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/values/wallet_strings.xml -->
-    <eat-comment/>
-    <string name="wallet_buy_button_place_holder">Buy with Google</string>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
-    <eat-comment/>
     <string name="want_to_give_person_ride_to_address">Would you like to give %1$s a ride to %2$s?\n\nYou will be prompted to adjust the pickup time if necessary.</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -1631,6 +1651,17 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
+    <eat-comment/>
+    <style name="InstabugBorderlessDialog" parent="android:Theme.Light">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@color/instabug_transparent_color</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
@@ -1885,42 +1916,10 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_iap_style.xml -->
-    <eat-comment/>
-    <style name="Theme.IAPTheme" parent="android:Theme">
-    <item name="android:windowIsTranslucent">true</item>
-    <item name="android:windowBackground">@android:color/transparent</item>
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowIsFloating">true</item>
-    <item name="android:backgroundDimEnabled">false</item>
-  </style>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/style.xml -->
     <eat-comment/>
     <style name="Theme.Main" parent="AppTheme">
 
-    </style>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
-    <eat-comment/>
-    <style name="Theme.MediaRouter" parent="">
-        <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.MediaRouteButton</item>
-
-        <item name="mediaRouteOffDrawable">@drawable/ic_media_route_off_mono_dark</item>
-        <item name="mediaRouteConnectingDrawable">@drawable/mr_ic_media_route_connecting_mono_dark</item>
-        <item name="mediaRouteOnDrawable">@drawable/ic_media_route_on_mono_dark</item>
-        <item name="mediaRouteSettingsDrawable">@drawable/mr_ic_settings_dark</item>
-        <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_dark</item>
-        <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_dark</item>
-    </style>
-    <style name="Theme.MediaRouter.Light" parent="">
-        <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.Light.MediaRouteButton</item>
-
-        <item name="mediaRouteOffDrawable">@drawable/ic_cast_off_light</item>
-        <item name="mediaRouteConnectingDrawable">@drawable/mr_ic_media_route_connecting_mono_light</item>
-        <item name="mediaRouteOnDrawable">@drawable/ic_cast_on_light</item>
-        <item name="mediaRouteSettingsDrawable">@drawable/mr_ic_settings_light</item>
-        <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_light</item>
-        <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_light</item>
     </style>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -1929,42 +1928,6 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/values/wallet_styles.xml -->
-    <eat-comment/>
-    <style name="WalletFragmentDefaultButtonTextAppearance">
-        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
-        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
-        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
-        <item name="android:textColorLink">@color/wallet_link_text_light</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:textStyle">normal</item>
-    </style>
-    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="WalletFragmentDefaultDetailsTextAppearance">
-        <item name="android:textStyle">bold</item>
-    </style>
-    <style name="WalletFragmentDefaultDetailsTextAppearance">
-        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
-        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
-        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
-        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">normal</item>
-    </style>
-    <style name="WalletFragmentDefaultStyle">
-        <item name="buyButtonHeight">48dp</item>
-        <item name="buyButtonWidth">match_parent</item>
-        <item name="buyButtonText">buy_with</item>
-        <item name="buyButtonAppearance">google_wallet_classic</item>
-        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
-        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
-        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
-        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
-        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
-        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
-        <item name="maskedWalletDetailsLogoImageType">google_wallet_classic</item>
-    </style>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
-    <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -2107,23 +2070,5 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <style name="Widget.Design.TextInputLayout" parent="android:Widget">
         <item name="hintTextAppearance">@style/TextAppearance.Design.Hint</item>
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
-    </style>
-    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
-    <eat-comment/>
-    <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">
-        <item name="android:minWidth">56dp</item>
-        <item name="android:minHeight">48dp</item>
-        <item name="android:padding">0dp</item>
-        <item name="android:focusable">true</item>
-        <item name="android:contentDescription">@string/mr_media_route_button_content_description</item>
-        <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_light</item>
-    </style>
-    <style name="Widget.MediaRouter.MediaRouteButton" parent="Widget.AppCompat.ActionButton">
-        <item name="android:minWidth">56dp</item>
-        <item name="android:minHeight">48dp</item>
-        <item name="android:padding">0dp</item>
-        <item name="android:focusable">true</item>
-        <item name="android:contentDescription">@string/mr_media_route_button_content_description</item>
-        <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_dark</item>
     </style>
 </resources>

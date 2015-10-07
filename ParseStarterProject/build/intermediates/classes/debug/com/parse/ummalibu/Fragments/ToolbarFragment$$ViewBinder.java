@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class ToolbarFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.ToolbarFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findOptionalView(source, 2131689604, null);
-    target.mToolbar = finder.castView(view, 2131689604, "field 'mToolbar'");
+    view = finder.findOptionalView(source, 2131689588, null);
+    target.mToolbar = finder.castView(view, 2131689588, "field 'mToolbar'");
   }
 
   @Override public void unbind(T target) {

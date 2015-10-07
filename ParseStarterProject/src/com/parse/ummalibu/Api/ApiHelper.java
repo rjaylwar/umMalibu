@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.google.gson.JsonObject;
+import com.parse.ummalibu.objects.Driver;
 import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.responses.DriverResponse;
 import com.parse.ummalibu.responses.EventsResponse;
@@ -19,6 +20,8 @@ import com.parse.ummalibu.volley.GsonVolleyRequester;
 import com.parse.ummalibu.volley.JsonObjectVolleyRequester;
 import com.parse.ummalibu.volley.StringObjectVolleyRequester;
 import com.parse.ummalibu.volley.VolleyRequestListener;
+
+import java.security.InvalidParameterException;
 
 /**
  * Created by rjaylward on 9/22/15
@@ -154,6 +157,24 @@ public class ApiHelper {
 
         StringObjectVolleyRequester volleyRequester = new StringObjectVolleyRequester(mActivity);
         volleyRequester.makePostRequest(mActivity, url, requestParams, uiListener);
+    }
+
+    public void createDriver(Driver driver, VolleyRequestListener uiListener){
+        String url = PARSE_API_URL + "/drivers";
+        Log.d("create driver request", url);
+
+        StringObjectVolleyRequester volleyRequester = new StringObjectVolleyRequester(mActivity);
+        volleyRequester.makePostRequest(mActivity, url, driver.getAsJson(false), uiListener);
+    }
+
+    public void updateDriver(Driver driver, VolleyRequestListener uiListener){
+        String url = PARSE_API_URL + "/drivers/" + driver.getObjectId();
+        if(driver.getObjectId().equals(""))
+            throw new InvalidParameterException("Driver must have an object ID");
+        Log.d("update driver request", url);
+
+        StringObjectVolleyRequester volleyRequester = new StringObjectVolleyRequester(mActivity);
+        volleyRequester.makePutRequest(mActivity, url, driver.getAsJson(false), uiListener);
     }
 
     public void getDriver(String email, VolleyRequestListener<DriverResponse> uiListener) {

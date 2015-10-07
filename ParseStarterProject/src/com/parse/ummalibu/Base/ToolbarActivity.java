@@ -1,18 +1,18 @@
 package com.parse.ummalibu.base;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.instabug.wrapper.support.activity.InstabugAppCompatActivity;
 import com.parse.ummalibu.R;
 
 /**
  * Created by rjaylward on 9/24/15.
  */
-public abstract class ToolbarActivity extends AppCompatActivity {
+public abstract class ToolbarActivity extends InstabugAppCompatActivity {
 
     public Toolbar mToolbar;
 

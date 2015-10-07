@@ -14,7 +14,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp">
 
@@ -94,7 +94,7 @@
                     android:id="@+id/login_image_url"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Image url (optional)"
+                    android:hint="@string/image_url_optional"
                     android:textSize="@dimen/login_text_size"
                     android:layout_marginBottom="4dp"
                     android:inputType="textUri"/>
@@ -118,7 +118,7 @@
                     android:id="@+id/login_car"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Car Description"
+                    android:hint="@string/car_desc"
                     android:textSize="@dimen/login_text_size"
                     android:layout_marginBottom="4dp"/>
 
@@ -133,7 +133,7 @@
                     android:id="@+id/login_mpg"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="email"
+                    android:hint="@string/email"
                     android:textSize="@dimen/login_text_size"
                     android:layout_marginBottom="4dp"/>
 
