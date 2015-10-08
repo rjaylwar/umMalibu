@@ -4,7 +4,6 @@ import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,6 +14,7 @@ import android.widget.ProgressBar;
 
 import com.parse.ummalibu.R;
 import com.parse.ummalibu.adapters.RequestListAdapter;
+import com.parse.ummalibu.base.BaseFragment;
 import com.parse.ummalibu.database.Table;
 import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.views.EmptyListView;
@@ -26,7 +26,7 @@ import butterknife.ButterKnife;
 /**
  * Created by rjaylward on 9/26/15
  */
-public abstract class AbsRequestListFragment extends Fragment {
+public abstract class AbsRequestListFragment extends BaseFragment {
 
     @Bind(R.id.recycler_view)
     protected LoadMoreRecyclerView mRecyclerView;

@@ -336,7 +336,7 @@ public class UmberRequest implements ApiResponse, Parcelable {
 
     @Override
     public void saveResponse(Context context) {
-        DatabaseHelper helper = new DatabaseHelper(context);
+        DatabaseHelper helper = DatabaseHelper.getInstance(context);
         helper.addRequest(this);
     }
 

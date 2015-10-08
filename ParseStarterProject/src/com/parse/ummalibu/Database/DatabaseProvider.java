@@ -177,6 +177,7 @@ public class DatabaseProvider extends ContentProvider {
 
         int count = db.delete(table, selection, selectionArgs);
 
+
         getContext().getContentResolver().notifyChange(uri, null);
 
         return count;

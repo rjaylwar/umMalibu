@@ -289,10 +289,12 @@ public class SummaryFragment extends ToolbarFragment {
         helper.getGoogleMapsData(mRequest, new VolleyRequestListener<MapsResponse>() {
             @Override
             public void onResponse(MapsResponse mapsResponse) {
-                mMapsResponse = mapsResponse;
-                mDistance.setText(mapsResponse.getDistance());
-                mTripTime.setText(mapsResponse.getTripTime());
-                calculateCost();
+                if(mapsResponse != null) {
+                    mMapsResponse = mapsResponse;
+                    mDistance.setText(mapsResponse.getDistance());
+                    mTripTime.setText(mapsResponse.getTripTime());
+                    calculateCost();
+                }
             }
 
             @Override
@@ -313,7 +315,7 @@ public class SummaryFragment extends ToolbarFragment {
     }
 
     private void getDriver() {
-        DatabaseHelper dbHelper = new DatabaseHelper(mActivity);
+        DatabaseHelper dbHelper = DatabaseHelper.getInstance(mActivity);
         mDriver = dbHelper.getDriver(mRequest.getDriverEmail());
         if(mDriver == null)
             driverApiRequest();

@@ -139,6 +139,7 @@
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/colors.xml -->
     <eat-comment/>
     <color name="light_grey">#9c9c9c</color>
+    <color name="light_grey_text">#e1e1e1</color>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
@@ -179,6 +180,9 @@
     <color name="shadow_mid_color">#14000000</color>
     <color name="shadow_start_color">#44000000</color>
     <color name="snackbar_background_color">#323232</color>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="statusBarColor">#080d10</color>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
@@ -197,6 +201,7 @@
     <color name="um_grey_blue">#FF345065</color>
     <color name="um_highlight_blue">#FF00DEF2</color>
     <color name="very_light_grey">#f4f4f4</color>
+    <color name="very_transparent_white">#aaffffff</color>
     <color name="white">#ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
@@ -411,6 +416,9 @@
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="view_offset_helper" type="id"/>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="__leak_canary_max_stored_leaks">7</integer>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
@@ -432,6 +440,20 @@
         <item quantity="one">Split Gas %s Way</item>
         <item quantity="other">Split Gas %s Ways</item>
     </plurals>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/res/values/values.xml -->
+    <eat-comment/>
+    <string name="__leak_canary_analysis_failed">Leak analysis failed</string>
+    <string name="__leak_canary_class_has_leaked">%s has leaked</string>
+    <string name="__leak_canary_delete">Delete</string>
+    <string name="__leak_canary_delete_all">Delete all</string>
+    <string name="__leak_canary_display_activity_label">Leaks</string>
+    <string name="__leak_canary_failure_report">"Please report this failure to http://github.com/square/leakcanary\n"</string>
+    <string name="__leak_canary_leak_list_title">Leaks in %s</string>
+    <string name="__leak_canary_notification_message">Click for more details</string>
+    <string name="__leak_canary_share_heap_dump">Share heap dump</string>
+    <string name="__leak_canary_share_leak">Share info</string>
+    <string name="__leak_canary_share_with">Share with…</string>
+    <string name="__leak_canary_toast_heap_dump">Dumping memory, app will freeze. Brrrr.</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -586,6 +608,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="meet_steve_title">Meet Our Director - Steve Smith</string>
+    <string name="miles_per_gallon">Miles per Gallon (MPG)</string>
     <string name="minus">-</string>
     <string name="more">More</string>
     <string name="name">Name:</string>
@@ -2073,4 +2096,8 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
         <item name="hintTextAppearance">@style/TextAppearance.Design.Hint</item>
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
     </style>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/res/values/values.xml -->
+    <eat-comment/>
+    <style name="__LeakCanary.Base" parent="android:Theme">
+  </style>
 </resources>

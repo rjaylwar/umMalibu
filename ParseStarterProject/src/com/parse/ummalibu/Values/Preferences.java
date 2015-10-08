@@ -40,11 +40,11 @@ public class Preferences extends AbsPreferences{
     }
 
     public int getMpg() {
-        return getIntPref(FieldNames.ETA);
+        return getIntPref(FieldNames.MPG);
     }
 
     public void setMpg(int eta) {
-        setPref(FieldNames.ETA, eta);
+        setPref(FieldNames.MPG, eta);
     }
 
     public String getName() {

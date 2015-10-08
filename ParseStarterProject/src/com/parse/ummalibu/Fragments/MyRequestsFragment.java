@@ -25,7 +25,7 @@ public class MyRequestsFragment extends AbsRequestListFragment {
 
     @Override
     protected void databaseRequest() {
-        DatabaseHelper helper = new DatabaseHelper(mActivity);
+        DatabaseHelper helper = DatabaseHelper.getInstance(mActivity);
         mAdapter.setData(helper.getRequests(), RequestListAdapter.MY_REQUESTS);
     }
 

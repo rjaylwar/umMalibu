@@ -181,8 +181,7 @@
 
         <activity
             android:name="com.parse.ummalibu.LoginActivity"
-            android:windowSoftInputMode="stateHidden"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
+            android:windowSoftInputMode="stateHidden"/>
 
         <provider
             android:name=".database.DatabaseProvider"

@@ -8,4 +8,17 @@
         <item name="android:windowAllowReturnTransitionOverlap">true</item>
     </style>
 
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/um_dark_blue</item>
+        <item name="colorPrimaryDark">@color/um_grey_blue</item>
+        <item name="colorAccent">@color/um_highlight_blue</item>
+
+        <!-- Trim color for UI elements like checkboxes -->
+        <item name="android:textColorSecondary">@color/grey</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+
+    </style>
+
 </resources>

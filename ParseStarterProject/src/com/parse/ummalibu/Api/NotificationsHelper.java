@@ -44,7 +44,7 @@ public class NotificationsHelper {
     public static void sendUnclaimNotification(UmberRequest request) {
         ParsePush push = new ParsePush();
         push.setChannel(RIDER_ + request.getObjectId());
-        push.setMessage("Your request was unclaimed, it will be put back in the list of active requests");
+        push.setMessage("Your request was unclaimed, it will be put back in the list of open requests");
         push.sendInBackground();
     }
 
@@ -58,7 +58,7 @@ public class NotificationsHelper {
     public static void sendNewRequestNotification(UmberRequest request) {
         ParsePush push = new ParsePush();
         push.setChannel("umber");
-        push.setMessage("A new request was made for a ride to " + request.getDestination());
+        push.setMessage("A new request was made for a ride to " + request.getDestination() + " was posted.");
         push.sendInBackground();
     }
 

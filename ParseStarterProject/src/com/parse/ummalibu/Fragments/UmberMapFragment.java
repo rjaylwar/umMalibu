@@ -11,8 +11,8 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.Property;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,13 +37,18 @@ import com.parse.ummalibu.LocationsActivity;
 import com.parse.ummalibu.R;
 import com.parse.ummalibu.SearchLayout;
 import com.parse.ummalibu.api.ApiHelper;
+import com.parse.ummalibu.api.NotificationsHelper;
+import com.parse.ummalibu.base.BaseFragment;
+import com.parse.ummalibu.helper.DatePickerHelper;
 import com.parse.ummalibu.objects.LatLngInterpolator;
 import com.parse.ummalibu.objects.UmLocation;
 import com.parse.ummalibu.objects.UmberRequest;
+import com.parse.ummalibu.values.Constants;
 import com.parse.ummalibu.values.FieldNames;
 import com.parse.ummalibu.values.Preferences;
 import com.parse.ummalibu.volley.VolleyRequestListener;
 
+import java.util.Calendar;
 import java.util.HashSet;
 
 import butterknife.Bind;
@@ -53,7 +58,7 @@ import butterknife.ButterKnife;
 /**
  * Created by rjaylward on 9/28/15
  */
-public class UmberMapFragment extends Fragment {
+public class UmberMapFragment extends BaseFragment {
 
     @Bind(R.id.search_pickup_layout) SearchLayout mSearchPickUpLayout;
     @Bind(R.id.search_destination_layout) SearchLayout mSearchDestLayout;
@@ -455,16 +460,10 @@ public class UmberMapFragment extends Fragment {
     private void makeUmberRequest() {
 
         if(mMap != null && mSelectedPickUpLocation != null && mSelectedDestLocation != null) {
-            UmberRequest umberRequest = new UmberRequest();
+            final UmberRequest umberRequest = new UmberRequest();
 
             umberRequest.setName(Preferences.getInstance().getName());
             umberRequest.setEmail(Preferences.getInstance().getEmail());
-
-            umberRequest.setClaimed(false);
-            umberRequest.setIsPickedUp(false);
-            umberRequest.setStarted(false);
-            umberRequest.setComplete(false);
-            umberRequest.setCanceled(false);
 
             umberRequest.setPhoneNumber(Preferences.getInstance().getPhoneNumber());
             umberRequest.setRiderImageUrl(Preferences.getInstance().getImageUrl());
@@ -484,18 +483,35 @@ public class UmberMapFragment extends Fragment {
             umberRequest.setDestinationLat(mSelectedDestLocation.getLat());
             umberRequest.setDestinationLong(mSelectedDestLocation.getLon());
 
-            ApiHelper helper = new ApiHelper(mActivity);
-            helper.makeUmberRequest(umberRequest, new VolleyRequestListener() {
-                @Override
-                public void onResponse(Object response) {
-                    Toast.makeText(mActivity, "Your request has been made!", Toast.LENGTH_SHORT).show();
-                    mSearchPickUpLayout.clear();
-                    mSearchDestLayout.clear();
-                }
+            DatePickerHelper datePicker = new DatePickerHelper(mActivity);
+            datePicker.showPicker(umberRequest, true, new DatePickerHelper.OnDatePickedListener() {
 
                 @Override
-                public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(mActivity, error.getMessage(), Toast.LENGTH_SHORT).show();
+                public void onDatePicked(UmberRequest request, Calendar cal) {
+                    request.setEta(cal.getTimeInMillis());
+                    ApiHelper helper = new ApiHelper(mActivity);
+
+                    helper.makeUmberRequest(umberRequest, new VolleyRequestListener<JsonObject>() {
+
+                        @Override
+                        public void onResponse(JsonObject response) {
+                            Log.d("New Request ->", response.toString());
+                            Toast.makeText(mActivity, "Your request has been made!", Toast.LENGTH_SHORT).show();
+
+                            mSearchPickUpLayout.clear();
+                            mSearchDestLayout.clear();
+
+                            String objectId = response.getAsJsonPrimitive(FieldNames.OBJECT_ID).getAsString();
+                            NotificationsHelper.subscribeAsRider(objectId);
+                            if (Constants.SEND_NEW_REQUEST_NOTIFICATIONS)
+                                NotificationsHelper.sendNewRequestNotification(umberRequest);
+                        }
+
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(mActivity, error.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
             });
         }

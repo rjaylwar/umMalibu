@@ -7,7 +7,6 @@ import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -22,10 +21,12 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
+import com.parse.ummalibu.LoginActivity;
 import com.parse.ummalibu.R;
 import com.parse.ummalibu.adapters.RequestListAdapter;
 import com.parse.ummalibu.api.ApiHelper;
 import com.parse.ummalibu.api.NotificationsHelper;
+import com.parse.ummalibu.base.BaseFragment;
 import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.database.Table;
 import com.parse.ummalibu.objects.UmberRequest;
@@ -45,7 +46,7 @@ import butterknife.ButterKnife;
 /**
  * Created by rjaylward on 9/25/15
  */
-public class RequestListFragment extends Fragment {
+public class RequestListFragment extends BaseFragment {
 
     @Bind(R.id.recycler_view) LoadMoreRecyclerView mRecyclerView;
     @Bind(R.id.swipe_refresh) SwipeRefreshLayout mSwipeRefreshLayout;
@@ -143,8 +144,13 @@ public class RequestListFragment extends Fragment {
             alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            checkRequestStatus(request);
-                            dialog.dismiss();
+                            if (!Preferences.getInstance().getCarDescription().equals("")) {
+                                checkRequestStatus(request);
+                                dialog.dismiss();
+                            } else {
+                                Toast.makeText(mActivity, "You must add a car description in order to claim requests.", Toast.LENGTH_LONG).show();
+                                startActivity(LoginActivity.createIntent(mActivity));
+                            }
                         }
                     });
             alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Cancel",
@@ -199,7 +205,7 @@ public class RequestListFragment extends Fragment {
         helper.claimUmberRequest(request, new VolleyRequestListener() {
             @Override
             public void onResponse(Object response) {
-                DatabaseHelper dbHelper = new DatabaseHelper(mActivity);
+                DatabaseHelper dbHelper = DatabaseHelper.getInstance(mActivity);
                 dbHelper.addRequest(request);
                 NotificationsHelper.subscribeAsDriver(request.getObjectId());
             }
@@ -220,7 +226,7 @@ public class RequestListFragment extends Fragment {
     }
 
     private void databaseRequest() {
-        ArrayList<UmberRequest> requests = new DatabaseHelper(mActivity).getRequests();
+        ArrayList<UmberRequest> requests = DatabaseHelper.getInstance(mActivity).getRequests();
         mAdapter.setData(requests, getMode());
     }
 

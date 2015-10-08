@@ -25,6 +25,7 @@ import com.android.volley.VolleyError;
 import com.bumptech.glide.Glide;
 import com.parse.ummalibu.api.ApiHelper;
 import com.parse.ummalibu.base.ToolbarActivity;
+import com.parse.ummalibu.helper.SlidingPaneHelper;
 import com.parse.ummalibu.objects.Driver;
 import com.parse.ummalibu.responses.DriverResponse;
 import com.parse.ummalibu.values.Preferences;
@@ -63,6 +64,7 @@ public class LoginActivity extends ToolbarActivity {
 
     private Driver mDriver = new Driver();
     private ProgressDialog mProgressDialog;
+    private SlidingPaneHelper mSlidingPaneHelper;
 
     public static Intent createIntent(Context context) {
         return new Intent(context, LoginActivity.class);
@@ -78,9 +80,18 @@ public class LoginActivity extends ToolbarActivity {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
 
+        setUpSlidingPanel();
+        setValues();
+    }
+
+    private void setUpSlidingPanel() {
         mNavigationView.setBackgroundColor(getResources().getColor(R.color.um_dark_blue));
         mNavigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.white)));
         mNavigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.white)));
+
+        mSlidingPaneHelper = new SlidingPaneHelper(this, mNavigationView);
+        mSlidingPaneHelper.loadView();
+
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
@@ -89,10 +100,10 @@ public class LoginActivity extends ToolbarActivity {
 
                 switch (menuItem.getItemId()) {
                     case R.id.menu_item_rideshare:
-                        startActivity(RideShareActivity.createIntent(LoginActivity.this));
+                            startActivity(RideShareActivity.createIntent(LoginActivity.this));
                         return true;
                     case R.id.menu_item_um:
-                        startActivity(MainActivity.createIntent(LoginActivity.this));
+                            startActivity(MainActivity.createIntent(LoginActivity.this));
                         return true;
                     default:
                         return true;
@@ -100,8 +111,6 @@ public class LoginActivity extends ToolbarActivity {
             }
         });
         initDrawer(mToolbar);
-
-        setValues();
     }
 
     @Override
@@ -115,12 +124,10 @@ public class LoginActivity extends ToolbarActivity {
             ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, 0, 0) {
                 @Override
                 public void onDrawerClosed(View view) {
-                    invalidateOptionsMenu();
                 }
 
                 @Override
                 public void onDrawerOpened(View drawerView) {
-                    invalidateOptionsMenu();
                 }
             };
 
@@ -158,7 +165,7 @@ public class LoginActivity extends ToolbarActivity {
         mImageUrlLayout.getEditText().addTextChangedListener(mTextWatcher);
 
         mCarLayout.getEditText().setText(Preferences.getInstance().getCarDescription());
-        mMpgLayout.getEditText().setText(Preferences.getInstance().getMpg());
+        mMpgLayout.getEditText().setText(String.valueOf(Preferences.getInstance().getMpg()));
     }
 
     private TextWatcher mTextWatcher = new TextWatcher() {
@@ -181,7 +188,7 @@ public class LoginActivity extends ToolbarActivity {
             }
         }
     };
-
+//
     private void save() {
 
         if(!mNameLayout.getEditText().getText().toString().isEmpty()) {
@@ -211,7 +218,7 @@ public class LoginActivity extends ToolbarActivity {
 
         int mpg;
         try {
-            mpg = Integer.valueOf(mCarLayout.getEditText().getText().toString());
+            mpg = Integer.valueOf(mMpgLayout.getEditText().getText().toString());
         } catch (Exception e) {
             mpg = 20;
         }
@@ -225,6 +232,8 @@ public class LoginActivity extends ToolbarActivity {
             final ApiHelper helper = new ApiHelper(this);
             checkForDriver(helper);
         }
+
+        mSlidingPaneHelper.loadView();
     }
 
     private void checkForDriver(final ApiHelper helper) {
@@ -258,7 +267,7 @@ public class LoginActivity extends ToolbarActivity {
             public void onResponse(Object response) {
                 Log.d("Driver Response", response.toString());
                 mProgressDialog.dismiss();
-                finish();
+                Toast.makeText(LoginActivity.this, "Your info has been saved", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -276,7 +285,7 @@ public class LoginActivity extends ToolbarActivity {
             public void onResponse(Object response) {
                 Log.d("Driver Response", response.toString());
                 mProgressDialog.dismiss();
-                finish();
+                Toast.makeText(LoginActivity.this, "Your info has been updated", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -287,7 +296,7 @@ public class LoginActivity extends ToolbarActivity {
             }
         });
     }
-
+//
     @Override
     protected void onDestroy() {
         super.onDestroy();

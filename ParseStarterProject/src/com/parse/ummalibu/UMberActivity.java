@@ -459,9 +459,9 @@ public class UMberActivity extends ToolbarActivity {
             final Context context = this;
 
             ApiHelper helper = new ApiHelper(this);
-            helper.makeUmberRequest(mUmberRequest, new VolleyRequestListener() {
+            helper.makeUmberRequest(mUmberRequest, new VolleyRequestListener<JsonObject>() {
                 @Override
-                public void onResponse(Object response) {
+                public void onResponse(JsonObject response) {
                     Toast.makeText(context, "it worked!", Toast.LENGTH_SHORT).show();
                 }
 

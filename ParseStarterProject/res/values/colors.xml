@@ -12,11 +12,13 @@
     <color name="darkred">#FFCC0000</color>
     <color name="grey">#5a5a5a</color>
     <color name="light_grey">#9c9c9c</color>
+    <color name="light_grey_text">#e1e1e1</color>
     <color name="very_light_grey">#f4f4f4</color>
     <color name="transparent_grey">#55818181</color>
     <color name="breakline_color">#44b4b4b4</color>
     <color name="grey_blue">#234265</color>
     <color name="transparent_white">#e1f1f1f1</color>
+    <color name="very_transparent_white">#aaffffff</color>
     <color name="gray_white">#ebebeb</color>
     <color name="white">#ffffff</color>
     <color name="transparent_blue">#da345065</color>
@@ -28,5 +30,6 @@
     <color name="um_grey">#FFABCDCF</color>
     <color name="um_green">#5DFC0A</color>
     <color name="black">#000000</color>
+    <color name="statusBarColor">#080d10</color>
 
 </resources>

@@ -21,7 +21,7 @@ public class UmberRequestResponse implements ApiResponse {
     @Override
     public void saveResponse(Context context) {
         if(mUmberRequests.size() > 0) {
-            DatabaseHelper helper = new DatabaseHelper(context);
+            DatabaseHelper helper = DatabaseHelper.getInstance(context);
             helper.addRequests(mUmberRequests);
         }
     }

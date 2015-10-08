@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:1-193:12
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:1-192:12
 	xmlns:android
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:11-69
 	package
@@ -34,6 +34,7 @@ MERGED from [com.android.support:support-v4:22.2.0] /Users/rjaylward/Google Driv
 MERGED from [de.hdodenhof:circleimageview:2.0.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.instabug.library:instabugsupport:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7/AndroidManifest.xml:5:5-7:41
 MERGED from [com.instabug.library:instabugcore:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:20:5-22:41
 	android:targetSdkVersion
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml
@@ -73,6 +74,7 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:19:5-81
 MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:22:5-80
 MERGED from [com.instabug.library:instabugcore:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/AndroidManifest.xml:10:5-81
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:25:5-81
 	android:name
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:19:22-78
 uses-permission#android.permission.READ_PHONE_STATE
@@ -135,7 +137,7 @@ MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/rjaylward/G
 	android:glEsVersion
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:50:9-41
 application
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:53:5-191:19
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:53:5-190:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
@@ -154,6 +156,7 @@ MERGED from [com.android.support:support-v4:22.2.0] /Users/rjaylward/Google Driv
 MERGED from [de.hdodenhof:circleimageview:2.0.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/AndroidManifest.xml:9:5-20
 MERGED from [com.instabug.library:instabugsupport:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7/AndroidManifest.xml:9:5-10:19
 MERGED from [com.instabug.library:instabugcore:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/AndroidManifest.xml:15:5-27:19
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:27:5-49:19
 	android:label
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:58:9-41
 	android:allowBackup
@@ -377,21 +380,19 @@ ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.
 	android:name
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:179:13-64
 activity#com.parse.ummalibu.LoginActivity
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:182:9-185:76
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:182:9-184:56
 	android:windowSoftInputMode
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:184:13-54
-	android:configChanges
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:185:13-74
 	android:name
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:183:13-60
 provider#com.parse.ummalibu.database.DatabaseProvider
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:187:9-190:76
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:186:9-189:76
 	android:exported
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:189:13-37
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:188:13-37
 	android:authorities
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:190:13-73
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:189:13-73
 	android:name
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:188:13-54
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:187:13-54
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.instabug.library:instabugcore:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/AndroidManifest.xml:12:5-76
 	android:name
@@ -416,3 +417,31 @@ action#android.net.conn.CONNECTIVITY_CHANGE
 ADDED from [com.instabug.library:instabugcore:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/AndroidManifest.xml:24:17-79
 	android:name
 		ADDED from [com.instabug.library:instabugcore:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/AndroidManifest.xml:24:25-76
+service#com.squareup.leakcanary.internal.HeapAnalyzerService
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:28:9-31:45
+	android:process
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:31:13-42
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:29:13-80
+service#com.squareup.leakcanary.DisplayLeakService
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:32:9-34:39
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:34:13-36
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:33:13-70
+activity#com.squareup.leakcanary.internal.DisplayLeakActivity
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:36:9-48:20
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:40:13-73
+	android:icon
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:39:13-56
+	android:theme
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:42:13-53
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:38:13-36
+	android:taskAffinity
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:41:13-59
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.3.1] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/AndroidManifest.xml:37:13-80

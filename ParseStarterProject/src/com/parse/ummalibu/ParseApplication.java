@@ -1,6 +1,7 @@
 package com.parse.ummalibu;
 
 import android.app.Application;
+import android.content.Context;
 import android.util.Log;
 
 import com.instabug.library.Instabug;
@@ -11,16 +12,23 @@ import com.parse.ParsePush;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.parse.ummalibu.values.Preferences;
+import com.squareup.leakcanary.LeakCanary;
+import com.squareup.leakcanary.RefWatcher;
 
 public class ParseApplication extends Application {
+
+    private RefWatcher mRefWatcher;
+
+    public static RefWatcher getRefWatcher(Context context) {
+        ParseApplication application = (ParseApplication) context.getApplicationContext();
+        return application.mRefWatcher;
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
 
         Preferences.initialize(getApplicationContext());
-        Preferences.getInstance().setEmail("richard.j.aylward@gmail.com");
-        Preferences.getInstance().setMpg(20);
 
         // Initialize Crash Reporting.
         ParseCrashReporting.enable(this);
@@ -29,7 +37,7 @@ public class ParseApplication extends Application {
         ParseUser.enableAutomaticUser();
 
         Instabug.initialize(this, getString(R.string.instabug_key));
-
+        mRefWatcher = LeakCanary.install(this);
         subscribeToChannels();
 
     }

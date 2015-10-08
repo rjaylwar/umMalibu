@@ -20,7 +20,7 @@ public class DriversResponse implements ApiResponse {
 
     @Override
     public void saveResponse(Context context) {
-        DatabaseHelper helper = new DatabaseHelper(context);
+        DatabaseHelper helper = DatabaseHelper.getInstance(context);
         helper.addDrivers(mDrivers);
     }
 

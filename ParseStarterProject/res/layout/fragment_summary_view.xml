@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="28dp"
-                android:background="@color/transparent_um_grey">
+                android:background="@color/very_transparent_white">
 
                 <LinearLayout
                     android:id="@+id/summary_top_button_layout"

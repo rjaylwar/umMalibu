@@ -11,7 +11,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -31,6 +30,7 @@ import com.parse.ummalibu.R;
 import com.parse.ummalibu.SearchLayout;
 import com.parse.ummalibu.adapters.LocationsListAdapter;
 import com.parse.ummalibu.api.ApiHelper;
+import com.parse.ummalibu.base.BaseFragment;
 import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.database.Table;
 import com.parse.ummalibu.objects.UmLocation;
@@ -48,7 +48,7 @@ import butterknife.ButterKnife;
 /**
  * Created by rjaylward on 10/3/15
  */
-public class LocationsFragment extends Fragment {
+public class LocationsFragment extends BaseFragment {
 
     @Bind(R.id.recycler_view) LoadMoreRecyclerView mRecyclerView;
     @Bind(R.id.swipe_refresh) SwipeRefreshLayout mSwipeRefreshLayout;
@@ -164,7 +164,7 @@ public class LocationsFragment extends Fragment {
     }
 
     public void queryDatabase() {
-        DatabaseHelper helper = new DatabaseHelper(mActivity);
+        DatabaseHelper helper = DatabaseHelper.getInstance(mActivity);
         mAdapter.setItems(helper.getAllLocations());
     }
 

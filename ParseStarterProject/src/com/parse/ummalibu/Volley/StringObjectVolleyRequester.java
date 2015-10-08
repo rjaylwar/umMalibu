@@ -29,7 +29,7 @@ public class StringObjectVolleyRequester extends AbsVolleyRequester {
     protected Request buildRequest(AppCompatActivity activity, int requestType, final String url, final JsonObject
             requestBody, final VolleyRequestListener listener, int timeout, boolean handleResponse) {
 
-        Request jsonObjectRequest = buildRequest(activity, requestType, url, requestBody.toString(), listener, timeout, handleResponse);
+        Request jsonObjectRequest = buildRequest(activity, requestType, url, requestBody == null ? new JsonObject().toString() : requestBody.toString(), listener, timeout, handleResponse);
 
         return jsonObjectRequest;
     }

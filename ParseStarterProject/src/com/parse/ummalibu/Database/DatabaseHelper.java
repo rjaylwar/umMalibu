@@ -24,10 +24,23 @@ public class DatabaseHelper {
     private ContentResolver mContentResolver;
     public static final int DATABASE_VERSION = 1;
     DatabaseProvider.OpenDatabaseHelper mOpenDatabaseHelper;
+    private static DatabaseHelper databaseHelper;
 
-    public DatabaseHelper(Context context) {
+    private DatabaseHelper(Context context) {
         mContentResolver = context.getApplicationContext().getContentResolver();
         mOpenDatabaseHelper = new DatabaseProvider.OpenDatabaseHelper(context);
+    }
+
+//    private DatabaseHelper(Context context) {
+//        //Use application context to avoid any leaks
+//        mContentResolver = context.getApplicationContext().getContentResolver();
+//    }
+
+    public static DatabaseHelper getInstance(Context context) {
+        if(databaseHelper == null)
+            databaseHelper = new DatabaseHelper(context.getApplicationContext());
+
+        return databaseHelper;
     }
 
     public synchronized void addNotification(Notification notification) {
@@ -213,8 +226,8 @@ public class DatabaseHelper {
                     location.setId(cursor.getString(cursor.getColumnIndexOrThrow(FieldNames.OBJECT_ID)));
                     location.setName(cursor.getString(cursor.getColumnIndexOrThrow(Table.UmLocations.NAME)));
                     location.setImageUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.UmLocations.IMAGE_URL)));
-                    location.setLat(cursor.getLong(cursor.getColumnIndexOrThrow(Table.UmLocations.LATITUDE)));
-                    location.setLon(cursor.getLong(cursor.getColumnIndexOrThrow(Table.UmLocations.LONGITUDE)));
+                    location.setLat(cursor.getDouble(cursor.getColumnIndexOrThrow(Table.UmLocations.LATITUDE)));
+                    location.setLon(cursor.getDouble(cursor.getColumnIndexOrThrow(Table.UmLocations.LONGITUDE)));
                     location.setType(cursor.getString(cursor.getColumnIndexOrThrow(Table.UmLocations.TYPE)));
                     location.setAddress(cursor.getString(cursor.getColumnIndexOrThrow(Table.UmLocations.ADDRESS)));
 
@@ -290,7 +303,7 @@ public class DatabaseHelper {
     public synchronized ArrayList<UmberRequest> getRequests() {
         ArrayList<UmberRequest> requests = new ArrayList<>();
         // Select All Query
-        String selectQuery = "SELECT * FROM " + Table.Requests.TABLE_NAME + " ORDER BY " + Table.Requests.ETA + " DESC";
+        String selectQuery = "SELECT * FROM " + Table.Requests.TABLE_NAME + " WHERE " + Table.Requests.CANCELED + " != 1 ORDER BY " + Table.Requests.ETA + " DESC";
 
         SQLiteDatabase db = mOpenDatabaseHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);

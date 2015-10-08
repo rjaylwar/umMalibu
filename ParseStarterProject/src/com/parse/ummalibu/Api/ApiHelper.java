@@ -117,7 +117,7 @@ public class ApiHelper {
         Log.d("getting umber request", url);
     }
 
-    public void makeUmberRequest(UmberRequest umberRequest, VolleyRequestListener uiListener){
+    public void makeUmberRequest(UmberRequest umberRequest, VolleyRequestListener<JsonObject> uiListener){
         String url = PARSE_API_URL + "/uber_requests";
         Log.d("make umber request", url);
 //        Log.d("Request params", umberRequest.getAsJson(false).toString());
@@ -156,7 +156,7 @@ public class ApiHelper {
         requestParams.addProperty(FieldNames.CANCELED, request.isCanceled());
 
         StringObjectVolleyRequester volleyRequester = new StringObjectVolleyRequester(mActivity);
-        volleyRequester.makePostRequest(mActivity, url, requestParams, uiListener);
+        volleyRequester.makePutRequest(mActivity, url, requestParams, uiListener);
     }
 
     public void createDriver(Driver driver, VolleyRequestListener uiListener){
