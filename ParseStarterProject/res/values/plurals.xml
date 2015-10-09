@@ -2,7 +2,7 @@
 <resources>
 
     <plurals name="split_gas_number_ways">
-        <item quantity="one">Split Gas %s Way</item>
+        <item quantity="one">Total Gas Cost</item>
         <item quantity="other">Split Gas %s Ways</item>
     </plurals>
 

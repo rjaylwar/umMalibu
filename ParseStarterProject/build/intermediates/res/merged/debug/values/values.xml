@@ -437,7 +437,7 @@
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/plurals.xml -->
     <eat-comment/>
     <plurals name="split_gas_number_ways">
-        <item quantity="one">Split Gas %s Way</item>
+        <item quantity="one">Total Gas Cost</item>
         <item quantity="other">Split Gas %s Ways</item>
     </plurals>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/res/values/values.xml -->
@@ -506,8 +506,10 @@
     <string name="cancelbutton">Cancel</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
+    <string name="canceled">Canceled</string>
     <string name="car_desc">Car Description</string>
     <string name="claim_request">Claim Request</string>
+    <string name="claimed">Claimed</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>
     <string name="commentplaceholder">Enter your feedback...</string>
@@ -549,8 +551,10 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
+    <string name="complete">Complete</string>
     <string name="contact">Contact</string>
     <string name="date_string">Date</string>
+    <string name="delete">Delete</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>
     <string name="edgeswipestartalerttext">Swipe from edge to send feedback</string>
@@ -596,6 +600,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="hello_world">Hello world!</string>
     <string name="if_you_have_a_car">If you have a car enter the info below</string>
     <string name="image_url_optional">Image url (optional)</string>
+    <string name="in_progress">In-Progress</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/keys.xml -->
     <eat-comment/>
     <string name="instabug_key">7f58e5854e7e2ab477467da69ee5e933</string>
@@ -613,6 +618,8 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="more">More</string>
     <string name="name">Name:</string>
     <string name="next_text">Next</string>
+    <string name="no_driver_yet">No Driver Yet</string>
+    <string name="on_the_way">On the way</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/keys.xml -->
     <eat-comment/>
     <string name="parse_app_id">M8lsPPcaku0od8yzToKaHKR11TUFlsZuRPorClFt</string>
@@ -620,6 +627,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="pick_up">Pick Up</string>
+    <string name="picked_up">Picked Up</string>
     <string name="pickup_location">Pickup Location</string>
     <string name="play">Play</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
@@ -712,6 +720,8 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="um">UM</string>
     <string name="um_goal">At UM our job is to minister to students in any way we can. That means getting to know students on a more personal level than we can in the short time that everyone is together on Tuesday nights. We would love to talk about life, God, and answer any questions you may have about our ministry. Plus if you take the time to meet with us we will byy you a coffee, so you have nothing to lose. Use the link below to send us an email of talk to Steve at UM if you are interested.</string>
     <string name="umber">UMber</string>
+    <string name="unclaim">Unclaim</string>
+    <string name="unclaimed">Unclaimed</string>
     <string name="want_to_give_person_ride_to_address">Would you like to give %1$s a ride to %2$s?\n\nYou will be prompted to adjust the pickup time if necessary.</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>

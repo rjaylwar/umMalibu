@@ -70,5 +70,15 @@
     <string name="save">Save</string>
     <string name="saving">Saving...</string>
     <string name="miles_per_gallon">Miles per Gallon (MPG)</string>
+    <string name="unclaimed">Unclaimed</string>
+    <string name="no_driver_yet">No Driver Yet</string>
+    <string name="claimed">Claimed</string>
+    <string name="unclaim">Unclaim</string>
+    <string name="in_progress">In-Progress</string>
+    <string name="on_the_way">On the way</string>
+    <string name="picked_up">Picked Up</string>
+    <string name="delete">Delete</string>
+    <string name="complete">Complete</string>
+    <string name="canceled">Canceled</string>
 
 </resources>

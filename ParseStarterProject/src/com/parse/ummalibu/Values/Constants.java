@@ -17,4 +17,7 @@ public class Constants {
     public static final int RESULT_CANCEL = 10;
 
     public static final boolean SEND_NEW_REQUEST_NOTIFICATIONS = false;
+
+    public static final String VENMO_APP_NAME = "Pepperdine Rideshare";
+    public static final String VENMO_APP_ID = "2922";
 }

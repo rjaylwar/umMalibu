@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.android.volley.VolleyError;
 import com.bumptech.glide.Glide;
 import com.parse.ummalibu.R;
+import com.parse.ummalibu.VenmoLibrary;
 import com.parse.ummalibu.api.ApiHelper;
 import com.parse.ummalibu.api.NotificationsHelper;
 import com.parse.ummalibu.database.DatabaseHelper;
@@ -152,69 +153,71 @@ public class SummaryFragment extends ToolbarFragment {
     private void checkStatus() {
         if(!mRequest.isCanceled()) {
             if (!mRequest.isClaimed()) {
-                mStatus.setText("Unclaimed");
-                mName.setText("No Driver Yet");
-                mStatusButton.setText("Cancel");
+                mStatus.setText(R.string.unclaimed);
+                mName.setText(R.string.no_driver_yet);
+                mStatusButton.setText(R.string.cancel);
             } else if (!mRequest.isStarted()) {
-                mStatus.setText("Claimed");
+                mStatus.setText(R.string.claimed);
 
-                if (Preferences.getInstance().getEmail().equals(mRequest.getEmail()))
-                    mStatusButton.setText("Cancel");
+                if (isRider())
+                    mStatusButton.setText(R.string.cancel);
                 else
-                    mStatusButton.setText("Unclaim");
+                    mStatusButton.setText(R.string.unclaim);
 
             } else if (!mRequest.isPickedUp()) {
-                mStatusButton.setText("In-Progress");
-                mStatus.setText("On the way");
+                mStatusButton.setText(R.string.in_progress);
+                mStatus.setText(R.string.on_the_way);
             } else if (!mRequest.isComplete()) {
-                mStatusButton.setText("In-Progress");
-                mStatus.setText("Picked Up");
+                mStatusButton.setText(R.string.in_progress);
+                mStatus.setText(R.string.picked_up);
             } else {
-                mStatusButton.setText("Delete");
-                mStatus.setText("Complete");
+                mStatusButton.setText(R.string.delete);
+                mStatus.setText(R.string.complete);
             }
         }
         else {
-            mStatus.setText("Canceled");
-            mStatusButton.setText("Delete");
+            mStatus.setText(R.string.canceled);
+            mStatusButton.setText(R.string.delete);
         }
     }
 
     @OnClick(R.id.summary_status_button)
     void onStatusButtonClick() {
-        AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
-        alertDialog.setTitle(mActivity.getString(R.string.claim_request));
-        alertDialog.setMessage("Are you sure you want to " + mStatusButton.getText().toString() + " this request?");
-        alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE, "OK",
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        switch (mStatusButton.getText().toString()) {
-                            case "Cancel":
-                                Log.d("Cancel Request", mStatusButton.getText().toString());
-                                cancelRequest();
-                                break;
-                            case "Unclaim":
-                                Log.d("Unclaim Request", mStatusButton.getText().toString());
-                                unclaimRequest();
-                                break;
-                            case "Delete":
-                                Log.d("Delete Request", mStatusButton.getText().toString());
-                                deleteRequest();
-                                break;
-                            default:
-                                Log.d("Button text", mStatusButton.getText().toString());
+        if(!mStatusButton.getText().toString().equals(getString(R.string.in_progress))) {
+            AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
+            alertDialog.setTitle(mActivity.getString(R.string.claim_request));
+            alertDialog.setMessage("Are you sure you want to " + mStatusButton.getText().toString() + " this request?");
+            alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE, "OK",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            switch (mStatusButton.getText().toString()) {
+                                case "Cancel":
+                                    Log.d("Cancel Request", mStatusButton.getText().toString());
+                                    cancelRequest();
+                                    break;
+                                case "Unclaim":
+                                    Log.d("Unclaim Request", mStatusButton.getText().toString());
+                                    unclaimRequest();
+                                    break;
+                                case "Delete":
+                                    Log.d("Delete Request", mStatusButton.getText().toString());
+                                    deleteRequest();
+                                    break;
+                                default:
+                                    Log.d("Button text", mStatusButton.getText().toString());
+                            }
+                            dialog.dismiss();
                         }
-                        dialog.dismiss();
-                    }
-                });
-        alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_NEGATIVE, "Cancel",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-        alertDialog.show();
+                    });
+            alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_NEGATIVE, "Cancel",
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+            alertDialog.show();
+        }
     }
 
     private void unclaimRequest() {
@@ -289,7 +292,7 @@ public class SummaryFragment extends ToolbarFragment {
         helper.getGoogleMapsData(mRequest, new VolleyRequestListener<MapsResponse>() {
             @Override
             public void onResponse(MapsResponse mapsResponse) {
-                if(mapsResponse != null) {
+                if (mapsResponse != null) {
                     mMapsResponse = mapsResponse;
                     mDistance.setText(mapsResponse.getDistance());
                     mTripTime.setText(mapsResponse.getTripTime());
@@ -340,13 +343,13 @@ public class SummaryFragment extends ToolbarFragment {
 
     @OnClick(R.id.summary_contact_button)
     void sendText() {
-        if(mRequest.getDriverEmail().toLowerCase().equals(Preferences.getInstance().getEmail())) {
+        if(isDriver()) {
             Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
             sendIntent.setData(Uri.parse("sms:" + mRequest.getPhoneNumber()));
             sendIntent.putExtra("sms_body", "");
             sendIntent.putExtra("exit_on_sent", true);
             startActivityForResult(sendIntent, 0);
-        } else if(mDriver != null && mDriver.getEmail().equals(Preferences.getInstance().getEmail())) {
+        } else if(mDriver != null && mRequest.getEmail().equals(Preferences.getInstance().getEmail())) {
             Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
             sendIntent.setData(Uri.parse("sms:" + mDriver.getPhoneNumber()));
             sendIntent.putExtra("sms_body", "");
@@ -380,5 +383,60 @@ public class SummaryFragment extends ToolbarFragment {
     private void showCost() {
         mCost.setText(String.format("$%.2f", mDisplayedCost));
         mSplitGas.setText(String.format(mActivity.getResources().getQuantityString(R.plurals.split_gas_number_ways, mNumWaysSplit), mNumWaysSplit));
+    }
+
+    @OnClick(R.id.summary_split_gas_button)
+    void launchVenmo() {
+        AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
+        alertDialog.setTitle(mActivity.getString(R.string.claim_request));
+        alertDialog.setMessage("Would you like to try and use Venmo to split the cost of gas?");
+        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        if(VenmoLibrary.isVenmoInstalled(mActivity))
+                            launchVenmoPayment();
+                        else
+                            Toast.makeText(mActivity, "Error, You must install Venmo first.", Toast.LENGTH_SHORT).show();
+                    }
+                });
+        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Cancel",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+        alertDialog.show();
+    }
+
+    public void launchVenmoPayment() {
+        if(isDriver()) {
+            String note = "UM Waves Rideshare request to split the cost of gas for a ride to "
+                    + mRequest.getDestination();
+
+            Intent venmoIntent = VenmoLibrary.openVenmoPayment(Constants.VENMO_APP_ID, Constants.VENMO_APP_NAME,
+                    mRequest.getPhoneNumber(), String.format("%.2f", mDisplayedCost), note, VenmoLibrary.CHARGE);
+
+            startActivityForResult(venmoIntent, VenmoLibrary.REQUEST_CODE_VENMO_APP_SWITCH);
+        }
+        else {
+            if(mRequest.isClaimed() && mDriver != null && !mDriver.getPhoneNumber().equals("")) {
+                String note = "UM Waves Rideshare - gas cost reimbursement for ride to "
+                        + mRequest.getDestination();
+
+                Intent venmoIntent = VenmoLibrary.openVenmoPayment(Constants.VENMO_APP_ID, Constants.VENMO_APP_NAME,
+                        mDriver.getPhoneNumber(), String.format("%.2f", mDisplayedCost), note, VenmoLibrary.PAY);
+
+                startActivityForResult(venmoIntent, VenmoLibrary.REQUEST_CODE_VENMO_APP_SWITCH);
+            }
+        }
+    }
+
+    private boolean isDriver() {
+        return mRequest.isClaimed() && mRequest.getDriverEmail().toLowerCase().equals(Preferences.getInstance().getEmail());
+    }
+
+    private boolean isRider() {
+        return Preferences.getInstance().getEmail().equals(mRequest.getEmail());
     }
 }

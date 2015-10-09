@@ -633,7 +633,7 @@ public final class R {
 		public static final int instabug_titlebar = 0x7f0f00fc;
 		public static final int instabug_toolbar = 0x7f0f00fd;
 		public static final int instabug_top_bar_toolbar = 0x7f0f000c;
-		public static final int invoke_instabug_menu_item = 0x7f0f014c;
+		public static final int invoke_instabug_menu_item = 0x7f0f014d;
 		public static final int line1 = 0x7f0f011f;
 		public static final int line3 = 0x7f0f0123;
 		public static final int listMode = 0x7f0f0013;
@@ -807,8 +807,8 @@ public final class R {
 		public static final int common_google_play_services_updating_text = 0x7f080028;
 		public static final int common_google_play_services_updating_title = 0x7f080029;
 		public static final int common_open_on_phone = 0x7f08002a;
-		public static final int common_signin_button_text = 0x7f08005e;
-		public static final int common_signin_button_text_long = 0x7f08005f;
+		public static final int common_signin_button_text = 0x7f080060;
+		public static final int common_signin_button_text_long = 0x7f080061;
 		public static final int edgeswipestartalerttext = 0x7f08002f;
 		public static final int emailplaceholder = 0x7f080030;
 		public static final int feedbackheader = 0x7f080031;
@@ -821,7 +821,7 @@ public final class R {
 		public static final int pleasewait = 0x7f080038;
 		public static final int screenshotstartalerttext = 0x7f080039;
 		public static final int shakestartalerttext = 0x7f08003a;
-		public static final int status_bar_notification_info_overflow = 0x7f080093;
+		public static final int status_bar_notification_info_overflow = 0x7f08009b;
 		public static final int submitbutton = 0x7f08003b;
 		public static final int tutorialalerttext = 0x7f08003c;
 		public static final int twofingerswipestartalerttext = 0x7f08003d;

@@ -183,6 +183,8 @@
             android:name="com.parse.ummalibu.LoginActivity"
             android:windowSoftInputMode="stateHidden"/>
 
+        <activity android:name=".VenmoWebViewActivity"/>
+
         <provider
             android:name=".database.DatabaseProvider"
             android:exported="false"

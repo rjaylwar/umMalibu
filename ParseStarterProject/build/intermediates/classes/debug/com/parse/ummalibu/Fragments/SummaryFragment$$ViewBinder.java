@@ -73,8 +73,16 @@ public class SummaryFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.
           target.splitCost();
         }
       });
-    view = finder.findRequiredView(source, 2131689718, "field 'mSplitGas'");
+    view = finder.findRequiredView(source, 2131689718, "field 'mSplitGas' and method 'launchVenmo'");
     target.mSplitGas = finder.castView(view, 2131689718, "field 'mSplitGas'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.launchVenmo();
+        }
+      });
   }
 
   @Override public void unbind(T target) {

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:1-192:12
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:1-194:12
 	xmlns:android
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:2:11-69
 	package
@@ -137,7 +137,7 @@ MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/rjaylward/G
 	android:glEsVersion
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:50:9-41
 application
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:53:5-190:19
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:53:5-192:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
@@ -385,14 +385,18 @@ ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:184:13-54
 	android:name
 		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:183:13-60
-provider#com.parse.ummalibu.database.DatabaseProvider
-ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:186:9-189:76
-	android:exported
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:188:13-37
-	android:authorities
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:189:13-73
+activity#com.parse.ummalibu.VenmoWebViewActivity
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:186:9-57
 	android:name
-		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:187:13-54
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:186:19-55
+provider#com.parse.ummalibu.database.DatabaseProvider
+ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:188:9-191:76
+	android:exported
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:190:13-37
+	android:authorities
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:191:13-73
+	android:name
+		ADDED from /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/AndroidManifest.xml:189:13-54
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.instabug.library:instabugcore:1.7] /Users/rjaylward/Google Drive/Android Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/AndroidManifest.xml:12:5-76
 	android:name
