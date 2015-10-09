@@ -108,13 +108,16 @@ public class ApiHelper {
         volleyRequester.makeGetRequest(mActivity, url, uiListener);
     }
 
-    public void getMyUmberRequests(VolleyRequestListener<MyUmberRequestResponse> uiListener) {
+    public void getMyActiveUmberRequests(VolleyRequestListener<MyUmberRequestResponse> uiListener) {
         String email = Preferences.getInstance().getEmail();
         String where = "?where={\"$or\":[{\"email\":\"" + email + "\", \"canceled\":false, \"isComplete\":false}," +
                 "{\"driverEmail\":\"" + email + "\", \"canceled\":false, \"isComplete\":false}]}";
 
         String url = PARSE_API_URL + "/uber_requests" + where;
         Log.d("getting umber request", url);
+
+        GsonVolleyRequester<MyUmberRequestResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, MyUmberRequestResponse.class);
+        volleyRequester.makeGetRequest(mActivity, url, uiListener);
     }
 
     public void makeUmberRequest(UmberRequest umberRequest, VolleyRequestListener<JsonObject> uiListener){

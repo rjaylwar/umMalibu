@@ -1,7 +1,5 @@
 package com.parse.ummalibu.fragments;
 
-import android.animation.ObjectAnimator;
-import android.animation.TypeEvaluator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -9,22 +7,25 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.util.Property;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
+import com.bumptech.glide.Glide;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -34,26 +35,33 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.JsonObject;
 import com.parse.ummalibu.LocationsActivity;
+import com.parse.ummalibu.LoginActivity;
 import com.parse.ummalibu.R;
 import com.parse.ummalibu.SearchLayout;
 import com.parse.ummalibu.api.ApiHelper;
 import com.parse.ummalibu.api.NotificationsHelper;
 import com.parse.ummalibu.base.BaseFragment;
+import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.helper.DatePickerHelper;
-import com.parse.ummalibu.objects.LatLngInterpolator;
+import com.parse.ummalibu.objects.Driver;
 import com.parse.ummalibu.objects.UmLocation;
 import com.parse.ummalibu.objects.UmberRequest;
+import com.parse.ummalibu.responses.DriverResponse;
+import com.parse.ummalibu.responses.MyUmberRequestResponse;
 import com.parse.ummalibu.values.Constants;
 import com.parse.ummalibu.values.FieldNames;
 import com.parse.ummalibu.values.Preferences;
+import com.parse.ummalibu.views.RiderControlsView;
 import com.parse.ummalibu.volley.VolleyRequestListener;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashSet;
 
 import butterknife.Bind;
 import butterknife.BindDimen;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by rjaylward on 9/28/15
@@ -65,6 +73,18 @@ public class UmberMapFragment extends BaseFragment {
     @Bind(R.id.search_search_layout) LinearLayout mSearchLayout;
     @Bind(R.id.umber_request_button) Button mRequestButton;
     @BindDimen(R.dimen.search_widget_height) int mSearchLayoutHeight;
+
+    @Bind(R.id.umber_driver_layout) RelativeLayout mDriverLayout;
+    @Bind(R.id.umber_driver_image) ImageView mDriverImage;
+    @Bind(R.id.umber_driver_name) TextView mDriverName;
+    @Bind(R.id.umber_contact_button) Button mDriverContactButton;
+    @Bind(R.id.umber_cancel_button) Button mDriverCancelButton;
+    @Bind(R.id.umber_car_description) TextView mDriverCarDescription;
+
+    @Bind(R.id.umber_riders_layout) LinearLayout mRidersLayout;
+    @Bind(R.id.umber_first_rider_control) RiderControlsView mFirstRiderView;
+    @Bind(R.id.umber_second_rider_control) RiderControlsView mSecondRiderView;
+    @Bind(R.id.umber_third_rider_control) RiderControlsView mThirdRiderView;
 
     private View mRoot;
     private AppCompatActivity mActivity;
@@ -88,6 +108,9 @@ public class UmberMapFragment extends BaseFragment {
     private UmLocation mSelectedPickUpLocation;
     private UmLocation mSelectedDestLocation;
 
+    private ArrayList<UmberRequest> mRiderRequests;
+    private ArrayList<UmberRequest> mDriverRequests;
+    private Driver mDriver;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -129,7 +152,7 @@ public class UmberMapFragment extends BaseFragment {
             public void onTextClicked() {
                 mSearchDestLayout.getEditText().setFocusable(true);
                 mSearchDestLayout.clear();
-                lauchDestinationSpotsList();
+                launchDestinationSpotsList();
                 mSearchDestLayout.getEditText().setCursorVisible(true);
                 hideKeyboard();
             }
@@ -165,7 +188,7 @@ public class UmberMapFragment extends BaseFragment {
         startActivityForResult(LocationsActivity.createIntent(mActivity, LocationsActivity.PICKUP), PICKUP_LOCATIONS);
     }
 
-    private void lauchDestinationSpotsList() {
+    private void launchDestinationSpotsList() {
         startActivityForResult(LocationsActivity.createIntent(mActivity, LocationsActivity.DESTINATION), DESTINATION_LOCATIONS);
     }
 
@@ -229,53 +252,53 @@ public class UmberMapFragment extends BaseFragment {
         mSearchDestLayout.clearFocus();
     }
 
-    private void makeMovingDriverApiRequest() {
-        ApiHelper helper = new ApiHelper(mActivity);
-        helper.getUmberLocation(new VolleyRequestListener<JsonObject>() {
-            @Override
-            public void onResponse(JsonObject response) {
-                double lat;
-                lat = response.getAsJsonArray("results").get(0).getAsJsonObject().getAsJsonPrimitive("latitude").getAsDouble();
-                double lon;
-                lon = response.getAsJsonArray("results").get(0).getAsJsonObject().getAsJsonPrimitive("longitude").getAsDouble();
-
-                animateMarker(lat, lon);
-            }
-
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-        });
-    }
-
-    private void startUpdating() {
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                // TODO Auto-generated method stub
-                while (mKeepUpdating) {
-                    try {
-                        mIsUpdating = true;
-                        Thread.sleep(3000);
-                        mHandler.post(new Runnable() {
-
-                            @Override
-                            public void run() {
-                                makeMovingDriverApiRequest();
-                            }
-                        });
-                    } catch (Exception e) {
-                        // TODO: handle exception
-                    }
-                }
-
-                if (!mKeepUpdating)
-                    mIsUpdating = false;
-            }
-        }).start();
-    }
+//    private void makeMovingDriverApiRequest() {
+//        ApiHelper helper = new ApiHelper(mActivity);
+//        helper.getUmberLocation(new VolleyRequestListener<JsonObject>() {
+//            @Override
+//            public void onResponse(JsonObject response) {
+//                double lat;
+//                lat = response.getAsJsonArray("results").get(0).getAsJsonObject().getAsJsonPrimitive("latitude").getAsDouble();
+//                double lon;
+//                lon = response.getAsJsonArray("results").get(0).getAsJsonObject().getAsJsonPrimitive("longitude").getAsDouble();
+//
+//                animateMarker(lat, lon);
+//            }
+//
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//
+//            }
+//        });
+//    }
+//
+//    private void startUpdating() {
+//
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                // TODO Auto-generated method stub
+//                while (mKeepUpdating) {
+//                    try {
+//                        mIsUpdating = true;
+//                        Thread.sleep(3000);
+//                        mHandler.post(new Runnable() {
+//
+//                            @Override
+//                            public void run() {
+//                                makeMovingDriverApiRequest();
+//                            }
+//                        });
+//                    } catch (Exception e) {
+//                        // TODO: handle exception
+//                    }
+//                }
+//
+//                if (!mKeepUpdating)
+//                    mIsUpdating = false;
+//            }
+//        }).start();
+//    }
 
     @Override
     public void onResume() {
@@ -362,13 +385,10 @@ public class UmberMapFragment extends BaseFragment {
             // something
         }
 
-        if (mMarker == null) {
-            mMarker = mMap.addMarker(new MarkerOptions().position(new LatLng(34.04063163, -118.69598329)));
-            mMarker.setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher));
-        }
 
-        if (!mIsUpdating)
-            startUpdating();
+
+//        if (!mIsUpdating)
+//            startUpdating();
 
     }
 
@@ -380,12 +400,12 @@ public class UmberMapFragment extends BaseFragment {
     }
 
     private void updateMapCamera(Location location) {
-        updateMapCamera(location.getLatitude(), location.getLongitude());
+        updateMapCamera(new LatLng(location.getLatitude(), location.getLongitude()));
     }
 
-    private void updateMapCamera(double lat, double lon) {
+    private void updateMapCamera(LatLng latLng) {
 
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(lat, lon), 15), 2800, new GoogleMap.CancelableCallback() {
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15), 1500, new GoogleMap.CancelableCallback() {
             @Override
             public void onFinish() {
             }
@@ -396,66 +416,37 @@ public class UmberMapFragment extends BaseFragment {
         });
     }
 
-    private void animateMarker(Location location) {
-        animateMarker(location.getLatitude(), location.getLongitude());
-    }
+//    private void animateMarker(double lat, double lon) {
+//
+//        animateMarkerToICS(mMarker, new LatLng(lat, lon), new LatLngInterpolator() {
+//            @Override
+//            public LatLng interpolate(float fraction, LatLng a, LatLng b) {
+//                double lat = (b.latitude - a.latitude) * fraction + a.latitude;
+//                double lng = (b.longitude - a.longitude) * fraction + a.longitude;
+//                return new LatLng(lat, lng);
+//            }
+//        });
+//    }
 
-    private void animateMarker(double lat, double lon) {
-
-        animateMarkerToICS(mMarker, new LatLng(lat, lon), new LatLngInterpolator() {
-            @Override
-            public LatLng interpolate(float fraction, LatLng a, LatLng b) {
-                double lat = (b.latitude - a.latitude) * fraction + a.latitude;
-                double lng = (b.longitude - a.longitude) * fraction + a.longitude;
-                return new LatLng(lat, lng);
-            }
-        });
-    }
-
-    private void drawPinAndMoveCamera(final LatLng location, final Marker marker, boolean moveCamera, final Integer iconResource) {
-        if (moveCamera) {
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location, 15), 2800, new GoogleMap.CancelableCallback() {
-                @Override
-                public void onFinish() {
-                    drawPin(location, marker, iconResource);
-                }
-
-                @Override
-                public void onCancel() {
-                }
-            });
-        }
-    }
-
-    private void drawPinAndMoveCamera(LatLng location, Marker marker, boolean moveCamera) {
-        drawPinAndMoveCamera(location, marker, moveCamera, 0);
-    }
-
-    private void drawPin(LatLng location, Marker marker, Integer iconResource) {
-        marker = mMap.addMarker(new MarkerOptions().position(location));
-
-        if (iconResource != null && iconResource > 0)
-            marker.setIcon(BitmapDescriptorFactory.fromResource(iconResource));
-    }
 
     @Override
     public void onPause() {
         super.onPause();
-        mKeepUpdating = false;
+//        mKeepUpdating = false;
     }
 
-    static void animateMarkerToICS(Marker marker, LatLng finalPosition, final LatLngInterpolator latLngInterpolator) {
-        TypeEvaluator<LatLng> typeEvaluator = new TypeEvaluator<LatLng>() {
-            @Override
-            public LatLng evaluate(float fraction, LatLng startValue, LatLng endValue) {
-                return latLngInterpolator.interpolate(fraction, startValue, endValue);
-            }
-        };
-        Property<Marker, LatLng> property = Property.of(Marker.class, LatLng.class, "position");
-        ObjectAnimator animator = ObjectAnimator.ofObject(marker, property, typeEvaluator, finalPosition);
-        animator.setDuration(3000);
-        animator.start();
-    }
+//    static void animateMarkerToICS(Marker marker, LatLng finalPosition, final LatLngInterpolator latLngInterpolator) {
+//        TypeEvaluator<LatLng> typeEvaluator = new TypeEvaluator<LatLng>() {
+//            @Override
+//            public LatLng evaluate(float fraction, LatLng startValue, LatLng endValue) {
+//                return latLngInterpolator.interpolate(fraction, startValue, endValue);
+//            }
+//        };
+//        Property<Marker, LatLng> property = Property.of(Marker.class, LatLng.class, "position");
+//        ObjectAnimator animator = ObjectAnimator.ofObject(marker, property, typeEvaluator, finalPosition);
+//        animator.setDuration(3000);
+//        animator.start();
+//    }
 
     private void makeUmberRequest() {
 
@@ -556,4 +547,138 @@ public class UmberMapFragment extends BaseFragment {
 
         mKeepUpdating = false;
     }
+
+    private void getMyRequests() {
+        ApiHelper apiHelper = new ApiHelper(mActivity);
+        apiHelper.getMyActiveUmberRequests(new VolleyRequestListener<MyUmberRequestResponse>() {
+            @Override
+            public void onResponse(MyUmberRequestResponse response) {
+                response.saveResponse(mActivity);
+            }
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+    }
+
+    private void loadCurrentRequest() {
+        String email = Preferences.getInstance().getEmail();
+        if(!email.equals("")) {
+            ArrayList<UmberRequest> myRequests = DatabaseHelper.getInstance(mActivity).getMyActiveRequests(email);
+
+            mRiderRequests = new ArrayList<>();
+            mDriverRequests = new ArrayList<>();
+
+            for(UmberRequest request : myRequests) {
+                if(request.getEmail().equals(email))
+                    mRiderRequests.add(request);
+                else if(request.getDriverEmail().equals(email))
+                    mDriverRequests.add(request);
+            }
+
+            loadAsRider();
+            loadAsDriver();
+
+        } else {
+            Toast.makeText(mActivity, "You must login to view or make requests", Toast.LENGTH_SHORT).show();
+            startActivity(LoginActivity.createIntent(mActivity));
+            mActivity.finish();
+        }
+    }
+
+    private void loadAsDriver() {
+        if(!mDriverRequests.isEmpty())
+            mRidersLayout.setVisibility(View.VISIBLE);
+        else
+            mRidersLayout.setVisibility(View.GONE);
+    }
+
+    private void loadAsRider() {
+        if(!mDriverRequests.isEmpty()) {
+            Marker myRequestPickUpMarker = mMap.addMarker(new MarkerOptions()
+                            .position(mRiderRequests.get(0).getPickUpLatLng())
+                            .title("Pick Up Spot")
+                            .snippet(mRiderRequests.get(0).getPickUpLocation())
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
+            );
+
+            Marker myRequestDestMarker = mMap.addMarker(new MarkerOptions()
+                            .position(mRiderRequests.get(0).getDestinationLatLng())
+                            .title("Destination")
+                            .snippet(mRiderRequests.get(0).getDestination())
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))
+            );
+
+            updateMapCamera(mRiderRequests.get(0).getPickUpLatLng());
+
+            if (mRiderRequests.get(0).isClaimed())
+                getDriver(mRiderRequests.get(0));
+            else
+                mDriverLayout.setVisibility(View.GONE);
+        } else {
+            mDriverLayout.setVisibility(View.GONE);
+        }
+
+    }
+
+    private void getDriver(final UmberRequest request) {
+        ApiHelper helper = new ApiHelper(mActivity);
+        helper.getDriver(request.getDriverEmail(), new VolleyRequestListener<DriverResponse>() {
+            @Override
+            public void onResponse(DriverResponse response) {
+                response.saveResponse(mActivity);
+                if (!response.getDrivers().isEmpty()) {
+                    mDriver = response.getDrivers().get(0);
+                    loadDriverLayout();
+                }
+            }
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(mActivity, "Error, unable to find your driver. Please try again later", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void loadDriverLayout() {
+        mDriverLayout.setVisibility(View.VISIBLE);
+        Glide.with(mActivity).load(mDriver.getImageUrl()).into(mDriverImage);
+        mDriverName.setText(mDriver.getName());
+        mDriverCarDescription.setText(mDriver.getCarDescription());
+    }
+
+    @OnClick(R.id.umber_contact_button)
+    void contactDriver() {
+        if(mDriver != null) {
+            Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
+            sendIntent.setData(Uri.parse("sms:" + mDriver.getPhoneNumber()));
+            sendIntent.putExtra("sms_body", "");
+            sendIntent.putExtra("exit_on_sent", true);
+            startActivityForResult(sendIntent, 0);
+        }
+    }
+
+    @OnClick(R.id.umber_cancel_button)
+    void cancelRequest() {
+        if(!mRiderRequests.get(0).isStarted()) {
+            ApiHelper helper = new ApiHelper(mActivity);
+            helper.updateUmberRequestStatus(mRiderRequests.get(0), new VolleyRequestListener() {
+                @Override
+                public void onResponse(Object response) {
+                    NotificationsHelper.sendCancelNotification(mRiderRequests.get(0));
+                    mRiderRequests.remove(0);
+                    if(mRiderRequests.get(0) != null)
+                        loadAsRider();
+                }
+
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(mActivity, "Error, unable to cancel your request at this time. Please try again later", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+    }
+
 }

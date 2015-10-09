@@ -3,14 +3,10 @@ package com.parse.ummalibu;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -18,7 +14,6 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
@@ -85,55 +80,15 @@ public class LoginActivity extends ToolbarActivity {
     }
 
     private void setUpSlidingPanel() {
-        mNavigationView.setBackgroundColor(getResources().getColor(R.color.um_dark_blue));
-        mNavigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.white)));
-        mNavigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.white)));
 
-        mSlidingPaneHelper = new SlidingPaneHelper(this, mNavigationView);
+        mSlidingPaneHelper = new SlidingPaneHelper(this, mToolbar, mNavigationView, mDrawerLayout);
         mSlidingPaneHelper.loadView();
-
-        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                if (!menuItem.isChecked())
-                    menuItem.setChecked(true);
-
-                switch (menuItem.getItemId()) {
-                    case R.id.menu_item_rideshare:
-                            startActivity(RideShareActivity.createIntent(LoginActivity.this));
-                        return true;
-                    case R.id.menu_item_um:
-                            startActivity(MainActivity.createIntent(LoginActivity.this));
-                        return true;
-                    default:
-                        return true;
-                }
-            }
-        });
-        initDrawer(mToolbar);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         mDrawerLayout.closeDrawer(Gravity.LEFT);
-    }
-
-    public void initDrawer(@NonNull Toolbar toolbar) {
-        if(mDrawerLayout != null) {
-            ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, 0, 0) {
-                @Override
-                public void onDrawerClosed(View view) {
-                }
-
-                @Override
-                public void onDrawerOpened(View drawerView) {
-                }
-            };
-
-            mDrawerLayout.setDrawerListener(drawerToggle);
-            drawerToggle.syncState();
-        }
     }
 
     @Override

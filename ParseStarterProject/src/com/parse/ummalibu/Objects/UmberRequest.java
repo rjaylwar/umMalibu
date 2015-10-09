@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.JsonObject;
 import com.google.gson.annotations.SerializedName;
 import com.parse.ummalibu.database.ApiResponse;
@@ -295,6 +296,22 @@ public class UmberRequest implements ApiResponse, Parcelable {
             mapString += "&path=weight:3%7Ccolor:blue%7Cenc:" + mPath;
 
         return mapString;
+    }
+
+    public LatLng getLatLng() {
+        return new LatLng(mLatitude, mLongitude);
+    }
+
+    public LatLng getPickUpLatLng() {
+        return new LatLng(mPickupLat, mPickupLong);
+    }
+
+    public LatLng getDestinationLatLng() {
+        return new LatLng(mDestinationLat, mDestinationLong);
+    }
+
+    public LatLng getDriverLatLng() {
+        return new LatLng(mDriverLat, mDriverLon);
     }
 
     public Uri getUri() {

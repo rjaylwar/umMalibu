@@ -2,16 +2,15 @@ package com.parse.ummalibu;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.view.MenuItem;
 
 import com.parse.ummalibu.adapters.UmberPagerAdapter;
 import com.parse.ummalibu.base.ToolbarActivity;
+import com.parse.ummalibu.helper.SlidingPaneHelper;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -26,6 +25,8 @@ public class RideShareActivity extends ToolbarActivity {
     @Bind(R.id.tabs) TabLayout mTabLayout;
     @Bind(R.id.view_pager) ViewPager mViewPager;
 
+    private SlidingPaneHelper mSlidingPaneHelper;
+
     public static Intent createIntent(Context context) {
         return new Intent(context, RideShareActivity.class);
     }
@@ -35,28 +36,8 @@ public class RideShareActivity extends ToolbarActivity {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
 
-        mNavigationView.setBackgroundColor(getResources().getColor(R.color.um_dark_blue));
-        mNavigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.white)));
-        mNavigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.white)));
-        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                if (!menuItem.isChecked())
-                    menuItem.setChecked(true);
-
-                switch (menuItem.getItemId()) {
-                    case R.id.menu_item_um:
-                        startActivity(MainActivity.createIntent(RideShareActivity.this));
-                        mDrawerLayout.closeDrawer(mNavigationView);
-                        return true;
-                    case R.id.menu_item_settings:
-                        startActivity(LoginActivity.createIntent(RideShareActivity.this));
-                        return true;
-                    default:
-                        return true;
-                }
-            }
-        });
+        mSlidingPaneHelper = new SlidingPaneHelper(this, mToolbar, mNavigationView, mDrawerLayout);
+        mSlidingPaneHelper.loadView();
 
         mTabLayout = (TabLayout) findViewById(R.id.tabs);
         mTabLayout.addTab(mTabLayout.newTab().setText("Map"));

@@ -6,7 +6,7 @@
         <item
             android:id="@+id/menu_item_um"
             android:checked="false"
-            android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+            android:icon="@drawable/abc_ic_menu_selectall_mtrl_alpha"
             android:title="@string/um"/>
 
         <item
@@ -21,6 +21,11 @@
             android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
             android:title="@string/action_settings"/>
 
+        <item
+            android:id="@+id/menu_item_feedback"
+            android:checked="false"
+            android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+            android:title="@string/feedback" />
     </group>
 
 </menu>

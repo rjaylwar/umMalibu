@@ -226,7 +226,7 @@ public class RequestListFragment extends BaseFragment {
     }
 
     private void databaseRequest() {
-        ArrayList<UmberRequest> requests = DatabaseHelper.getInstance(mActivity).getRequests();
+        ArrayList<UmberRequest> requests = DatabaseHelper.getInstance(mActivity).getMyRequests();
         mAdapter.setData(requests, getMode());
     }
 

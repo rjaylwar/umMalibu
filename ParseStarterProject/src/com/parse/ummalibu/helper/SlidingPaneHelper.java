@@ -1,13 +1,25 @@
 package com.parse.ummalibu.helper;
 
+import android.content.res.ColorStateList;
+import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.instabug.library.Instabug;
+import com.parse.ummalibu.LoginActivity;
+import com.parse.ummalibu.MainActivity;
 import com.parse.ummalibu.R;
-import com.parse.ummalibu.base.ToolbarActivity;
+import com.parse.ummalibu.RideShareActivity;
+import com.parse.ummalibu.base.BaseActivity;
 import com.parse.ummalibu.values.Preferences;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -17,17 +29,14 @@ import de.hdodenhof.circleimageview.CircleImageView;
  */
 public class SlidingPaneHelper {
 
-    private ToolbarActivity mActivity;
+    private BaseActivity mActivity;
     private NavigationView mNavigationView;
     private TextView mName;
     private TextView mEmail;
     private CircleImageView mProfileImage;
 
-    public SlidingPaneHelper(ToolbarActivity activity, NavigationView navigationView) {
-        mActivity = activity;
-        mNavigationView = navigationView;
-        createView();
-    }
+    private DrawerLayout mDrawerLayout;
+    private Toolbar mToolbar;
 
     private void createView() {
         View v = LayoutInflater.from(mActivity).inflate(R.layout.header_layout, mNavigationView, false);
@@ -45,80 +54,82 @@ public class SlidingPaneHelper {
         mName.setText(Preferences.getInstance().getName());
     }
 
-//    NavigationView mNavigationView;
-//    ToolbarActivity mToolbarActivity;
-//    DrawerLayout mDrawerLayout;
-//    Toolbar mToolbar;
-//    OnDrawerStateChangedListener mListener;
-//
-//    public SlidingPaneHelper(ToolbarActivity activity, Toolbar toolbar, DrawerLayout drawerLayout) {
-//        mToolbarActivity = activity;
-//        mToolbar = toolbar;
-//        mDrawerLayout = drawerLayout;
-//
-//        setUp();
-//    }
-//
-//    public void setUp() {
-//        mNavigationView.setBackgroundColor(mToolbarActivity.getResources().getColor(R.color.um_dark_blue));
-//        mNavigationView.setItemIconTintList(ColorStateList.valueOf(mToolbarActivity.getResources().getColor(R.color.white)));
-//        mNavigationView.setItemTextColor(ColorStateList.valueOf(mToolbarActivity.getResources().getColor(R.color.white)));
-//        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(MenuItem menuItem) {
-//                if (!menuItem.isChecked())
-//                    menuItem.setChecked(true);
-//
-//                switch (menuItem.getItemId()) {
-//                    case R.id.menu_item_rideshare:
-//                        if(!(mToolbarActivity instanceof RideShareActivity))
-//                            mToolbarActivity.startActivity(RideShareActivity.createIntent(mToolbarActivity));
-//                        return true;
-//                    case R.id.menu_item_um:
-//                        if(!(mToolbarActivity instanceof MainActivity))
-//                            mToolbarActivity.startActivity(MainActivity.createIntent(mToolbarActivity));
-//                        return true;
-//                    case R.id.menu_item_settings:
-//                        if(!(mToolbarActivity instanceof LoginActivity))
-//                            mToolbarActivity.startActivity(LoginActivity.createIntent(mToolbarActivity));
-//                        return true;
-//                    default:
-//                        return true;
-//                }
-//            }
-//        });
-//        initDrawer(mToolbar);
-//    }
-//
-//    public void initDrawer(@NonNull Toolbar toolbar) {
-//        if(mDrawerLayout != null) {
-//            ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(mToolbarActivity, mDrawerLayout, toolbar, 0, 0) {
-//                @Override
-//                public void onDrawerClosed(View view) {
-//                    if(mListener != null)
-//                        mListener.onDrawerStateChanged(false);
-//                }
-//
-//                @Override
-//                public void onDrawerOpened(View drawerView) {
-//                    if(mListener != null)
-//                        mListener.onDrawerStateChanged(true);
-//                }
-//            };
-//
-//            mDrawerLayout.setDrawerListener(drawerToggle);
-//            drawerToggle.syncState();
-//        }
-//    }
-//
-//    public void setOnDrawerStateChangedListener(OnDrawerStateChangedListener listener) {
-//        mListener = listener;
-//    }
-//
-//    public interface OnDrawerStateChangedListener {
-//
-//        void onDrawerStateChanged(boolean isOpen);
-//
-//    }
+    public SlidingPaneHelper(BaseActivity activity, Toolbar toolbar, NavigationView navigationView, DrawerLayout drawerLayout) {
+        mActivity = activity;
+        mToolbar = toolbar;
+        mDrawerLayout = drawerLayout;
+        mNavigationView = navigationView;
+
+        setUp();
+    }
+
+    public void setUp() {
+        mNavigationView.setBackgroundColor(mActivity.getResources().getColor(R.color.um_dark_blue));
+        mNavigationView.setItemIconTintList(ColorStateList.valueOf(mActivity.getResources().getColor(R.color.white)));
+        mNavigationView.setItemTextColor(ColorStateList.valueOf(mActivity.getResources().getColor(R.color.white)));
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                if (!menuItem.isChecked())
+                    menuItem.setChecked(true);
+
+                switch (menuItem.getItemId()) {
+                    case R.id.menu_item_rideshare:
+                        if (!(mActivity instanceof RideShareActivity))
+                            mActivity.startActivity(RideShareActivity.createIntent(mActivity));
+                        return true;
+                    case R.id.menu_item_um:
+                        if (!(mActivity instanceof MainActivity))
+                            mActivity.startActivity(MainActivity.createIntent(mActivity));
+                        return true;
+                    case R.id.menu_item_settings:
+                        if (!(mActivity instanceof LoginActivity))
+                            mActivity.startActivity(LoginActivity.createIntent(mActivity));
+                        return true;
+                    case R.id.menu_item_feedback:
+                        mDrawerLayout.closeDrawer(Gravity.LEFT);
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+
+                            @Override
+                            public void run() {
+                                //Gives the drawer time to close so screenshot is of the current screen
+                                Instabug.getInstance().invoke();
+                            }
+
+                        }, 250l);
+                        return true;
+                    default:
+                        return true;
+                }
+            }
+        });
+        createView();
+        initDrawer(mToolbar);
+    }
+
+    public void initDrawer(@NonNull Toolbar toolbar) {
+        if(mDrawerLayout != null) {
+            ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(mActivity, mDrawerLayout, toolbar, 0, 0) {
+                @Override
+                public void onDrawerClosed(View view) { }
+
+                @Override
+                public void onDrawerOpened(View drawerView) {
+                    loadView();
+
+//                    if(mActivity instanceof MainActivity)
+//                        mNavigationView.getMenu().getItem(0).setChecked(true);
+//                    else if(mActivity instanceof RideShareActivity)
+//                        mNavigationView.getMenu().getItem(1).setChecked(true);
+//                    else if(mActivity instanceof LoginActivity)
+//                        mNavigationView.getMenu().getItem(2).setChecked(true);
+                }
+            };
+
+            mDrawerLayout.setDrawerListener(drawerToggle);
+            drawerToggle.syncState();
+        }
+    }
 
 }

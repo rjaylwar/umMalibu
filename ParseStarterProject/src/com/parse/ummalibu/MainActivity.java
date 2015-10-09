@@ -4,16 +4,11 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
@@ -21,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.parse.ummalibu.base.ToolbarActivity;
+import com.parse.ummalibu.helper.SlidingPaneHelper;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -35,6 +31,8 @@ public class MainActivity extends ToolbarActivity {
     private Intent aboutUMIntent;
     private Intent coffeeIntent;
     private Intent umslIntent;
+
+    private SlidingPaneHelper mSlidingPaneHelper;
 
     @Bind(R.id.drawer_layout) DrawerLayout mDrawerLayout;
     @Bind(R.id.navigation_view) NavigationView mNavigationView;
@@ -54,27 +52,8 @@ public class MainActivity extends ToolbarActivity {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
 
-        mNavigationView.setBackgroundColor(getResources().getColor(R.color.um_dark_blue));
-        mNavigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.white)));
-        mNavigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.white)));
-        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                if (!menuItem.isChecked())
-                    menuItem.setChecked(true);
-
-                switch (menuItem.getItemId()) {
-                    case R.id.menu_item_rideshare:
-                        startActivity(RideShareActivity.createIntent(MainActivity.this));
-                        return true;
-                    case R.id.menu_item_settings:
-                        startActivity(LoginActivity.createIntent(MainActivity.this));
-                        return true;
-                    default:
-                        return true;
-                }
-            }
-        });
+        mSlidingPaneHelper = new SlidingPaneHelper(this, mToolbar, mNavigationView, mDrawerLayout);
+        mSlidingPaneHelper.loadView();
 
         addListenerOnButton();
         detailIntent = new Intent(this, ParseStarterProjectActivity.class);
@@ -85,31 +64,11 @@ public class MainActivity extends ToolbarActivity {
         aboutUMIntent = new Intent(this, AboutUMActivity.class);
         umslIntent = new Intent(this, UmslMenuActivity.class);
 
-        initDrawer(mToolbar);
     }
 
     @Override
     public int getLayoutId() {
         return R.layout.activity_main;
-    }
-
-    public void initDrawer(@NonNull Toolbar toolbar) {
-        if(mDrawerLayout != null) {
-            ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, 0, 0) {
-                @Override
-                public void onDrawerClosed(View view) {
-                    invalidateOptionsMenu();
-                }
-
-                @Override
-                public void onDrawerOpened(View drawerView) {
-                    invalidateOptionsMenu();
-                }
-            };
-
-            mDrawerLayout.setDrawerListener(drawerToggle);
-            drawerToggle.syncState();
-        }
     }
 
     public void addListenerOnButton() {

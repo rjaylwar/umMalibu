@@ -5,6 +5,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.annotation.Nullable;
 
 import com.parse.ummalibu.objects.UmLocation;
 import com.parse.ummalibu.values.FieldNames;
@@ -300,10 +301,23 @@ public class DatabaseHelper {
         }
     }
 
-    public synchronized ArrayList<UmberRequest> getRequests() {
+    public synchronized ArrayList<UmberRequest> getMyRequests() {
+        return getRequestsWithParams(Table.Requests.CANCELED + " != 1");
+    }
+
+    public synchronized  ArrayList<UmberRequest> getMyActiveRequests(String email) {
+        String where = Table.Requests.CANCELED + " != 1 AND (" + Table.Requests.EMAIL + " == " + email + " OR " + Table.Requests.DRIVER_EMAIL + " == " + email + ")";
+        return getRequestsWithParams(where);
+    }
+
+    public synchronized ArrayList<UmberRequest> getRequestsWithParams(@Nullable String whereQuery) {
         ArrayList<UmberRequest> requests = new ArrayList<>();
         // Select All Query
-        String selectQuery = "SELECT * FROM " + Table.Requests.TABLE_NAME + " WHERE " + Table.Requests.CANCELED + " != 1 ORDER BY " + Table.Requests.ETA + " DESC";
+        String selectQuery;
+        if(whereQuery != null)
+            selectQuery = "SELECT * FROM " + Table.Requests.TABLE_NAME + " WHERE " + whereQuery + " ORDER BY " + Table.Requests.ETA + " DESC";
+        else
+            selectQuery = "SELECT * FROM " + Table.Requests.TABLE_NAME + " ORDER BY " + Table.Requests.ETA + " DESC";
 
         SQLiteDatabase db = mOpenDatabaseHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);

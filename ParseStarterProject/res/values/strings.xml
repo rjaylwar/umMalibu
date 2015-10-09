@@ -80,5 +80,6 @@
     <string name="delete">Delete</string>
     <string name="complete">Complete</string>
     <string name="canceled">Canceled</string>
+    <string name="feedback">Feedback</string>
 
 </resources>

@@ -37,6 +37,9 @@ public class ParseApplication extends Application {
         ParseUser.enableAutomaticUser();
 
         Instabug.initialize(this, getString(R.string.instabug_key));
+        Instabug.getInstance().setEmailPlaceholder(Preferences.getInstance().getEmail());
+        Instabug.getInstance().setIsTrackingCrashes(false);
+
         mRefWatcher = LeakCanary.install(this);
         subscribeToChannels();
 

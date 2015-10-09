@@ -6,13 +6,12 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.instabug.wrapper.support.activity.InstabugAppCompatActivity;
 import com.parse.ummalibu.R;
 
 /**
- * Created by rjaylward on 9/24/15.
+ * Created by rjaylward on 9/24/15
  */
-public abstract class ToolbarActivity extends InstabugAppCompatActivity {
+public abstract class ToolbarActivity extends BaseActivity {
 
     public Toolbar mToolbar;
 
@@ -40,6 +39,9 @@ public abstract class ToolbarActivity extends InstabugAppCompatActivity {
     }
 
     public abstract int getLayoutId();
+
+    @Override
+    public void initLayout() { }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
