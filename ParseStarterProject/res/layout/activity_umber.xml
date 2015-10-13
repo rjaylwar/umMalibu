@@ -107,25 +107,28 @@
         android:id="@+id/umber_riders_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="3"
-        android:layout_below="@+id/search_card">
+        android:layout_below="@+id/search_card"
+        android:weightSum="3">
 
         <com.parse.ummalibu.views.RiderControlsView
             android:id="@+id/umber_first_rider_control"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_weight="1"/>
 
         <com.parse.ummalibu.views.RiderControlsView
             android:id="@+id/umber_second_rider_control"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_weight="1"/>
 
         <com.parse.ummalibu.views.RiderControlsView
             android:id="@+id/umber_third_rider_control"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_weight="1"/>
 
     </LinearLayout>

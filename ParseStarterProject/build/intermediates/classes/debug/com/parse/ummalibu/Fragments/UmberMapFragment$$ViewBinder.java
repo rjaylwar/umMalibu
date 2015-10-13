@@ -9,14 +9,50 @@ import butterknife.ButterKnife.ViewBinder;
 public class UmberMapFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.UmberMapFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131689798, "field 'mSearchPickUpLayout'");
-    target.mSearchPickUpLayout = finder.castView(view, 2131689798, "field 'mSearchPickUpLayout'");
-    view = finder.findRequiredView(source, 2131689799, "field 'mSearchDestLayout'");
-    target.mSearchDestLayout = finder.castView(view, 2131689799, "field 'mSearchDestLayout'");
-    view = finder.findRequiredView(source, 2131689797, "field 'mSearchLayout'");
-    target.mSearchLayout = finder.castView(view, 2131689797, "field 'mSearchLayout'");
+    view = finder.findRequiredView(source, 2131689799, "field 'mSearchPickUpLayout'");
+    target.mSearchPickUpLayout = finder.castView(view, 2131689799, "field 'mSearchPickUpLayout'");
+    view = finder.findRequiredView(source, 2131689800, "field 'mSearchDestLayout'");
+    target.mSearchDestLayout = finder.castView(view, 2131689800, "field 'mSearchDestLayout'");
+    view = finder.findRequiredView(source, 2131689798, "field 'mSearchLayout'");
+    target.mSearchLayout = finder.castView(view, 2131689798, "field 'mSearchLayout'");
     view = finder.findRequiredView(source, 2131689643, "field 'mRequestButton'");
     target.mRequestButton = finder.castView(view, 2131689643, "field 'mRequestButton'");
+    view = finder.findRequiredView(source, 2131689636, "field 'mDriverLayout'");
+    target.mDriverLayout = finder.castView(view, 2131689636, "field 'mDriverLayout'");
+    view = finder.findRequiredView(source, 2131689637, "field 'mDriverImage'");
+    target.mDriverImage = finder.castView(view, 2131689637, "field 'mDriverImage'");
+    view = finder.findRequiredView(source, 2131689640, "field 'mDriverName'");
+    target.mDriverName = finder.castView(view, 2131689640, "field 'mDriverName'");
+    view = finder.findRequiredView(source, 2131689639, "field 'mDriverContactButton' and method 'contactDriver'");
+    target.mDriverContactButton = finder.castView(view, 2131689639, "field 'mDriverContactButton'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.contactDriver();
+        }
+      });
+    view = finder.findRequiredView(source, 2131689642, "field 'mDriverCancelButton' and method 'promptToCancel'");
+    target.mDriverCancelButton = finder.castView(view, 2131689642, "field 'mDriverCancelButton'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.promptToCancel();
+        }
+      });
+    view = finder.findRequiredView(source, 2131689641, "field 'mDriverCarDescription'");
+    target.mDriverCarDescription = finder.castView(view, 2131689641, "field 'mDriverCarDescription'");
+    view = finder.findRequiredView(source, 2131689644, "field 'mRidersLayout'");
+    target.mRidersLayout = finder.castView(view, 2131689644, "field 'mRidersLayout'");
+    view = finder.findRequiredView(source, 2131689646, "field 'mFirstRiderView'");
+    target.mFirstRiderView = finder.castView(view, 2131689646, "field 'mFirstRiderView'");
+    view = finder.findRequiredView(source, 2131689647, "field 'mSecondRiderView'");
+    target.mSecondRiderView = finder.castView(view, 2131689647, "field 'mSecondRiderView'");
+    view = finder.findRequiredView(source, 2131689648, "field 'mThirdRiderView'");
+    target.mThirdRiderView = finder.castView(view, 2131689648, "field 'mThirdRiderView'");
     Resources res = finder.getContext(source).getResources();
     target.mSearchLayoutHeight = res.getDimensionPixelSize(2131361895);
   }
@@ -26,5 +62,15 @@ public class UmberMapFragment$$ViewBinder<T extends com.parse.ummalibu.fragments
     target.mSearchDestLayout = null;
     target.mSearchLayout = null;
     target.mRequestButton = null;
+    target.mDriverLayout = null;
+    target.mDriverImage = null;
+    target.mDriverName = null;
+    target.mDriverContactButton = null;
+    target.mDriverCancelButton = null;
+    target.mDriverCarDescription = null;
+    target.mRidersLayout = null;
+    target.mFirstRiderView = null;
+    target.mSecondRiderView = null;
+    target.mThirdRiderView = null;
   }
 }

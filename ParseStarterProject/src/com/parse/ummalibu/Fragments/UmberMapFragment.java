@@ -1,8 +1,11 @@
 package com.parse.ummalibu.fragments;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.ContentObserver;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
@@ -15,6 +18,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -42,6 +46,7 @@ import com.parse.ummalibu.api.ApiHelper;
 import com.parse.ummalibu.api.NotificationsHelper;
 import com.parse.ummalibu.base.BaseFragment;
 import com.parse.ummalibu.database.DatabaseHelper;
+import com.parse.ummalibu.database.Table;
 import com.parse.ummalibu.helper.DatePickerHelper;
 import com.parse.ummalibu.objects.Driver;
 import com.parse.ummalibu.objects.UmLocation;
@@ -112,6 +117,9 @@ public class UmberMapFragment extends BaseFragment {
     private ArrayList<UmberRequest> mDriverRequests;
     private Driver mDriver;
 
+    private Marker myRequestPickUpMarker;
+    private Marker myRequestDestMarker;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mRoot = inflater.inflate(R.layout.activity_umber, container, false);
@@ -178,11 +186,30 @@ public class UmberMapFragment extends BaseFragment {
             }
         });
 
+        mActivity.getContentResolver().registerContentObserver(Table.Requests.CONTENT_URI, true, mRequestsObserver);
+        getMyRequests();
+
         mHandler = new Handler();
         setUpMapIfNeeded();
 
+        mSearchDestLayout.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                if(mSearchPickUpLayout.getEditText().getText().toString().length() == 0)
+                    hideDestinationSearch();
+            }
+        });
+
         return mRoot;
     }
+
+    private ContentObserver mRequestsObserver = new ContentObserver(new Handler()) {
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            super.onChange(selfChange, uri);
+            loadCurrentRequest();
+        }
+    };
 
     private void launchPickupSpotsList() {
         startActivityForResult(LocationsActivity.createIntent(mActivity, LocationsActivity.PICKUP), PICKUP_LOCATIONS);
@@ -336,9 +363,10 @@ public class UmberMapFragment extends BaseFragment {
     }
 
     private void setUpMap() {
-
         mMap.setMyLocationEnabled(true);
+    }
 
+    private void getLocationUpdates() {
         // The minimum time (in milliseconds) the system will wait until checking if the location changed
         int minTime = 1000;
         // The minimum distance (in meters) traveled until you will be notified
@@ -385,11 +413,8 @@ public class UmberMapFragment extends BaseFragment {
             // something
         }
 
-
-
 //        if (!mIsUpdating)
 //            startUpdating();
-
     }
 
     private void updateMapCameraOnce(Location location) {
@@ -405,7 +430,9 @@ public class UmberMapFragment extends BaseFragment {
 
     private void updateMapCamera(LatLng latLng) {
 
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15), 1500, new GoogleMap.CancelableCallback() {
+        LatLng shiftedLatLng = new LatLng(latLng.latitude + .002, latLng.longitude);
+
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(shiftedLatLng, 15), 1500, new GoogleMap.CancelableCallback() {
             @Override
             public void onFinish() {
             }
@@ -542,6 +569,8 @@ public class UmberMapFragment extends BaseFragment {
         try {
             mLocationManager.removeUpdates(mLocationListener);
         } catch (SecurityException e) {
+
+        } catch (Exception e) {
             // something
         }
 
@@ -553,12 +582,15 @@ public class UmberMapFragment extends BaseFragment {
         apiHelper.getMyActiveUmberRequests(new VolleyRequestListener<MyUmberRequestResponse>() {
             @Override
             public void onResponse(MyUmberRequestResponse response) {
-                response.saveResponse(mActivity);
+                if(response != null && !response.getMyRequests().isEmpty())
+                    response.saveResponse(mActivity);
+                else
+                    getLocationUpdates();
             }
 
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                Toast.makeText(mActivity, "An error occurred fetching your requests, please try again later.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -589,22 +621,55 @@ public class UmberMapFragment extends BaseFragment {
     }
 
     private void loadAsDriver() {
-        if(!mDriverRequests.isEmpty())
+        if(!mDriverRequests.isEmpty()) {
             mRidersLayout.setVisibility(View.VISIBLE);
+            setUpRideCircleControls();
+        }
         else
             mRidersLayout.setVisibility(View.GONE);
     }
 
+    private void setUpRideCircleControls() {
+        RiderControlsView[] mRiderControlsArray = {mFirstRiderView, mSecondRiderView, mThirdRiderView};
+        for(int i = 0; i < mRiderControlsArray.length; i++) {
+            try {
+                mRiderControlsArray[i].setVisibility(View.VISIBLE);
+                mRiderControlsArray[i].setRequest(mDriverRequests.get(i), new RiderControlsView.OnRiderClickedListener() {
+                    @Override
+                    public void onRiderClicked(UmberRequest request) {
+                        if (!request.isStarted())
+                            updateMapCamera(request.getPickUpLatLng());
+
+                        else
+                            updateMapCamera(request.getDestinationLatLng());
+                    }
+
+                    @Override
+                    public void onControlClicked(UmberRequest request) {
+                        changeRequestStatusAndSendNotification();
+                    }
+                });
+            }
+            catch (IndexOutOfBoundsException e) {
+                mRiderControlsArray[i].setVisibility(View.GONE);
+            }
+        }
+    }
+
+    private void changeRequestStatusAndSendNotification() {
+
+    }
+
     private void loadAsRider() {
         if(!mDriverRequests.isEmpty()) {
-            Marker myRequestPickUpMarker = mMap.addMarker(new MarkerOptions()
+            myRequestPickUpMarker = mMap.addMarker(new MarkerOptions()
                             .position(mRiderRequests.get(0).getPickUpLatLng())
                             .title("Pick Up Spot")
                             .snippet(mRiderRequests.get(0).getPickUpLocation())
                             .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
             );
 
-            Marker myRequestDestMarker = mMap.addMarker(new MarkerOptions()
+            myRequestDestMarker = mMap.addMarker(new MarkerOptions()
                             .position(mRiderRequests.get(0).getDestinationLatLng())
                             .title("Destination")
                             .snippet(mRiderRequests.get(0).getDestination())
@@ -660,24 +725,45 @@ public class UmberMapFragment extends BaseFragment {
         }
     }
 
-    @OnClick(R.id.umber_cancel_button)
     void cancelRequest() {
-        if(!mRiderRequests.get(0).isStarted()) {
-            ApiHelper helper = new ApiHelper(mActivity);
-            helper.updateUmberRequestStatus(mRiderRequests.get(0), new VolleyRequestListener() {
-                @Override
-                public void onResponse(Object response) {
-                    NotificationsHelper.sendCancelNotification(mRiderRequests.get(0));
-                    mRiderRequests.remove(0);
-                    if(mRiderRequests.get(0) != null)
-                        loadAsRider();
-                }
+        ApiHelper helper = new ApiHelper(mActivity);
+        helper.updateUmberRequestStatus(mRiderRequests.get(0), new VolleyRequestListener() {
+            @Override
+            public void onResponse(Object response) {
+                NotificationsHelper.sendCancelNotification(mRiderRequests.get(0));
+                mRiderRequests.remove(0);
+                if (mRiderRequests.get(0) != null)
+                    loadAsRider();
+            }
 
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(mActivity, "Error, unable to cancel your request at this time. Please try again later", Toast.LENGTH_SHORT).show();
-                }
-            });
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(mActivity, "Error, unable to cancel your request at this time. Please try again later", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    @OnClick(R.id.umber_cancel_button)
+    void promptToCancel() {
+        if(!mRiderRequests.get(0).isStarted()) {
+            AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
+            alertDialog.setTitle(mActivity.getString(R.string.claim_request));
+            alertDialog.setMessage("Are you sure you want to cancel this request?");
+            alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE, "Yes",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            cancelRequest();
+                            dialog.dismiss();
+                        }
+                    });
+            alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_NEGATIVE, "No",
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+            alertDialog.show();
         }
     }
 

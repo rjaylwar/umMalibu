@@ -306,7 +306,7 @@ public class DatabaseHelper {
     }
 
     public synchronized  ArrayList<UmberRequest> getMyActiveRequests(String email) {
-        String where = Table.Requests.CANCELED + " != 1 AND (" + Table.Requests.EMAIL + " == " + email + " OR " + Table.Requests.DRIVER_EMAIL + " == " + email + ")";
+        String where = Table.Requests.CANCELED + " != 1 AND (" + Table.Requests.EMAIL + " == '" + email + "' OR " + Table.Requests.DRIVER_EMAIL + " == '" + email + "')";
         return getRequestsWithParams(where);
     }
 
