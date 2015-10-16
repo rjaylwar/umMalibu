@@ -12,7 +12,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 
 /**
- * Created by rjaylward on 12/15/14.
+ * Created by rjaylward on 12/15/14
  */
 public class CustomAdapter extends ParseQueryAdapter<ParseObject> {
 

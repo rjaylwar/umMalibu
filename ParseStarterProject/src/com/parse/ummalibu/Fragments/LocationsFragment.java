@@ -241,6 +241,7 @@ public class LocationsFragment extends BaseFragment {
                 umLocation.setAddress(formattedAddressLine);
                 umLocation.setLat(address.getLatitude());
                 umLocation.setLon(address.getLongitude());
+                Log.d("UM Location", umLocation.getLatLng().toString() + umLocation.getAddress());
 
                 finishForResult(umLocation, Activity.RESULT_OK);
             } else

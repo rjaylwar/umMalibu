@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 
 /**
- * Created by rjaylward on 9/22/15.
+ * Created by rjaylward on 9/22/15
  */
 public class LoadMoreRecyclerView extends RecyclerView {
 

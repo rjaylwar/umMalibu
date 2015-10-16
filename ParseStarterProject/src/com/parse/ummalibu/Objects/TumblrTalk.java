@@ -47,27 +47,29 @@ public class TumblrTalk implements Parcelable {
 
     public String mSeriesImageUrl;
 
-    public Date mCreatedAt;
-
     @SerializedName("timestamp")
     public long mTimestamp;
+
+    public ArrayList<String> getTags() {
+        return mTags;
+    }
+
+    public void setTags(ArrayList<String> tags) {
+        mTags = tags;
+    }
+
+    public long getTimestamp() {
+        return mTimestamp;
+    }
+
+    public void setTimestamp(long timestamp) {
+        mTimestamp = timestamp;
+    }
 
     public ArrayList<String> mTags;
 
     public Date getCreatedAt() {
-        return mCreatedAt;
-    }
-
-    public Long getCreateAtLong() {
-        return mCreatedAt.getTime();
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        mCreatedAt = createdAt;
-    }
-
-    public void setCreatedAt(Long createdAtLong) {
-        mCreatedAt.setTime(createdAtLong);
+        return new Date(mTimestamp);
     }
 
     public String getTitle() {
@@ -170,8 +172,14 @@ public class TumblrTalk implements Parcelable {
         mSeries = in.readString();
         mOriginalLink = in.readString();
         mSeriesImageUrl = in.readString();
-        long tmpMDate = in.readLong();
-        mCreatedAt = tmpMDate != -1 ? new Date(tmpMDate) : null;
+        mTimestamp = in.readLong();
+
+        if (in.readByte() == 0x01) {
+            mTags = new ArrayList<>();
+            in.readList(mTags, String.class.getClassLoader());
+        } else
+            mTags = null;
+
     }
 
     @Override
@@ -192,7 +200,15 @@ public class TumblrTalk implements Parcelable {
         dest.writeString(mSeries);
         dest.writeString(mOriginalLink);
         dest.writeString(mSeriesImageUrl);
-        dest.writeLong(mCreatedAt != null ? mCreatedAt.getTime() : -1L);
+        dest.writeLong(mTimestamp);
+        dest.writeList(mTags);
+
+        if (mTags == null)
+            dest.writeByte((byte) (0x00));
+        else {
+            dest.writeByte((byte) (0x01));
+            dest.writeList(mTags);
+        }
     }
 
     @SuppressWarnings("unused")

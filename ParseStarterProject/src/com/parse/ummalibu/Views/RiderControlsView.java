@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.maps.model.Marker;
 import com.parse.ummalibu.R;
 import com.parse.ummalibu.objects.UmberRequest;
 
@@ -27,15 +28,17 @@ public class RiderControlsView extends RelativeLayout {
 
     private UmberRequest mUmberRequest;
     private OnRiderClickedListener mListener;
+    private Marker mPickUpMarker;
+    private Marker mDestMarker;
 
     private boolean mIsUpAndOut = false;
 
     private int mStatus;
-    private int UNSTARTED = 0;
-    private int STARTED = 1;
-    private int PICKED_UP = 2;
-    private int FINISHED = 3;
-    private boolean mIsAnimating;
+    public static final int UNSTARTED = 100;
+    public static final int STARTED = 101;
+    public static final int PICKED_UP = 102;
+    public static final int FINISHED = 103;
+    public static boolean mIsAnimating;
 
     public RiderControlsView(Context context) {
         super(context);
@@ -50,6 +53,10 @@ public class RiderControlsView extends RelativeLayout {
     public RiderControlsView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
+    }
+
+    public UmberRequest getRequest() {
+        return mUmberRequest;
     }
 
     private void init() {
@@ -129,6 +136,26 @@ public class RiderControlsView extends RelativeLayout {
             if(getVisibility() == INVISIBLE)
                 setVisibility(VISIBLE);
         }
+    }
+
+    public int getStatus() {
+        return mStatus;
+    }
+
+    public Marker getPickUpMarker() {
+        return mPickUpMarker;
+    }
+
+    public void setPickUpMarker(Marker pickUpMarker) {
+        mPickUpMarker = pickUpMarker;
+    }
+
+    public Marker getDestinationMarker() {
+        return mDestMarker;
+    }
+
+    public void setDestinationMarker(Marker destMarker) {
+        mDestMarker = destMarker;
     }
 
     public interface OnRiderClickedListener {

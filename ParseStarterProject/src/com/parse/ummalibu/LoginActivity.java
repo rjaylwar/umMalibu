@@ -14,6 +14,7 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
@@ -83,6 +84,15 @@ public class LoginActivity extends ToolbarActivity {
 
         mSlidingPaneHelper = new SlidingPaneHelper(this, mToolbar, mNavigationView, mDrawerLayout);
         mSlidingPaneHelper.loadView();
+        mSlidingPaneHelper.setOnNavDrawerToggledListener(new SlidingPaneHelper.OnNavDrawerToggledListener() {
+            @Override
+            public void onDrawerOpened(View drawerView) {
+                hideKeyboard();
+            }
+
+            @Override
+            public void onDrawerClosed(View view) { }
+        });
     }
 
     @Override

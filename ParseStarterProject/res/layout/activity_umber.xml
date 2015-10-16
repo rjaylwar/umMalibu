@@ -23,6 +23,7 @@
             android:id="@+id/umber_driver_layout"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:visibility="gone"
             android:background="@color/transparent_white">
 
             <ImageView
@@ -115,6 +116,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:visibility="gone"
+            android:gravity="center_horizontal"
             android:layout_weight="1"/>
 
         <com.parse.ummalibu.views.RiderControlsView
@@ -122,6 +124,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:visibility="gone"
+            android:gravity="center_horizontal"
             android:layout_weight="1"/>
 
         <com.parse.ummalibu.views.RiderControlsView
@@ -129,6 +132,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:visibility="gone"
+            android:gravity="center_horizontal"
             android:layout_weight="1"/>
 
     </LinearLayout>

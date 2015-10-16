@@ -37,6 +37,7 @@ public class SlidingPaneHelper {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar mToolbar;
+    private OnNavDrawerToggledListener mListener;
 
     private void createView() {
         View v = LayoutInflater.from(mActivity).inflate(R.layout.header_layout, mNavigationView, false);
@@ -112,11 +113,17 @@ public class SlidingPaneHelper {
         if(mDrawerLayout != null) {
             ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(mActivity, mDrawerLayout, toolbar, 0, 0) {
                 @Override
-                public void onDrawerClosed(View view) { }
+                public void onDrawerClosed(View view) {
+                    if(mListener != null)
+                        mListener.onDrawerClosed(view);
+                }
 
                 @Override
                 public void onDrawerOpened(View drawerView) {
                     loadView();
+
+                    if(mListener != null)
+                        mListener.onDrawerOpened(drawerView);
 
 //                    if(mActivity instanceof MainActivity)
 //                        mNavigationView.getMenu().getItem(0).setChecked(true);
@@ -130,6 +137,17 @@ public class SlidingPaneHelper {
             mDrawerLayout.setDrawerListener(drawerToggle);
             drawerToggle.syncState();
         }
+    }
+
+    public void setOnNavDrawerToggledListener(OnNavDrawerToggledListener drawerToggledListener) {
+        mListener = drawerToggledListener;
+    }
+
+    public interface OnNavDrawerToggledListener {
+
+        void onDrawerOpened(View drawerView);
+        void onDrawerClosed(View view);
+
     }
 
 }

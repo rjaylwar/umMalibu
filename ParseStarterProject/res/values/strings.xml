@@ -81,5 +81,9 @@
     <string name="complete">Complete</string>
     <string name="canceled">Canceled</string>
     <string name="feedback">Feedback</string>
+    <string name="ride_started_cant_cancel_use_contact_button">Your driver has already started this ride and so it cannot be canceled. Use the contact button if you need to talk to your driver.</string>
+    <string name="unable_to_cancel_request_att_ptg">Error, unable to cancel your request at this time. Please try again later</string>
+    <string name="are_you_sure_u_want_to_cancel">Are you sure you want to cancel this request?</string>
+    <string name="error_unable_to_find_driver">Error, unable to find your driver. Please try again later</string>
 
 </resources>

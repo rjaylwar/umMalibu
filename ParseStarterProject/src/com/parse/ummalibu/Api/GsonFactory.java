@@ -7,6 +7,7 @@ import com.parse.ummalibu.objects.Notification;
 import com.parse.ummalibu.objects.Prayer;
 import com.parse.ummalibu.objects.Song;
 import com.parse.ummalibu.objects.Talk;
+import com.parse.ummalibu.objects.TumblrTalk;
 import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.responses.MapsResponse;
 
@@ -24,6 +25,7 @@ public class GsonFactory {
                 .registerTypeAdapter(Song.class, new SongDeserializer())
                 .registerTypeAdapter(UmberRequest.class, new UmberRequestDeserializer())
                 .registerTypeAdapter(MapsResponse.class, new MapsResponseDeserializer())
+                .registerTypeAdapter(TumblrTalk.class, new TumblrTalkDeserializer())
                 .create();
     }
 

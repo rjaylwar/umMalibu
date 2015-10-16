@@ -41,6 +41,37 @@ public class NotificationsHelper {
         });
     }
 
+    public static void unsubscribeAsDriver(String objectId) {
+        ParsePush.unsubscribeInBackground(DRIVER_ + objectId, new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    Log.d("Driver channel", "successfully unsubscribed to the broadcast channel.");
+                } else {
+                    Log.e("Driver channel", "failed to unsubscribe for push", e);
+                }
+            }
+        });
+    }
+
+    public static void unsubscribeAsRider(String objectId) {
+        ParsePush.unsubscribeInBackground(DRIVER_ + objectId, new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    Log.d("Driver channel", "successfully unsubscribed to the broadcast channel.");
+                } else {
+                    Log.e("Driver channel", "failed to unsubscribe for push", e);
+                }
+            }
+        });
+    }
+
+    public static void unsubscribe(String objectId) {
+        unsubscribeAsDriver(objectId);
+        unsubscribeAsRider(objectId);
+    }
+
     public static void sendUnclaimNotification(UmberRequest request) {
         ParsePush push = new ParsePush();
         push.setChannel(RIDER_ + request.getObjectId());

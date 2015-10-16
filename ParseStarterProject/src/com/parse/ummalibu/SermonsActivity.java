@@ -10,7 +10,7 @@ import com.parse.ParseObject;
 import com.parse.ParseQueryAdapter;
 import com.parse.ummalibu.base.ToolbarActivity;
 
-public class ParseStarterProjectActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
+public class SermonsActivity extends ToolbarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     private ParseQueryAdapter<ParseObject> mainAdapter;
     private CustomAdapter alternateListAdapter;

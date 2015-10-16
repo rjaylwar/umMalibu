@@ -53,7 +53,10 @@ public class UmLocation implements Parcelable {
     }
 
     public String getFormattedTitle() {
-        return mName + " - " + mAddress;
+        if(mName != null)
+            return mName + " - " + mAddress;
+        else
+            return mAddress;
     }
 
     public String getImageUrl() {

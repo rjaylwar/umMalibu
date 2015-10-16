@@ -42,7 +42,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * Created by rjaylward on 12/15/14.
+ * Created by rjaylward on 12/15/14
  */
 public class SermonDetailActivity extends FragmentActivity implements View.OnTouchListener {
 
@@ -432,11 +432,10 @@ public class SermonDetailActivity extends FragmentActivity implements View.OnTou
 
         public DownloadImageTask(ImageView bmImage) {
             this.bmImage = bmImage;
-
+            bmImage.setVisibility(ImageView.GONE);
         }
 
         protected Bitmap doInBackground(String... urls) {
-            bmImage.setVisibility(ImageView.GONE);
             String urldisplay = urls[0];
             Bitmap mIcon11 = null;
             try {

@@ -229,6 +229,7 @@ public class SummaryFragment extends ToolbarFragment {
             @Override
             public void onResponse(Object response) {
                 NotificationsHelper.sendUnclaimNotification(mRequest);
+                NotificationsHelper.unsubscribeAsDriver(mRequest.getObjectId());
                 mActivity.onBackPressed();
             }
 
@@ -244,6 +245,7 @@ public class SummaryFragment extends ToolbarFragment {
         helper.deleteRequest(mRequest.getObjectId(), new VolleyRequestListener() {
             @Override
             public void onResponse(Object response) {
+                NotificationsHelper.unsubscribe(mRequest.getObjectId());
                 mActivity.onBackPressed();
             }
 
@@ -310,7 +312,7 @@ public class SummaryFragment extends ToolbarFragment {
     private void calculateCost() {
         if(mRequest.getDriverEmail().equals(Preferences.getInstance().getEmail()))
             mDisplayedCost = mMapsResponse.getDistanceMiles() / Preferences.getInstance().getMpg() * Constants.GAS_PRICE / 2;
-        else if(mDriver != null)
+        else if(mDriver != null && mMapsResponse != null)
             mDisplayedCost = mMapsResponse.getDistanceMiles() / mDriver.getMpg() * Constants.GAS_PRICE / 2;
 
         mNumWaysSplit = 2;

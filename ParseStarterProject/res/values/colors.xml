@@ -11,6 +11,7 @@
     <color name="darkorange">#FFFF8800</color>
     <color name="darkred">#FFCC0000</color>
     <color name="grey">#5a5a5a</color>
+    <color name="medium_grey">#7b7b7b</color>
     <color name="light_grey">#9c9c9c</color>
     <color name="light_grey_text">#e1e1e1</color>
     <color name="very_light_grey">#f4f4f4</color>

@@ -11,7 +11,7 @@ import com.parse.ummalibu.fragments.UmberMapFragment;
 import java.util.ArrayList;
 
 /**
- * Created by rjaylward on 9/26/15.
+ * Created by rjaylward on 9/26/15
  */
 public class UmberPagerAdapter extends FragmentPagerAdapter {
 

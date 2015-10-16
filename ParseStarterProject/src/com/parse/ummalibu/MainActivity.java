@@ -24,7 +24,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends ToolbarActivity {
 
-    private Intent detailIntent;
+    private Intent sermonsIntent;
     private Intent worshipIntent;
     private Intent prayerIntent;
     private Intent eventsIntent;
@@ -56,7 +56,8 @@ public class MainActivity extends ToolbarActivity {
         mSlidingPaneHelper.loadView();
 
         addListenerOnButton();
-        detailIntent = new Intent(this, ParseStarterProjectActivity.class);
+//        sermonsIntent = new Intent(this, SermonsActivity.class);
+        sermonsIntent = TumblrTalksActivity.createIntent(this);
         worshipIntent = new Intent(this, WorshipActivity.class);
         prayerIntent = new Intent(this, PrayerActivity.class);
         eventsIntent = new Intent(this, EventsActivity.class);
@@ -77,7 +78,7 @@ public class MainActivity extends ToolbarActivity {
         sermonButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                startActivity(detailIntent);
+                startActivity(sermonsIntent);
             }
         });
         ImageButton aboutButton = (ImageButton) findViewById(R.id.aboutButton2);

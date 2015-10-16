@@ -61,7 +61,6 @@ import com.parse.ummalibu.volley.VolleyRequestListener;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashSet;
 
 import butterknife.Bind;
 import butterknife.BindDimen;
@@ -97,7 +96,6 @@ public class UmberMapFragment extends BaseFragment {
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     private LocationManager mLocationManager;
     private LocationListener mLocationListener;
-    private Marker mMarker;
 
     private Handler mHandler;
 
@@ -108,8 +106,6 @@ public class UmberMapFragment extends BaseFragment {
     private static final int PICKUP_LOCATIONS = 33;
     private static final int DESTINATION_LOCATIONS = 34;
 
-    private HashSet<UmberRequest> mOpenRequests = new HashSet<>();
-
     private UmLocation mSelectedPickUpLocation;
     private UmLocation mSelectedDestLocation;
 
@@ -119,6 +115,9 @@ public class UmberMapFragment extends BaseFragment {
 
     private Marker myRequestPickUpMarker;
     private Marker myRequestDestMarker;
+
+    private Marker mPotentialPickUpSpotMaker;
+    private Marker mPotentialDestinationMarker;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -141,6 +140,9 @@ public class UmberMapFragment extends BaseFragment {
 
             @Override
             public void onLocationButtonClicked() {
+                updateMapCamera(mSelectedPickUpLocation.getLatLng());
+                if(mPotentialPickUpSpotMaker != null)
+                    mPotentialPickUpSpotMaker.showInfoWindow();
             }
 
             @Override
@@ -149,6 +151,11 @@ public class UmberMapFragment extends BaseFragment {
                     hideDestinationSearch();
                 mSelectedPickUpLocation = null;
                 mRequestButton.setVisibility(View.GONE);
+
+                if(mPotentialPickUpSpotMaker != null) {
+                    mPotentialPickUpSpotMaker.remove();
+                    mPotentialPickUpSpotMaker = null;
+                }
             }
         });
 
@@ -167,6 +174,9 @@ public class UmberMapFragment extends BaseFragment {
 
             @Override
             public void onLocationButtonClicked() {
+                updateMapCamera(mSelectedDestLocation.getLatLng());
+                if(mPotentialDestinationMarker != null)
+                    mPotentialDestinationMarker.showInfoWindow();
             }
 
             @Override
@@ -175,6 +185,11 @@ public class UmberMapFragment extends BaseFragment {
                     hideDestinationSearch();
                 mSelectedDestLocation = null;
                 mRequestButton.setVisibility(View.GONE);
+
+                if(mPotentialDestinationMarker != null) {
+                    mPotentialDestinationMarker.remove();
+                    mPotentialDestinationMarker = null;
+                }
             }
         });
 
@@ -195,8 +210,9 @@ public class UmberMapFragment extends BaseFragment {
         mSearchDestLayout.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
-                if(mSearchPickUpLayout.getEditText().getText().toString().length() == 0)
+                if(mSearchPickUpLayout != null && mSearchPickUpLayout.getEditText().getText().toString().length() == 0)
                     hideDestinationSearch();
+                mSearchDestLayout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
             }
         });
 
@@ -246,9 +262,11 @@ public class UmberMapFragment extends BaseFragment {
             if(requestCode == PICKUP_LOCATIONS) {
                 mSearchPickUpLayout.clear();
                 mSelectedPickUpLocation = null;
+                mPotentialPickUpSpotMaker.remove();
             } else {
                 mSearchDestLayout.clear();
                 mSelectedDestLocation = null;
+                mPotentialDestinationMarker.remove();
             }
         }
     }
@@ -271,12 +289,42 @@ public class UmberMapFragment extends BaseFragment {
         mSelectedPickUpLocation = location;
         mSearchPickUpLayout.setLocationName(location.getFormattedTitle());
         mSearchPickUpLayout.clearFocus();
+        updateMapCamera(location.getLatLng());
+
+        drawPickUpMarker();
+    }
+
+    private void drawPickUpMarker() {
+        if(mPotentialPickUpSpotMaker != null)
+            mPotentialPickUpSpotMaker.remove();
+
+        mPotentialPickUpSpotMaker = mMap.addMarker(new MarkerOptions()
+                        .position(mSelectedPickUpLocation.getLatLng())
+                        .title(mSelectedPickUpLocation.getName() + " - Pick Up Spot")
+                        .snippet(mSelectedPickUpLocation.getAddress())
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE))
+        );
     }
 
     private void setSelectedDestination(UmLocation location) {
         mSelectedDestLocation = location;
         mSearchDestLayout.setLocationName(location.getFormattedTitle());
         mSearchDestLayout.clearFocus();
+        updateMapCamera(location.getLatLng());
+
+        drawDestinationMarker();
+    }
+
+    private void drawDestinationMarker() {
+        if(mPotentialDestinationMarker != null)
+            mPotentialDestinationMarker.remove();
+
+        mPotentialDestinationMarker = mMap.addMarker(new MarkerOptions()
+                        .position(mSelectedDestLocation.getLatLng())
+                        .title(mSelectedDestLocation.getName() + " - Destination")
+                        .snippet(mSelectedDestLocation.getAddress())
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE))
+        );
     }
 
 //    private void makeMovingDriverApiRequest() {
@@ -364,6 +412,7 @@ public class UmberMapFragment extends BaseFragment {
 
     private void setUpMap() {
         mMap.setMyLocationEnabled(true);
+        loadCurrentRequest();
     }
 
     private void getLocationUpdates() {
@@ -434,12 +483,10 @@ public class UmberMapFragment extends BaseFragment {
 
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(shiftedLatLng, 15), 1500, new GoogleMap.CancelableCallback() {
             @Override
-            public void onFinish() {
-            }
+            public void onFinish() { }
 
             @Override
-            public void onCancel() {
-            }
+            public void onCancel() { }
         });
     }
 
@@ -596,6 +643,14 @@ public class UmberMapFragment extends BaseFragment {
     }
 
     private void loadCurrentRequest() {
+        clearMap();
+
+        if(mPotentialPickUpSpotMaker != null)
+            drawPickUpMarker();
+
+        if(mPotentialDestinationMarker != null)
+            drawDestinationMarker();
+
         String email = Preferences.getInstance().getEmail();
         if(!email.equals("")) {
             ArrayList<UmberRequest> myRequests = DatabaseHelper.getInstance(mActivity).getMyActiveRequests(email);
@@ -630,38 +685,127 @@ public class UmberMapFragment extends BaseFragment {
     }
 
     private void setUpRideCircleControls() {
-        RiderControlsView[] mRiderControlsArray = {mFirstRiderView, mSecondRiderView, mThirdRiderView};
+        final RiderControlsView[] mRiderControlsArray = {mFirstRiderView, mSecondRiderView, mThirdRiderView};
         for(int i = 0; i < mRiderControlsArray.length; i++) {
             try {
                 mRiderControlsArray[i].setVisibility(View.VISIBLE);
+                final int iFinal = i;
                 mRiderControlsArray[i].setRequest(mDriverRequests.get(i), new RiderControlsView.OnRiderClickedListener() {
                     @Override
                     public void onRiderClicked(UmberRequest request) {
-                        if (!request.isStarted())
+                        if (!request.isStarted()) {
                             updateMapCamera(request.getPickUpLatLng());
-
-                        else
+                            if (mRiderControlsArray[iFinal].getPickUpMarker() != null)
+                                mRiderControlsArray[iFinal].getPickUpMarker().showInfoWindow();
+                        }
+                        else {
                             updateMapCamera(request.getDestinationLatLng());
+                            if (mRiderControlsArray[iFinal].getDestinationMarker() != null)
+                                mRiderControlsArray[iFinal].getDestinationMarker().showInfoWindow();
+                        }
                     }
 
                     @Override
                     public void onControlClicked(UmberRequest request) {
-                        changeRequestStatusAndSendNotification();
+                        changeRequestStatusAndSendNotification(mRiderControlsArray[iFinal], mDriverRequests.get(iFinal));
                     }
                 });
+
+                drawPins(mRiderControlsArray[i], iFinal);
+
             }
-            catch (IndexOutOfBoundsException e) {
+            catch (Exception e) {
                 mRiderControlsArray[i].setVisibility(View.GONE);
             }
         }
     }
 
-    private void changeRequestStatusAndSendNotification() {
+    private void drawPins(RiderControlsView riderControlsView, int index) {
+        float pickupColor;
+        float destColor;
+        switch (index) {
+            case 0 :
+                pickupColor = BitmapDescriptorFactory.HUE_AZURE;
+                destColor = BitmapDescriptorFactory.HUE_BLUE;
+                break;
+            case 1 :
+                pickupColor = BitmapDescriptorFactory.HUE_ORANGE;
+                destColor = BitmapDescriptorFactory.HUE_RED;
+                break;
+            case 2 :
+                pickupColor = BitmapDescriptorFactory.HUE_MAGENTA;
+                destColor = BitmapDescriptorFactory.HUE_VIOLET;
+                break;
+            default:
+                pickupColor = BitmapDescriptorFactory.HUE_YELLOW;
+                destColor = BitmapDescriptorFactory.HUE_YELLOW;
+                break;
+        }
 
+        Marker pickUpMark = mMap.addMarker(new MarkerOptions()
+                        .position(riderControlsView.getRequest().getPickUpLatLng())
+                        .title(riderControlsView.getRequest().getName() + " - Pick Up Spot")
+                        .snippet(riderControlsView.getRequest().getPickUpLocation())
+                        .icon(BitmapDescriptorFactory.defaultMarker(pickupColor))
+        );
+
+        Marker destMark = mMap.addMarker(new MarkerOptions()
+                        .position(riderControlsView.getRequest().getDestinationLatLng())
+                        .title(riderControlsView.getRequest().getName() + " - Destination")
+                        .snippet(riderControlsView.getRequest().getDestination())
+                        .icon(BitmapDescriptorFactory.defaultMarker(destColor))
+        );
+
+        riderControlsView.setPickUpMarker(pickUpMark);
+        riderControlsView.setDestinationMarker(destMark);
+    }
+
+    private void changeRequestStatusAndSendNotification(final RiderControlsView view, final UmberRequest request) {
+        switch (view.getStatus()) {
+            case RiderControlsView.PICKED_UP:
+                request.setComplete(true);
+                break;
+            case RiderControlsView.STARTED:
+                request.setIsPickedUp(true);
+                break;
+            case RiderControlsView.UNSTARTED:
+                request.setStarted(true);
+                break;
+            default:
+                Log.d("Invalid Status", "invalid request status");
+        }
+
+        ApiHelper helper = new ApiHelper(mActivity);
+        helper.updateUmberRequestStatus(request, new VolleyRequestListener() {
+            @Override
+            public void onResponse(Object response) {
+                request.saveResponse(mActivity);
+
+                switch (view.getStatus()) {
+                    case RiderControlsView.STARTED:
+                        NotificationsHelper.sendArrivedNotification(request);
+                        break;
+                    case RiderControlsView.UNSTARTED:
+                        NotificationsHelper.sendStartedNotification(request);
+                        break;
+                    case RiderControlsView.FINISHED:
+                        NotificationsHelper.unsubscribeAsDriver(request.getObjectId());
+                        break;
+                }
+
+                view.updateRequest(request);
+            }
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(mActivity, "Unfortunately an error occurred updating the status of this request, please try again.", Toast.LENGTH_SHORT).show();
+                loadCurrentRequest();
+            }
+        });
     }
 
     private void loadAsRider() {
-        if(!mDriverRequests.isEmpty()) {
+        if(!mRiderRequests.isEmpty()) {
             myRequestPickUpMarker = mMap.addMarker(new MarkerOptions()
                             .position(mRiderRequests.get(0).getPickUpLatLng())
                             .title("Pick Up Spot")
@@ -673,7 +817,7 @@ public class UmberMapFragment extends BaseFragment {
                             .position(mRiderRequests.get(0).getDestinationLatLng())
                             .title("Destination")
                             .snippet(mRiderRequests.get(0).getDestination())
-                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN))
             );
 
             updateMapCamera(mRiderRequests.get(0).getPickUpLatLng());
@@ -682,9 +826,8 @@ public class UmberMapFragment extends BaseFragment {
                 getDriver(mRiderRequests.get(0));
             else
                 mDriverLayout.setVisibility(View.GONE);
-        } else {
+        } else
             mDriverLayout.setVisibility(View.GONE);
-        }
 
     }
 
@@ -702,7 +845,7 @@ public class UmberMapFragment extends BaseFragment {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(mActivity, "Error, unable to find your driver. Please try again later", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mActivity, R.string.error_unable_to_find_driver, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -738,7 +881,7 @@ public class UmberMapFragment extends BaseFragment {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(mActivity, "Error, unable to cancel your request at this time. Please try again later", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mActivity, R.string.unable_to_cancel_request_att_ptg, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -748,7 +891,7 @@ public class UmberMapFragment extends BaseFragment {
         if(!mRiderRequests.get(0).isStarted()) {
             AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
             alertDialog.setTitle(mActivity.getString(R.string.claim_request));
-            alertDialog.setMessage("Are you sure you want to cancel this request?");
+            alertDialog.setMessage(mActivity.getString(R.string.are_you_sure_u_want_to_cancel));
             alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE, "Yes",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
@@ -765,6 +908,20 @@ public class UmberMapFragment extends BaseFragment {
                     });
             alertDialog.show();
         }
+        else
+            Toast.makeText(mActivity, R.string.ride_started_cant_cancel_use_contact_button, Toast.LENGTH_SHORT).show();
     }
 
+    private void clearMap() {
+        //TODO clear the pins on the map
+        if(mMap != null) {
+            mMap.clear();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mActivity.getContentResolver().unregisterContentObserver(mRequestsObserver);
+    }
 }

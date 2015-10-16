@@ -151,6 +151,7 @@
     <color name="material_deep_teal_500">#ff009688</color>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/colors.xml -->
     <eat-comment/>
+    <color name="medium_grey">#7b7b7b</color>
     <color name="orange">#FFFFBB33</color>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -489,6 +490,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
+    <string name="are_you_sure_u_want_to_cancel">Are you sure you want to cancel this request?</string>
     <string name="artist_text">Artists</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/auth_strings.xml -->
     <eat-comment/>
@@ -566,6 +568,7 @@
     <string name="emailplaceholder">Enter your Email...</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
+    <string name="error_unable_to_find_driver">Error, unable to find your driver. Please try again later</string>
     <string name="events">Events</string>
     <string name="feedback">Feedback</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
@@ -661,6 +664,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="request_cant_be_claimed">Request can not be claimed at this time. Please try again later.</string>
     <string name="request_text">Type song Requests here... </string>
     <string name="ride_share">Ride Share</string>
+    <string name="ride_started_cant_cancel_use_contact_button">Your driver has already started this ride and so it cannot be canceled. Use the contact button if you need to talk to your driver.</string>
     <string name="save">Save</string>
     <string name="saving">Saving...</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
@@ -721,6 +725,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="um">UM</string>
     <string name="um_goal">At UM our job is to minister to students in any way we can. That means getting to know students on a more personal level than we can in the short time that everyone is together on Tuesday nights. We would love to talk about life, God, and answer any questions you may have about our ministry. Plus if you take the time to meet with us we will byy you a coffee, so you have nothing to lose. Use the link below to send us an email of talk to Steve at UM if you are interested.</string>
     <string name="umber">UMber</string>
+    <string name="unable_to_cancel_request_att_ptg">Error, unable to cancel your request at this time. Please try again later</string>
     <string name="unclaim">Unclaim</string>
     <string name="unclaimed">Unclaimed</string>
     <string name="want_to_give_person_ride_to_address">Would you like to give %1$s a ride to %2$s?\n\nYou will be prompted to adjust the pickup time if necessary.</string>

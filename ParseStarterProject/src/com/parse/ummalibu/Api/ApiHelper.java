@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.google.gson.JsonObject;
 import com.parse.ummalibu.objects.Driver;
+import com.parse.ummalibu.objects.TumblrResponse;
 import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.responses.DriverResponse;
 import com.parse.ummalibu.responses.EventsResponse;
@@ -31,6 +32,7 @@ public class ApiHelper {
     AppCompatActivity mActivity;
     String PARSE_API_URL = "https://api.parse.com/1/classes";
     String GOOGLE_MAPS_DIRECTIONS_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%f,%f&destination=%f,%f&key=AIzaSyC8l_H5c5SxRYFwGsiV85kFJ9mgeprPkxA";
+    String TUMBLR_API_KEY = "NMhe3dJOgq9L4BKdOPNWA1cSTfMPW5TUgppBTkF3mmCQZ5BkYG";
 
     public ApiHelper(AppCompatActivity activity) {
         mActivity = activity;
@@ -117,7 +119,7 @@ public class ApiHelper {
         Log.d("getting umber request", url);
 
         GsonVolleyRequester<MyUmberRequestResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, MyUmberRequestResponse.class);
-        volleyRequester.makeGetRequest(mActivity, url, uiListener);
+        volleyRequester.makeLargeGetRequest(mActivity, url, uiListener);
     }
 
     public void makeUmberRequest(UmberRequest umberRequest, VolleyRequestListener<JsonObject> uiListener){
@@ -205,6 +207,15 @@ public class ApiHelper {
         volleyRequester.makeDeleteRequest(mActivity, url, uiListener);
     }
 
+    //////////////////////////////////// Tumblr Api Requests /////////////////////////////////////////
+
+    public void getTumblrTalks(VolleyRequestListener<TumblrResponse> uiListener) {
+        String url = "http://api.tumblr.com/v2/blog/ummalibu.com/posts/audio?api_key=" + TUMBLR_API_KEY;
+        Log.d("get tumblr talks", url);
+
+        GsonVolleyRequester<TumblrResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, TumblrResponse.class);
+        volleyRequester.makeGetRequest(mActivity, url, uiListener);
+    }
 
 }
 
