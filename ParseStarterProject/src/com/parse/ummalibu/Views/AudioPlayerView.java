@@ -46,11 +46,11 @@ public class AudioPlayerView extends RelativeLayout {
     }
 
     private void inflateLayout() {
-        LayoutInflater.from(getContext()).inflate(R.layout.audio_player_layout, this, true);
-
-        int height = Math.round(getResources().getDimension(R.dimen.media_player_height));
-
-        setLayoutParams(new RelativeLayout.LayoutParams(height, height));
+        LayoutInflater.from(getContext()).inflate(R.layout.new_audio_player_layout, this, true);
+//        LayoutInflater.from(getContext()).inflate(R.layout.audio_player_layout, this, true);
+//
+//        int height = Math.round(getResources().getDimension(R.dimen.media_player_height));
+//        setLayoutParams(new RelativeLayout.LayoutParams(height, height));
 
         mImageView = (ImageView) findViewById(R.id.media_player_image);
         mPlayButton = (Button) findViewById(R.id.media_player_play_button);
@@ -68,7 +68,7 @@ public class AudioPlayerView extends RelativeLayout {
     }
 
     public void setUpAudioPlayer(String sourceLinkUrl, String trackTile, String imageUrl) {
-        if(imageUrl != null && !imageUrl.equals(""))
+        if(imageUrl != null && !imageUrl.equals("") && mImageView != null)
             Glide.with(getContext()).load(imageUrl).into(mImageView);
         mAudioPlayer.setUpPlayer(mPlayButton, mSeekBar, mTrackTitleView, trackTile, mLoadingBar,
                 mCountDown, mCountUp);
@@ -77,7 +77,7 @@ public class AudioPlayerView extends RelativeLayout {
     }
 
     public void setUpAudioPlayer(TumblrTalk talk) {
-        if(talk.getImageUrl() != null && !talk.getImageUrl().equals(""))
+        if(talk.getImageUrl() != null && !talk.getImageUrl().equals("") && mImageView != null)
             Glide.with(getContext()).load(talk.getImageUrl()).into(mImageView);
         mAudioPlayer.setUpPlayer(mPlayButton, mSeekBar, mTrackTitleView, talk.getTitle(), mLoadingBar,
                 mCountDown, mCountUp);
@@ -86,7 +86,7 @@ public class AudioPlayerView extends RelativeLayout {
     }
 
     public void changeTalk(Talk talk) {
-        if(talk.getImageUrl() != null && !talk.getImageUrl().equals(""))
+        if(talk.getImageUrl() != null && !talk.getImageUrl().equals("") && mImageView != null)
             Glide.with(getContext()).load(talk.getImageUrl()).into(mImageView);
         mAudioPlayer.changeSourceLink(talk.getAudioUrl());
         mTrackTitleView.setText(talk.getTitle());

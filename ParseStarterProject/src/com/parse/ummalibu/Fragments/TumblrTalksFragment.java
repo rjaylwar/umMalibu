@@ -69,6 +69,8 @@ public class TumblrTalksFragment extends ToolbarFragment {
             mActivity.getScreenSize();
             //noinspection SuspiciousNameCombination
             mAppBarLayout.getLayoutParams().height = mActivity.getScreenSize().x;
+            //noinspection SuspiciousNameCombination
+            mPlayerView.getLayoutParams().height = mActivity.getScreenSize().x;
         }
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mActivity, LinearLayoutManager.VERTICAL, false));
@@ -104,13 +106,13 @@ public class TumblrTalksFragment extends ToolbarFragment {
         apiHelper.getTumblrTalks(new VolleyRequestListener<BaseTumblrResponse>() {
             @Override
             public void onResponse(BaseTumblrResponse response) {
-                if (mSwipeRefreshLayout != null)
+                if(mSwipeRefreshLayout != null)
                     mSwipeRefreshLayout.setRefreshing(false);
 
                 try {
                     Log.d("Talks Size", String.valueOf(response.getResponse().getTumblrTalks().size()));
 
-                    if (!response.getResponse().isEmpty()) {
+                    if(!response.getResponse().isEmpty()) {
                         mAdapter.loadTalks(response.getResponse().getTumblrTalks());
                         loadTalkView(response.getResponse().getTumblrTalks().get(0));
                     }
@@ -121,7 +123,7 @@ public class TumblrTalksFragment extends ToolbarFragment {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                if (mSwipeRefreshLayout != null)
+                if(mSwipeRefreshLayout != null)
                     mSwipeRefreshLayout.setRefreshing(false);
 
                 Log.d("Error", "Error getting tumblr talks - " + error.toString());
@@ -134,37 +136,43 @@ public class TumblrTalksFragment extends ToolbarFragment {
 
     @SuppressLint("SetJavaScriptEnabled")
     private void loadTalkView(TumblrTalk talk) {
-        if (mToolbar != null)
-            mToolbar.setTitle(talk.getTitle());
+        if (mActivity.getActionBar() != null)
+            mActivity.getActionBar().setTitle(talk.getTitle());
 
         mPlayerView.setUpAudioPlayer(talk);
         mWebView.setWebViewClient(new WebViewClient());
         mWebView.setWebChromeClient(new WebChromeClient());
         mWebView.getSettings().setJavaScriptEnabled(true);
 
-        if (talk.getType().equals("video")) {
-            if (mWebView.getVisibility() != View.VISIBLE)
+        if(talk.getType().equals("video")) {
+            if(mWebView.getVisibility() != View.VISIBLE)
                 mWebView.setVisibility(View.VISIBLE);
+            if(mPlayerView.getVisibility() != View.GONE)
+                mPlayerView.setVisibility(View.GONE);
 
             Glide.with(this).load(talk.getThumbnailUrl()).into(mImageView);
             //noinspection SuspiciousNameCombination
             mWebView.loadUrl(talk.getVideoUrl());
         }
         else {
-            if (mWebView.getVisibility() != View.GONE)
+            if(mWebView.getVisibility() != View.GONE)
                 mWebView.setVisibility(View.GONE);
+            if(mPlayerView.getVisibility() != View.VISIBLE)
+                mPlayerView.setVisibility(View.VISIBLE);
 
             Glide.with(this).load(talk.getImageUrl()).into(mImageView);
         }
     }
 
     private void changeTalkView(TumblrTalk talk) {
-        if (mToolbar != null)
-            mToolbar.setTitle(talk.getTitle());
+        if(mActivity.getActionBar() != null)
+            mActivity.getActionBar().setTitle(talk.getTitle());
 
-        if (talk.getType().equals("video")) {
-            if (mWebView.getVisibility() != View.VISIBLE)
+        if(talk.getType().equals("video")) {
+            if(mWebView.getVisibility() != View.VISIBLE)
                 mWebView.setVisibility(View.VISIBLE);
+            if(mPlayerView.getVisibility() != View.GONE)
+                mPlayerView.setVisibility(View.GONE);
 
             Glide.with(this).load(talk.getThumbnailUrl()).into(mImageView);
             mPlayerView.pause();
@@ -173,8 +181,10 @@ public class TumblrTalksFragment extends ToolbarFragment {
         }
         else {
             mWebView.loadUrl(null);
-            if (mWebView.getVisibility() != View.GONE)
+            if(mWebView.getVisibility() != View.GONE)
                 mWebView.setVisibility(View.GONE);
+            if(mPlayerView.getVisibility() != View.VISIBLE)
+                mPlayerView.setVisibility(View.VISIBLE);
 
             mPlayerView.changeTalk(talk);
             Glide.with(this).load(talk.getImageUrl()).into(mImageView);

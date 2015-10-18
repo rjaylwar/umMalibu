@@ -182,7 +182,10 @@
             android:windowSoftInputMode="stateHidden"/>
 
         <activity android:name=".VenmoWebViewActivity"/>
-        <activity android:name=".TumblrTalksActivity"/>
+
+        <activity
+            android:name=".TumblrTalksActivity"
+            android:label=""/>
 
         <provider
             android:name=".database.DatabaseProvider"

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black">
+
+    <ImageView
+        android:layout_width="@dimen/media_player_height"
+        android:layout_height="@dimen/media_player_height"
+        android:visibility="gone"
+        android:id="@+id/media_player_image"/>
+
+    <ProgressBar
+        android:id="@+id/media_player_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/media_player_play_button"
+        android:layout_alignStart="@+id/media_player_play_button">
+    </ProgressBar>
+
+    <SeekBar
+        android:id="@+id/media_player_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/media_player_count_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:layout_marginRight="16dp"
+        android:text="0.00"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/media_player_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:layout_marginLeft="16dp"
+        android:text="-0.00"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/media_player_count_up"
+        android:layout_toRightOf="@+id/media_player_image"
+        android:layout_toEndOf="@+id/media_player_image"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/media_player_play_button"
+        android:text="\u25B6"
+        android:gravity="center"
+        android:textSize="64dp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/media_player_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Behind Closed Doors"
+        android:textSize="28dp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/media_player_play_button"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

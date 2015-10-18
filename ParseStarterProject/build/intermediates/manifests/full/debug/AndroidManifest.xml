@@ -181,7 +181,9 @@
             android:name="com.parse.ummalibu.LoginActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name="com.parse.ummalibu.VenmoWebViewActivity" />
-        <activity android:name="com.parse.ummalibu.TumblrTalksActivity" />
+        <activity
+            android:name="com.parse.ummalibu.TumblrTalksActivity"
+            android:label="" />
 
         <provider
             android:name="com.parse.ummalibu.database.DatabaseProvider"

@@ -201,7 +201,7 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/colors.xml -->
     <eat-comment/>
-    <color name="transparent_black">#64000000</color>
+    <color name="transparent_black">#a0000000</color>
     <color name="transparent_blue">#da345065</color>
     <color name="transparent_grey">#55818181</color>
     <color name="transparent_um_grey">#d7bfe9eb</color>
@@ -746,6 +746,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <eat-comment/>
     <string name="um">UM</string>
     <string name="um_goal">At UM our job is to minister to students in any way we can. That means getting to know students on a more personal level than we can in the short time that everyone is together on Tuesday nights. We would love to talk about life, God, and answer any questions you may have about our ministry. Plus if you take the time to meet with us we will byy you a coffee, so you have nothing to lose. Use the link below to send us an email of talk to Steve at UM if you are interested.</string>
+    <string name="um_talks">UM Talks</string>
     <string name="umber">UMber</string>
     <string name="unable_to_cancel_request_att_ptg">Error, unable to cancel your request at this time. Please try again later</string>
     <string name="unclaim">Unclaim</string>
