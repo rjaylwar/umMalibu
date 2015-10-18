@@ -102,7 +102,12 @@ public class TumblrTalk implements Parcelable {
     }
 
     public String getTitle() {
-        return mTitle;
+        if(mTitle != null)
+            return mTitle;
+        else if(mType != null)
+            return mType.toUpperCase();
+        else
+            return null;
     }
 
     public void setTitle(String title) {
@@ -118,7 +123,10 @@ public class TumblrTalk implements Parcelable {
     }
 
     public String getImageUrl() {
-        return mImageUrl;
+        if(mImageUrl != null)
+            return mImageUrl;
+        else
+            return mThumbnailUrl;
     }
 
     public void setImageUrl(String imageUrl) {

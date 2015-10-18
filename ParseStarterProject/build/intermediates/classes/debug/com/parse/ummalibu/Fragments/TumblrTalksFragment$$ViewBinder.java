@@ -14,16 +14,16 @@ public class TumblrTalksFragment$$ViewBinder<T extends com.parse.ummalibu.fragme
     target.mSwipeRefreshLayout = finder.castView(view, 2131689638, "field 'mSwipeRefreshLayout'");
     view = finder.findRequiredView(source, 2131689639, "field 'mRecyclerView'");
     target.mRecyclerView = finder.castView(view, 2131689639, "field 'mRecyclerView'");
-    view = finder.findRequiredView(source, 2131689813, "field 'mWebView'");
-    target.mWebView = finder.castView(view, 2131689813, "field 'mWebView'");
-    view = finder.findRequiredView(source, 2131689812, "field 'mImageView'");
-    target.mImageView = finder.castView(view, 2131689812, "field 'mImageView'");
-    view = finder.findRequiredView(source, 2131689814, "field 'mPlayerView'");
-    target.mPlayerView = finder.castView(view, 2131689814, "field 'mPlayerView'");
-    view = finder.findRequiredView(source, 2131689808, "field 'mAppBarLayout'");
-    target.mAppBarLayout = finder.castView(view, 2131689808, "field 'mAppBarLayout'");
-    view = finder.findRequiredView(source, 2131689810, "field 'mCollapsingToolbarLayout'");
-    target.mCollapsingToolbarLayout = finder.castView(view, 2131689810, "field 'mCollapsingToolbarLayout'");
+    view = finder.findRequiredView(source, 2131689814, "field 'mWebView'");
+    target.mWebView = finder.castView(view, 2131689814, "field 'mWebView'");
+    view = finder.findRequiredView(source, 2131689813, "field 'mImageView'");
+    target.mImageView = finder.castView(view, 2131689813, "field 'mImageView'");
+    view = finder.findRequiredView(source, 2131689815, "field 'mPlayerView'");
+    target.mPlayerView = finder.castView(view, 2131689815, "field 'mPlayerView'");
+    view = finder.findRequiredView(source, 2131689809, "field 'mAppBarLayout'");
+    target.mAppBarLayout = finder.castView(view, 2131689809, "field 'mAppBarLayout'");
+    view = finder.findRequiredView(source, 2131689811, "field 'mCollapsingToolbarLayout'");
+    target.mCollapsingToolbarLayout = finder.castView(view, 2131689811, "field 'mCollapsingToolbarLayout'");
     Resources res = finder.getContext(source).getResources();
     target.mLandscape = res.getBoolean(2131361795);
   }

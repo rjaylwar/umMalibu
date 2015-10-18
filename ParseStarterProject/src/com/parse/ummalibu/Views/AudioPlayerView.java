@@ -1,6 +1,7 @@
 package com.parse.ummalibu.views;
 
 import android.content.Context;
+import android.text.Html;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.Button;
@@ -29,6 +30,7 @@ public class AudioPlayerView extends RelativeLayout {
     private AudioPlayer mAudioPlayer;
     private TextView mCountDown;
     private TextView mCountUp;
+    private TextView mSubtitleView;
 
     public AudioPlayerView(Context context) {
         super(context);
@@ -59,6 +61,7 @@ public class AudioPlayerView extends RelativeLayout {
         mTrackTitleView = (TextView) findViewById(R.id.media_player_title_text_view);
         mCountDown = (TextView) findViewById(R.id.media_player_count_down);
         mCountUp = (TextView) findViewById(R.id.media_player_count_up);
+        mSubtitleView = (TextView) findViewById(R.id.media_player_subtitle);
 
         mAudioPlayer = new AudioPlayer();
     }
@@ -83,6 +86,13 @@ public class AudioPlayerView extends RelativeLayout {
                 mCountDown, mCountUp);
         mAudioPlayer.setSourceLink(talk.getAudioUrl());
         mTrackTitleView.setText(talk.getTitle());
+
+        if(mSubtitleView != null)
+            mSubtitleView.setText(Html.fromHtml(talk.getSubtitle()));
+    }
+
+    public void addLongClickListener(OnLongClickListener longClickListener) {
+        mSubtitleView.setOnLongClickListener(longClickListener);
     }
 
     public void changeTalk(Talk talk) {
@@ -90,6 +100,9 @@ public class AudioPlayerView extends RelativeLayout {
             Glide.with(getContext()).load(talk.getImageUrl()).into(mImageView);
         mAudioPlayer.changeSourceLink(talk.getAudioUrl());
         mTrackTitleView.setText(talk.getTitle());
+
+        if(mSubtitleView != null)
+            mSubtitleView.setText(talk.getSubtitle());
     }
 
     public void changeTalk(TumblrTalk talk) {
@@ -97,6 +110,9 @@ public class AudioPlayerView extends RelativeLayout {
             Glide.with(getContext()).load(talk.getImageUrl()).into(mImageView);
         mAudioPlayer.changeSourceLink(talk.getAudioUrl());
         mTrackTitleView.setText(talk.getTitle());
+
+        if(mSubtitleView != null)
+            mSubtitleView.setText(Html.fromHtml(talk.getSubtitle()));
     }
 
     public void play() {

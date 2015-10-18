@@ -150,6 +150,7 @@ public class TumblrTalksFragment extends ToolbarFragment {
             if(mPlayerView.getVisibility() != View.GONE)
                 mPlayerView.setVisibility(View.GONE);
 
+
             Glide.with(this).load(talk.getThumbnailUrl()).into(mImageView);
             //noinspection SuspiciousNameCombination
             mWebView.loadUrl(talk.getVideoUrl());
@@ -196,5 +197,7 @@ public class TumblrTalksFragment extends ToolbarFragment {
         super.onActivityBackPressed();
         if(mPlayerView != null)
             mPlayerView.release();
+
+        mWebView = null;
     }
 }

@@ -12,8 +12,8 @@ public class RideShareActivity$$ViewBinder<T extends com.parse.ummalibu.RideShar
     target.mDrawerLayout = finder.castView(view, 2131689619, "field 'mDrawerLayout'");
     view = finder.findRequiredView(source, 2131689627, "field 'mNavigationView'");
     target.mNavigationView = finder.castView(view, 2131689627, "field 'mNavigationView'");
-    view = finder.findRequiredView(source, 2131689809, "field 'mTabLayout'");
-    target.mTabLayout = finder.castView(view, 2131689809, "field 'mTabLayout'");
+    view = finder.findRequiredView(source, 2131689810, "field 'mTabLayout'");
+    target.mTabLayout = finder.castView(view, 2131689810, "field 'mTabLayout'");
     view = finder.findRequiredView(source, 2131689637, "field 'mViewPager'");
     target.mViewPager = finder.castView(view, 2131689637, "field 'mViewPager'");
   }
