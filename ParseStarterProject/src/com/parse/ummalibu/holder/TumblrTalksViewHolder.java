@@ -2,6 +2,7 @@ package com.parse.ummalibu.holder;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -42,7 +43,7 @@ public class TumblrTalksViewHolder extends RecyclerView.ViewHolder {
     public void loadView(TumblrTalk tumblrTalk, View.OnClickListener onClickListener) {
         Glide.with(mContext).load(tumblrTalk.getImageUrl()).into(mImageView);
         mTitle.setText(tumblrTalk.getTitle());
-        mSubtitle.setText(tumblrTalk.getSubtitle());
+        mSubtitle.setText(Html.fromHtml(tumblrTalk.getSubtitle()));
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy", Locale.US);
         String dateString = dateFormat.format(new Date(tumblrTalk.getTimestamp()));

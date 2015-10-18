@@ -4,8 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.google.gson.JsonObject;
+import com.parse.ummalibu.objects.BaseTumblrResponse;
 import com.parse.ummalibu.objects.Driver;
-import com.parse.ummalibu.objects.TumblrResponse;
 import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.responses.DriverResponse;
 import com.parse.ummalibu.responses.EventsResponse;
@@ -209,11 +209,11 @@ public class ApiHelper {
 
     //////////////////////////////////// Tumblr Api Requests /////////////////////////////////////////
 
-    public void getTumblrTalks(VolleyRequestListener<TumblrResponse> uiListener) {
+    public void getTumblrTalks(VolleyRequestListener<BaseTumblrResponse> uiListener) {
         String url = "http://api.tumblr.com/v2/blog/ummalibu.com/posts/audio?api_key=" + TUMBLR_API_KEY;
         Log.d("get tumblr talks", url);
 
-        GsonVolleyRequester<TumblrResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, TumblrResponse.class);
+        GsonVolleyRequester<BaseTumblrResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, BaseTumblrResponse.class);
         volleyRequester.makeGetRequest(mActivity, url, uiListener);
     }
 

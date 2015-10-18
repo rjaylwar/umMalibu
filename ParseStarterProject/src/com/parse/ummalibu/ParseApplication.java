@@ -32,6 +32,7 @@ public class ParseApplication extends Application {
 
         // Initialize Crash Reporting.
         ParseCrashReporting.enable(this);
+
         //Parse.enableLocalDatastore(this);
         Parse.initialize(this, getString(R.string.parse_app_id), getString(R.string.parse_client_key));
         ParseUser.enableAutomaticUser();

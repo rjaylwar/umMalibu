@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:bit="http://schemas.android.com/apk/res-auto"
+    xmlns:um="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,18 +9,23 @@
 
     <include layout="@layout/toolbar_tumblr_talk"/>
 
+    <!--<com.parse.ummalibu.views.AudioPlayerView-->
+        <!--android:id="@+id/tumblr_toolbar_audio_player"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/media_player_height"-->
+        <!--um:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/tumblr_swipe_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        bit:layout_behavior="@string/appbar_scrolling_view_behavior">
+        um:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <com.parse.ummalibu.views.LoadMoreRecyclerView
-            android:id="@+id/tumblr_recycler_view"
-            android:scrollbars="vertical"
+            android:id="@+id/tumblr_load_more_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            bit:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            um:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     </android.support.v4.widget.SwipeRefreshLayout>
 

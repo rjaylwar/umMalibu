@@ -73,7 +73,7 @@ public class AudioPlayer {
         mSourceLink = sourceLink;
     }
 
-    public void changeSourcLink(String sourceLink) {
+    public void changeSourceLink(String sourceLink) {
         if(mMediaPlayer != null) {
             mMediaPlayer.stop();
             resetPlayer();
@@ -124,9 +124,11 @@ public class AudioPlayer {
     public void play() {
         //mPlayPauseButton.setBackgroundResource(mPauseButtonResourceId);
         mPlayPauseButton.setText("II");
-        if (initialStage)
+        if (initialStage) {
             new Player()
                     .execute(mSourceLink);
+
+        }
         else {
             if (!mMediaPlayer.isPlaying())
                 mMediaPlayer.start();
@@ -148,6 +150,7 @@ public class AudioPlayer {
         if (mMediaPlayer != null) {
             mSeekHandler.removeCallbacks(run);
             mMediaPlayer.reset();
+            mSeekBar.setProgress(0);
             mPlayPauseButton.setText("\u25B6");
             isPlaying = false;
             initialStage = true;

@@ -24,13 +24,13 @@ public abstract class AbsVolleyRequester {
     }
 
     public void makeGetRequest(AppCompatActivity activity, String url, final VolleyRequestListener listener) {
-        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity);
+        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity.getApplicationContext());
         Request request = buildRequest(activity, Request.Method.GET, url, null, listener, DefaultRetryPolicy.DEFAULT_TIMEOUT_MS, true);
         queue.add(request);
     }
 
     public void makeLargeGetRequest(AppCompatActivity activity, String url, final VolleyRequestListener listener) {
-        RequestQueue queue = Volley.newRequestQueue(activity);
+        RequestQueue queue = Volley.newRequestQueue(activity.getApplicationContext());
         Request request = buildRequest(activity, Request.Method.GET, url, null, listener, 10000, true);
         queue.add(request);
     }
@@ -40,7 +40,7 @@ public abstract class AbsVolleyRequester {
     }
 
     public void makePostRequest(AppCompatActivity activity, String url, JsonObject requestBody, VolleyRequestListener listener, boolean handleResponse) {
-        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity);
+        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity.getApplicationContext());
         Request request = buildRequest(activity, Request.Method.POST, url, requestBody, listener, DefaultRetryPolicy.DEFAULT_TIMEOUT_MS, handleResponse);
 
         queue.add(request);
@@ -51,14 +51,14 @@ public abstract class AbsVolleyRequester {
     }
 
     public void makePutRequest(AppCompatActivity activity, String url, JsonObject requestBody, VolleyRequestListener listener, boolean handleResponse) {
-        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity);
+        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity.getApplicationContext());
         Request request = buildRequest(activity, Request.Method.PUT, url, requestBody, listener, DefaultRetryPolicy.DEFAULT_TIMEOUT_MS, handleResponse);
 
         queue.add(request);
     }
 
     public void makeDeleteRequest(AppCompatActivity activity, String url, VolleyRequestListener listener) {
-        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity);
+        VolleyRequestQueue queue = VolleyRequestQueue.getInstance(activity.getApplicationContext());
         Request request = buildRequest(activity, Request.Method.DELETE, url, null, listener, DefaultRetryPolicy.DEFAULT_TIMEOUT_MS, false);
 
         queue.add(request);

@@ -8,7 +8,7 @@ import com.squareup.leakcanary.RefWatcher;
 /**
  * Created by rjaylward on 10/7/15
  */
-public class BaseFragment extends Fragment {
+public class BaseFragment extends Fragment implements BaseFragActivity.OnActivityBackPressedListener {
 
     @Override
     public void onDestroy() {
@@ -17,4 +17,6 @@ public class BaseFragment extends Fragment {
         refWatcher.watch(this);
     }
 
+    @Override
+    public void onActivityBackPressed() { }
 }

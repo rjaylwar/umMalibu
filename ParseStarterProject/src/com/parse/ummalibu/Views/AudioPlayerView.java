@@ -64,7 +64,7 @@ public class AudioPlayerView extends RelativeLayout {
     }
 
     public void changeSourceUrl(String url) {
-        mAudioPlayer.changeSourcLink(url);
+        mAudioPlayer.changeSourceLink(url);
     }
 
     public void setUpAudioPlayer(String sourceLinkUrl, String trackTile, String imageUrl) {
@@ -88,14 +88,14 @@ public class AudioPlayerView extends RelativeLayout {
     public void changeTalk(Talk talk) {
         if(talk.getImageUrl() != null && !talk.getImageUrl().equals(""))
             Glide.with(getContext()).load(talk.getImageUrl()).into(mImageView);
-        mAudioPlayer.changeSourcLink(talk.getAudioUrl());
+        mAudioPlayer.changeSourceLink(talk.getAudioUrl());
         mTrackTitleView.setText(talk.getTitle());
     }
 
     public void changeTalk(TumblrTalk talk) {
         if(talk.getImageUrl() != null && !talk.getImageUrl().equals(""))
             Glide.with(getContext()).load(talk.getImageUrl()).into(mImageView);
-        mAudioPlayer.changeSourcLink(talk.getAudioUrl());
+        mAudioPlayer.changeSourceLink(talk.getAudioUrl());
         mTrackTitleView.setText(talk.getTitle());
     }
 
@@ -108,6 +108,7 @@ public class AudioPlayerView extends RelativeLayout {
     }
 
     public void release() {
-        mAudioPlayer.releasePlayer();
+        if(mAudioPlayer != null)
+            mAudioPlayer.releasePlayer();
     }
 }

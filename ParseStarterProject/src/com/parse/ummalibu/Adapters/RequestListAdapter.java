@@ -14,7 +14,7 @@ import com.parse.ummalibu.holder.RequestViewHolder;
 import java.util.ArrayList;
 
 /**
- * Created by rjaylward on 9/22/15.
+ * Created by rjaylward on 9/22/15
  */
 public class RequestListAdapter extends RecyclerView.Adapter{
 
