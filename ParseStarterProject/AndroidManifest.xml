@@ -80,7 +80,8 @@
             android:label="@string/title_activity_worship">
         </activity>
         <activity
-            android:name="com.parse.ummalibu.PrayerActivity">
+            android:name="com.parse.ummalibu.PrayerActivity"
+            android:label="@string/title_activity_prayer">
         </activity>
         <activity
             android:name="com.parse.ummalibu.NewPrayerActivity"
@@ -88,11 +89,13 @@
         </activity>
         <activity
             android:name="com.parse.ummalibu.EventsActivity"
-            android:configChanges="orientation|screenSize">
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_events">
         </activity>
         <activity
             android:name="com.parse.ummalibu.EventsDetailActivity"
-            android:configChanges="orientation|screenSize">
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_events_detail">
         </activity>
 
         <service android:name="com.parse.PushService" />
@@ -179,7 +182,8 @@
 
         <activity
             android:name="com.parse.ummalibu.LoginActivity"
-            android:windowSoftInputMode="stateHidden"/>
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/login"/>
 
         <activity android:name=".VenmoWebViewActivity"/>
 

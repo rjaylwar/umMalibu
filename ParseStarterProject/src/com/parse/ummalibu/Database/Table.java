@@ -162,6 +162,10 @@ public class Table {
         public static final String ORIGINAL_LINK = "original_link";
         public static final String SERIES_IMAGE_URL = "series_image_url";
         public static final String TIMESTAMP = "timestamp";
+        public static final String TAGS = "tags";
+        public static final String TYPE = "type";
+        public static final String THUMBNAIL_URL = "thumbnail_url";
+        public static final String PERMALINK_URL = "permalink_url";
     }
 }
 

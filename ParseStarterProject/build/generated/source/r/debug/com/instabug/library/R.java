@@ -50,16 +50,16 @@ public final class R {
 		public static final int common_signin_btn_light_text_disabled = 0x7f0e0020;
 		public static final int common_signin_btn_light_text_focused = 0x7f0e0021;
 		public static final int common_signin_btn_light_text_pressed = 0x7f0e0022;
-		public static final int common_signin_btn_text_dark = 0x7f0e0082;
-		public static final int common_signin_btn_text_light = 0x7f0e0083;
-		public static final int instabug_annotation_color_blue = 0x7f0e003e;
-		public static final int instabug_annotation_color_default = 0x7f0e003f;
-		public static final int instabug_annotation_color_gray = 0x7f0e0040;
-		public static final int instabug_annotation_color_green = 0x7f0e0041;
-		public static final int instabug_annotation_color_orange = 0x7f0e0042;
-		public static final int instabug_annotation_color_red = 0x7f0e0043;
-		public static final int instabug_annotation_color_yellow = 0x7f0e0044;
-		public static final int instabug_transparent_color = 0x7f0e0045;
+		public static final int common_signin_btn_text_dark = 0x7f0e0083;
+		public static final int common_signin_btn_text_light = 0x7f0e0084;
+		public static final int instabug_annotation_color_blue = 0x7f0e003f;
+		public static final int instabug_annotation_color_default = 0x7f0e0040;
+		public static final int instabug_annotation_color_gray = 0x7f0e0041;
+		public static final int instabug_annotation_color_green = 0x7f0e0042;
+		public static final int instabug_annotation_color_orange = 0x7f0e0043;
+		public static final int instabug_annotation_color_red = 0x7f0e0044;
+		public static final int instabug_annotation_color_yellow = 0x7f0e0045;
+		public static final int instabug_transparent_color = 0x7f0e0046;
 	}
 	public static final class dimen {
 		public static final int instabug_actionbar_height = 0x7f0b0005;
@@ -211,8 +211,8 @@ public final class R {
 		public static final int rawres = 0x7f070000;
 	}
 	public static final class string {
-		public static final int auth_google_play_services_client_facebook_display_name = 0x7f08005d;
-		public static final int auth_google_play_services_client_google_display_name = 0x7f08005e;
+		public static final int auth_google_play_services_client_facebook_display_name = 0x7f08005e;
+		public static final int auth_google_play_services_client_google_display_name = 0x7f08005f;
 		public static final int bottommessage = 0x7f080032;
 		public static final int bugheader = 0x7f080033;
 		public static final int cancelbutton = 0x7f080034;
@@ -247,8 +247,8 @@ public final class R {
 		public static final int common_google_play_services_updating_text = 0x7f08002e;
 		public static final int common_google_play_services_updating_title = 0x7f08002f;
 		public static final int common_open_on_phone = 0x7f080030;
-		public static final int common_signin_button_text = 0x7f080065;
-		public static final int common_signin_button_text_long = 0x7f080066;
+		public static final int common_signin_button_text = 0x7f080066;
+		public static final int common_signin_button_text_long = 0x7f080067;
 		public static final int edgeswipestartalerttext = 0x7f080036;
 		public static final int emailplaceholder = 0x7f080037;
 		public static final int feedbackheader = 0x7f080038;

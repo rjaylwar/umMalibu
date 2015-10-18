@@ -14,7 +14,7 @@
         <item name="colorAccent">@color/um_highlight_blue</item>
 
         <!-- Trim color for UI elements like checkboxes -->
-        <item name="android:textColorSecondary">@color/grey</item>
+        <item name="android:textColorSecondary">@color/light_grey</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:statusBarColor">@color/statusBarColor</item>

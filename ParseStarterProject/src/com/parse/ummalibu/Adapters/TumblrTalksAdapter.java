@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 /**
  * Created by rjaylward on 10/16/15
- */
+ **/
 public class TumblrTalksAdapter extends RecyclerView.Adapter {
 
     private Context mContext;

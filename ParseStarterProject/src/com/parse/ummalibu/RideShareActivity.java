@@ -16,7 +16,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by rjaylward on 9/26/15.
+ * Created by rjaylward on 9/26/15
  */
 public class RideShareActivity extends ToolbarActivity {
 
@@ -58,14 +58,10 @@ public class RideShareActivity extends ToolbarActivity {
             }
 
             @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
+            public void onTabUnselected(TabLayout.Tab tab) { }
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
+            public void onTabReselected(TabLayout.Tab tab) { }
         });
     }
 

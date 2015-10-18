@@ -101,6 +101,7 @@
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/colors.xml -->
     <eat-comment/>
+    <color name="dark_grey">#282828</color>
     <color name="darkgreen">#FF669900</color>
     <color name="darkorange">#FFFF8800</color>
     <color name="darkpurple">#FF9933CC</color>
@@ -638,6 +639,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="invalidemailalerttitle">Invalid Email</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
+    <string name="login">Login</string>
     <string name="meet_steve_title">Meet Our Director - Steve Smith</string>
     <string name="miles_per_gallon">Miles per Gallon (MPG)</string>
     <string name="minus">-</string>
@@ -656,6 +658,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     <string name="picked_up">Picked Up</string>
     <string name="pickup_location">Pickup Location</string>
     <string name="play">Play</string>
+    <string name="play_icon">▶</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>
     <string name="pleasewait">Please wait a moment</string>
@@ -766,7 +769,7 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
         <item name="colorAccent">@color/um_highlight_blue</item>
 
         <!-- Trim color for UI elements like checkboxes -->
-        <item name="android:textColorSecondary">@color/grey</item>
+        <item name="android:textColorSecondary">@color/light_grey</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
 
@@ -2164,6 +2167,16 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
         <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
         <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow</item>
+    </style>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values/style.xml -->
+    <eat-comment/>
+    <style name="Widget.UM.TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+    <style name="Widget.UM.TextAppearance.Dark" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/dark_grey</item>
     </style>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/res/values/values.xml -->
     <eat-comment/>

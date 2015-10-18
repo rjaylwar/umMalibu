@@ -10,11 +10,12 @@
         layout="@layout/toolbar_basic"
         android:id="@+id/toolbar"/>
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/scrollView"
-                android:fillViewport="true">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:fillViewport="true">
 
         <LinearLayout
             android:orientation="vertical" android:layout_width="match_parent"
@@ -54,7 +55,6 @@
                     android:layout_alignParentStart="true"
                     android:id="@+id/about_share_button"
                     android:text="Share"
-                    android:textSize="24sp"
                     android:textColor="#ff73ff00"
                     android:layout_marginRight="5dp"
                     android:layout_marginLeft="5dp" />
@@ -67,7 +67,6 @@
                     android:layout_alignParentEnd="true"
                     android:id="@+id/about_directions_button"
                     android:text="Directions"
-                    android:textSize="24sp"
                     android:textColor="#ff73ff00"
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="5dp" />

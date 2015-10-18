@@ -7,4 +7,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:transitionName="transition_root"
-    tools:ignore="UnusedAttribute"/><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/layout/activity_fragment.xml -->
+    tools:ignore="UnusedAttribute"
+    android:background="@color/um_grey_blue"/><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/layout/activity_fragment.xml -->

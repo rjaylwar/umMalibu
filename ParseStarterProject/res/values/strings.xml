@@ -86,5 +86,7 @@
     <string name="are_you_sure_u_want_to_cancel">Are you sure you want to cancel this request?</string>
     <string name="error_unable_to_find_driver">Error, unable to find your driver. Please try again later</string>
     <string name="um_talks">UM Talks</string>
+    <string name="play_icon">▶</string>
+    <string name="login">Login</string>
 
 </resources>

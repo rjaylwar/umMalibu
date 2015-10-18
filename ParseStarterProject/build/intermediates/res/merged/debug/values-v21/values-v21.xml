@@ -3,6 +3,9 @@
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/23.1.0/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <dimen name="design_navigation_padding_top_default">24dp</dimen>
+    <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values-v21/strings.xml -->
+    <eat-comment/>
+    <string name="play_icon">▶</string>
     <!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/ParseStarterProject/res/values-v21/style.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
@@ -11,7 +14,7 @@
         <item name="colorAccent">@color/um_highlight_blue</item>
 
         <!-- Trim color for UI elements like checkboxes -->
-        <item name="android:textColorSecondary">@color/grey</item>
+        <item name="android:textColorSecondary">@color/light_grey</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:statusBarColor">@color/statusBarColor</item>

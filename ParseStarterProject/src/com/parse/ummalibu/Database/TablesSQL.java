@@ -3,7 +3,7 @@ package com.parse.ummalibu.database;
 import com.parse.ummalibu.values.FieldNames;
 
 /**
- * Created by rjaylward on 9/22/15.
+ * Created by rjaylward on 9/22/15
  */
 public class TablesSQL {
 
@@ -73,7 +73,7 @@ public class TablesSQL {
             Table.UmLocations.LATITUDE + " INTEGER, " +
             Table.UmLocations.LONGITUDE + " INTEGER " + ");";
 
-    public static final String CREATE_UMBER_REQUESTS_TABLE = "CREATE TABLE " + FieldNames.REQUESTS + " ( " +
+    public static final String CREATE_UMBER_REQUESTS_TABLE = "CREATE TABLE " + Table.Requests.TABLE_NAME + " ( " +
             Table.Requests.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE," +
             Table.Requests.CREATED_AT + " INTEGER, " +
             Table.Requests.EMAIL + " TEXT, " +
@@ -99,9 +99,28 @@ public class TablesSQL {
             Table.Requests.IS_COMPLETE + " TINYINT DEFAULT 0, " +
             Table.Requests.CANCELED + " TINYINT DEFAULT 0 " + ");";
 
+    public static final String CREATE_TUMBLR_TALKS_TABLE = "CREATE TABLE " + Table.TumblrTalks.TABLE_NAME + " ( " +
+            Table.TumblrTalks.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE," +
+            Table.TumblrTalks.TITLE + " TEXT, " +
+            Table.TumblrTalks.SUBTITLE + " TEXT, " +
+            Table.TumblrTalks.IMAGE_URL + " TEXT, " +
+            Table.TumblrTalks.AUDIO_URL + " TEXT, " +
+            Table.TumblrTalks.BASE_URL + " TEXT, " +
+            Table.TumblrTalks.DESCRIPTION + " TEXT, " +
+            Table.TumblrTalks.SOURCE + " TEXT, " +
+            Table.TumblrTalks.SERIES + " TEXT, " +
+            Table.TumblrTalks.ORIGINAL_LINK + " TEXT, " +
+            Table.TumblrTalks.SERIES_IMAGE_URL + " TEXT, " +
+            Table.TumblrTalks.TYPE + " TEXT, " +
+            Table.TumblrTalks.THUMBNAIL_URL + " TEXT, " +
+            Table.TumblrTalks.PERMALINK_URL + " TEXT, " +
+            Table.TumblrTalks.TAGS + " TEXT, " +
+
+            Table.TumblrTalks.TIMESTAMP + " INTEGER " + ");";
+
     public static final String[] TABLE_NAMES = {CREATE_TALKS_TABLE, CREATE_EVENTS_TABLE, CREATE_SONGS_TABLE,
             CREATE_PRAYERS_TABLE, CREATE_NOTIFICATIONS_TABLE, CREATE_UMBER_REQUESTS_TABLE, CREATE_DRIVERS_TABLE,
-            CREATE_UM_LOCATIONS_TABLE};
+            CREATE_UM_LOCATIONS_TABLE, CREATE_TUMBLR_TALKS_TABLE};
 
     public static String deleteTable(String tableName) {
         return "DROP TABLE IF EXISTS " + tableName;

@@ -7,4 +7,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:transitionName="transition_root"
-    tools:ignore="UnusedAttribute"/>
+    tools:ignore="UnusedAttribute"
+    android:background="@color/um_grey_blue"/>

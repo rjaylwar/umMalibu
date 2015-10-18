@@ -10,6 +10,7 @@
     <color name="darkgreen">#FF669900</color>
     <color name="darkorange">#FFFF8800</color>
     <color name="darkred">#FFCC0000</color>
+    <color name="dark_grey">#282828</color>
     <color name="grey">#5a5a5a</color>
     <color name="medium_grey">#7b7b7b</color>
     <color name="light_grey">#9c9c9c</color>

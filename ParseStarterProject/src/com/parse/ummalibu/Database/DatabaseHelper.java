@@ -7,7 +7,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.Nullable;
 
+import com.parse.ummalibu.objects.TumblrTalk;
 import com.parse.ummalibu.objects.UmLocation;
+import com.parse.ummalibu.util.Util;
 import com.parse.ummalibu.values.FieldNames;
 import com.parse.ummalibu.objects.Driver;
 import com.parse.ummalibu.objects.Notification;
@@ -18,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Created by rjaylward on 9/22/15.
+ * Created by rjaylward on 9/22/15
  */
 public class DatabaseHelper {
 
@@ -403,5 +405,56 @@ public class DatabaseHelper {
         }
 
         mContentResolver.bulkInsert(Table.UmLocations.CONTENT_URI, values.toArray(new ContentValues[locations.size()]));
+    }
+
+    public synchronized void addTumblrTalks(ArrayList<TumblrTalk> talks) {
+        ArrayList<ContentValues> values = new ArrayList<>();
+
+        for(TumblrTalk talk : talks) {
+            values.add(talk.toContentValues());
+        }
+
+        mContentResolver.bulkInsert(Table.TumblrTalks.CONTENT_URI, values.toArray(new ContentValues[values.size()]));
+    }
+
+    public synchronized ArrayList<TumblrTalk> getTumblrTalks() {
+        ArrayList<TumblrTalk> tumblrTalks = new ArrayList<>();
+        String selectQuery = "SELECT * FROM " + Table.TumblrTalks.TABLE_NAME + " ORDER BY " + Table.TumblrTalks.TIMESTAMP + " DESC";
+
+        SQLiteDatabase db = mOpenDatabaseHelper.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        try {
+            if(cursor.moveToFirst()) {
+                do {
+                    TumblrTalk talk = new TumblrTalk();
+                    talk.setTimestamp(cursor.getLong(cursor.getColumnIndexOrThrow(Table.TumblrTalks.TIMESTAMP)));
+                    talk.setId(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.OBJECT_ID)));
+
+                    talk.setTitle(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.TITLE)));
+                    talk.setSubtitle(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.SUBTITLE)));
+                    talk.setImageUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.IMAGE_URL)));
+                    talk.setAudioUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.AUDIO_URL)));
+                    talk.setBaseUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.BASE_URL)));
+                    talk.setDescription(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.DESCRIPTION)));
+                    talk.setSource(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.SOURCE)));
+                    talk.setSeries(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.SERIES)));
+                    talk.setOriginalLink(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.ORIGINAL_LINK)));
+                    talk.setSeriesImageUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.SERIES_IMAGE_URL)));
+                    talk.setType(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.TYPE)));
+                    talk.setThumbnailUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.THUMBNAIL_URL)));
+                    talk.setPermalinkUrl(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.PERMALINK_URL)));
+
+                    talk.setTags(Util.convertStringToArrayList(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.TAGS))));
+
+                    tumblrTalks.add(talk);
+                } while (cursor.moveToNext());
+            }
+        } finally {
+            if(cursor != null)
+                cursor.close();
+        }
+
+        return tumblrTalks;
     }
 }

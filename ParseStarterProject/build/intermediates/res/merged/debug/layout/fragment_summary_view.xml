@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:id="@+id/root">
 
     <include layout="@layout/toolbar_basic"/>
@@ -124,7 +125,8 @@
                     android:layout_marginTop="8dp"
                     android:text="Pick Up Time"
                     android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="8dp"/>
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/dark_grey"/>
 
                 <TextView
                     android:id="@+id/summary_pick_up_time"
@@ -133,7 +135,8 @@
                     android:text="Test Text"
                     android:layout_alignParentRight="true"
                     android:layout_alignBaseline="@+id/summary_pick_up_label"
-                    android:layout_marginRight="8dp"/>
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/dark_grey"/>
 
                 <TextView
                     android:id="@+id/summary_distance_label"
@@ -143,7 +146,8 @@
                     android:layout_marginTop="4dp"
                     android:text="Distance"
                     android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="8dp"/>
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/dark_grey"/>
 
                 <TextView
                     android:id="@+id/summary_distance"
@@ -152,7 +156,8 @@
                     android:text="Miles"
                     android:layout_alignParentRight="true"
                     android:layout_alignBaseline="@+id/summary_distance_label"
-                    android:layout_marginRight="8dp"/>
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/dark_grey"/>
 
                 <TextView
                     android:id="@+id/summary_time_label"
@@ -162,7 +167,8 @@
                     android:layout_marginTop="4dp"
                     android:text="Length"
                     android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="8dp"/>
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/dark_grey"/>
 
                 <TextView
                     android:id="@+id/summary_time"
@@ -171,7 +177,8 @@
                     android:text="- min"
                     android:layout_alignParentRight="true"
                     android:layout_alignBaseline="@+id/summary_time_label"
-                    android:layout_marginRight="8dp"/>
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/dark_grey"/>
 
                 <TextView
                     android:id="@+id/summary_status_label"
@@ -181,7 +188,8 @@
                     android:layout_marginTop="4dp"
                     android:text="Status"
                     android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="8dp"/>
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/dark_grey"/>
 
                 <TextView
                     android:id="@+id/summary_status"
@@ -190,7 +198,8 @@
                     android:text="Test Text"
                     android:layout_alignParentRight="true"
                     android:layout_alignBaseline="@+id/summary_status_label"
-                    android:layout_marginRight="8dp"/>
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/dark_grey"/>
 
                 <TextView
                     android:id="@+id/summary_cost_view"
@@ -216,6 +225,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/um_green"
+                        android:textSize="18dp"
                         android:text="@string/minus"/>
 
                     <Button
@@ -224,6 +234,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:background="@color/um_grey"
+                        android:textSize="18dp"
                         android:text="@string/split_gas_number_ways"/>
 
                     <Button
@@ -232,6 +243,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/um_green"
+                        android:textSize="18dp"
                         android:text="@string/plus"/>
 
                 </LinearLayout>

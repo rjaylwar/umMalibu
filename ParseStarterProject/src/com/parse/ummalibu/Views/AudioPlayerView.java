@@ -19,7 +19,7 @@ import com.parse.ummalibu.objects.TumblrTalk;
 
 /**
  * Created by rjaylward on 10/15/15
- */
+ **/
 public class AudioPlayerView extends RelativeLayout {
 
     private ImageView mImageView;

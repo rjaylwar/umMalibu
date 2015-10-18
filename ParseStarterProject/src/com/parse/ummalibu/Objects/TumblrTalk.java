@@ -5,6 +5,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
+import com.parse.ummalibu.database.Table;
+import com.parse.ummalibu.util.Util;
 import com.parse.ummalibu.values.FieldNames;
 
 import java.util.ArrayList;
@@ -44,6 +46,18 @@ public class TumblrTalk implements Parcelable {
         return mPermalinkUrl;
     }
 
+    public void setType(String type) {
+        mType = type;
+    }
+
+    public void setThumbnailUrl(String thumbnailUrl) {
+        mThumbnailUrl = thumbnailUrl;
+    }
+
+    public void setPermalinkUrl(String permalinkUrl) {
+        mPermalinkUrl = permalinkUrl;
+    }
+
     // TUMBLR AUDIO TALKS
     @SerializedName("artist")
     public String mTitle;
@@ -79,6 +93,8 @@ public class TumblrTalk implements Parcelable {
     @SerializedName("timestamp")
     public long mTimestamp;
 
+    public ArrayList<String> mTags;
+
     public ArrayList<String> getTags() {
         return mTags;
     }
@@ -94,8 +110,6 @@ public class TumblrTalk implements Parcelable {
     public void setTimestamp(long timestamp) {
         mTimestamp = timestamp;
     }
-
-    public ArrayList<String> mTags;
 
     public Date getCreatedAt() {
         return new Date(mTimestamp);
@@ -200,7 +214,23 @@ public class TumblrTalk implements Parcelable {
     public ContentValues toContentValues() {
         ContentValues values = new ContentValues();
 
-//        values.put(Table.Requests.IS_COMPLETE, mComplete ? 1 : 0);
+        values.put(Table.TumblrTalks.OBJECT_ID, mId);
+        values.put(Table.TumblrTalks.TITLE, mTitle);
+        values.put(Table.TumblrTalks.SUBTITLE, mSubtitle);
+        values.put(Table.TumblrTalks.IMAGE_URL, mImageUrl);
+        values.put(Table.TumblrTalks.AUDIO_URL, mAudioUrl);
+        values.put(Table.TumblrTalks.BASE_URL, mBaseUrl);
+        values.put(Table.TumblrTalks.DESCRIPTION, mDescription);
+        values.put(Table.TumblrTalks.SOURCE, mSource);
+        values.put(Table.TumblrTalks.SERIES, mSeries);
+        values.put(Table.TumblrTalks.ORIGINAL_LINK, mOriginalLink);
+        values.put(Table.TumblrTalks.SERIES_IMAGE_URL, mSeriesImageUrl);
+        values.put(Table.TumblrTalks.TYPE, mType);
+        values.put(Table.TumblrTalks.THUMBNAIL_URL, mThumbnailUrl);
+        values.put(Table.TumblrTalks.PERMALINK_URL, mPermalinkUrl);
+        values.put(Table.TumblrTalks.TAGS, Util.printArrayListAsString(mTags));
+        values.put(Table.TumblrTalks.TIMESTAMP, mTimestamp);
+
         return values;
     }
 

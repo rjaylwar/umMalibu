@@ -57,7 +57,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:id="@+id/media_player_play_button"
-        android:text="\u25B6"
+        android:text="@string/play_icon"
         android:gravity="center"
         android:textSize="64dp"
         android:textColor="@color/white"

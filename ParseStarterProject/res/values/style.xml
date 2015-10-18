@@ -6,7 +6,7 @@
         <item name="colorAccent">@color/um_highlight_blue</item>
 
         <!-- Trim color for UI elements like checkboxes -->
-        <item name="android:textColorSecondary">@color/grey</item>
+        <item name="android:textColorSecondary">@color/light_grey</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
 
@@ -15,5 +15,15 @@
     <style name="Theme.Main" parent="AppTheme"/>
 
     <style name="Theme.Main.TransparentStatus" parent="Theme.Main"/>
+
+    <style name="Widget.UM.TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+
+    <style name="Widget.UM.TextAppearance.Dark" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
 
 </resources>
