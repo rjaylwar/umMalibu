@@ -3,7 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="media_player_height">56dp</dimen>
+    <dimen name="media_player_height">64dp</dimen>
+    <dimen name="media_player_button_size">64dp</dimen>
+
     <dimen name="search_widget_height">48dp</dimen>
     <dimen name="request_image_size">64dp</dimen>
     <dimen name="sliding_view_top_margin">120dp</dimen>
@@ -11,4 +13,6 @@
     <dimen name="circle_top_margin">4dp</dimen>
     <dimen name="border_size">1dp</dimen>
     <dimen name="login_text_size">15dp</dimen>
+
+    <bool name="isLandscape">false</bool>
 </resources>

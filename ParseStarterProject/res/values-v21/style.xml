@@ -21,4 +21,8 @@
 
     </style>
 
+    <style name="Theme.Main.TransparentStatus" parent="Theme.Main">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
 </resources>

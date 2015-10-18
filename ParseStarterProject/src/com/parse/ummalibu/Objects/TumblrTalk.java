@@ -1,5 +1,6 @@
 package com.parse.ummalibu.objects;
 
+import android.content.ContentValues;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -16,6 +17,34 @@ public class TumblrTalk implements Parcelable {
 
     public TumblrTalk() {}
 
+    // TUMBLR VIDEO VIEWS
+    @SerializedName("type")
+    public String mType;
+    @SerializedName("thumbnail_url")
+    public String mThumbnailUrl;
+    @SerializedName("permalink_url")
+    public String mPermalinkUrl;
+
+    public String getType() {
+        return mType;
+    }
+
+    public String getThumbnailUrl() {
+        return mThumbnailUrl;
+    }
+
+    public String getPermalinkUrl() {
+        return mPermalinkUrl;
+    }
+
+    public String getVideoUrl() {
+        if(mPermalinkUrl.contains("www.youtube.com/watch?v=")) {
+            mPermalinkUrl = mPermalinkUrl.replace("watch?v=", "embed/");
+        }
+        return mPermalinkUrl;
+    }
+
+    // TUMBLR AUDIO TALKS
     @SerializedName("artist")
     public String mTitle;
 
@@ -160,6 +189,13 @@ public class TumblrTalk implements Parcelable {
         this.mSeriesImageUrl = directLink;
     }
 
+    public ContentValues toContentValues() {
+        ContentValues values = new ContentValues();
+
+//        values.put(Table.Requests.IS_COMPLETE, mComplete ? 1 : 0);
+        return values;
+    }
+
     protected TumblrTalk(Parcel in) {
         mTitle = in.readString();
         mSubtitle = in.readString();
@@ -173,6 +209,9 @@ public class TumblrTalk implements Parcelable {
         mOriginalLink = in.readString();
         mSeriesImageUrl = in.readString();
         mTimestamp = in.readLong();
+        mType = in.readString();
+        mThumbnailUrl = in.readString();
+        mPermalinkUrl = in.readString();
 
         if (in.readByte() == 0x01) {
             mTags = new ArrayList<>();
@@ -202,6 +241,9 @@ public class TumblrTalk implements Parcelable {
         dest.writeString(mSeriesImageUrl);
         dest.writeLong(mTimestamp);
         dest.writeList(mTags);
+        dest.writeString(mType);
+        dest.writeString(mThumbnailUrl);
+        dest.writeString(mPermalinkUrl);
 
         if (mTags == null)
             dest.writeByte((byte) (0x00));

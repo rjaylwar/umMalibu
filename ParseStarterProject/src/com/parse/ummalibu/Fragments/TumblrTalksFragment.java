@@ -1,18 +1,21 @@
 package com.parse.ummalibu.fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
+import android.view.View;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
 import com.android.volley.VolleyError;
 import com.bumptech.glide.Glide;
 import com.parse.ummalibu.R;
-import com.parse.ummalibu.adapters.RequestListAdapter;
 import com.parse.ummalibu.adapters.TumblrTalksAdapter;
 import com.parse.ummalibu.api.ApiHelper;
 import com.parse.ummalibu.objects.BaseTumblrResponse;
@@ -22,6 +25,7 @@ import com.parse.ummalibu.views.LoadMoreRecyclerView;
 import com.parse.ummalibu.volley.VolleyRequestListener;
 
 import butterknife.Bind;
+import butterknife.BindBool;
 
 /**
  * Created by rjaylward on 10/17/15
@@ -45,8 +49,10 @@ public class TumblrTalksFragment extends ToolbarFragment {
     @Bind(R.id.collapsing_toolbar)
     CollapsingToolbarLayout mCollapsingToolbarLayout;
 
+    @BindBool(R.bool.isLandscape)
+    boolean mLandscape;
+
     private TumblrTalksAdapter mAdapter;
-    private RequestListAdapter requestListAdapter;
 
     public static TumblrTalksFragment createFragment() {
         return new TumblrTalksFragment();
@@ -59,6 +65,12 @@ public class TumblrTalksFragment extends ToolbarFragment {
 
     @Override
     protected void fragOnCreateView(Bundle savedInstanceState) {
+        if (!mLandscape) {
+            mActivity.getScreenSize();
+            //noinspection SuspiciousNameCombination
+            mAppBarLayout.getLayoutParams().height = mActivity.getScreenSize().x;
+        }
+
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mActivity, LinearLayoutManager.VERTICAL, false));
         mAdapter = new TumblrTalksAdapter(mActivity);
 
@@ -68,13 +80,6 @@ public class TumblrTalksFragment extends ToolbarFragment {
                 changeTalkView(tumblrTalk);
             }
         });
-
-//        requestListAdapter = new RequestListAdapter(mActivity, new RequestListAdapter.OnRequestClickedListener() {
-//            @Override
-//            public void onRequestClicked(UmberRequest request) {
-//                Log.d("Request Clicked", "test works");
-//            }
-//        });
 
         mRecyclerView.setAdapter(mAdapter);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -127,14 +132,53 @@ public class TumblrTalksFragment extends ToolbarFragment {
 
     private void setUpAudioPlayer() { }
 
+    @SuppressLint("SetJavaScriptEnabled")
     private void loadTalkView(TumblrTalk talk) {
+        if (mToolbar != null)
+            mToolbar.setTitle(talk.getTitle());
+
         mPlayerView.setUpAudioPlayer(talk);
-        Glide.with(this).load(talk.getImageUrl()).into(mImageView);
+        mWebView.setWebViewClient(new WebViewClient());
+        mWebView.setWebChromeClient(new WebChromeClient());
+        mWebView.getSettings().setJavaScriptEnabled(true);
+
+        if (talk.getType().equals("video")) {
+            if (mWebView.getVisibility() != View.VISIBLE)
+                mWebView.setVisibility(View.VISIBLE);
+
+            Glide.with(this).load(talk.getThumbnailUrl()).into(mImageView);
+            //noinspection SuspiciousNameCombination
+            mWebView.loadUrl(talk.getVideoUrl());
+        }
+        else {
+            if (mWebView.getVisibility() != View.GONE)
+                mWebView.setVisibility(View.GONE);
+
+            Glide.with(this).load(talk.getImageUrl()).into(mImageView);
+        }
     }
 
     private void changeTalkView(TumblrTalk talk) {
-        mPlayerView.changeTalk(talk);
-        Glide.with(this).load(talk.getImageUrl()).into(mImageView);
+        if (mToolbar != null)
+            mToolbar.setTitle(talk.getTitle());
+
+        if (talk.getType().equals("video")) {
+            if (mWebView.getVisibility() != View.VISIBLE)
+                mWebView.setVisibility(View.VISIBLE);
+
+            Glide.with(this).load(talk.getThumbnailUrl()).into(mImageView);
+            mPlayerView.pause();
+            //noinspection SuspiciousNameCombination
+            mWebView.loadUrl(talk.getVideoUrl());
+        }
+        else {
+            mWebView.loadUrl(null);
+            if (mWebView.getVisibility() != View.GONE)
+                mWebView.setVisibility(View.GONE);
+
+            mPlayerView.changeTalk(talk);
+            Glide.with(this).load(talk.getImageUrl()).into(mImageView);
+        }
     }
 
     @Override

@@ -2,13 +2,13 @@ package com.parse.ummalibu.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.parse.ummalibu.R;
+import com.parse.ummalibu.base.BaseActivity;
 import com.parse.ummalibu.base.BaseFragment;
 
 import butterknife.Bind;
@@ -22,12 +22,12 @@ public abstract class ToolbarFragment extends BaseFragment {
     @Nullable @Bind(R.id.toolbar)
     protected Toolbar mToolbar;
 
-    protected AppCompatActivity mActivity;
+    protected BaseActivity mActivity;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mActivity = (AppCompatActivity) getActivity();
+        mActivity = (BaseActivity) getActivity();
     }
 
     @Override
@@ -46,7 +46,6 @@ public abstract class ToolbarFragment extends BaseFragment {
                     mActivity.onBackPressed();
                 }
             });
-
         }
 
         fragOnCreateView(savedInstanceState);

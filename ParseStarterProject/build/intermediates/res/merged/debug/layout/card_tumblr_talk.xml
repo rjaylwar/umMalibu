@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:text="Title"
             android:lines="1"
-            android:textSize="20sp"
+            android:textSize="20dp"
             android:textColor="@color/white"/>
 
         <TextView
@@ -38,9 +38,9 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="Subtitle"
-            android:textSize="16sp"
+            android:textSize="16dp"
             android:lines="1"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="1dp"
             android:textColor="@color/light_grey_text"/>
 
         <TextView
@@ -48,9 +48,9 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="12/12/15"
-            android:textSize="12sp"
+            android:textSize="12dp"
             android:lines="1"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="1dp"
             android:textColor="@color/medium_grey"/>
 
     </LinearLayout>

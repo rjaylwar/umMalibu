@@ -144,5 +144,24 @@ public class Table {
         public static final String LONGITUDE = FieldNames.LONGITUDE;
         public static final String OBJECT_ID = FieldNames.OBJECT_ID;
     }
+
+    public static final class TumblrTalks {
+        public static final String TABLE_NAME = "tumblr_talks";
+        public static final Uri CONTENT_URI = Uri.parse("content://" + DatabaseProvider.AUTHORITY + "/" + TABLE_NAME);
+        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.UM." + TABLE_NAME;
+
+        public static final String TITLE = "artist";
+        public static final String SUBTITLE = "caption";
+        public static final String IMAGE_URL = "album_art";
+        public static final String AUDIO_URL = "audio_url";
+        public static final String BASE_URL = "embed";
+        public static final String DESCRIPTION = "description";
+        public static final String OBJECT_ID = "object_id";
+        public static final String SOURCE = "source";
+        public static final String SERIES = "album";
+        public static final String ORIGINAL_LINK = "original_link";
+        public static final String SERIES_IMAGE_URL = "series_image_url";
+        public static final String TIMESTAMP = "timestamp";
+    }
 }
 

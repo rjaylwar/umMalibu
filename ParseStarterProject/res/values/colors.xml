@@ -25,12 +25,14 @@
     <color name="transparent_blue">#da345065</color>
     <color name="transparent_um_grey">#d7bfe9eb</color>
 
+    <color name="transparent_black">#64000000</color>
+
     <color name="um_grey_blue">#FF345065</color>
     <color name="um_dark_blue">#FF233645</color>
     <color name="um_highlight_blue">#FF00DEF2</color>
     <color name="um_grey">#FFABCDCF</color>
     <color name="um_green">#5DFC0A</color>
     <color name="black">#000000</color>
-    <color name="statusBarColor">#080d10</color>
+    <color name="statusBarColor">#17242e</color>
 
 </resources>

@@ -26,7 +26,7 @@ import java.security.InvalidParameterException;
 
 /**
  * Created by rjaylward on 9/22/15
- */
+ **/
 public class ApiHelper {
 
     AppCompatActivity mActivity;
@@ -207,10 +207,11 @@ public class ApiHelper {
         volleyRequester.makeDeleteRequest(mActivity, url, uiListener);
     }
 
-    //////////////////////////////////// Tumblr Api Requests /////////////////////////////////////////
+    /////////////////////////////////// Tumblr Api Requests ////////////////////////////////////////
 
     public void getTumblrTalks(VolleyRequestListener<BaseTumblrResponse> uiListener) {
-        String url = "http://api.tumblr.com/v2/blog/ummalibu.com/posts/audio?api_key=" + TUMBLR_API_KEY;
+//        String url = "http://api.tumblr.com/v2/blog/ummalibu.com/posts/audio?api_key=" + TUMBLR_API_KEY;
+        String url = "http://api.tumblr.com/v2/blog/ummalibu.com/posts?api_key=" + TUMBLR_API_KEY + "&tag=talks";
         Log.d("get tumblr talks", url);
 
         GsonVolleyRequester<BaseTumblrResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, BaseTumblrResponse.class);
@@ -218,4 +219,3 @@ public class ApiHelper {
     }
 
 }
-

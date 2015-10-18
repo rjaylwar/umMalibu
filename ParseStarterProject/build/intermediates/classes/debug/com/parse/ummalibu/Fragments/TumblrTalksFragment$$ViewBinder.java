@@ -1,6 +1,7 @@
 // Generated code from Butter Knife. Do not modify!
 package com.parse.ummalibu.fragments;
 
+import android.content.res.Resources;
 import android.view.View;
 import butterknife.ButterKnife.Finder;
 
@@ -9,20 +10,22 @@ public class TumblrTalksFragment$$ViewBinder<T extends com.parse.ummalibu.fragme
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131689636, "field 'mSwipeRefreshLayout'");
-    target.mSwipeRefreshLayout = finder.castView(view, 2131689636, "field 'mSwipeRefreshLayout'");
-    view = finder.findRequiredView(source, 2131689637, "field 'mRecyclerView'");
-    target.mRecyclerView = finder.castView(view, 2131689637, "field 'mRecyclerView'");
-    view = finder.findRequiredView(source, 2131689805, "field 'mWebView'");
-    target.mWebView = finder.castView(view, 2131689805, "field 'mWebView'");
-    view = finder.findRequiredView(source, 2131689806, "field 'mImageView'");
-    target.mImageView = finder.castView(view, 2131689806, "field 'mImageView'");
-    view = finder.findRequiredView(source, 2131689807, "field 'mPlayerView'");
-    target.mPlayerView = finder.castView(view, 2131689807, "field 'mPlayerView'");
-    view = finder.findRequiredView(source, 2131689801, "field 'mAppBarLayout'");
-    target.mAppBarLayout = finder.castView(view, 2131689801, "field 'mAppBarLayout'");
-    view = finder.findRequiredView(source, 2131689803, "field 'mCollapsingToolbarLayout'");
-    target.mCollapsingToolbarLayout = finder.castView(view, 2131689803, "field 'mCollapsingToolbarLayout'");
+    view = finder.findRequiredView(source, 2131689638, "field 'mSwipeRefreshLayout'");
+    target.mSwipeRefreshLayout = finder.castView(view, 2131689638, "field 'mSwipeRefreshLayout'");
+    view = finder.findRequiredView(source, 2131689639, "field 'mRecyclerView'");
+    target.mRecyclerView = finder.castView(view, 2131689639, "field 'mRecyclerView'");
+    view = finder.findRequiredView(source, 2131689813, "field 'mWebView'");
+    target.mWebView = finder.castView(view, 2131689813, "field 'mWebView'");
+    view = finder.findRequiredView(source, 2131689812, "field 'mImageView'");
+    target.mImageView = finder.castView(view, 2131689812, "field 'mImageView'");
+    view = finder.findRequiredView(source, 2131689814, "field 'mPlayerView'");
+    target.mPlayerView = finder.castView(view, 2131689814, "field 'mPlayerView'");
+    view = finder.findRequiredView(source, 2131689808, "field 'mAppBarLayout'");
+    target.mAppBarLayout = finder.castView(view, 2131689808, "field 'mAppBarLayout'");
+    view = finder.findRequiredView(source, 2131689810, "field 'mCollapsingToolbarLayout'");
+    target.mCollapsingToolbarLayout = finder.castView(view, 2131689810, "field 'mCollapsingToolbarLayout'");
+    Resources res = finder.getContext(source).getResources();
+    target.mLandscape = res.getBoolean(2131361795);
   }
 
   @Override public void unbind(T target) {

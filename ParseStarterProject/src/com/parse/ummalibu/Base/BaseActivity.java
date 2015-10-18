@@ -1,7 +1,9 @@
 package com.parse.ummalibu.base;
 
 import android.content.Context;
+import android.graphics.Point;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
@@ -31,5 +33,13 @@ public abstract class BaseActivity extends InstabugAppCompatActivity {
 //            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
             imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         }
+    }
+
+    public Point getScreenSize() {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+
+        return size;
     }
 }
