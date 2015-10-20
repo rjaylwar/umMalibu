@@ -23,7 +23,7 @@ public class DatabaseProvider extends ContentProvider {
 
     public static final String AUTHORITY = "com.parse.ummalibu.provider.internalDB";
     public static final String DATABASE_NAME = "UM.db";
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
 
     private OpenDatabaseHelper mDatabaseHelper;
 
@@ -182,7 +182,6 @@ public class DatabaseProvider extends ContentProvider {
         String table = getTable(uri);
 
         int count = db.delete(table, selection, selectionArgs);
-
 
         getContext().getContentResolver().notifyChange(uri, null);
 

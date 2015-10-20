@@ -130,7 +130,8 @@ public class LoginActivity extends ToolbarActivity {
         mImageUrlLayout.getEditText().addTextChangedListener(mTextWatcher);
 
         mCarLayout.getEditText().setText(Preferences.getInstance().getCarDescription());
-        mMpgLayout.getEditText().setText(String.valueOf(Preferences.getInstance().getMpg()));
+        if(Preferences.getInstance().getMpg() != 0)
+            mMpgLayout.getEditText().setText(String.valueOf(Preferences.getInstance().getMpg()));
     }
 
     private TextWatcher mTextWatcher = new TextWatcher() {

@@ -1,0 +1,114 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#365166">
+
+    <include
+        layout="@layout/toolbar_basic"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:background="#365166">
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.parse.ummalibu.NewPrayerActivity"
+            android:onClick="hideKeyboard">
+
+            <EditText
+                android:id="@+id/new_request_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="(Type request here)"
+                android:minLines="10"
+                android:textSize="18sp"
+                android:background="#ff233645"
+                android:inputType="textMultiLine"
+                android:layout_margin="5dp"
+                android:gravity="start"
+                android:padding="3dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:id="@+id/name_label"
+                    android:textSize="20sp"
+                    android:textColor="#ff07e2ff"
+                    android:layout_alignBaseline="@+id/name_edit"
+                    android:layout_margin="5dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anonymous"
+                    android:textSize="20sp"
+                    android:background="#ff233645"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/name_label"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/name_edit"
+                    android:layout_marginRight="5dp"
+                    android:padding="3dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Public Prayer?"
+                    android:id="@+id/public_prayer_string"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:textColor="#ff07e2ff"
+                    android:layout_margin="5dp"/>
+
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/public_prayer_switch"
+                    android:textColor="#ff73ff00"
+                    android:layout_alignTop="@+id/public_prayer_string"
+                    android:layout_alignRight="@+id/public_prayer_string"
+                    android:layout_alignEnd="@+id/public_prayer_string" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Prayer Request"
+                android:id="@+id/submit_prayer_button"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff73ff00"
+                android:layout_margin="10dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/UMMalibu/res/layout/activity_new_prayer.xml -->

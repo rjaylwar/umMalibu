@@ -10,8 +10,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.R;
+import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.values.Preferences;
 
 import java.text.SimpleDateFormat;
@@ -60,12 +60,13 @@ public class RequestViewHolder extends RecyclerView.ViewHolder {
         Glide.with(mContext).load(request.getMapUrl(mMap.getWidth(), mMap.getHeight())).into(mMap);
 
         if(useColors) {
-            if (!request.isClaimed())
+            if (!request.isStarted())
                 mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.light_grey));
+            else if(Preferences.getInstance().getEmail().equals(request.getEmail()))
+                mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.grey_blue));
             else
                 mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.black));
-            if (Preferences.getInstance().getEmail().equals(request.getEmail()))
-                mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.grey_blue));
+
             if (request.isCanceled())
                 mBackgroundLayout.setBackgroundColor(mContext.getResources().getColor(R.color.red));
 

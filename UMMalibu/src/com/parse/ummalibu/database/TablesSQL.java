@@ -8,7 +8,7 @@ import com.parse.ummalibu.values.FieldNames;
 public class TablesSQL {
 
     public static final String CREATE_TALKS_TABLE = "CREATE TABLE " + FieldNames.TALKS + " ( " +
-            Table.Talks.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE, " +
+            Table.Talks.OBJECT_ID + " TEXT PRIMARY KEY, " +
             Table.Talks.TITLE + " TEXT, " +
             Table.Talks.MEDIA_PLAYER_TEXT + " TEXT, " +
             Table.Talks.IMAGE_URL + " TEXT, " +
@@ -22,7 +22,7 @@ public class TablesSQL {
             Table.Talks.CREATED_AT + " INTEGER " + ");";
 
     public static final String CREATE_EVENTS_TABLE = "CREATE TABLE " + FieldNames.EVENTS + " ( " +
-            Table.Events.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE, " +
+            Table.Events.OBJECT_ID + " TEXT PRIMARY KEY, " +
             Table.Events.TITLE + " TEXT, " +
             Table.Events.DATE + " TEXT, " +
             Table.Events.EVENT_DATE + " TEXT, " +
@@ -36,7 +36,7 @@ public class TablesSQL {
             Table.Events.CREATED_AT + " INTEGER " + ");";
 
     public static final String CREATE_SONGS_TABLE = "CREATE TABLE " + FieldNames.SONGS + " ( " +
-            Table.Songs.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE, " +
+            Table.Songs.OBJECT_ID + " TEXT PRIMARY KEY, " +
             Table.Songs.TITLE + " TEXT, " +
             Table.Songs.YOUTUBE_URL + " TEXT, " +
             Table.Songs.SPOTIFY_URL + " TEXT, " +
@@ -44,18 +44,18 @@ public class TablesSQL {
             Table.Songs.CREATED_AT + " INTEGER " + ");";
 
     public static final String CREATE_NOTIFICATIONS_TABLE = "CREATE TABLE " + FieldNames.NOTIFICATIONS + " ( " +
-            Table.Notifications.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE, " +
+            Table.Notifications.OBJECT_ID + " TEXT PRIMARY KEY, " +
             Table.Notifications.ALERT + " TEXT, " +
             Table.Notifications.CREATED_AT + " INTEGER " + ");";
 
     public static final String CREATE_PRAYERS_TABLE = "CREATE TABLE " + Table.Prayers.TABLE_NAME + " ( " +
-            Table.Prayers.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE, " +
+            Table.Prayers.OBJECT_ID + " TEXT PRIMARY KEY, " +
             Table.Prayers.PRAYER_REQUEST + " TEXT, " +
             Table.Prayers.NAME + " TEXT, " +
             Table.Prayers.CREATED_AT + " INTEGER " + ");";
 
     public static final String CREATE_DRIVERS_TABLE = "CREATE TABLE " + Table.Drivers.TABLE_NAME + " ( " +
-            Table.Drivers.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE, " +
+            Table.Drivers.OBJECT_ID + " TEXT PRIMARY KEY, " +
             Table.Drivers.EMAIL + " TEXT, " +
             Table.Drivers.NAME + " TEXT, " +
             Table.Drivers.CAR_DESCRIPTION + " TEXT, " +
@@ -65,7 +65,7 @@ public class TablesSQL {
             Table.Drivers.MPG + " INTEGER " + ");";
 
     public static final String CREATE_UM_LOCATIONS_TABLE = "CREATE TABLE " + Table.UmLocations.TABLE_NAME + " ( " +
-            Table.UmLocations.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE, " +
+            Table.UmLocations.OBJECT_ID + " TEXT PRIMARY KEY, " +
             Table.UmLocations.NAME + " TEXT, " +
             Table.UmLocations.ADDRESS + " TEXT, " +
             Table.UmLocations.IMAGE_URL + " TEXT, " +
@@ -74,7 +74,7 @@ public class TablesSQL {
             Table.UmLocations.LONGITUDE + " INTEGER " + ");";
 
     public static final String CREATE_UMBER_REQUESTS_TABLE = "CREATE TABLE " + Table.Requests.TABLE_NAME + " ( " +
-            Table.Requests.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE," +
+            Table.Requests.OBJECT_ID + " TEXT PRIMARY KEY," +
             Table.Requests.CREATED_AT + " INTEGER, " +
             Table.Requests.EMAIL + " TEXT, " +
             Table.Requests.NAME + " TEXT, " +
@@ -100,7 +100,7 @@ public class TablesSQL {
             Table.Requests.CANCELED + " TINYINT DEFAULT 0 " + ");";
 
     public static final String CREATE_TUMBLR_TALKS_TABLE = "CREATE TABLE " + Table.TumblrTalks.TABLE_NAME + " ( " +
-            Table.TumblrTalks.OBJECT_ID + " TEXT PRIMARY KEY UNIQUE," +
+            Table.TumblrTalks.OBJECT_ID + " INTEGER PRIMARY KEY," +
             Table.TumblrTalks.TITLE + " TEXT, " +
             Table.TumblrTalks.SUBTITLE + " TEXT, " +
             Table.TumblrTalks.IMAGE_URL + " TEXT, " +
@@ -115,8 +115,8 @@ public class TablesSQL {
             Table.TumblrTalks.THUMBNAIL_URL + " TEXT, " +
             Table.TumblrTalks.PERMALINK_URL + " TEXT, " +
             Table.TumblrTalks.TAGS + " TEXT, " +
-
-            Table.TumblrTalks.TIMESTAMP + " INTEGER " + ");";
+            Table.TumblrTalks.TIMESTAMP + " INTEGER, " +
+            "UNIQUE (" + Table.TumblrTalks.OBJECT_ID + "," + Table.TumblrTalks.TITLE + ")" + ");";
 
     public static final String[] TABLE_NAMES = {CREATE_TALKS_TABLE, CREATE_EVENTS_TABLE, CREATE_SONGS_TABLE,
             CREATE_PRAYERS_TABLE, CREATE_NOTIFICATIONS_TABLE, CREATE_UMBER_REQUESTS_TABLE, CREATE_DRIVERS_TABLE,

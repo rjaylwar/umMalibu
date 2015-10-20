@@ -78,8 +78,8 @@ public class TumblrTalk implements Parcelable {
 
     public String mDescription;
 
-    @SerializedName(FieldNames.OBJECT_ID)
-    public String mId;
+    @SerializedName("id")
+    public long mId;
 
     @SerializedName(FieldNames.SOURCE)
     public String mSource;
@@ -173,11 +173,11 @@ public class TumblrTalk implements Parcelable {
         this.mDescription = description;
     }
 
-    public String getId() {
+    public long getId() {
         return mId;
     }
 
-    public void setId(String mId) {
+    public void setId(long mId) {
         this.mId = mId;
     }
 
@@ -243,7 +243,7 @@ public class TumblrTalk implements Parcelable {
         mAudioUrl = in.readString();
         mBaseUrl = in.readString();
         mDescription = in.readString();
-        mId = in.readString();
+        mId = in.readLong();
         mSource = in.readString();
         mSeries = in.readString();
         mOriginalLink = in.readString();
@@ -258,7 +258,6 @@ public class TumblrTalk implements Parcelable {
             in.readList(mTags, String.class.getClassLoader());
         } else
             mTags = null;
-
     }
 
     @Override
@@ -274,7 +273,7 @@ public class TumblrTalk implements Parcelable {
         dest.writeString(mAudioUrl);
         dest.writeString(mBaseUrl);
         dest.writeString(mDescription);
-        dest.writeString(mId);
+        dest.writeLong(mId);
         dest.writeString(mSource);
         dest.writeString(mSeries);
         dest.writeString(mOriginalLink);

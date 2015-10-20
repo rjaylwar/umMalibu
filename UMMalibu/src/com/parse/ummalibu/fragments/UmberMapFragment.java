@@ -140,13 +140,12 @@ public class UmberMapFragment extends BaseFragment {
 
             @Override
             public void onLocationButtonClicked() {
-                if(mSelectedPickUpLocation != null) {
+                if (mSelectedPickUpLocation != null) {
                     updateMapCamera(mSelectedPickUpLocation.getLatLng());
-                    if(mPotentialPickUpSpotMaker != null)
+                    if (mPotentialPickUpSpotMaker != null)
                         mPotentialPickUpSpotMaker.showInfoWindow();
-                }
-                else {
-                    if(mMap != null && mMap.getMyLocation() != null)
+                } else {
+                    if (mMap != null && mMap.getMyLocation() != null)
                         updateMapCamera(mMap.getMyLocation());
                 }
             }
@@ -158,7 +157,7 @@ public class UmberMapFragment extends BaseFragment {
                 mSelectedPickUpLocation = null;
                 mRequestButton.setVisibility(View.GONE);
 
-                if(mPotentialPickUpSpotMaker != null) {
+                if (mPotentialPickUpSpotMaker != null) {
                     mPotentialPickUpSpotMaker.remove();
                     mPotentialPickUpSpotMaker = null;
                 }
@@ -181,7 +180,7 @@ public class UmberMapFragment extends BaseFragment {
             @Override
             public void onLocationButtonClicked() {
                 updateMapCamera(mSelectedDestLocation.getLatLng());
-                if(mPotentialDestinationMarker != null)
+                if (mPotentialDestinationMarker != null)
                     mPotentialDestinationMarker.showInfoWindow();
             }
 
@@ -192,7 +191,7 @@ public class UmberMapFragment extends BaseFragment {
                 mSelectedDestLocation = null;
                 mRequestButton.setVisibility(View.GONE);
 
-                if(mPotentialDestinationMarker != null) {
+                if (mPotentialDestinationMarker != null) {
                     mPotentialDestinationMarker.remove();
                     mPotentialDestinationMarker = null;
                 }
@@ -308,10 +307,11 @@ public class UmberMapFragment extends BaseFragment {
 
         mPotentialPickUpSpotMaker = mMap.addMarker(new MarkerOptions()
                         .position(mSelectedPickUpLocation.getLatLng())
-                        .title(mSelectedPickUpLocation.getName() + " - Pick Up Spot")
+                        .title(mSelectedPickUpLocation.getName() + " - Potential Pick Up")
                         .snippet(mSelectedPickUpLocation.getAddress())
-                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE))
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
         );
+        mPotentialPickUpSpotMaker.showInfoWindow();
     }
 
     private void setSelectedDestination(UmLocation location) {
@@ -329,10 +329,11 @@ public class UmberMapFragment extends BaseFragment {
 
         mPotentialDestinationMarker = mMap.addMarker(new MarkerOptions()
                         .position(mSelectedDestLocation.getLatLng())
-                        .title(mSelectedDestLocation.getName() + " - Destination")
+                        .title(mSelectedDestLocation.getName() + " - Potential Destination")
                         .snippet(mSelectedDestLocation.getAddress())
-                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE))
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN))
         );
+        mPotentialDestinationMarker.showInfoWindow();
     }
 
 //    private void makeMovingDriverApiRequest() {
@@ -510,7 +511,6 @@ public class UmberMapFragment extends BaseFragment {
 //        });
 //    }
 
-
     @Override
     public void onPause() {
         super.onPause();
@@ -576,7 +576,7 @@ public class UmberMapFragment extends BaseFragment {
 
                             String objectId = response.getAsJsonPrimitive(FieldNames.OBJECT_ID).getAsString();
                             NotificationsHelper.subscribeAsRider(objectId);
-                            if (Constants.SEND_NEW_REQUEST_NOTIFICATIONS)
+                            if(Constants.SEND_NEW_REQUEST_NOTIFICATIONS)
                                 NotificationsHelper.sendNewRequestNotification(umberRequest);
                         }
 
@@ -717,6 +717,11 @@ public class UmberMapFragment extends BaseFragment {
                     public void onControlClicked(UmberRequest request) {
                         changeRequestStatusAndSendNotification(mRiderControlsArray[iFinal], mDriverRequests.get(iFinal));
                     }
+
+                    @Override
+                    public void onRiderLongClickd() {
+                        contactRider(mDriverRequests.get(iFinal));
+                    }
                 });
 
                 drawPins(mRiderControlsArray[i], iFinal);
@@ -816,14 +821,14 @@ public class UmberMapFragment extends BaseFragment {
         if(!mRiderRequests.isEmpty()) {
             myRequestPickUpMarker = mMap.addMarker(new MarkerOptions()
                             .position(mRiderRequests.get(0).getPickUpLatLng())
-                            .title("Pick Up Spot")
+                            .title("Your Request - Pick Up")
                             .snippet(mRiderRequests.get(0).getPickUpLocation())
                             .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
             );
 
             myRequestDestMarker = mMap.addMarker(new MarkerOptions()
                             .position(mRiderRequests.get(0).getDestinationLatLng())
-                            .title("Destination")
+                            .title("Your Request - Destination")
                             .snippet(mRiderRequests.get(0).getDestination())
                             .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN))
             );
@@ -836,7 +841,6 @@ public class UmberMapFragment extends BaseFragment {
                 mDriverLayout.setVisibility(View.GONE);
         } else
             mDriverLayout.setVisibility(View.GONE);
-
     }
 
     private void getDriver(final UmberRequest request) {
@@ -870,6 +874,16 @@ public class UmberMapFragment extends BaseFragment {
         if(mDriver != null) {
             Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
             sendIntent.setData(Uri.parse("sms:" + mDriver.getPhoneNumber()));
+            sendIntent.putExtra("sms_body", "");
+            sendIntent.putExtra("exit_on_sent", true);
+            startActivityForResult(sendIntent, 0);
+        }
+    }
+
+    void contactRider(UmberRequest request) {
+        if(request != null) {
+            Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
+            sendIntent.setData(Uri.parse("sms:" + request.getPhoneNumber()));
             sendIntent.putExtra("sms_body", "");
             sendIntent.putExtra("exit_on_sent", true);
             startActivityForResult(sendIntent, 0);
@@ -922,9 +936,8 @@ public class UmberMapFragment extends BaseFragment {
 
     private void clearMap() {
         //TODO clear the pins on the map
-        if(mMap != null) {
+        if(mMap != null)
             mMap.clear();
-        }
     }
 
     @Override

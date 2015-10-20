@@ -98,7 +98,7 @@ public class TumblrTalksFragment extends ToolbarFragment {
             @Override
             public void onRefresh() {
                 mSwipeRefreshLayout.setRefreshing(true);
-                getRequests();
+                makeApiRequest();
             }
         });
 
@@ -132,8 +132,7 @@ public class TumblrTalksFragment extends ToolbarFragment {
                 response.saveResponse(mActivity);
                 Preferences.getInstance().setTumblrTalksExpiration(System.currentTimeMillis() + Constants.ONE_DAY_MILLIS);
 
-                if(mSwipeRefreshLayout != null)
-                    mSwipeRefreshLayout.setRefreshing(false);
+                mSwipeRefreshLayout.setRefreshing(false);
 
                 try {
                     Log.d("Talks Size", String.valueOf(response.getResponse().getTumblrTalks().size()));
@@ -144,8 +143,7 @@ public class TumblrTalksFragment extends ToolbarFragment {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                if(mSwipeRefreshLayout != null)
-                    mSwipeRefreshLayout.setRefreshing(false);
+                mSwipeRefreshLayout.setRefreshing(false);
 
                 Log.d("Error", "Error getting tumblr talks - " + error.toString());
             }
@@ -196,6 +194,8 @@ public class TumblrTalksFragment extends ToolbarFragment {
     }
 
     private void changeTalkView(TumblrTalk talk) {
+        Log.d("ID", String.valueOf(talk.getId()));
+
         if(mActivity.getActionBar() != null)
             mActivity.getActionBar().setTitle(talk.getTitle());
 

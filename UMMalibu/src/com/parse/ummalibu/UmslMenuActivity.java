@@ -74,33 +74,33 @@ public class UmslMenuActivity extends ToolbarActivity {
 
                 if (channelTextBox.getText().toString().equals("+") || channelTextBox.getText().toString().equals("add channel") || channelTextBox.getText().toString().equals("delete channel") || channelTextBox.getText().toString().equals("-")) {
 
-                if (channelTextBox.getText().toString().equals("+") || channelTextBox.getText().toString().equals("add channel")) {
-                    ParsePush.subscribeInBackground(expirationTextBox.getText().toString(), new SaveCallback() {
+                    if (channelTextBox.getText().toString().equals("+") || channelTextBox.getText().toString().equals("add channel")) {
+                        ParsePush.subscribeInBackground(expirationTextBox.getText().toString(), new SaveCallback() {
+                            @Override
+                            public void done(ParseException e) {
+                                if (e == null) {
+                                    Log.d("com.parse.push", "successfully subscribed to the broadcast channel.");
+                                    Toast.makeText(getApplicationContext(), "You have subscribed to the broadcast channel",
+                                            Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Log.e("com.parse.ummalibu", "failed to subscribe for push", e);
+                                }
+                            }
+                        });
+                    } else {ParsePush.unsubscribeInBackground(expirationTextBox.getText().toString(), new SaveCallback() {
                         @Override
                         public void done(ParseException e) {
                             if (e == null) {
-                                Log.d("com.parse.push", "successfully subscribed to the broadcast channel.");
-                                Toast.makeText(getApplicationContext(), "You have subscribed to the broadcast channel",
+                                Log.d("com.parse.ummalibu", "successfully unsubscribed from the broadcast channel.");
+                                Toast.makeText(getApplicationContext(), "You have unsubscribed from the broadcast channel",
                                         Toast.LENGTH_SHORT).show();
                             } else {
-                                Log.e("com.parse.ummalibu", "failed to subscribe for push", e);
+                                Log.e("com.parse.ummalibu", "failed to unsubscribe from push", e);
                             }
                         }
-                    });
-                } else {ParsePush.unsubscribeInBackground(expirationTextBox.getText().toString(), new SaveCallback() {
-                    @Override
-                    public void done(ParseException e) {
-                        if (e == null) {
-                            Log.d("com.parse.ummalibu", "successfully unsubscribed from the broadcast channel.");
-                            Toast.makeText(getApplicationContext(), "You have unsubscribed from the broadcast channel",
-                                    Toast.LENGTH_SHORT).show();
-                        } else {
-                            Log.e("com.parse.ummalibu", "failed to unsubscribe from push", e);
-                        }
-                    }
-                });} }
+                    });} }
                 else {
-                presentAlert();}
+                    presentAlert();}
             }
         });
     }

@@ -429,7 +429,7 @@ public class DatabaseHelper {
                 do {
                     TumblrTalk talk = new TumblrTalk();
                     talk.setTimestamp(cursor.getLong(cursor.getColumnIndexOrThrow(Table.TumblrTalks.TIMESTAMP)));
-                    talk.setId(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.OBJECT_ID)));
+                    talk.setId(cursor.getLong(cursor.getColumnIndexOrThrow(Table.TumblrTalks.OBJECT_ID)));
 
                     talk.setTitle(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.TITLE)));
                     talk.setSubtitle(cursor.getString(cursor.getColumnIndexOrThrow(Table.TumblrTalks.SUBTITLE)));

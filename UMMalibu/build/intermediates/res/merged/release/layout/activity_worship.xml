@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:weightSum="7"
+    android:background="@color/um_grey_blue">
+
+    <include
+        layout="@layout/toolbar_basic"
+        android:id="@+id/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp">
+
+        <WebView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/webView"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/worship_image"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:id="@+id/songs_title"
+        android:text="@string/songs_title_text"
+        android:textColor="#ff07e2ff"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="6"
+        android:clickable="true"
+        android:focusable="true"
+        android:nestedScrollingEnabled="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relative_layout_bottom">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/request_box"
+            android:hint="@string/request_text"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/submit_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/submit_button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_button"
+            android:text="@string/submit"
+            android:textColor="#ff73ff00"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+<!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/UMMalibu/res/layout/activity_worship.xml -->

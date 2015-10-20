@@ -34,7 +34,8 @@ public abstract class AbsRequestListFragment extends BaseFragment {
     protected SwipeRefreshLayout mSwipeRefreshLayout;
     @Bind(R.id.basic_empty_list_view)
     protected EmptyListView mEmptyListView;
-    @Bind(R.id.progress) protected ProgressBar mProgressBar;
+    @Bind(R.id.progress)
+    protected ProgressBar mProgressBar;
 
     protected RequestListAdapter mAdapter;
     protected AppCompatActivity mActivity;

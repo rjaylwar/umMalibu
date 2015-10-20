@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http//schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke android:color="#dc000000" android:width="5dp"/>
+    <size android:height="50dp" android:width="50dp"/>
+
+</shape><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/UMMalibu/res/drawable-xhdpi/circle_outline.xml -->

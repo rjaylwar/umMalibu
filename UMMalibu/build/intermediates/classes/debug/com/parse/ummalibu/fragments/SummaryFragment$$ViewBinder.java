@@ -19,10 +19,10 @@ public class SummaryFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.
     target.mDestAddress = finder.castView(view, 2131689723, "field 'mDestAddress'");
     view = finder.findRequiredView(source, 2131689724, "field 'mSlidingLayout'");
     target.mSlidingLayout = finder.castView(view, 2131689724, "field 'mSlidingLayout'");
-    view = finder.findRequiredView(source, 2131689726, "field 'mCircleImageView'");
-    target.mCircleImageView = finder.castView(view, 2131689726, "field 'mCircleImageView'");
-    view = finder.findRequiredView(source, 2131689727, "field 'mContactButton' and method 'sendText'");
-    target.mContactButton = finder.castView(view, 2131689727, "field 'mContactButton'");
+    view = finder.findRequiredView(source, 2131689743, "field 'mCircleImageView'");
+    target.mCircleImageView = finder.castView(view, 2131689743, "field 'mCircleImageView'");
+    view = finder.findRequiredView(source, 2131689726, "field 'mContactButton' and method 'sendText'");
+    target.mContactButton = finder.castView(view, 2131689726, "field 'mContactButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -31,8 +31,8 @@ public class SummaryFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.
           target.sendText();
         }
       });
-    view = finder.findRequiredView(source, 2131689728, "field 'mStatusButton' and method 'onStatusButtonClick'");
-    target.mStatusButton = finder.castView(view, 2131689728, "field 'mStatusButton'");
+    view = finder.findRequiredView(source, 2131689727, "field 'mStatusButton' and method 'onStatusButtonClick'");
+    target.mStatusButton = finder.castView(view, 2131689727, "field 'mStatusButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -41,20 +41,20 @@ public class SummaryFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.
           target.onStatusButtonClick();
         }
       });
-    view = finder.findRequiredView(source, 2131689729, "field 'mName'");
-    target.mName = finder.castView(view, 2131689729, "field 'mName'");
-    view = finder.findRequiredView(source, 2131689732, "field 'mPickUpTime'");
-    target.mPickUpTime = finder.castView(view, 2131689732, "field 'mPickUpTime'");
-    view = finder.findRequiredView(source, 2131689734, "field 'mDistance'");
-    target.mDistance = finder.castView(view, 2131689734, "field 'mDistance'");
-    view = finder.findRequiredView(source, 2131689736, "field 'mTripTime'");
-    target.mTripTime = finder.castView(view, 2131689736, "field 'mTripTime'");
-    view = finder.findRequiredView(source, 2131689738, "field 'mStatus'");
-    target.mStatus = finder.castView(view, 2131689738, "field 'mStatus'");
-    view = finder.findRequiredView(source, 2131689739, "field 'mCost'");
-    target.mCost = finder.castView(view, 2131689739, "field 'mCost'");
-    view = finder.findRequiredView(source, 2131689741, "field 'mMinusButton' and method 'divideCost'");
-    target.mMinusButton = finder.castView(view, 2131689741, "field 'mMinusButton'");
+    view = finder.findRequiredView(source, 2131689728, "field 'mName'");
+    target.mName = finder.castView(view, 2131689728, "field 'mName'");
+    view = finder.findRequiredView(source, 2131689731, "field 'mPickUpTime'");
+    target.mPickUpTime = finder.castView(view, 2131689731, "field 'mPickUpTime'");
+    view = finder.findRequiredView(source, 2131689733, "field 'mDistance'");
+    target.mDistance = finder.castView(view, 2131689733, "field 'mDistance'");
+    view = finder.findRequiredView(source, 2131689735, "field 'mTripTime'");
+    target.mTripTime = finder.castView(view, 2131689735, "field 'mTripTime'");
+    view = finder.findRequiredView(source, 2131689737, "field 'mStatus'");
+    target.mStatus = finder.castView(view, 2131689737, "field 'mStatus'");
+    view = finder.findRequiredView(source, 2131689738, "field 'mCost'");
+    target.mCost = finder.castView(view, 2131689738, "field 'mCost'");
+    view = finder.findRequiredView(source, 2131689740, "field 'mMinusButton' and method 'divideCost'");
+    target.mMinusButton = finder.castView(view, 2131689740, "field 'mMinusButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -63,8 +63,8 @@ public class SummaryFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.
           target.divideCost();
         }
       });
-    view = finder.findRequiredView(source, 2131689743, "field 'mPlusButton' and method 'splitCost'");
-    target.mPlusButton = finder.castView(view, 2131689743, "field 'mPlusButton'");
+    view = finder.findRequiredView(source, 2131689742, "field 'mPlusButton' and method 'splitCost'");
+    target.mPlusButton = finder.castView(view, 2131689742, "field 'mPlusButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -73,8 +73,8 @@ public class SummaryFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.
           target.splitCost();
         }
       });
-    view = finder.findRequiredView(source, 2131689742, "field 'mSplitGas' and method 'launchVenmo'");
-    target.mSplitGas = finder.castView(view, 2131689742, "field 'mSplitGas'");
+    view = finder.findRequiredView(source, 2131689741, "field 'mSplitGas' and method 'launchVenmo'");
+    target.mSplitGas = finder.castView(view, 2131689741, "field 'mSplitGas'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

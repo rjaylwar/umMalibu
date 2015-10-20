@@ -76,11 +76,11 @@ public class RiderControlsView extends RelativeLayout {
         mRiderView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(mListener != null)
+                if (mListener != null)
                     mListener.onRiderClicked(mUmberRequest);
 
-                if(!mIsAnimating) {
-                    if(mIsUpAndOut)
+                if (!mIsAnimating) {
+                    if (mIsUpAndOut)
                         animateDownOrIn();
                     else
                         animateUpOrOut();
@@ -92,6 +92,14 @@ public class RiderControlsView extends RelativeLayout {
             public void onClick(View view) {
                 if(mListener != null)
                     mListener.onControlClicked(mUmberRequest);
+            }
+        });
+        mRiderView.setOnLongClickListener(new OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if(mListener != null)
+                    mListener.onRiderLongClickd();
+                return true;
             }
         });
     }
@@ -161,6 +169,7 @@ public class RiderControlsView extends RelativeLayout {
     public interface OnRiderClickedListener {
         void onRiderClicked(UmberRequest request);
         void onControlClicked(UmberRequest request);
+        void onRiderLongClickd();
     }
 
     private void animateDownOrIn() {
