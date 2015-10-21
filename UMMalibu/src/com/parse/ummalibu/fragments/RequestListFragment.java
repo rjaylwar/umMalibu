@@ -1,7 +1,5 @@
 package com.parse.ummalibu.fragments;
 
-import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.database.ContentObserver;
 import android.net.Uri;
@@ -15,9 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.DatePicker;
 import android.widget.ProgressBar;
-import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
@@ -29,6 +25,7 @@ import com.parse.ummalibu.api.NotificationsHelper;
 import com.parse.ummalibu.base.BaseFragment;
 import com.parse.ummalibu.database.DatabaseHelper;
 import com.parse.ummalibu.database.Table;
+import com.parse.ummalibu.helper.DatePickerHelper;
 import com.parse.ummalibu.objects.UmberRequest;
 import com.parse.ummalibu.responses.UmberRequestResponse;
 import com.parse.ummalibu.values.Constants;
@@ -165,36 +162,43 @@ public class RequestListFragment extends BaseFragment {
     }
 
     private void showDatePicker(final UmberRequest request) {
-        final Calendar cal = Calendar.getInstance();
-        cal.setTime(request.getEta());
-
-        DatePickerDialog datePickerDialog = new DatePickerDialog(mActivity, new DatePickerDialog.OnDateSetListener() {
+        DatePickerHelper datePickerHelper = new DatePickerHelper(mActivity);
+        datePickerHelper.showPicker(request, false, new DatePickerHelper.OnDatePickedListener() {
             @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                cal.set(year, monthOfYear, dayOfMonth);
-                showTimePicker(cal, request);
-            }
-        }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));
-
-        datePickerDialog.show();
-    }
-
-    private void showTimePicker(final Calendar cal, final UmberRequest request) {
-        Calendar today = Calendar.getInstance();
-        today.setTime(request.getEta());
-
-        TimePickerDialog timePickerDialog = new TimePickerDialog(mActivity, new TimePickerDialog.OnTimeSetListener() {
-            @Override
-            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                cal.set(Calendar.HOUR_OF_DAY, hourOfDay);
-                cal.set(Calendar.MINUTE, minute);
-
+            public void onDatePicked(UmberRequest request, Calendar cal) {
                 claimRequest(request, cal);
             }
-        }, today.get(Calendar.HOUR_OF_DAY), today.get(Calendar.MINUTE), false);
-
-        timePickerDialog.show();
+        });
+//        final Calendar cal = Calendar.getInstance();
+//        cal.setTime(request.getEta());
+//
+//        DatePickerDialog datePickerDialog = new DatePickerDialog(mActivity, new DatePickerDialog.OnDateSetListener() {
+//            @Override
+//            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+//                cal.set(year, monthOfYear, dayOfMonth);
+//                showTimePicker(cal, request);
+//            }
+//        }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));
+//
+//        datePickerDialog.show();
     }
+
+//    private void showTimePicker(final Calendar cal, final UmberRequest request) {
+//        Calendar today = Calendar.getInstance();
+//        today.setTime(request.getEta());
+//
+//        TimePickerDialog timePickerDialog = new TimePickerDialog(mActivity, new TimePickerDialog.OnTimeSetListener() {
+//            @Override
+//            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+//                cal.set(Calendar.HOUR_OF_DAY, hourOfDay);
+//                cal.set(Calendar.MINUTE, minute);
+//
+//                claimRequest(request, cal);
+//            }
+//        }, today.get(Calendar.HOUR_OF_DAY), today.get(Calendar.MINUTE), false);
+//
+//        timePickerDialog.show();
+//    }
 
     private void claimRequest(final UmberRequest request, Calendar eta) {
         request.setDriverEmail(Preferences.getInstance().getEmail());

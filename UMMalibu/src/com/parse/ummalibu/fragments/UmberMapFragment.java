@@ -596,6 +596,10 @@ public class UmberMapFragment extends BaseFragment {
         }
     }
 
+    private void onDatePicked() {
+
+    }
+
     private void hideKeyboard() {
         View view = mActivity.getCurrentFocus();
         if (view != null) {

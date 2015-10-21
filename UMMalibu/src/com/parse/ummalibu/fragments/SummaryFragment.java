@@ -228,6 +228,8 @@ public class SummaryFragment extends ToolbarFragment {
         helper.updateUmberRequestStatus(mRequest, new VolleyRequestListener() {
             @Override
             public void onResponse(Object response) {
+                DatabaseHelper dbHelper = DatabaseHelper.getInstance(mActivity);
+                dbHelper.updateRequest(mRequest);
                 NotificationsHelper.sendUnclaimNotification(mRequest);
                 NotificationsHelper.unsubscribeAsDriver(mRequest.getObjectId());
                 mActivity.onBackPressed();
@@ -245,6 +247,8 @@ public class SummaryFragment extends ToolbarFragment {
         helper.deleteRequest(mRequest.getObjectId(), new VolleyRequestListener() {
             @Override
             public void onResponse(Object response) {
+                DatabaseHelper dbHelper = DatabaseHelper.getInstance(mActivity);
+                dbHelper.deleteRequest(mRequest.getObjectId());
                 NotificationsHelper.unsubscribe(mRequest.getObjectId());
                 mActivity.onBackPressed();
             }
@@ -264,6 +268,8 @@ public class SummaryFragment extends ToolbarFragment {
             @Override
             public void onResponse(Object response) {
                 NotificationsHelper.sendCancelNotification(mRequest);
+                DatabaseHelper dbHelper = DatabaseHelper.getInstance(mActivity);
+                dbHelper.updateRequest(mRequest);
                 mActivity.onBackPressed();
             }
 

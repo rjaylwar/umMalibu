@@ -54,7 +54,7 @@ public class UmberMapFragment$$ViewBinder<T extends com.parse.ummalibu.fragments
     view = finder.findRequiredView(source, 2131689652, "field 'mThirdRiderView'");
     target.mThirdRiderView = finder.castView(view, 2131689652, "field 'mThirdRiderView'");
     Resources res = finder.getContext(source).getResources();
-    target.mSearchLayoutHeight = res.getDimensionPixelSize(2131427445);
+    target.mSearchLayoutHeight = res.getDimensionPixelSize(2131427452);
   }
 
   @Override public void unbind(T target) {

@@ -303,8 +303,17 @@ public class DatabaseHelper {
         }
     }
 
+    public synchronized void deleteRequest(String id) {
+        mContentResolver.delete(Table.Requests.CONTENT_URI, Table.Requests.OBJECT_ID + " == '" + id + "'", null);
+    }
+
     public synchronized ArrayList<UmberRequest> getMyRequests() {
         return getRequestsWithParams(Table.Requests.CANCELED + " != 1");
+    }
+
+    public synchronized ArrayList<UmberRequest> getMyHistoryRequests(String email) {
+        String where =  "(" + Table.Requests.EMAIL + " == '" + email + "' OR " + Table.Requests.DRIVER_EMAIL + " == '" + email + "')";
+        return getRequestsWithParams(where);
     }
 
     public synchronized  ArrayList<UmberRequest> getMyActiveRequests(String email) {
@@ -366,7 +375,7 @@ public class DatabaseHelper {
     }
 
     public synchronized void updateRequest(UmberRequest request) {
-        mContentResolver.update(Table.Requests.CONTENT_URI, request.toContentValues(), Table.Requests.OBJECT_ID + " = " + request.getObjectId(), null);
+        mContentResolver.update(Table.Requests.CONTENT_URI, request.toContentValues(), Table.Requests.OBJECT_ID + " = '" + request.getObjectId() + "'", null);
     }
 
     public synchronized void addRequest(UmberRequest request) {

@@ -15,7 +15,7 @@
     <color name="medium_grey">#7b7b7b</color>
     <color name="light_grey">#9c9c9c</color>
     <color name="light_grey_text">#e1e1e1</color>
-    <color name="very_light_grey">#f4f4f4</color>
+    <color name="very_light_grey">#f0f1f9</color>
     <color name="transparent_grey">#55818181</color>
     <color name="breakline_color">#44b4b4b4</color>
     <color name="grey_blue">#234265</color>
@@ -32,8 +32,14 @@
     <color name="um_dark_blue">#FF233645</color>
     <color name="um_highlight_blue">#FF00DEF2</color>
     <color name="um_grey">#FFABCDCF</color>
-    <color name="um_green">#5DFC0A</color>
     <color name="black">#000000</color>
     <color name="statusBarColor">#17242e</color>
+    <color name="um_green">#5DFC0A</color>
+    <color name="um_green_button_pressed">#4dc60e</color>
+    <color name="um_green_ripple">#348709</color>
+
+    <color name="teal">#00B4B3</color>
+    <color name="teal_ripple">#8800B4B3</color>
+    <color name="teal_button_pressed">#009D9D</color>
 
 </resources>

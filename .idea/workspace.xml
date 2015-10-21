@@ -80,108 +80,118 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4312cdd8-eb08-4789-a969-a0ca2ccbc0ff" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/Parse-1.8.0-cd79418a23bba53167e4269bb8b73ae6202e3ac0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-72599e4824dd08fca8daebb9653994396c7e731d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-04a7f483e1d9d2c2fc1ad493ae43ce642b20fe45.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-17cf6c68259fa15ff8af09aed1b6defa15080f54.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-367ea8a49d03e29c6561cd9f7c302141b1576000.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-37513999141cfda8e90d6166ba4b89b16bc12fea.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-5b7bd5f25d2dedc9f6a34ac49b728d59b81408a8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-6dce0fed5989feb8bcf2ca0f00711876f4a182e8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-7a9442f51747e420555b65d225169e9653a67d02.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-89597c57624806b6555ed7018ea3fd4540374e1e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-8b3f01e4ac2a7e3f1227468a6591d6357ede4f6c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-973fb75d4a41846d33465bb209d3ad7ddf373768.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-ba388587e1fb015ec2f4983b354e47403f5e6f5e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-bac41663571cd70163b6e911bfe293b41e11c3ff.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/classes-c4cf91e69bffe9d585f0cdfe69ed138e2dd7fbba.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-84d1ad7de254a31b9b827b63f5a16fe54fe8e319.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/UMberActivity.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/AbsRequestListFragment$1.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/AbsRequestListFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/AbsRequestListFragment$2.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/AbsRequestListFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/AbsRequestListFragment$3.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/AbsRequestListFragment$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UMMalibu/res/drawable/green_button.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/AboutUMActivity.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/AboutUMActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/AbsRequestListFragment.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/AbsRequestListFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/BuildConfig.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/BuildConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/values/Constants.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/values/Constants.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/database/DatabaseHelper.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/database/DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/database/DatabaseProvider$OpenDatabaseHelper.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/database/DatabaseProvider$OpenDatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/database/DatabaseProvider.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/database/DatabaseProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity$2.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity$3.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity$4.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity$5.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/values/Preferences.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/values/Preferences.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/helper/DatePickerHelper$1.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/helper/DatePickerHelper$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/helper/DatePickerHelper$2.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/helper/DatePickerHelper$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/helper/DatePickerHelper.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/helper/DatePickerHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/LocationsFragment.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/LocationsFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/MyRequestsFragment.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/MyRequestsFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/design/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/google/android/gms/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/google/android/gms/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/google/android/gms/base/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/google/android/gms/base/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/google/android/gms/gcm/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/google/android/gms/gcm/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/google/android/gms/maps/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/google/android/gms/maps/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/library/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/library/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/wrapper/support/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/wrapper/support/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$color.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/design/R$dimen.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/design/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/cardview/R$dimen.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/cardview/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/recyclerview/R$dimen.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/recyclerview/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/wrapper/support/R$dimen.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/wrapper/support/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$dimen.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/design/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/library/R$drawable.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/library/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/wrapper/support/R$drawable.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/wrapper/support/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$drawable.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$id.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/holder/RequestViewHolder.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/holder/RequestViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/views/RiderControlsView$3.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/views/RiderControlsView$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/views/RiderControlsView$4.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/views/RiderControlsView$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/views/RiderControlsView$OnRiderClickedListener.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/views/RiderControlsView$OnRiderClickedListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$integer.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$layout.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$menu.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$mipmap.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$mipmap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$plurals.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$plurals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$raw.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$string.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/design/R$style.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/design/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/wrapper/support/R$style.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/instabug/wrapper/support/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$style.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$styleable.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$xml.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R$xml.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$1.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$2.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$3.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$4.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$5.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$6.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$7.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$8.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$9.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/RequestListFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/views/RiderControlsView.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/views/RiderControlsView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$$ViewBinder.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$$ViewBinder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/helper/SlidingPaneHelper.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/helper/SlidingPaneHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$10.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$11.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$5.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$6.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$7.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$8.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$9.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/database/TablesSQL.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/database/TablesSQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/objects/TumblrTalk$1.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/objects/TumblrTalk$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/objects/TumblrTalk.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/objects/TumblrTalk.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/TumblrTalksFragment$4.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/TumblrTalksFragment$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/TumblrTalksFragment.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/TumblrTalksFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$1.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/outputs/apk/UMMalibu-debug-unaligned.apk" afterPath="$PROJECT_DIR$/UMMalibu/build/outputs/apk/UMMalibu-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/outputs/apk/UMMalibu-debug.apk" afterPath="$PROJECT_DIR$/UMMalibu/build/outputs/apk/UMMalibu-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$$ViewBinder.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$$ViewBinder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$10.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$11.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$12.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$12.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$13.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$13.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$14.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$14.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$15.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$2.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$3.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$4.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$5.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$6.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$7.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$8$1.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$8$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$9.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment.class" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-2b6478e02f8b069e62dbd76f6f8b06efe2e694ca.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-2b6478e02f8b069e62dbd76f6f8b06efe2e694ca.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/butterknife-7.0.1-72c46ab50e6de9d78d14cd345277e9f252e12191.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/butterknife-7.0.1-72c46ab50e6de9d78d14cd345277e9f252e12191.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/glide-3.6.1-1f0a83f4871cad3c645e13a2f6164354497f409c.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/glide-3.6.1-1f0a83f4871cad3c645e13a2f6164354497f409c.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/gson-2.3.1-8dddcaaf9ec2b807fb97e50e13cc358d384ed71c.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/gson-2.3.1-8dddcaaf9ec2b807fb97e50e13cc358d384ed71c.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/haha-1.3-1686030f4620b56ce819cd215c1f92dafff780ca.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/haha-1.3-1686030f4620b56ce819cd215c1f92dafff780ca.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/leakcanary-analyzer-1.3.1-3852e031a849894481051017b7d4387fc7a49975.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/leakcanary-analyzer-1.3.1-3852e031a849894481051017b7d4387fc7a49975.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/leakcanary-watcher-1.3.1-643940a92c67883727b3e34335e343fe43564672.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/leakcanary-watcher-1.3.1-643940a92c67883727b3e34335e343fe43564672.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/library-1.0.19-32f63d9ad88a7896d273b86c794718df509b872a.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/library-1.0.19-32f63d9ad88a7896d273b86c794718df509b872a.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/mimecraft-1.1.1-068754c8a3f72ed391f8e106688d545960a828f6.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/mimecraft-1.1.1-068754c8a3f72ed391f8e106688d545960a828f6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-3f3ad7b7c69d44a24eb44e32cc6589bb14859058.jar" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-3f3ad7b7c69d44a24eb44e32cc6589bb14859058.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/AbsRequestListFragment.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/AbsRequestListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/AndroidManifest.xml" afterPath="$PROJECT_DIR$/UMMalibu/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/buildConfig/debug/com/parse/ummalibu/BuildConfig.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/buildConfig/debug/com/parse/ummalibu/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/values/Constants.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/values/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseHelper.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseProvider.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/LoginActivity.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/helper/DatePickerHelper.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/helper/DatePickerHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/MyRequestsFragment.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/MyRequestsFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/android/support/design/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/android/support/v7/cardview/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/google/android/gms/base/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/google/android/gms/base/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/google/android/gms/gcm/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/google/android/gms/gcm/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/google/android/gms/maps/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/google/android/gms/maps/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/instabug/library/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/instabug/library/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/instabug/wrapper/support/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/instabug/wrapper/support/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/parse/ummalibu/R.java" afterPath="$PROJECT_DIR$/UMMalibu/build/generated/source/r/debug/com/parse/ummalibu/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/holder/RequestViewHolder.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/holder/RequestViewHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/views/RiderControlsView.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/views/RiderControlsView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$$ViewBinder.java" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/SummaryFragment$$ViewBinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/TablesSQL.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/TablesSQL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/objects/TumblrTalk.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/objects/TumblrTalk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/TumblrTalksFragment.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/TumblrTalksFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/RequestListFragment.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/RequestListFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/SummaryFragment.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/SummaryFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$$ViewBinder.java" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/classes/debug/com/parse/ummalibu/fragments/UmberMapFragment$$ViewBinder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/UmberMapFragment.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/UmberMapFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/UmslMenuActivity.java" afterPath="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/UmslMenuActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/merged/debug/layout/fragment_login.xml" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/merged/debug/layout/fragment_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/res/layout/fragment_login.xml" afterPath="$PROJECT_DIR$/UMMalibu/res/layout/fragment_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/res/values/colors.xml" afterPath="$PROJECT_DIR$/UMMalibu/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/res/values/dimens.xml" afterPath="$PROJECT_DIR$/UMMalibu/res/values/dimens.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/merged/debug/layout/fragment_summary_view.xml" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/merged/debug/layout/fragment_summary_view.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/res/layout/fragment_summary_view.xml" afterPath="$PROJECT_DIR$/UMMalibu/res/layout/fragment_summary_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/UMMalibu/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/res/values/style.xml" afterPath="$PROJECT_DIR$/UMMalibu/res/values/style.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/res/values-v21/style.xml" afterPath="$PROJECT_DIR$/UMMalibu/res/values-v21/style.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/merged/debug/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/merged/debug/values-v21/values-v21.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/UMMalibu/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Parse-Starter-Project-1.8.0.iws" />
@@ -233,54 +243,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TumblrTalksFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/TumblrTalksFragment.java">
+      <file leaf-file-name="UmberMapFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/UmberMapFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="196" column="50" selection-start-line="196" selection-start-column="50" selection-end-line="196" selection-end-column="50" />
-              <folding />
+              <caret line="667" column="87" selection-start-line="667" selection-start-column="87" selection-end-line="667" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2928#2956#1" expanded="true" />
+                <element signature="e#13412#13461#0" expanded="false" />
+                <element signature="method#getLocationUpdates#0;class#UmberMapFragment#0" expanded="false" />
+                <element signature="e#19198#19256#0" expanded="false" />
+                <element signature="e#19809#19929#0" expanded="false" />
+                <element signature="e#21905#23359#0" expanded="true" />
+                <element signature="e#23358#23359#0" expanded="true" />
+                <element signature="e#34204#34240#0" expanded="true" />
+                <element signature="e#35998#36039#0" expanded="true" />
+                <element signature="e#36334#36377#0" expanded="true" />
+                <element signature="e#36415#36474#0" expanded="true" />
+                <element signature="e#37308#37360#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DatePickerHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/helper/DatePickerHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+              <folding>
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#1363#1645#0" expanded="true" />
+                <element signature="e#1644#1645#0" expanded="true" />
+                <element signature="e#1977#2342#0" expanded="true" />
+                <element signature="e#2341#2342#0" expanded="true" />
+                <element signature="e#2427#2650#0" expanded="true" />
+                <element signature="e#2649#2650#0" expanded="true" />
+                <element signature="e#3698#3935#0" expanded="true" />
+                <element signature="e#3934#3935#0" expanded="true" />
+                <element signature="e#4157#4428#0" expanded="true" />
+                <element signature="e#4427#4428#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="427" column="38" selection-start-line="427" selection-start-column="38" selection-end-line="427" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/values/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMMalibu/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_summary_view.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMMalibu/res/layout/fragment_summary_view.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-37.24138">
-              <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
+            <state vertical-scroll-proportion="1.4444444">
+              <caret line="389" column="60" selection-start-line="389" selection-start-column="60" selection-end-line="389" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -290,7 +304,7 @@
         <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/SummaryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
+              <caret line="249" column="80" selection-start-line="249" selection-start-column="80" selection-end-line="249" selection-end-column="80" />
               <folding>
                 <element signature="e#3083#3084#0" expanded="true" />
                 <element signature="e#3136#3137#0" expanded="true" />
@@ -299,47 +313,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4756944">
-              <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
-              <folding>
-                <element signature="e#2144#2145#0" expanded="true" />
-                <element signature="e#2190#2191#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TumblrTalk.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/objects/TumblrTalk.java">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/values/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-              <folding>
-                <element signature="e#3809#3810#0" expanded="true" />
-                <element signature="e#3856#3857#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TumblrTalksViewHolder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/holder/TumblrTalksViewHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TablesSQL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/TablesSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -352,9 +330,9 @@
       <list>
         <option value="layoutResourceFile" />
         <option value="layoutResourceFile_vertical" />
-        <option value="resourceFile" />
         <option value="valueResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -1853,16 +1831,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/toolbar_tumblr_talk.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/holder/TumblrTalksViewHolder.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/card_tumblr_talk.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/new_audio_player_layout.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/values-v21/strings.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/adapters/TumblrTalksAdapter.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/views/AudioPlayerView.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/activity_about_um.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/fragment_login.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/res/layout/fragment_locations_list.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/com/parse/ummalibu/fragments/AbsRequestListFragment.java" />
@@ -1893,17 +1861,27 @@
         <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/views/RiderControlsView.java" />
         <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/AbsRequestListFragment.java" />
         <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/holder/RequestViewHolder.java" />
-        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/UmberMapFragment.java" />
         <option value="$PROJECT_DIR$/UMMalibu/res/layout/fragment_login.xml" />
         <option value="$PROJECT_DIR$/UMMalibu/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseProvider.java" />
-        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/TablesSQL.java" />
         <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/TumblrTalksFragment.java" />
         <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/objects/TumblrTalk.java" />
-        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/values/Constants.java" />
-        <option value="$PROJECT_DIR$/UMMalibu/res/layout/fragment_summary_view.xml" />
         <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/api/NotificationsHelper.java" />
+        <option value="$PROJECT_DIR$/UMMalibu/res/drawable/green_button.xml" />
+        <option value="$PROJECT_DIR$/UMMalibu/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/UMMalibu/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/UMMalibu/res/values/style.xml" />
+        <option value="$PROJECT_DIR$/UMMalibu/res/values-v21/style.xml" />
+        <option value="$PROJECT_DIR$/UMMalibu/res/layout/fragment_summary_view.xml" />
+        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/UmberMapFragment.java" />
+        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/values/Constants.java" />
+        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/RequestListFragment.java" />
+        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/helper/DatePickerHelper.java" />
+        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/MyRequestsFragment.java" />
+        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/SummaryFragment.java" />
+        <option value="$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseHelper.java" />
       </list>
     </option>
   </component>
@@ -1995,6 +1973,90 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="UMMalibu" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.8.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMMalibu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.8.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMMalibu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.8.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMMalibu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dimens.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parse-Starter-Project-1.8.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UMMalibu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2199,7 +2261,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0a1ba10a" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="HT342W903475" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus4" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="371" />
     <property name="OverrideImplement.combined" value="true" />
@@ -2523,21 +2585,21 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32796487" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5373353" sideWeight="0.49717057" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5373353" sideWeight="0.49717057" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39824304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2898975" sideWeight="0.5092967" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24555735" sideWeight="0.50119907" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32796487" sideWeight="0.49717057" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29071537" sideWeight="0.50646204" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23039612" sideWeight="0.5221519" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23039612" sideWeight="0.5168375" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2898975" sideWeight="0.4907033" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24878837" sideWeight="0.49880096" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23039612" sideWeight="0.4778481" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23039612" sideWeight="0.48316252" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32796487" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2603,66 +2665,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="66" />
+      <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-23/data/res/values-sw600dp/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/res/layout/activity_about_um.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.793103">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/res/layout/fragment_locations_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6551723">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/res/layout/basic_swipe_refresh_recyclerview.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UMMalibu/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2718,22 +2725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/res/values-v21/style.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/res/values/style.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2828,8 +2819,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
-            <element signature="e#1320#1472#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1320#1472#0" expanded="false" />
+            <element signature="e#1471#1472#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2863,67 +2854,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/HistoryRequestsListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/MyRequestsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/adapters/RequestListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/holder/RequestViewHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/AbsRequestListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/UmberMapFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="544" column="59" selection-start-line="544" selection-start-column="59" selection-end-line="544" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2928#2956#1" expanded="true" />
-            <element signature="e#8207#8359#0" expanded="true" />
-            <element signature="e#8358#8359#0" expanded="true" />
-            <element signature="e#13412#13461#0" expanded="false" />
-            <element signature="method#getLocationUpdates#0;class#UmberMapFragment#0" expanded="false" />
-            <element signature="e#19198#19256#0" expanded="false" />
-            <element signature="e#19809#19929#0" expanded="false" />
-            <element signature="e#28380#28381#0" expanded="true" />
-            <element signature="e#28469#28470#0" expanded="true" />
-            <element signature="e#34162#34198#0" expanded="true" />
-            <element signature="e#35956#35997#0" expanded="true" />
-            <element signature="e#36292#36335#0" expanded="true" />
-            <element signature="e#36373#36432#0" expanded="true" />
-            <element signature="e#37266#37318#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2986,14 +2921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="427" column="38" selection-start-line="427" selection-start-column="38" selection-end-line="427" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/TablesSQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3015,8 +2942,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
-            <element signature="e#3809#3810#0" expanded="true" />
-            <element signature="e#3856#3857#0" expanded="true" />
+            <element signature="e#3809#3810#0" expanded="false" />
+            <element signature="e#3856#3857#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3029,18 +2956,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/values/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UMMalibu/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+          <folding>
+            <element signature="e#2144#2145#0" expanded="true" />
+            <element signature="e#2190#2191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/api/NotificationsHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="56" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/res/drawable/green_button.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="73" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="73" />
+          <folding>
+            <element signature="e#284#325#0" expanded="false" />
+            <element signature="e#358#397#0" expanded="false" />
+            <element signature="e#432#473#0" expanded="false" />
+            <element signature="e#636#668#0" expanded="false" />
+            <element signature="e#783#826#0" expanded="false" />
+            <element signature="e#864#905#0" expanded="false" />
+            <element signature="e#945#988#0" expanded="false" />
+            <element signature="e#1029#1070#0" expanded="false" />
+            <element signature="e#1269#1310#0" expanded="false" />
+            <element signature="e#1343#1382#0" expanded="false" />
+            <element signature="e#1417#1458#0" expanded="false" />
+            <element signature="e#1494#1533#0" expanded="false" />
+            <element signature="e#1621#1653#0" expanded="false" />
+            <element signature="e#1753#1796#0" expanded="false" />
+            <element signature="e#1834#1875#0" expanded="false" />
+            <element signature="e#1915#1958#0" expanded="false" />
+            <element signature="e#1999#2040#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/res/values/style.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1111112">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/res/values-v21/style.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -3050,16 +3046,112 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.24138">
-          <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
+        <state vertical-scroll-proportion="-8.655172">
+          <caret line="226" column="60" selection-start-line="226" selection-start-column="60" selection-end-line="226" selection-end-column="60" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/values/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/adapters/RequestListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/UmberMapFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="667" column="87" selection-start-line="667" selection-start-column="87" selection-end-line="667" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2928#2956#1" expanded="true" />
+            <element signature="e#13412#13461#0" expanded="false" />
+            <element signature="method#getLocationUpdates#0;class#UmberMapFragment#0" expanded="false" />
+            <element signature="e#19198#19256#0" expanded="false" />
+            <element signature="e#19809#19929#0" expanded="false" />
+            <element signature="e#21905#23359#0" expanded="true" />
+            <element signature="e#23358#23359#0" expanded="true" />
+            <element signature="e#34204#34240#0" expanded="true" />
+            <element signature="e#35998#36039#0" expanded="true" />
+            <element signature="e#36334#36377#0" expanded="true" />
+            <element signature="e#36415#36474#0" expanded="true" />
+            <element signature="e#37308#37360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/helper/DatePickerHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+          <folding>
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#1363#1645#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1977#2342#0" expanded="true" />
+            <element signature="e#2341#2342#0" expanded="true" />
+            <element signature="e#2427#2650#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
+            <element signature="e#3698#3935#0" expanded="true" />
+            <element signature="e#3934#3935#0" expanded="true" />
+            <element signature="e#4157#4428#0" expanded="true" />
+            <element signature="e#4427#4428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/MyRequestsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/HistoryRequestsListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16030534">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/AbsRequestListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/RequestListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="208" column="32" selection-start-line="208" selection-start-column="32" selection-end-line="208" selection-end-column="32" />
+          <folding>
+            <element signature="e#6700#6910#0" expanded="true" />
+            <element signature="e#6909#6910#0" expanded="true" />
+            <element signature="e#6913#6967#0" expanded="false" />
+            <element signature="e#7517#7600#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/fragments/SummaryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
+          <caret line="249" column="80" selection-start-line="249" selection-start-column="80" selection-end-line="249" selection-end-column="80" />
           <folding>
             <element signature="e#3083#3084#0" expanded="true" />
             <element signature="e#3136#3137#0" expanded="true" />
@@ -3067,14 +3159,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/UMMalibu/src/com/parse/ummalibu/database/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4756944">
-          <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
-          <folding>
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2190#2191#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="1.4444444">
+          <caret line="389" column="60" selection-start-line="389" selection-start-column="60" selection-end-line="389" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

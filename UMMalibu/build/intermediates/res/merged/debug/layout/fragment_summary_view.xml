@@ -223,6 +223,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:background="@color/um_green"
                         android:textSize="18dp"
                         android:text="@string/minus"/>
@@ -232,6 +233,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
+                        android:textColor="@color/black"
                         android:background="@color/um_grey"
                         android:textSize="18dp"
                         android:text="@string/split_gas_number_ways"/>
@@ -241,6 +243,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:background="@color/um_green"
                         android:textSize="18dp"
                         android:text="@string/plus"/>
