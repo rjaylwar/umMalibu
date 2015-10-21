@@ -88,5 +88,7 @@
     <string name="um_talks">UM Talks</string>
     <string name="play_icon">▶</string>
     <string name="login">Login</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="account">Account</string>
 
 </resources>

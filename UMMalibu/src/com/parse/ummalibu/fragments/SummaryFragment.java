@@ -224,10 +224,12 @@ public class SummaryFragment extends ToolbarFragment {
         ApiHelper helper = new ApiHelper(mActivity);
         mRequest.setClaimed(false);
         mRequest.setDriverEmail("");
+        mActivity.showProgressDialog("Unclaiming the request...");
 
         helper.updateUmberRequestStatus(mRequest, new VolleyRequestListener() {
             @Override
             public void onResponse(Object response) {
+                mActivity.hideProgressDialog();
                 DatabaseHelper dbHelper = DatabaseHelper.getInstance(mActivity);
                 dbHelper.updateRequest(mRequest);
                 NotificationsHelper.sendUnclaimNotification(mRequest);
@@ -237,6 +239,7 @@ public class SummaryFragment extends ToolbarFragment {
 
             @Override
             public void onErrorResponse(VolleyError error) {
+                mActivity.hideProgressDialog();
                 Toast.makeText(mActivity, "The request could not be unclaimed at this time. Try again later.", Toast.LENGTH_LONG).show();
             }
         });
@@ -244,9 +247,11 @@ public class SummaryFragment extends ToolbarFragment {
 
     private void deleteRequest() {
         ApiHelper helper = new ApiHelper(mActivity);
+        mActivity.showProgressDialog("Deleting the request...");
         helper.deleteRequest(mRequest.getObjectId(), new VolleyRequestListener() {
             @Override
             public void onResponse(Object response) {
+                mActivity.hideProgressDialog();
                 DatabaseHelper dbHelper = DatabaseHelper.getInstance(mActivity);
                 dbHelper.deleteRequest(mRequest.getObjectId());
                 NotificationsHelper.unsubscribe(mRequest.getObjectId());
@@ -255,6 +260,7 @@ public class SummaryFragment extends ToolbarFragment {
 
             @Override
             public void onErrorResponse(VolleyError error) {
+                mActivity.hideProgressDialog();
                 Toast.makeText(mActivity, "The request could not be deleted at this time. Try again later.", Toast.LENGTH_LONG).show();
             }
         });
@@ -263,10 +269,11 @@ public class SummaryFragment extends ToolbarFragment {
     private void cancelRequest() {
         ApiHelper helper = new ApiHelper(mActivity);
         mRequest.setCanceled(true);
-
+        mActivity.showProgressDialog("Canceling the request...");
         helper.updateUmberRequestStatus(mRequest, new VolleyRequestListener() {
             @Override
             public void onResponse(Object response) {
+                mActivity.hideProgressDialog();
                 NotificationsHelper.sendCancelNotification(mRequest);
                 DatabaseHelper dbHelper = DatabaseHelper.getInstance(mActivity);
                 dbHelper.updateRequest(mRequest);
@@ -275,6 +282,7 @@ public class SummaryFragment extends ToolbarFragment {
 
             @Override
             public void onErrorResponse(VolleyError error) {
+                mActivity.hideProgressDialog();
                 Toast.makeText(mActivity, "The request could not be canceled at this time. Try again later.", Toast.LENGTH_LONG).show();
             }
         });

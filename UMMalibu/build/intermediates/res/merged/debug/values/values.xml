@@ -509,6 +509,8 @@
     <string name="about_link">Check us out at http://www.ummalibu.com or https://www.facebook.com/universityministries</string>
     <string name="about_ride_text">Shuttles to UM pick up students every week in Smothers Parking Lot on Pepperdine\'s main campus at 7:50 every Tuesday night.</string>
     <string name="about_um_text">UM is University Ministries, a college ministry hosted by Malibu Presbyterian Church that meets every Tuesday night at 8pm. We are focused on creating a community of people who can be real and love God together. This ministry is open to any college aged student. UM is lead by Steve Smith along with yearly interns. Check out our website or our facebook page below for more information, and we hope to see you on Tuesday nights!</string>
+    <string name="account">Account</string>
+    <string name="account_settings">Account Settings</string>
     <string name="action_alerts">Notifications</string>
     <string name="action_new">New Action</string>
     <string name="action_settings">Settings</string>

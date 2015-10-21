@@ -163,8 +163,8 @@ public class LoginActivity extends ToolbarActivity {
         }
 
         if(!mEmailLayout.getEditText().getText().toString().isEmpty()) {
-            Preferences.getInstance().setEmail(mEmailLayout.getEditText().getText().toString());
-            mDriver.setEmail(mEmailLayout.getEditText().getText().toString());
+            Preferences.getInstance().setEmail(mEmailLayout.getEditText().getText().toString().toLowerCase());
+            mDriver.setEmail(mEmailLayout.getEditText().getText().toString().toLowerCase());
         }
 
         if(!mPhoneLayout.getEditText().getText().toString().isEmpty()) {

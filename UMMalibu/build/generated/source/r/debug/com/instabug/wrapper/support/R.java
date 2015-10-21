@@ -752,8 +752,8 @@ public final class R {
 		public static final int abc_shareactionprovider_share_with = 0x7f080010;
 		public static final int abc_shareactionprovider_share_with_application = 0x7f080011;
 		public static final int abc_toolbar_collapse_description = 0x7f080012;
-		public static final int auth_google_play_services_client_facebook_display_name = 0x7f08005e;
-		public static final int auth_google_play_services_client_google_display_name = 0x7f08005f;
+		public static final int auth_google_play_services_client_facebook_display_name = 0x7f080060;
+		public static final int auth_google_play_services_client_google_display_name = 0x7f080061;
 		public static final int bottommessage = 0x7f080032;
 		public static final int bugheader = 0x7f080033;
 		public static final int cancelbutton = 0x7f080034;
@@ -788,8 +788,8 @@ public final class R {
 		public static final int common_google_play_services_updating_text = 0x7f08002e;
 		public static final int common_google_play_services_updating_title = 0x7f08002f;
 		public static final int common_open_on_phone = 0x7f080030;
-		public static final int common_signin_button_text = 0x7f080066;
-		public static final int common_signin_button_text_long = 0x7f080067;
+		public static final int common_signin_button_text = 0x7f080068;
+		public static final int common_signin_button_text_long = 0x7f080069;
 		public static final int edgeswipestartalerttext = 0x7f080036;
 		public static final int emailplaceholder = 0x7f080037;
 		public static final int feedbackheader = 0x7f080038;

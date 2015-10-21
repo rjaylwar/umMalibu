@@ -296,7 +296,6 @@ public class UmberMapFragment extends BaseFragment {
         mSelectedPickUpLocation = location;
         mSearchPickUpLayout.setLocationName(location.getFormattedTitle());
         mSearchPickUpLayout.clearFocus();
-        updateMapCamera(location.getLatLng());
 
         drawPickUpMarker();
     }
@@ -312,13 +311,13 @@ public class UmberMapFragment extends BaseFragment {
                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
         );
         mPotentialPickUpSpotMaker.showInfoWindow();
+        updateMapCamera(mPotentialPickUpSpotMaker.getPosition());
     }
 
     private void setSelectedDestination(UmLocation location) {
         mSelectedDestLocation = location;
         mSearchDestLayout.setLocationName(location.getFormattedTitle());
         mSearchDestLayout.clearFocus();
-        updateMapCamera(location.getLatLng());
 
         drawDestinationMarker();
     }
@@ -334,6 +333,7 @@ public class UmberMapFragment extends BaseFragment {
                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN))
         );
         mPotentialDestinationMarker.showInfoWindow();
+        updateMapCamera(mPotentialDestinationMarker.getPosition());
     }
 
 //    private void makeMovingDriverApiRequest() {
@@ -578,6 +578,8 @@ public class UmberMapFragment extends BaseFragment {
                             NotificationsHelper.subscribeAsRider(objectId);
                             if(Constants.SEND_NEW_REQUEST_NOTIFICATIONS)
                                 NotificationsHelper.sendNewRequestNotification(umberRequest);
+
+
                         }
 
                         @Override
@@ -837,7 +839,10 @@ public class UmberMapFragment extends BaseFragment {
                             .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN))
             );
 
-            updateMapCamera(mRiderRequests.get(0).getPickUpLatLng());
+            if(mPotentialDestinationMarker == null && mPotentialPickUpSpotMaker == null) {
+                updateMapCamera(mRiderRequests.get(0).getPickUpLatLng());
+                myRequestPickUpMarker.showInfoWindow();
+            }
 
             if (mRiderRequests.get(0).isClaimed())
                 getDriver(mRiderRequests.get(0));
