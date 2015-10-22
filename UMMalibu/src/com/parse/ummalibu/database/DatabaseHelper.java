@@ -25,7 +25,7 @@ import java.util.Date;
 public class DatabaseHelper {
 
     private ContentResolver mContentResolver;
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     DatabaseProvider.OpenDatabaseHelper mOpenDatabaseHelper;
     private static DatabaseHelper databaseHelper;
 

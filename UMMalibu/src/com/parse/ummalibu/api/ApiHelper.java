@@ -15,6 +15,7 @@ import com.parse.ummalibu.responses.NotificationsResponse;
 import com.parse.ummalibu.responses.TalksResponse;
 import com.parse.ummalibu.responses.UmLocationsResponse;
 import com.parse.ummalibu.responses.UmberRequestResponse;
+import com.parse.ummalibu.responses.YoutubeItemsResponse;
 import com.parse.ummalibu.values.FieldNames;
 import com.parse.ummalibu.values.Preferences;
 import com.parse.ummalibu.volley.GsonVolleyRequester;
@@ -31,7 +32,9 @@ public class ApiHelper {
 
     AppCompatActivity mActivity;
     String PARSE_API_URL = "https://api.parse.com/1/classes";
-    String GOOGLE_MAPS_DIRECTIONS_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%f,%f&destination=%f,%f&key=AIzaSyC8l_H5c5SxRYFwGsiV85kFJ9mgeprPkxA";
+    String YOUTUBE_KEY = "AIzaSyC8l_H5c5SxRYFwGsiV85kFJ9mgeprPkxA";
+    String YOUTUBE_PLAYLIST_ITEMS_URL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=%s&key=" + YOUTUBE_KEY;
+    String GOOGLE_MAPS_DIRECTIONS_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%f,%f&destination=%f,%f&key=" + YOUTUBE_KEY;
     String TUMBLR_API_KEY = "NMhe3dJOgq9L4BKdOPNWA1cSTfMPW5TUgppBTkF3mmCQZ5BkYG";
 
     public ApiHelper(AppCompatActivity activity) {
@@ -215,6 +218,14 @@ public class ApiHelper {
         Log.d("get tumblr talks", url);
 
         GsonVolleyRequester<BaseTumblrResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, BaseTumblrResponse.class);
+        volleyRequester.makeGetRequest(mActivity, url, uiListener);
+    }
+
+    public void getYoutubeVideos(String channelId, VolleyRequestListener<YoutubeItemsResponse> uiListener) {
+        String url = String.format(YOUTUBE_PLAYLIST_ITEMS_URL, channelId);
+        Log.d("get youtube vids", url);
+
+        GsonVolleyRequester<YoutubeItemsResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, YoutubeItemsResponse.class);
         volleyRequester.makeGetRequest(mActivity, url, uiListener);
     }
 

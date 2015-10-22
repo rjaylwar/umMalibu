@@ -17,8 +17,8 @@ import com.parse.ummalibu.values.FieldNames;
 import java.util.Date;
 
 /**
- * Created by rjaylward on 9/22/15.
- */
+ * Created by rjaylward on 9/22/15
+ **/
 public class UmberRequest implements ApiResponse, Parcelable {
 
     public UmberRequest() {}
