@@ -182,6 +182,9 @@
         <activity
             android:name="com.parse.ummalibu.TumblrTalksActivity"
             android:label="" />
+        <activity
+            android:name="com.parse.ummalibu.YoutubeFragActivity"
+            android:label="@string/title_activity_worship" />
 
         <provider
             android:name="com.parse.ummalibu.database.DatabaseProvider"

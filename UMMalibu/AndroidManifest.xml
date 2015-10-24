@@ -184,6 +184,10 @@
             android:name=".TumblrTalksActivity"
             android:label=""/>
 
+        <activity
+            android:name=".YoutubeFragActivity"
+            android:label="@string/title_activity_worship"/>
+
         <provider
             android:name=".database.DatabaseProvider"
             android:exported="false"

@@ -23,21 +23,21 @@ public class YoutubeItemDeserializer implements JsonDeserializer<YoutubeItem> {
             YoutubeItem youtubeItem = gson.fromJson(json.getAsJsonObject().get("snippet").getAsJsonObject(), YoutubeItem.class);
 
             try {
-                youtubeItem.setKind(json.getAsJsonObject().get("resourceId").getAsJsonObject()
+                youtubeItem.setKind(json.getAsJsonObject().get("snippet").getAsJsonObject().get("resourceId").getAsJsonObject()
                         .get("kind").getAsJsonPrimitive().getAsString());
             } catch (Exception e) {
                 Log.d("Get Kind", e.getMessage(), e.getCause());
             }
 
             try {
-                youtubeItem.setVideoId(json.getAsJsonObject().get("resourceId").getAsJsonObject()
+                youtubeItem.setVideoId(json.getAsJsonObject().get("snippet").getAsJsonObject().get("resourceId").getAsJsonObject()
                         .get("videoId").getAsJsonPrimitive().getAsString());
             } catch (Exception e) {
                 Log.d("Get Video Id", e.getMessage(), e.getCause());
             }
 
             try {
-                youtubeItem.setKind(json.getAsJsonObject().get("thumbnails").getAsJsonObject()
+                youtubeItem.setThumbnailUrl(json.getAsJsonObject().get("snippet").getAsJsonObject().get("thumbnails").getAsJsonObject()
                         .get("standard").getAsJsonObject()
                         .get("url").getAsJsonPrimitive().getAsString());
             } catch (Exception e) {

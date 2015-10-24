@@ -31,11 +31,11 @@ import java.security.InvalidParameterException;
 public class ApiHelper {
 
     AppCompatActivity mActivity;
-    String PARSE_API_URL = "https://api.parse.com/1/classes";
-    String YOUTUBE_KEY = "AIzaSyC8l_H5c5SxRYFwGsiV85kFJ9mgeprPkxA";
-    String YOUTUBE_PLAYLIST_ITEMS_URL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=%s&key=" + YOUTUBE_KEY;
-    String GOOGLE_MAPS_DIRECTIONS_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%f,%f&destination=%f,%f&key=" + YOUTUBE_KEY;
-    String TUMBLR_API_KEY = "NMhe3dJOgq9L4BKdOPNWA1cSTfMPW5TUgppBTkF3mmCQZ5BkYG";
+    public static final String PARSE_API_URL = "https://api.parse.com/1/classes";
+    public static final String YOUTUBE_KEY = "AIzaSyC8l_H5c5SxRYFwGsiV85kFJ9mgeprPkxA";
+    private String YOUTUBE_PLAYLIST_ITEMS_URL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=%s&key=" + YOUTUBE_KEY;
+    private String GOOGLE_MAPS_DIRECTIONS_URL = "https://maps.googleapis.com/maps/api/directions/json?origin=%f,%f&destination=%f,%f&key=" + YOUTUBE_KEY;
+    public static String TUMBLR_API_KEY = "NMhe3dJOgq9L4BKdOPNWA1cSTfMPW5TUgppBTkF3mmCQZ5BkYG";
 
     public ApiHelper(AppCompatActivity activity) {
         mActivity = activity;
@@ -220,6 +220,8 @@ public class ApiHelper {
         GsonVolleyRequester<BaseTumblrResponse> volleyRequester = new GsonVolleyRequester<>(mActivity, BaseTumblrResponse.class);
         volleyRequester.makeGetRequest(mActivity, url, uiListener);
     }
+
+    /////////////////////////////////// Youtube Api Requests ///////////////////////////////////////
 
     public void getYoutubeVideos(String channelId, VolleyRequestListener<YoutubeItemsResponse> uiListener) {
         String url = String.format(YOUTUBE_PLAYLIST_ITEMS_URL, channelId);

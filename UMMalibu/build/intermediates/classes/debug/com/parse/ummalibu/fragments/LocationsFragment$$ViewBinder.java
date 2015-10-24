@@ -16,8 +16,8 @@ public class LocationsFragment$$ViewBinder<T extends com.parse.ummalibu.fragment
     target.mEmptyListView = finder.castView(view, 2131689677, "field 'mEmptyListView'");
     view = finder.findRequiredView(source, 2131689678, "field 'mProgressBar'");
     target.mProgressBar = finder.castView(view, 2131689678, "field 'mProgressBar'");
-    view = finder.findRequiredView(source, 2131689830, "field 'mSearchLayout'");
-    target.mSearchLayout = finder.castView(view, 2131689830, "field 'mSearchLayout'");
+    view = finder.findRequiredView(source, 2131689834, "field 'mSearchLayout'");
+    target.mSearchLayout = finder.castView(view, 2131689834, "field 'mSearchLayout'");
   }
 
   @Override public void unbind(T target) {

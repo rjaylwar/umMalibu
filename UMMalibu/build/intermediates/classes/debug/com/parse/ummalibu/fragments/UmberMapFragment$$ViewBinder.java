@@ -9,12 +9,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class UmberMapFragment$$ViewBinder<T extends com.parse.ummalibu.fragments.UmberMapFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131689824, "field 'mSearchPickUpLayout'");
-    target.mSearchPickUpLayout = finder.castView(view, 2131689824, "field 'mSearchPickUpLayout'");
-    view = finder.findRequiredView(source, 2131689825, "field 'mSearchDestLayout'");
-    target.mSearchDestLayout = finder.castView(view, 2131689825, "field 'mSearchDestLayout'");
-    view = finder.findRequiredView(source, 2131689823, "field 'mSearchLayout'");
-    target.mSearchLayout = finder.castView(view, 2131689823, "field 'mSearchLayout'");
+    view = finder.findRequiredView(source, 2131689828, "field 'mSearchPickUpLayout'");
+    target.mSearchPickUpLayout = finder.castView(view, 2131689828, "field 'mSearchPickUpLayout'");
+    view = finder.findRequiredView(source, 2131689829, "field 'mSearchDestLayout'");
+    target.mSearchDestLayout = finder.castView(view, 2131689829, "field 'mSearchDestLayout'");
+    view = finder.findRequiredView(source, 2131689827, "field 'mSearchLayout'");
+    target.mSearchLayout = finder.castView(view, 2131689827, "field 'mSearchLayout'");
     view = finder.findRequiredView(source, 2131689647, "field 'mRequestButton'");
     target.mRequestButton = finder.castView(view, 2131689647, "field 'mRequestButton'");
     view = finder.findRequiredView(source, 2131689640, "field 'mDriverLayout'");

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:background="@color/um_grey_blue">
+
+    <include layout="@layout/toolbar_basic"/>
+
+    <!--<com.google.android.youtube.player.YouTubePlayerView-->
+        <!--android:id="@+id/youtube_player_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="2"/>-->
+
+    <include layout="@layout/basic_swipe_refresh_recyclerview"/>
+
+</LinearLayout><!-- From: file:/Users/rjaylward/Google%20Drive/Android%20Studio/Parse-Starter-Project-1.8.0/UMMalibu/res/layout/fragment_worship_youtube.xml -->

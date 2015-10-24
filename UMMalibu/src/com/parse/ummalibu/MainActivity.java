@@ -58,7 +58,8 @@ public class MainActivity extends ToolbarActivity {
         addListenerOnButton();
 //        sermonsIntent = new Intent(this, SermonsActivity.class);
         sermonsIntent = TumblrTalksActivity.createIntent(this);
-        worshipIntent = new Intent(this, WorshipActivity.class);
+//        worshipIntent = new Intent(this, WorshipActivity.class);
+        worshipIntent = YoutubeFragActivity.createIntent(this);
         prayerIntent = new Intent(this, PrayerActivity.class);
         eventsIntent = new Intent(this, EventsActivity.class);
         coffeeIntent = new Intent(this, CoffeeActivity.class);

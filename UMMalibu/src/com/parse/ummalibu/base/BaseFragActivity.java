@@ -9,7 +9,7 @@ import com.parse.ummalibu.R;
  */
 public abstract class BaseFragActivity extends BaseActivity {
 
-    private BaseFragment mFragment;
+    private Fragment mFragment;
     private static final String FRAGMENT_TAG = "frag_tag";
     private OnActivityBackPressedListener mListener;
 
@@ -20,8 +20,8 @@ public abstract class BaseFragActivity extends BaseActivity {
 
     @Override
     public void initLayout() {
-        mFragment = (BaseFragment) getFragment();
-        this.setOnActivityBackPressedListener(mFragment);
+        mFragment = getFragment();
+//        this.setOnActivityBackPressedListener(mFragment);
         mFragment.setArguments(getIntent().getExtras());
 
         if(mFragment != null) {
